@@ -1,149 +1,337 @@
-export const utilityLinks = [
-  { label: "Publikationen", href: "#insights" },
-  { label: "Events", href: "#events" },
-  { label: "Karriere", href: "#career" },
-  { label: "Kontakt", href: "#contact" },
-];
-
-export const mainLinks = [
-  { label: "Expertise", href: "#expertise" },
-  { label: "Aktuelles", href: "#insights" },
-  { label: "Unser Ansatz", href: "#approach" },
-  { label: "Internationale Events", href: "#events" },
-  { label: "Join Us", href: "#career" },
-];
-
-export const industries = [
-  "Automobil & Mobilitaet",
-  "Energie & Versorgung",
-  "Private Equity",
-  "Industrials",
-  "Healthcare",
-  "Technologie",
-];
-
-export const metrics = [
-  { label: "Globale Themen", value: "06" },
-  { label: "Neue Insights", value: "18" },
-  { label: "Standorte", value: "50+" },
-];
-
-export const insights = {
-  featured: {
-    label: "Studie",
-    title: "Makrooekonomie, Lieferketten und Fuehrung unter neuem Druck",
-    description:
-      "Platzhalter fuer die zentrale Story der Woche. Die Typografie und Groessenverhaeltnisse sind auf eine grosse Thought Leadership Geschichte ausgelegt.",
+﻿export const heroVideos = [
+  {
+    title: "Smart factory automation",
+    src: "https://videos.pexels.com/video-files/32386599/13814607_3840_2160_100fps.mp4",
+    creditUrl:
+      "https://www.pexels.com/video/high-tech-automated-manufacturing-process-32386581/",
   },
-  secondary: [
-    {
-      label: "Artikel",
-      title: "Transformation mit einer klaren Value-Creation-Agenda",
-      description:
-        "Kurzer Teasertext fuer Branchenperspektiven, Cases oder Kommentare.",
+  {
+    title: "Industrial control systems",
+    src: "https://videos.pexels.com/video-files/34508889/14621114_3840_2160_25fps.mp4",
+    creditUrl:
+      "https://www.pexels.com/video/operator-uses-industrial-control-panel-for-machinery-31751360/",
+  },
+  {
+    title: "Production teamwork on site",
+    src: "https://videos.pexels.com/video-files/7192922/7192922-uhd_3840_2160_30fps.mp4",
+    creditUrl:
+      "https://www.pexels.com/video/two-men-are-working-on-a-machine-in-a-factory-20687170/",
+  },
+  {
+    title: "Industrial footprint overview",
+    src: "https://videos.pexels.com/video-files/30900257/13212332_3840_2160_60fps.mp4",
+    creditUrl:
+      "https://www.pexels.com/video/aerial-view-of-industrial-factory-complex-30900254/",
+  },
+  {
+    title: "Control room decision making",
+    src: "https://videos.pexels.com/video-files/4038983/4038983-hd_1920_1080_24fps.mp4",
+    creditUrl:
+      "https://www.pexels.com/video/a-director-in-a-production-control-room-5028976/",
+  },
+];
+
+export const homepageContent = {
+  tr: {
+    utilityLinks: [
+      { label: "Kimligimiz", href: "#kimligimiz" },
+      { label: "Misyonumuz", href: "#misyonumuz" },
+      { label: "Iletisim", href: "#iletisim" },
+    ],
+    mainLinks: [
+      { label: "Hemen Basla!", href: "#hemen-basla" },
+      { label: "Metodoloji", href: "#metodoloji" },
+      { label: "Yazilarimiz", href: "#yazilarimiz" },
+      { label: "Referanslar", href: "#referanslar" },
+    ],
+    hero: {
+      ctaLabel: "Yaklasimimiz",
     },
-    {
-      label: "Podcast",
-      title: "Geschaeftsmodelle neu denken, ohne operative Schaerfe zu verlieren",
-      description:
-        "Funktioniert fuer Audioformate, Interviews oder Gespraechsreihen.",
+    identity: {
+      eyebrow: "Kimligimiz",
+      title: "Sahada birlikte calisan, uygulamaya kadar kalan bir ekip.",
+      intro:
+        "Eski ana sayfadaki kimlik bolumunu yeni yapiya tasidik. Buradaki dil, sahada birlikte uretme ve sonuc alana kadar masada kalmama fikrini one cikariyor.",
+      bullets: [
+        "Uretim sektorunde yurt ici ve yurt disinda edinilmis genis saha tecrubemiz var.",
+        "Uzmanligimiz yalin surecler, yalin uretim, kalite ve proje yonetimi alanlarindadir.",
+        "Sirketinizin calisanlarini is ortagi olarak gorur, cozumleri birlikte uretiriz.",
+        "Sadece ne yapilacagini soylemeyiz; surec sonuclanana kadar ekiplerle birlikte kaliriz.",
+        "Calisirken kelimeler yerine eylemi tercih ederiz.",
+      ],
     },
-    {
-      label: "Think Piece",
-      title: "Human capital, KI und Procurement im Jahr 2030",
-      description:
-        "Die rote Karte schafft eine zweite visuelle Hierarchie fuer besonders wichtige Inhalte.",
-      accent: true,
+    mission: {
+      eyebrow: "Misyonumuz",
+      title: "Karliligi, kurumsal yapilari ve saha disiplinini birlikte guclendirmek.",
+      intro:
+        "Bu bolum eski sitedeki misyon metinlerinden uyarlandi. Yeni ana sayfada daha net ve okunur bir yapiyla yer aliyor.",
+      bullets: [
+        "Sanayiye yurt ici ve yurt disi bilgi birikimiyle katki saglamak.",
+        "Sirketlerin karliligini ve kurumsal yapisini guclendirmek.",
+        "Organizasyonlari dijital caga hazirlayip bu donusumde basariyla konumlandirmak.",
+        "Yalin, cevik, hizli ve verimli calisma sistemleri kurmak.",
+        "Calisanlara nitelik kazandirarak anlasilir ve surdurulebilir surecler olusturmak.",
+      ],
     },
-  ],
+    methodology: {
+      eyebrow: "Metodoloji",
+      title: "Calisma bicimimizi sekiz net prensip etrafinda kurguluyoruz.",
+      intro:
+        "Ilk temastan sonuclandirmaya kadar her adimda sahada uygulanabilir, olculebilir ve surdurulebilir bir yaklasim izliyoruz.",
+      steps: [
+        {
+          title: "Ucretsiz Analiz",
+          icon: "analysis",
+          description:
+            "Bizimle calismaya ilgileniyorsaniz sizleri ucretsiz olarak ziyaret eder, kisa bir saha surec alani turu yapar, kendimizi tanitir, firmaniza katki saglayip saglayamayacagimiza analiz eder ve tespitlerimizi sizlerle paylasiriz.",
+        },
+        {
+          title: "Verimlilik Optimizasyonu",
+          icon: "growth",
+          description:
+            "Sizinle calismaya karar verirsek firmanizi asamali olarak ama ayni zamanda mumkun oldugu kadar hizli bir sekilde sureclerinizi ve uretim alanlarinizi daha yalin, daha verimli, daha kurumsal ve dolayisiyla daha karli bir hale donusturuyoruz.",
+        },
+        {
+          title: "Kurumsallik",
+          icon: "governance",
+          description:
+            "Calismalarimiz sirasinda ust yonetimin destegi ve degisime hazir kurumsal calisma kulturu bizler icin esastir.",
+        },
+        {
+          title: "Seffaflik",
+          icon: "balance",
+          description:
+            "Iletisimimizde acik, net, seffaf ve durustuz. Dusuncemiz, soylemimiz ve eylemimiz arasinda bir fark yoktur. Karsilikli guvene ve durustluge dayali is iliskileri kurariz.",
+        },
+        {
+          title: "Profesyonellik",
+          icon: "check",
+          description:
+            "Uzmanligimiz olan konularda calisma yapariz.",
+        },
+        {
+          title: "Surekli Gelisim",
+          icon: "edit",
+          description:
+            "Uzmanligimizla ilgili olan gelismeleri takip edip yenilikleri islerimize katariz.",
+        },
+        {
+          title: "Sonuclandirma",
+          icon: "hourglass",
+          description:
+            "Uygulama esnasinda sonuc alana kadar ciddi cabayi gosteririz ve uygulamaci olarak surekli yaninizdayiz.",
+        },
+        {
+          title: "Butce Kontrolu",
+          icon: "budget",
+          description:
+            "Isin gerektirdigi danismanlik surelerimizi veya danisman sayimizi surekli izleyerek ekonomik calisma yontemleri uygulariz.",
+        },
+      ],
+    },
+    articles: {
+      eyebrow: "Yazilarimiz",
+      title: "Sahada tekrar eden problemleri yazilarla aciyoruz.",
+      intro:
+        "Eski sitedeki yazi bolumundeki baslik ve ozetler buraya tasindi. Bunlar daha sonra detay sayfalara veya CMS'e baglanabilir.",
+      items: [
+        {
+          title: "Yalin donusumde sizi ne bekliyor?",
+          excerpt:
+            "Bir cok firma ilk gorusmede gunluk sorunlardan bahsediyor ve hizli cozum ariyor. Gozlemledigimiz problemler ise sasirtici bicimde birbirine benziyor.",
+        },
+        {
+          title: "Planlama stabilitesi nerede kirilir?",
+          excerpt:
+            "Plan her gun degisiyorsa sorun plan degil, gorunurluk, WIP ve reaksiyon ritmi olabilir.",
+        },
+        {
+          title: "Shopfloor board gercekte nasil calisir?",
+          excerpt:
+            "Bir pano tek basina cozum degildir; dogru soruyu gorunur kilan yonetim ritmiyle anlam kazanir.",
+        },
+      ],
+    },
+    references: {
+      eyebrow: "Referanslar",
+      title: "Birlikte calistigimiz ekiplerden secili bir gorunum.",
+      intro:
+        "Eski referans bolumundeki gorsel varliklari yeni sayfada daha sakin bir grid duzeniyle kullaniyoruz.",
+    },
+    contact: {
+      eyebrow: "Iletisim",
+      title: "Kisa bir mesaj birakin, en hizli sekilde donus yapalim.",
+      intro:
+        "Eski iletisim panelindeki temel bilgiler yeni ana sayfaya tasindi. Bu alan istersek daha sonra form servisine veya CRM akisina baglanabilir.",
+      companyName: "EJS Muhendislik Danismanlik ve Egitim",
+      companyNote:
+        "Tum sureclerimiz hakkinda detayli bilgi icin iletisim kanallarimizdan bize ulasabilirsiniz.",
+      address:
+        "Aydintepe Mah. Alaaddin Sk. No.7 Evora Sitesi A Parsel, A13, Ic Kapi No: 19 Tuzla / Istanbul",
+      phones: ["+90 216 906 03 25", "+90 532 636 72 00"],
+      hours: "Pazartesi-Cuma: 8:00 - 17:00 / Cumartesi-Pazar: Kapali",
+      fields: {
+        name: "Isim Soyisim",
+        email: "Mail adresiniz",
+        message: "Mesajiniz",
+        submit: "Gonder",
+      },
+      placeholders: {
+        name: "Adiniz ve soyadiniz",
+        email: "hello@example.com",
+        message: "Mesajinizi buraya kisaca yazin...",
+      },
+    },
+  },
+  en: {
+    utilityLinks: [
+      { label: "Identity", href: "#kimligimiz" },
+      { label: "Mission", href: "#misyonumuz" },
+      { label: "Contact", href: "#iletisim" },
+    ],
+    mainLinks: [
+      { label: "Start Now", href: "#hemen-basla" },
+      { label: "Methodology", href: "#metodoloji" },
+      { label: "Articles", href: "#yazilarimiz" },
+      { label: "References", href: "#referanslar" },
+    ],
+    hero: {
+      ctaLabel: "Our Approach",
+    },
+    identity: {
+      eyebrow: "Identity",
+      title: "A team that works on the floor and stays through implementation.",
+      intro:
+        "The identity section from the old homepage has been moved into the new structure. The tone emphasizes co-creation on the shopfloor and staying with the team until results appear.",
+      bullets: [
+        "We bring broad field experience gained in manufacturing across domestic and international environments.",
+        "Our expertise covers lean processes, lean manufacturing, quality, and project management.",
+        "We treat your teams as partners and build solutions together.",
+        "We do not stop at recommendations; we stay involved until the process lands in daily practice.",
+        "We prefer action over words while working.",
+      ],
+    },
+    mission: {
+      eyebrow: "Mission",
+      title: "Strengthening profitability, governance, and operational discipline together.",
+      intro:
+        "This section is adapted from the mission copy on the old site and placed here in a clearer bilingual structure.",
+      bullets: [
+        "Contribute to industry with domestic and international experience.",
+        "Strengthen company profitability and institutional capability.",
+        "Prepare organizations for the digital era and position them for success.",
+        "Build lean, agile, fast, and efficient operating systems.",
+        "Develop people capabilities to create clear and sustainable processes.",
+      ],
+    },
+    methodology: {
+      eyebrow: "Methodology",
+      title: "We structure our way of working around eight clear principles.",
+      intro:
+        "From the first visit to execution, every step is designed to stay practical, measurable, and sustainable on the ground.",
+      steps: [
+        {
+          title: "Free Assessment",
+          icon: "analysis",
+          description:
+            "If you are interested in working with us, we visit you free of charge, take a short walkthrough of the process areas, introduce ourselves, assess whether we can create value for your company, and share our observations with you.",
+        },
+        {
+          title: "Efficiency Optimization",
+          icon: "growth",
+          description:
+            "If we decide to work together, we transform your processes and production areas step by step, yet as quickly as possible, into a leaner, more efficient, more institutional, and more profitable operating model.",
+        },
+        {
+          title: "Institutional Capability",
+          icon: "governance",
+          description:
+            "During our work, support from top management and a company culture that is ready for change are essential for us.",
+        },
+        {
+          title: "Transparency",
+          icon: "balance",
+          description:
+            "We are open, clear, transparent, and honest in our communication. There is no gap between what we think, say, and do. We build working relationships based on trust and integrity.",
+        },
+        {
+          title: "Professionalism",
+          icon: "check",
+          description:
+            "We work in the areas where we have proven expertise.",
+        },
+        {
+          title: "Continuous Improvement",
+          icon: "edit",
+          description:
+            "We closely follow developments related to our expertise and integrate meaningful innovations into our work.",
+        },
+        {
+          title: "Execution to Results",
+          icon: "hourglass",
+          description:
+            "During implementation, we put in the effort required until results are achieved and stay by your side as hands-on practitioners.",
+        },
+        {
+          title: "Budget Control",
+          icon: "budget",
+          description:
+            "We continuously monitor the consulting time and staffing the work requires and apply economical delivery methods throughout the engagement.",
+        },
+      ],
+    },
+    articles: {
+      eyebrow: "Articles",
+      title: "We unpack recurring shopfloor problems through writing.",
+      intro:
+        "Titles and summaries from the old article section are carried over here. They can later connect to full detail pages or a CMS.",
+      items: [
+        {
+          title: "What should you expect in a lean transformation?",
+          excerpt:
+            "Many companies begin with urgent daily problems, yet the patterns we observe are remarkably similar across operations.",
+        },
+        {
+          title: "Where does planning stability actually break?",
+          excerpt:
+            "If the plan changes every day, the issue is often not the plan itself but visibility, WIP, and reaction cadence.",
+        },
+        {
+          title: "How does a shopfloor board really work?",
+          excerpt:
+            "A board alone is not the solution; it becomes useful only when paired with the right management rhythm.",
+        },
+      ],
+    },
+    references: {
+      eyebrow: "References",
+      title: "A selection of teams and environments we have worked with.",
+      intro:
+        "Visual assets from the old references area are reused here in a calmer grid format.",
+    },
+    contact: {
+      eyebrow: "Contact",
+      title: "Leave a short message and we will get back to you quickly.",
+      intro:
+        "The key information from the old contact panel is now part of the new homepage. This can later connect to a real form flow or CRM automation.",
+      companyName: "EJS Engineering Consulting & Training",
+      companyNote:
+        "For detailed information about our services, reach us through the channels below.",
+      address:
+        "Aydintepe Mah. Alaaddin Sk. No.7 Evora Sitesi A Parsel, A13, Tuzla / Istanbul",
+      phones: ["+90 216 906 03 25", "+90 532 636 72 00"],
+      hours: "Mon-Fri: 8:00 - 17:00 / Sat-Sun: Closed",
+      fields: {
+        name: "Full name",
+        email: "Your email",
+        message: "Message",
+        submit: "Send",
+      },
+      placeholders: {
+        name: "Your full name",
+        email: "hello@example.com",
+        message: "Write your message here...",
+      },
+    },
+  },
 };
-
-export const expertiseCards = [
-  {
-    number: "01",
-    title: "Corporate Performance",
-    description:
-      "Wachstum, Portfolio, Margensteuerung und strategische Priorisierung.",
-  },
-  {
-    number: "02",
-    title: "Digital & AI",
-    description:
-      "Skalierbare digitale Modelle, Operating Model Design und Umsetzung.",
-  },
-  {
-    number: "03",
-    title: "Operations",
-    description:
-      "End-to-end Verbesserung von Netzwerken, Produktion und Serviceleistung.",
-  },
-  {
-    number: "04",
-    title: "People & Organization",
-    description:
-      "Fuehrung, Faehigkeiten und Strukturen fuer Transformation unter Druck.",
-  },
-  {
-    number: "05",
-    title: "Restrukturierung",
-    description:
-      "Stabilisierung, Cash-Fokus und beschleunigte operative Neuaufstellung.",
-  },
-  {
-    number: "06",
-    title: "Nachhaltigkeit",
-    description:
-      "Wertschoepfung aus Regulatorik, Dekarbonisierung und resilienten Lieferketten.",
-  },
-];
-
-export const approachPoints = [
-  "Hypothesenbasiert starten und frueh fokussieren.",
-  "Mit Management und Teams in denselben Entscheidungsraum gehen.",
-  "Ergebnisse so gestalten, dass sie operativ tragfaehig bleiben.",
-];
-
-export const events = [
-  {
-    day: "16",
-    date: "APR 2026",
-    title: "Executive Morning: KI in industriellen Wertschoepfungsketten",
-    description:
-      "Beschreibungsflaeche fuer ein Signature Event mit Raum fuer Ort, Gastgeber, Fokus und CTA.",
-  },
-  {
-    day: "21",
-    date: "APR 2026",
-    title: "Innovation Tour und Networking Lunch auf internationaler Messe",
-    description:
-      "Zweites Event-Modul fuer Messeformate, Roundtables oder Investorengespraeche.",
-  },
-];
-
-export const footerColumns = [
-  {
-    title: "Standort",
-    items: ["Muenchen Office", "Sederanger 1", "80538 Muenchen"],
-  },
-  {
-    title: "Themen",
-    links: [
-      { label: "Expertise", href: "#expertise" },
-      { label: "Insights", href: "#insights" },
-      { label: "Events", href: "#events" },
-    ],
-  },
-  {
-    title: "Unternehmen",
-    links: [
-      { label: "Unser Ansatz", href: "#approach" },
-      { label: "Karriere", href: "#career" },
-      { label: "Kontakt", href: "#contact" },
-    ],
-  },
-  {
-    title: "Newsletter",
-    items: ["Aktuelle Studien und Nachrichten direkt in Ihre Inbox."],
-    links: [{ label: "Jetzt abonnieren", href: "#contact" }],
-  },
-];

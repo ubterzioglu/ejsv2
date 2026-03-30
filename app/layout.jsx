@@ -1,20 +1,14 @@
-import { Bodoni_Moda, IBM_Plex_Sans } from "next/font/google";
+﻿import { Manrope } from "next/font/google";
 import "./globals.css";
 
-const bodoniModa = Bodoni_Moda({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  variable: "--font-display",
-});
-
-const ibmPlexSans = IBM_Plex_Sans({
+const manrope = Manrope({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-body",
 });
 
 export const metadata = {
-  title: "Roland Berger | Unternehmensberatung",
+  title: "EJS Consulting | Consulting",
   description:
     "Next.js editorial landing page inspired by a corporate consulting homepage.",
 };
@@ -22,9 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="de">
-      <body className={`${bodoniModa.variable} ${ibmPlexSans.variable}`}>
-        {children}
-      </body>
+      <body className={manrope.variable}>{children}</body>
     </html>
   );
 }

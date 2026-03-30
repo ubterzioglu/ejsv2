@@ -1,0 +1,4 @@
+﻿$path = 'app/page.jsx'
+$content = Get-Content -Path $path -Raw
+$content = $content.Replace(';`r`nimport { ExpertSpotlight } from "@/components/expert-spotlight";', ";`r`nimport { ExpertSpotlight } from \"@/components/expert-spotlight\";")
+Set-Content -Path $path -Value $content -Encoding utf8

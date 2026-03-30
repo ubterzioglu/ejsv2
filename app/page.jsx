@@ -1,257 +1,372 @@
-import {
-  approachPoints,
-  events,
-  expertiseCards,
-  footerColumns,
-  industries,
-  insights,
-  mainLinks,
-  metrics,
-  utilityLinks,
-} from "@/app/data/homepage-content";
+﻿"use client";
+
+import Image from "next/image";
+import { Fragment, useState } from "react";
+import ref1 from "@/old/src/assets/references/1.jpg";
+import ref2 from "@/old/src/assets/references/2.jpg";
+import ref3 from "@/old/src/assets/references/3.jpg";
+import ref4 from "@/old/src/assets/references/4.jpg";
+import ref5 from "@/old/src/assets/references/5.jpg";
+import ref6 from "@/old/src/assets/references/6.jpg";
+import footerLogo from "@/old/src/assets/ejsmenulogo.png";
+import missionImage from "@/old/src/assets/workflow/step-2-factory.jpg";
+import identityImage from "@/old/src/assets/workflow/step-2-factory.jpg";
+import { heroVideos, homepageContent } from "@/app/data/homepage-content";
+import { ExpertSpotlight } from "@/components/expert-spotlight";
+import { ProcessHighlight } from "@/components/process-highlight";
+import { HeroVideoCarousel } from "@/components/hero-video-carousel";
+import { MethodologyCards } from "@/components/methodology-cards";
 import { SiteHeader } from "@/components/site-header";
 
+const referenceImages = [ref1, ref2, ref3, ref4, ref5, ref6];
+
 export default function HomePage() {
+  const [lang, setLang] = useState("tr");
+  const page = homepageContent[lang];
+  const shareUrl = encodeURIComponent("https://ejsconsulting.com");
+  const shareText = encodeURIComponent(
+    lang === "tr"
+      ? "EJS Consulting ile muhendislik cozumlerini kesfedin."
+      : "Discover engineering solutions with EJS Consulting.",
+  );
+  const footerContent =
+    lang === "tr"
+      ? {
+          eyebrow: "Merkez",
+          title: "Merkez Ofis",
+          officeName: "Istanbul Office",
+          addressLines: [
+            "EJS Muhendislik Danismanlik ve Egitim",
+            "Aydintepe Mah. Alaaddin Sk. No.7",
+            "Evora Sitesi A Parsel, A13, Ic Kapi No: 19",
+            "Tuzla / Istanbul",
+            "Turkiye",
+          ],
+          contactRows: [
+            { label: "Telefon", value: "+90 216 906 03 25", href: "tel:+902169060325" },
+            { label: "Mobil", value: "+90 532 636 72 00", href: "tel:+905326367200" },
+            { label: "Mail", value: "Mesaj gonderin", href: "#iletisim" },
+          ],
+          links: [
+            { label: "Yazilarimiz", href: "#yazilarimiz" },
+            { label: "Kurumsal", href: "#kimligimiz" },
+            { label: "Yardim", href: "#iletisim" },
+            { label: "Gizlilik", href: "#top" },
+            { label: "Cerezler", href: "#top" },
+            { label: "Iletisim", href: "#iletisim" },
+          ],
+          navLabel: "Alt gezinme",
+        }
+      : {
+          eyebrow: "Headquarters",
+          title: "Head Office",
+          officeName: "Istanbul Office",
+          addressLines: [
+            "EJS Engineering Consulting & Training",
+            "Aydintepe Mah. Alaaddin Sk. No.7",
+            "Evora Sitesi A Parsel, A13, Unit 19",
+            "Tuzla / Istanbul",
+            "Turkey",
+          ],
+          contactRows: [
+            { label: "Phone", value: "+90 216 906 03 25", href: "tel:+902169060325" },
+            { label: "Mobile", value: "+90 532 636 72 00", href: "tel:+905326367200" },
+            { label: "Mail", value: "Send a message", href: "#iletisim" },
+          ],
+          links: [
+            { label: "Newsroom", href: "#yazilarimiz" },
+            { label: "Legal", href: "#kimligimiz" },
+            { label: "Help", href: "#iletisim" },
+            { label: "Privacy", href: "#top" },
+            { label: "Cookies", href: "#top" },
+            { label: "Contact", href: "#iletisim" },
+          ],
+          navLabel: "Footer navigation",
+        };
+
+  const shareLinks = [
+    {
+      label: "LinkedIn",
+      href: `https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`,
+      icon: (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6.5 8.2v9.3H3.6V8.2zm.2-3a1.8 1.8 0 1 1-3.5 0 1.8 1.8 0 0 1 3.5 0M20.5 12.1v5.4h-2.9v-5.1c0-1.3-.5-2.1-1.7-2.1-.9 0-1.4.6-1.7 1.2-.1.2-.1.5-.1.8v5.2h-2.9V8.2h2.9v1.3c.4-.6 1.1-1.5 2.8-1.5 2.1 0 3.6 1.3 3.6 4.1" fill="currentColor" />
+        </svg>
+      ),
+    },
+    {
+      label: "X",
+      href: `https://x.com/intent/post?url=${shareUrl}&text=${shareText}`,
+      icon: (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M17.8 3h3.1l-6.7 7.7L22 21h-6.1l-4.8-6.3L5.6 21H2.5l7.2-8.2L2 3h6.2l4.3 5.8zm-1.1 16h1.7L7.3 4.9H5.5z" fill="currentColor" />
+        </svg>
+      ),
+    },
+    {
+      label: "Facebook",
+      href: `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`,
+      icon: (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M13.4 21v-8h2.7l.4-3.1h-3.1V8c0-.9.2-1.6 1.5-1.6h1.7V3.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.3H7.6V13h2.6v8z" fill="currentColor" />
+        </svg>
+      ),
+    },
+    {
+      label: lang === "tr" ? "E-posta" : "Email",
+      href: `mailto:?subject=${encodeURIComponent("EJS Consulting")}&body=${shareText}%20${shareUrl}`,
+      icon: (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 6.5h16A1.5 1.5 0 0 1 21.5 8v8A1.5 1.5 0 0 1 20 17.5H4A1.5 1.5 0 0 1 2.5 16V8A1.5 1.5 0 0 1 4 6.5m0 1.5v.3l8 5.3 8-5.3V8zm16 8V10l-7.6 5a.8.8 0 0 1-.8 0L4 10v6z" fill="currentColor" />
+        </svg>
+      ),
+    },
+    {
+      label: "WhatsApp",
+      href: `https://wa.me/?text=${shareText}%20${shareUrl}`,
+      icon: (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3.5a8.5 8.5 0 0 0-7.4 12.7L3.5 20.5l4.4-1.1A8.5 8.5 0 1 0 12 3.5m0 15.5c-1.2 0-2.4-.3-3.4-.9l-.2-.1-2.6.7.7-2.5-.2-.3a6.9 6.9 0 1 1 5.7 3.1m3.8-5.1c-.2-.1-1.2-.6-1.4-.6s-.3-.1-.5.1-.6.6-.7.8-.3.2-.5.1a5.7 5.7 0 0 1-1.7-1.1 6.4 6.4 0 0 1-1.2-1.5c-.1-.2 0-.4.1-.5l.3-.4.2-.3.1-.4c0-.1 0-.3-.1-.4l-.6-1.5c-.1-.3-.3-.3-.5-.3h-.4a.8.8 0 0 0-.6.3 2.3 2.3 0 0 0-.7 1.7c0 1 .7 2 1 2.4.1.1 2 3.1 4.9 4.2.7.3 1.2.4 1.7.5.7.1 1.3.1 1.8.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4s-.2-.2-.4-.3" fill="currentColor" />
+        </svg>
+      ),
+    },
+  ];
+
   return (
-    <div className="page-shell">
-      <SiteHeader utilityLinks={utilityLinks} mainLinks={mainLinks} />
+    <div className="page-shell" id="top">
+      <SiteHeader
+        utilityLinks={page.utilityLinks}
+        mainLinks={page.mainLinks}
+        lang={lang}
+        onLangChange={setLang}
+      />
 
-      <main>
-        <section className="hero section">
-          <div className="section-eyebrow">Unternehmensberatung</div>
+      <main className="hero-page">
+        <section className="hero-stage">
+          <HeroVideoCarousel videos={heroVideos} ctaLabel={page.hero.ctaLabel} />
+        </section>
 
-          <div className="hero-grid">
-            <div className="hero-copy">
-              <p className="hero-kicker">Neue Klarheit fuer komplexe Entscheidungen</p>
-              <h1>
-                Strategische Perspektiven, die aus Unsicherheit{" "}
-                <span>konkrete Bewegung</span> machen.
-              </h1>
-              <p className="hero-text">
-                Diese Startseite uebersetzt die ruhige, praezise Sprache grosser
-                Beratungshaeuser in eine App-Router-Struktur. Inhalte, Karten und
-                Navigation sind jetzt React-basiert und spaeter leicht austauschbar.
-              </p>
-
-              <div className="hero-actions">
-                <a className="button button-primary" href="#insights">
-                  Insights ansehen
-                </a>
-                <a className="button button-secondary" href="#expertise">
-                  Leistungsfelder
-                </a>
-              </div>
+        <section id="kimligimiz" className="content-section section identity-feature-section">
+          <div className="identity-feature-top">
+            <div className="identity-feature-heading">
+              <p className="structure-label">{page.identity.eyebrow}</p>
+              <h1 className="identity-feature-title">{page.identity.title}</h1>
             </div>
-
-            <aside className="hero-aside">
-              <div className="hero-panel">
-                <div className="panel-meta">
-                  <span>Empfohlen</span>
-                  <span>Q2 / 2026</span>
-                </div>
-
-                <h2>Trendradar fuer Industrien im Umbruch</h2>
-                <p>
-                  Eine prominente Buehne fuer eine Leitpublikation, Studie oder
-                  Kampagne. Die Komposition ist bewusst grosszuegig, damit spaetere
-                  Inhalte hochwertig wirken.
-                </p>
-                <a href="#insights">Mehr erfahren</a>
-              </div>
-
-              <dl className="hero-metrics" aria-label="Kennzahlen">
-                {metrics.map((metric) => (
-                  <div key={metric.label}>
-                    <dt>{metric.label}</dt>
-                    <dd>{metric.value}</dd>
-                  </div>
-                ))}
-              </dl>
-            </aside>
           </div>
 
-          <div className="hero-band">
-            <p>Industries</p>
-            <ul>
-              {industries.map((industry) => (
-                <li key={industry}>{industry}</li>
+          <div className="identity-feature-card">
+            <div className="identity-feature-copy">
+              <span className="identity-feature-tag">{lang === "tr" ? "Yaklasim" : "Approach"}</span>
+              <p className="identity-feature-intro">{page.identity.intro}</p>
+              <ul className="identity-feature-list">
+                {page.identity.bullets.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="identity-feature-image-wrap">
+              <Image
+                src={identityImage}
+                alt={lang === "tr" ? "Kimligimiz gorseli" : "Identity visual"}
+                className="identity-feature-image"
+                sizes="(max-width: 1040px) 100vw, 46vw"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="misyonumuz" className="content-section section mission-showcase">
+          <div className="mission-copy">
+            <h2 className="mission-showcase-title">{page.mission.eyebrow}</h2>
+            <ul className="mission-bullets">
+              {page.mission.bullets.slice(0, 3).map((item) => (
+                <li key={item}>{item}</li>
               ))}
             </ul>
           </div>
-        </section>
 
-        <section className="section section-slab" id="insights">
-          <div className="section-heading">
-            <div>
-              <p className="section-label">Aktuelles</p>
-              <h2>Insights fuer reale Geschaeftsergebnisse</h2>
-            </div>
-            <a href="#insights" className="text-link">
-              Alle Publikationen ansehen
-            </a>
-          </div>
-
-          <div className="insight-layout">
-            <article className="feature-card">
-              <div className="card-visual visual-grid">
-                <span>Lead Study</span>
-              </div>
-              <div className="card-body">
-                <p className="card-tag">{insights.featured.label}</p>
-                <h3>{insights.featured.title}</h3>
-                <p>{insights.featured.description}</p>
-              </div>
-            </article>
-
-            <div className="insight-stack">
-              {insights.secondary.map((item) => (
-                <article
-                  key={item.title}
-                  className={`mini-card ${item.accent ? "accent" : ""}`}
-                >
-                  <p className="card-tag">{item.label}</p>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                </article>
-              ))}
-            </div>
+          <div className="mission-image-card">
+            <Image
+              src={missionImage}
+              alt={lang === "tr" ? "Misyon gorseli" : "Mission visual"}
+              className="mission-image"
+              sizes="(max-width: 1040px) 100vw, 48vw"
+            />
           </div>
         </section>
 
-        <section className="section" id="expertise">
-          <div className="section-heading">
-            <div>
-              <p className="section-label">Expertise</p>
-              <h2>Branchenwissen und funktionale Exzellenz in einem Raster</h2>
-            </div>
-            <p className="section-intro">
-              Die Karten sind modular aufgebaut. So lassen sich spaeter Branchen,
-              Services oder Themenwelten austauschen, ohne das Layout neu zu bauen.
-            </p>
-          </div>
+        <ProcessHighlight lang={lang} />
 
-          <div className="expertise-grid">
-            {expertiseCards.map((card) => (
-              <article key={card.number} className="expert-card">
-                <span>{card.number}</span>
-                <h3>{card.title}</h3>
-                <p>{card.description}</p>
+        <section id="metodoloji" className="content-section section methodology-section">
+          <div className="section-heading-block compact-heading methodology-heading">
+            <p className="structure-label">{page.methodology.eyebrow}</p>
+            <h2 className="section-title methodology-title">{page.methodology.title}</h2>
+            <p className="section-intro methodology-intro">{page.methodology.intro}</p>
+          </div>
+          <MethodologyCards steps={page.methodology.steps} />
+        </section>
+
+        <ExpertSpotlight lang={lang} />
+
+        <section id="yazilarimiz" className="content-section section">
+          <div className="section-heading-block compact-heading">
+            <p className="structure-label">{page.articles.eyebrow}</p>
+            <h2 className="section-title">{page.articles.title}</h2>
+            <p className="section-intro">{page.articles.intro}</p>
+          </div>
+          <div className="article-grid">
+            {page.articles.items.map((article) => (
+              <article key={article.title} className="article-card">
+                <h3>{article.title}</h3>
+                <p>{article.excerpt}</p>
+                <a href="#iletisim" className="article-link">
+                  {lang === "tr" ? "Detay konusalim" : "Discuss details"}
+                </a>
               </article>
             ))}
           </div>
         </section>
 
-        <section className="section approach-section" id="approach">
-          <div className="approach-panel">
-            <div className="approach-copy">
-              <p className="section-label">Unser Beratungsansatz</p>
-              <h2>Analytische Schaerfe, klare Prioritaeten und saubere Umsetzung.</h2>
-              <p>
-                Dieses Segment funktioniert als Marken- oder Methodikbuehne. Die
-                diagonalen Linien und die dunklere Flaeche geben der Seite in der
-                Mitte einen bewusst markanten Taktwechsel.
-              </p>
-            </div>
-
-            <div className="approach-points">
-              {approachPoints.map((point, index) => (
-                <div key={point}>
-                  <strong>{String(index + 1).padStart(2, "0")}</strong>
-                  <p>{point}</p>
-                </div>
-              ))}
-            </div>
+        <section id="referanslar" className="content-section section">
+          <div className="section-heading-block compact-heading">
+            <p className="structure-label">{page.references.eyebrow}</p>
+            <h2 className="section-title">{page.references.title}</h2>
+            <p className="section-intro">{page.references.intro}</p>
           </div>
-        </section>
-
-        <section className="section section-slab" id="events">
-          <div className="section-heading">
-            <div>
-              <p className="section-label">Internationale Events</p>
-              <h2>Kuratiert, kompakt und fuer Entscheider inszeniert</h2>
-            </div>
-            <a href="#events" className="text-link">
-              Mehr Events
-            </a>
-          </div>
-
-          <div className="event-list">
-            {events.map((event) => (
-              <article key={event.title} className="event-card">
-                <div className="event-date">
-                  <span>{event.day}</span>
-                  <small>{event.date}</small>
-                </div>
-                <div className="event-body">
-                  <h3>{event.title}</h3>
-                  <p>{event.description}</p>
-                </div>
-              </article>
+          <div className="reference-grid">
+            {referenceImages.map((image, index) => (
+              <div key={image.src} className="reference-card">
+                <img
+                  src={image.src}
+                  alt={`${page.references.eyebrow} ${index + 1}`}
+                  className="reference-image"
+                />
+              </div>
             ))}
           </div>
         </section>
 
-        <section className="section career-section" id="career">
-          <div className="career-grid">
-            <article className="career-card">
-              <p className="section-label">Join Us</p>
-              <h2>Karrierethemen in einer ruhigeren, menschenzentrierten Zone</h2>
-              <p>
-                Dieses Feld ist fuer Recruiting Stories, Kultur, Entwicklung oder
-                Bewerbungswege gedacht und bricht den eher analytischen Rhythmus der
-                oberen Bereiche auf.
-              </p>
-              <a className="button button-primary" href="#contact">
-                Karrierebereich oeffnen
-              </a>
+        <section id="iletisim" className="content-section section contact-section">
+          <div className="section-heading-block compact-heading">
+            <p className="structure-label">{page.contact.eyebrow}</p>
+            <h2 className="section-title">{page.contact.title}</h2>
+            <p className="section-intro">{page.contact.intro}</p>
+          </div>
+
+          <div className="contact-grid">
+            <article className="contact-card contact-details">
+              <h3>{page.contact.companyName}</h3>
+              <p>{page.contact.companyNote}</p>
+              <p>{page.contact.address}</p>
+              <div className="contact-lines">
+                {page.contact.phones.map((phone) => (
+                  <a key={phone} href={`tel:${phone.replace(/\s+/g, "")}`}>
+                    {phone}
+                  </a>
+                ))}
+              </div>
+              <p>{page.contact.hours}</p>
             </article>
 
-            <article className="career-story">
-              <p className="card-tag">Look behind the scenes</p>
-              <h3>
-                Raum fuer Storytelling ueber Kultur, Lernen und internationale Wege
-              </h3>
-              <p>
-                Eine editoriale Karte fuer Mitarbeitergeschichten, Podcasts oder
-                kurze Video-Teaser.
-              </p>
-            </article>
+            <form className="contact-card contact-form" onSubmit={(event) => event.preventDefault()}>
+              <label>
+                <span>{page.contact.fields.name}</span>
+                <input type="text" placeholder={page.contact.placeholders.name} />
+              </label>
+              <label>
+                <span>{page.contact.fields.email}</span>
+                <input type="email" placeholder={page.contact.placeholders.email} />
+              </label>
+              <label className="full-span">
+                <span>{page.contact.fields.message}</span>
+                <textarea placeholder={page.contact.placeholders.message} rows={5} />
+              </label>
+              <button type="submit" className="submit-button">
+                {page.contact.fields.submit}
+              </button>
+            </form>
           </div>
         </section>
       </main>
 
-      <footer className="site-footer section" id="contact">
-        <div className="footer-top">
-          <div>
-            <p className="section-label">Kontaktieren Sie uns</p>
-            <h2>Wir gestalten die naechsten Inhalte spaeter, das Fundament steht.</h2>
+      <footer className="site-footer">
+        <div className="footer-shell section">
+          <div className="footer-left-column">
+            <div className="footer-logo-panel" aria-hidden="true">
+              <Image
+                src={footerLogo}
+                alt=""
+                className="footer-logo-mark"
+                sizes="(max-width: 760px) 220px, 320px"
+              />
+            </div>
           </div>
-          <a className="button button-primary" href="mailto:info@example.com">
-            Kontakt
-          </a>
+
+          <div className="footer-copy-column">
+            <div className="footer-heading-block">
+              <p className="structure-label footer-eyebrow">{footerContent.eyebrow}</p>
+              <h2 className="footer-title">{footerContent.title}</h2>
+            </div>
+
+            <div className="footer-copy-grid">
+              <div className="footer-office-block">
+                <h3>{footerContent.officeName}</h3>
+                <div className="footer-address">
+                  {footerContent.addressLines.map((line) => (
+                    <p key={line}>{line}</p>
+                  ))}
+                </div>
+              </div>
+
+              <div className="footer-contact-block">
+                {footerContent.contactRows.map((row) => (
+                  <div key={row.label} className="footer-contact-row">
+                    <span>{row.label}:</span>
+                    <a href={row.href}>{row.value}</a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <nav className="footer-nav" aria-label={footerContent.navLabel}>
+            {footerContent.links.map((link, index) => (
+              <Fragment key={link.label}>
+                {index > 0 ? <span className="footer-nav-separator" aria-hidden="true" /> : null}
+                <a className="footer-nav-link" href={link.href}>
+                  {link.label}
+                </a>
+              </Fragment>
+            ))}
+          </nav>
         </div>
 
-        <div className="footer-columns">
-          {footerColumns.map((column) => (
-            <div key={column.title}>
-              <p className="footer-title">{column.title}</p>
-              {column.items?.map((item) => (
-                <p key={item}>{item}</p>
-              ))}
-              {column.links?.map((link) => (
-                <a key={link.label} href={link.href}>
-                  {link.label}
+        <div className="footer-share-band">
+          <div className="footer-share-inner section">
+            <p className="footer-share-title">
+              {lang === "tr" ? "Sayfamizi paylasin" : "Share this page"}
+            </p>
+
+            <div className="footer-share-icons" aria-label={lang === "tr" ? "Paylasim baglantilari" : "Share links"}>
+              {shareLinks.map((item) => (
+                <a
+                  key={item.label}
+                  className="footer-share-link"
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={item.label}
+                >
+                  {item.icon}
                 </a>
               ))}
             </div>
-          ))}
-        </div>
-
-        <div className="footer-bottom">
-          <p>(c) 2026 Roland Berger inspired layout</p>
-          <p>Impressum / Datenschutz / Cookies</p>
+          </div>
         </div>
       </footer>
     </div>
   );
 }
+
+
