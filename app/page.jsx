@@ -171,6 +171,7 @@ export default function HomePage() {
                 alt={lang === "tr" ? "Kimligimiz gorseli" : "Identity visual"}
                 className="identity-feature-image"
                 sizes="(max-width: 1040px) 100vw, 46vw"
+                loading="eager"
               />
             </div>
           </div>
@@ -192,6 +193,7 @@ export default function HomePage() {
               alt={lang === "tr" ? "Misyon gorseli" : "Mission visual"}
               className="mission-image"
               sizes="(max-width: 1040px) 100vw, 48vw"
+              loading="eager"
             />
           </div>
         </section>
@@ -228,22 +230,47 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section className="content-section section share-section">
+          <div className="footer-share-inner section">
+            <p className="footer-share-title">
+              {lang === "tr" ? "Sayfamizi paylasin" : "Share this page"}
+            </p>
+
+            <div className="footer-share-icons" aria-label={lang === "tr" ? "Paylasim baglantilari" : "Share links"}>
+              {shareLinks.map((item) => (
+                <a
+                  key={item.label}
+                  className="footer-share-link"
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={item.label}
+                >
+                  {item.icon}
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section id="referanslar" className="content-section section">
           <div className="section-heading-block compact-heading">
             <p className="structure-label">{page.references.eyebrow}</p>
             <h2 className="section-title">{page.references.title}</h2>
             <p className="section-intro">{page.references.intro}</p>
           </div>
-          <div className="reference-grid">
-            {referenceImages.map((image, index) => (
-              <div key={image.src} className="reference-card">
-                <img
-                  src={image.src}
-                  alt={`${page.references.eyebrow} ${index + 1}`}
-                  className="reference-image"
-                />
-              </div>
-            ))}
+          <div className="reference-carousel">
+            <div className="reference-track">
+              {[...referenceImages, ...referenceImages].map((image, index) => (
+                <div key={index} className="reference-card">
+                  <img
+                    src={image.src}
+                    alt={`${page.references.eyebrow} ${(index % referenceImages.length) + 1}`}
+                    className="reference-image"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -342,27 +369,8 @@ export default function HomePage() {
           </nav>
         </div>
 
-        <div className="footer-share-band">
-          <div className="footer-share-inner section">
-            <p className="footer-share-title">
-              {lang === "tr" ? "Sayfamizi paylasin" : "Share this page"}
-            </p>
-
-            <div className="footer-share-icons" aria-label={lang === "tr" ? "Paylasim baglantilari" : "Share links"}>
-              {shareLinks.map((item) => (
-                <a
-                  key={item.label}
-                  className="footer-share-link"
-                  href={item.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={item.label}
-                >
-                  {item.icon}
-                </a>
-              ))}
-            </div>
-          </div>
+        <div className="footer-copyright">
+          <p>EJS Consulting 2026 - Tüm Hakları Saklıdır</p>
         </div>
       </footer>
     </div>

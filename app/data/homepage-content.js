@@ -49,7 +49,7 @@ export const homepageContent = {
     },
     identity: {
       eyebrow: "Kimligimiz",
-      title: "Sahada birlikte calisan, uygulamaya kadar kalan bir ekip.",
+      title: "Sahada birlikte uretir, sonuca kadar kaliriz.",
       intro:
         "Eski ana sayfadaki kimlik bolumunu yeni yapiya tasidik. Buradaki dil, sahada birlikte uretme ve sonuc alana kadar masada kalmama fikrini one cikariyor.",
       bullets: [
@@ -200,7 +200,7 @@ export const homepageContent = {
     },
     identity: {
       eyebrow: "Identity",
-      title: "A team that works on the floor and stays through implementation.",
+      title: "We produce on the floor, we stay until results.",
       intro:
         "The identity section from the old homepage has been moved into the new structure. The tone emphasizes co-creation on the shopfloor and staying with the team until results appear.",
       bullets: [

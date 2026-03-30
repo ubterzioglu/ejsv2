@@ -1,0 +1,152 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1774878406002,
+  "projectRoot": "C:\\.temp_private\\ejsv2",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "jsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "next",
+        "version": "16.2.1",
+        "category": "fullstack"
+      },
+      {
+        "name": "react",
+        "version": "19.2.4",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "19.2.4",
+        "category": "frontend"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "npm run build",
+    "testCommand": null,
+    "lintCommand": "npm run lint",
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "app",
+      "components"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "app": {
+      "path": "app",
+      "purpose": "Application code",
+      "fileCount": 3,
+      "lastAccessed": 1774878405956,
+      "keyFiles": [
+        "globals.css",
+        "layout.jsx",
+        "page.jsx"
+      ]
+    },
+    "components": {
+      "path": "components",
+      "purpose": "UI components",
+      "fileCount": 5,
+      "lastAccessed": 1774878405956,
+      "keyFiles": [
+        "expert-spotlight.jsx",
+        "hero-video-carousel.jsx",
+        "methodology-cards.jsx",
+        "process-highlight.jsx",
+        "site-header.jsx"
+      ]
+    },
+    "old": {
+      "path": "old",
+      "purpose": null,
+      "fileCount": 17,
+      "lastAccessed": 1774878405979,
+      "keyFiles": [
+        "bun.lockb",
+        "components.json",
+        "eslint.config.js",
+        "index.html",
+        "package-lock.json"
+      ]
+    },
+    "app\\data": {
+      "path": "app\\data",
+      "purpose": "Data files",
+      "fileCount": 1,
+      "lastAccessed": 1774878405980,
+      "keyFiles": [
+        "homepage-content.js"
+      ]
+    },
+    "old\\dist": {
+      "path": "old\\dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 5,
+      "lastAccessed": 1774878405981,
+      "keyFiles": [
+        "favicon.ico",
+        "favicon.svg",
+        "index.html"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "app\\globals.css",
+      "accessCount": 13,
+      "lastAccessed": 1774879010026,
+      "type": "directory"
+    },
+    {
+      "path": "app\\page.jsx",
+      "accessCount": 6,
+      "lastAccessed": 1774878990403,
+      "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 3,
+      "lastAccessed": 1774878888574,
+      "type": "directory"
+    }
+  ],
+  "userDirectives": []
+}
