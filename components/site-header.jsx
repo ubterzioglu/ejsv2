@@ -1,23 +1,33 @@
-﻿"use client";
+"use client";
 
 import { Fragment, useState } from "react";
-import { useLanguage } from "@/lib/language-context";
+import { useRouter, usePathname } from "next/navigation";
+import { locales } from "@/lib/locales";
+
+const languageItems = [
+  { label: "TR", code: "tr" },
+  { label: "EN", code: "en" },
+  { label: "DE", code: "de" },
+];
 
 export function SiteHeader({ utilityLinks, mainLinks, ariaLabels }) {
-  const { lang, setLang } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
 
-  const languageItems = [
-    { label: "TR", code: "tr" },
-    { label: "EN", code: "en" },
-  ];
+  const currentLang = locales.find((l) => pathname.startsWith(`/${l}`)) ?? "tr";
+
+  const switchLang = (code) => {
+    const withoutLang = pathname.replace(/^\/(tr|en|de)/, "") || "/";
+    router.push(`/${code}${withoutLang}`);
+  };
 
   return (
     <header className="site-header">
       <div className="utility-bar">
         <div className="utility-inner">
           <div className="utility-nav-wrap">
-            <nav className="utility-nav" aria-label={ariaLabels.utilityNav}>
+            <nav className="utility-nav" aria-label={ariaLabels?.utilityNav}>
               {utilityLinks.map((item, index) => (
                 <Fragment key={item.label}>
                   {index > 0 ? (
@@ -31,28 +41,21 @@ export function SiteHeader({ utilityLinks, mainLinks, ariaLabels }) {
             </nav>
           </div>
 
-          <div className="language-switch" aria-label="Dil secimi">
-            {languageItems.map((item, index) => {
-              const isActive = lang === item.code;
-              const isMuted = lang !== item.code;
-
-              return (
-                <Fragment key={item.code}>
-                  {index > 0 ? (
-                    <span className="utility-separator" aria-hidden="true" />
-                  ) : null}
-                  <button
-                    type="button"
-                    className={`utility-link ${isActive ? "is-active" : ""} ${
-                      isMuted ? "is-muted" : ""
-                    }`}
-                    onClick={() => setLang(item.code)}
-                  >
-                    {item.label}
-                  </button>
-                </Fragment>
-              );
-            })}
+          <div className="language-switch" aria-label={ariaLabels?.langSwitch}>
+            {languageItems.map((item, index) => (
+              <Fragment key={item.code}>
+                {index > 0 ? (
+                  <span className="utility-separator" aria-hidden="true" />
+                ) : null}
+                <button
+                  type="button"
+                  className={`utility-link ${currentLang === item.code ? "is-active" : "is-muted"}`}
+                  onClick={() => switchLang(item.code)}
+                >
+                  {item.label}
+                </button>
+              </Fragment>
+            ))}
           </div>
         </div>
       </div>
@@ -79,7 +82,7 @@ export function SiteHeader({ utilityLinks, mainLinks, ariaLabels }) {
         <nav
           className={`main-nav ${isOpen ? "is-open" : ""}`}
           id="main-navigation"
-          aria-label={ariaLabels.mainNav}
+          aria-label={ariaLabels?.mainNav}
         >
           {mainLinks.map((link) => (
             <a
@@ -97,7 +100,7 @@ export function SiteHeader({ utilityLinks, mainLinks, ariaLabels }) {
           <button
             type="button"
             className="search-trigger"
-            aria-label={ariaLabels.search}
+            aria-label={ariaLabels?.search}
             onClick={() => console.info("search açılacak")}
           >
             <span className="search-circle" />
@@ -108,4 +111,3 @@ export function SiteHeader({ utilityLinks, mainLinks, ariaLabels }) {
     </header>
   );
 }
-

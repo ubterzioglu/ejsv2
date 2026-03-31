@@ -396,4 +396,128 @@ export const homepageContent = {
       navLabel: "Footer navigation",
     },
   },
+  // TODO: German translations — copy of TR skeleton, replace all strings
+  de: {
+    ariaLabels: {
+      utilityNav: "Obere Navigation",
+      mainNav: "Hauptnavigation",
+      search: "Suchen",
+    },
+    utilityLinks: [
+      { label: "Identität", href: "#kimligimiz" },
+      { label: "Mission", href: "#misyonumuz" },
+      { label: "Kontakt", href: "#iletisim" },
+    ],
+    mainLinks: [
+      { label: "Jetzt starten", href: "#hemen-basla" },
+      { label: "Methodik", href: "#metodoloji" },
+      { label: "Artikel", href: "#yazilarimiz" },
+      { label: "Referenzen", href: "#referanslar" },
+    ],
+    hero: {
+      ctaLabel: "Unser Ansatz",
+    },
+    identity: {
+      eyebrow: "Identität",
+      title: "Wir produzieren gemeinsam vor Ort und bleiben bis zum Ergebnis.",
+      intro:
+        "TODO: DE translation", // TODO
+      bullets: [
+        "TODO: Bullet 1", // TODO
+        "TODO: Bullet 2",
+        "TODO: Bullet 3",
+        "TODO: Bullet 4",
+        "TODO: Bullet 5",
+      ],
+    },
+    mission: {
+      eyebrow: "Mission",
+      title: "Rentabilität, Governance und operative Disziplin gemeinsam stärken.",
+      intro: "TODO: DE translation", // TODO
+      bullets: [
+        "TODO: Bullet 1",
+        "TODO: Bullet 2",
+        "TODO: Bullet 3",
+        "TODO: Bullet 4",
+        "TODO: Bullet 5",
+      ],
+    },
+    methodology: {
+      eyebrow: "Methodik",
+      title: "Unsere Arbeitsweise basiert auf acht klaren Prinzipien.",
+      intro: "TODO: DE translation", // TODO
+      steps: [
+        { title: "Kostenlose Analyse", icon: "analysis", description: "TODO" },
+        { title: "Effizienzoptimierung", icon: "growth", description: "TODO" },
+        { title: "Institutionelle Kompetenz", icon: "governance", description: "TODO" },
+        { title: "Transparenz", icon: "balance", description: "TODO" },
+        { title: "Professionalität", icon: "check", description: "TODO" },
+        { title: "Kontinuierliche Verbesserung", icon: "edit", description: "TODO" },
+        { title: "Umsetzung bis zum Ergebnis", icon: "hourglass", description: "TODO" },
+        { title: "Budgetkontrolle", icon: "budget", description: "TODO" },
+      ],
+    },
+    articles: {
+      eyebrow: "Artikel",
+      title: "Wir beleuchten wiederkehrende Shopfloor-Probleme.",
+      intro: "TODO: DE translation", // TODO
+      items: [
+        { title: "TODO: Artikel 1", excerpt: "TODO" },
+        { title: "TODO: Artikel 2", excerpt: "TODO" },
+        { title: "TODO: Artikel 3", excerpt: "TODO" },
+      ],
+    },
+    references: {
+      eyebrow: "Referenzen",
+      title: "Eine Auswahl der Teams und Umgebungen, mit denen wir gearbeitet haben.",
+      intro: "TODO: DE translation", // TODO
+    },
+    contact: {
+      eyebrow: "Kontakt",
+      title: "Hinterlassen Sie eine kurze Nachricht, wir melden uns schnell.",
+      intro: "TODO: DE translation", // TODO
+      companyName: "EJS Engineering Beratung & Schulung",
+      companyNote: "TODO: DE translation", // TODO
+      address: "Aydintepe Mah. Alaaddin Sk. No.7 Evora Sitesi A Parsel, A13, Tuzla / Istanbul",
+      phones: ["+90 216 906 03 25", "+90 532 636 72 00"],
+      hours: "Mo-Fr: 8:00 - 17:00 / Sa-So: Geschlossen",
+      fields: {
+        name: "Vollständiger Name",
+        email: "Ihre E-Mail",
+        message: "Nachricht",
+        submit: "Senden",
+      },
+      placeholders: {
+        name: "Ihr vollständiger Name",
+        email: "hello@example.com",
+        message: "Schreiben Sie hier Ihre Nachricht...",
+      },
+    },
+    footer: {
+      eyebrow: "Hauptsitz",
+      title: "Hauptbüro",
+      officeName: "Istanbul Office",
+      addressLines: [
+        "EJS Engineering Beratung & Schulung",
+        "Aydintepe Mah. Alaaddin Sk. No.7",
+        "Evora Sitesi A Parsel, A13, Einheit 19",
+        "Tuzla / Istanbul",
+        "Türkei",
+      ],
+      contactRows: [
+        { label: "Telefon", value: "+90 216 906 03 25", href: "tel:+902169060325" },
+        { label: "Mobil", value: "+90 532 636 72 00", href: "tel:+905326367200" },
+        { label: "Mail", value: "Nachricht senden", href: "#iletisim" },
+      ],
+      links: [
+        { label: "Artikel", href: "#yazilarimiz" },
+        { label: "Unternehmen", href: "#kimligimiz" },
+        { label: "Hilfe", href: "#iletisim" },
+        { label: "Datenschutz", href: "#top" },
+        { label: "Cookies", href: "#top" },
+        { label: "Kontakt", href: "#iletisim" },
+      ],
+      navLabel: "Fußzeilen-Navigation",
+    },
+  },
 };
