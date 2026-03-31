@@ -18,7 +18,7 @@ export default async function HomePage({ params }) {
 
   const shareUrl = encodeURIComponent("https://ejsconsulting.com");
   const shareTextMap = {
-    tr: "EJS Consulting ile muhendislik cozumlerini kesfedin.",
+    tr: "EJS Consulting ile mühendislik çözümlerini keşfedin.",
     en: "Discover engineering solutions with EJS Consulting.",
     de: "Entdecken Sie Engineering-Loesungen mit EJS Consulting.",
   };

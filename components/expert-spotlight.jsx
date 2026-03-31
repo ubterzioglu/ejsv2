@@ -7,12 +7,12 @@ const profilePhoto = "/assets/ejsprofil.png";
 const spotlightCopy = {
   tr: {
     quote:
-      "Basarili bir donusum, uygulamayi konseptin dogal bir parcasi haline getirir ve bunu musteriyle birlikte sahada kurar.",
+      "Başarılı bir dönüşüm, uygulamayı konseptin doğal bir parçası haline getirir ve bunu müşteriyle birlikte sahada kurar.",
     name: "Envera Jahovic Sarayli",
-    title: "Kurucu Danisman",
-    location: "EJS Consulting, Istanbul",
-    primaryCta: "Tum Uzmanliklar",
-    secondaryCta: "Tam Profili Inceleyin",
+    title: "Kurucu Danışman",
+    location: "EJS Consulting, İstanbul",
+    primaryCta: "Tüm Uzmanlıklar",
+    secondaryCta: "Tam Profili İnceleyin",
   },
   en: {
     quote:

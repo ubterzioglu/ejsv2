@@ -39,177 +39,177 @@ export const homepageContent = {
       search: "Ara",
     },
     utilityLinks: [
-      { label: "Kimligimiz", href: "#kimligimiz" },
+      { label: "Kimliğimiz", href: "#kimligimiz" },
       { label: "Misyonumuz", href: "#misyonumuz" },
-      { label: "Iletisim", href: "#iletisim" },
+      { label: "İletişim", href: "#iletisim" },
     ],
     mainLinks: [
-      { label: "Hemen Basla!", href: "#hemen-basla" },
+      { label: "Hemen Başla!", href: "#hemen-basla" },
       { label: "Metodoloji", href: "#metodoloji" },
-      { label: "Yazilarimiz", href: "#yazilarimiz" },
+      { label: "Yazılarımız", href: "#yazilarimiz" },
       { label: "Referanslar", href: "#referanslar" },
     ],
     hero: {
-      ctaLabel: "Yaklasimimiz",
+      ctaLabel: "Yaklaşımımız",
     },
     identity: {
-      eyebrow: "Kimligimiz",
-      title: "Sahada birlikte uretir, sonuca kadar kaliriz.",
+      eyebrow: "Kimliğimiz",
+      title: "Sahada birlikte üretir, sonuca kadar kalırız.",
       intro:
-        "Eski ana sayfadaki kimlik bolumunu yeni yapiya tasidik. Buradaki dil, sahada birlikte uretme ve sonuc alana kadar masada kalmama fikrini one cikariyor.",
+        "Eski ana sayfadaki kimlik bölümünü yeni yapıya taşıdık. Buradaki dil, sahada birlikte üretme ve sonuç alana kadar masada kalmama fikrini öne çıkarıyor.",
       bullets: [
-        "Uretim sektorunde yurt ici ve yurt disinda edinilmis genis saha tecrubemiz var.",
-        "Uzmanligimiz yalin surecler, yalin uretim, kalite ve proje yonetimi alanlarindadir.",
-        "Sirketinizin calisanlarini is ortagi olarak gorur, cozumleri birlikte uretiriz.",
-        "Sadece ne yapilacagini soylemeyiz; surec sonuclanana kadar ekiplerle birlikte kaliriz.",
-        "Calisirken kelimeler yerine eylemi tercih ederiz.",
+        "Üretim sektöründe yurt içi ve yurt dışında edinilmiş geniş saha tecrübemiz var.",
+        "Uzmanlığımız yalın süreçler, yalın üretim, kalite ve proje yönetimi alanlarındadır.",
+        "Şirketinizin çalışanlarını iş ortağı olarak görür, çözümleri birlikte üretiriz.",
+        "Sadece ne yapılacağını söylemeyiz; süreç sonuçlanana kadar ekiplerle birlikte kalırız.",
+        "Çalışırken kelimeler yerine eylemi tercih ederiz.",
       ],
     },
     mission: {
       eyebrow: "Misyonumuz",
-      title: "Karliligi, kurumsal yapilari ve saha disiplinini birlikte guclendirmek.",
+      title: "Karlılığı, kurumsal yapıları ve saha disiplinini birlikte güçlendirmek.",
       intro:
-        "Bu bolum eski sitedeki misyon metinlerinden uyarlandi. Yeni ana sayfada daha net ve okunur bir yapiyla yer aliyor.",
+        "Bu bölüm eski sitedeki misyon metinlerinden uyarlandı. Yeni ana sayfada daha net ve okunur bir yapıyla yer alıyor.",
       bullets: [
-        "Sanayiye yurt ici ve yurt disi bilgi birikimiyle katki saglamak.",
-        "Sirketlerin karliligini ve kurumsal yapisini guclendirmek.",
-        "Organizasyonlari dijital caga hazirlayip bu donusumde basariyla konumlandirmak.",
-        "Yalin, cevik, hizli ve verimli calisma sistemleri kurmak.",
-        "Calisanlara nitelik kazandirarak anlasilir ve surdurulebilir surecler olusturmak.",
+        "Sanayiye yurt içi ve yurt dışı bilgi birikimiyle katkı sağlamak.",
+        "Şirketlerin karlılığını ve kurumsal yapısını güçlendirmek.",
+        "Organizasyonları dijital çağa hazırlayıp bu dönüşümde başarıyla konumlandırmak.",
+        "Yalın, çevik, hızlı ve verimli çalışma sistemleri kurmak.",
+        "Çalışanlara nitelik kazandırarak anlaşılır ve sürdürülebilir süreçler oluşturmak.",
       ],
     },
     methodology: {
       eyebrow: "Metodoloji",
-      title: "Calisma bicimimizi sekiz net prensip etrafinda kurguluyoruz.",
+      title: "Çalışma biçimimizi sekiz net prensip etrafında kurguluyoruz.",
       intro:
-        "Ilk temastan sonuclandirmaya kadar her adimda sahada uygulanabilir, olculebilir ve surdurulebilir bir yaklasim izliyoruz.",
+        "İlk temastan sonuçlandırmaya kadar her adımda sahada uygulanabilir, ölçülebilir ve sürdürülebilir bir yaklaşım izliyoruz.",
       steps: [
         {
-          title: "Ucretsiz Analiz",
+          title: "Ücretsiz Analiz",
           icon: "analysis",
           description:
-            "Bizimle calismaya ilgileniyorsaniz sizleri ucretsiz olarak ziyaret eder, kisa bir saha surec alani turu yapar, kendimizi tanitir, firmaniza katki saglayip saglayamayacagimiza analiz eder ve tespitlerimizi sizlerle paylasiriz.",
+            "Bizimle çalışmaya ilgileniyorsanız sizleri ücretsiz olarak ziyaret eder, kısa bir saha süreç alanı turu yapar, kendimizi tanıtır, firmanıza katkı sağlayıp sağlayamayacağımızı analiz eder ve tespitlerimizi sizlerle paylaşırız.",
         },
         {
           title: "Verimlilik Optimizasyonu",
           icon: "growth",
           description:
-            "Sizinle calismaya karar verirsek firmanizi asamali olarak ama ayni zamanda mumkun oldugu kadar hizli bir sekilde sureclerinizi ve uretim alanlarinizi daha yalin, daha verimli, daha kurumsal ve dolayisiyla daha karli bir hale donusturuyoruz.",
+            "Sizinle çalışmaya karar verirsek firmanızı aşamalı olarak ama aynı zamanda mümkün olduğu kadar hızlı bir şekilde süreçlerinizi ve üretim alanlarınızı daha yalın, daha verimli, daha kurumsal ve dolayısıyla daha karlı bir hale dönüştürüyoruz.",
         },
         {
-          title: "Kurumsallik",
+          title: "Kurumsallık",
           icon: "governance",
           description:
-            "Calismalarimiz sirasinda ust yonetimin destegi ve degisime hazir kurumsal calisma kulturu bizler icin esastir.",
+            "Çalışmalarımız sırasında üst yönetimin desteği ve değişime hazır kurumsal çalışma kültürü bizler için esastır.",
         },
         {
-          title: "Seffaflik",
+          title: "Şeffaflık",
           icon: "balance",
           description:
-            "Iletisimimizde acik, net, seffaf ve durustuz. Dusuncemiz, soylemimiz ve eylemimiz arasinda bir fark yoktur. Karsilikli guvene ve durustluge dayali is iliskileri kurariz.",
+            "İletişimimizde açık, net, şeffaf ve dürüstüz. Düşüncemiz, söylemimiz ve eylemimiz arasında bir fark yoktur. Karşılıklı güvene ve dürüstlüğe dayalı iş ilişkileri kurarız.",
         },
         {
           title: "Profesyonellik",
           icon: "check",
           description:
-            "Uzmanligimiz olan konularda calisma yapariz.",
+            "Uzmanlığımız olan konularda çalışma yaparız.",
         },
         {
-          title: "Surekli Gelisim",
+          title: "Sürekli Gelişim",
           icon: "edit",
           description:
-            "Uzmanligimizla ilgili olan gelismeleri takip edip yenilikleri islerimize katariz.",
+            "Uzmanlığımızla ilgili olan gelişmeleri takip edip yenilikleri işlerimize katarız.",
         },
         {
-          title: "Sonuclandirma",
+          title: "Sonuçlandırma",
           icon: "hourglass",
           description:
-            "Uygulama esnasinda sonuc alana kadar ciddi cabayi gosteririz ve uygulamaci olarak surekli yaninizdayiz.",
+            "Uygulama esnasında sonuç alana kadar ciddi çabayı gösteririz ve uygulamacı olarak sürekli yanınızdayız.",
         },
         {
-          title: "Butce Kontrolu",
+          title: "Bütçe Kontrolü",
           icon: "budget",
           description:
-            "Isin gerektirdigi danismanlik surelerimizi veya danisman sayimizi surekli izleyerek ekonomik calisma yontemleri uygulariz.",
+            "İşin gerektirdiği danışmanlık sürelerimizi veya danışman sayımızı sürekli izleyerek ekonomik çalışma yöntemleri uygularız.",
         },
       ],
     },
     articles: {
-      eyebrow: "Yazilarimiz",
-      title: "Sahada tekrar eden problemleri yazilarla aciyoruz.",
+      eyebrow: "Yazılarımız",
+      title: "Sahada tekrar eden problemleri yazılarla açıyoruz.",
       intro:
-        "Eski sitedeki yazi bolumundeki baslik ve ozetler buraya tasindi. Bunlar daha sonra detay sayfalara veya CMS'e baglanabilir.",
+        "Eski sitedeki yazı bölümündeki başlık ve özetler buraya taşındı. Bunlar daha sonra detay sayfalara veya CMS'e bağlanabilir.",
       items: [
         {
-          title: "Yalin donusumde sizi ne bekliyor?",
+          title: "Yalın dönüşümde sizi ne bekliyor?",
           excerpt:
-            "Bir cok firma ilk gorusmede gunluk sorunlardan bahsediyor ve hizli cozum ariyor. Gozlemledigimiz problemler ise sasirtici bicimde birbirine benziyor.",
+            "Birçok firma ilk görüşmede günlük sorunlardan bahsediyor ve hızlı çözüm arıyor. Gözlemlediğimiz problemler ise şaşırtıcı biçimde birbirine benziyor.",
         },
         {
-          title: "Planlama stabilitesi nerede kirilir?",
+          title: "Planlama stabilitesi nerede kırılır?",
           excerpt:
-            "Plan her gun degisiyorsa sorun plan degil, gorunurluk, WIP ve reaksiyon ritmi olabilir.",
+            "Plan her gün değişiyorsa sorun plan değil, görünürlük, WIP ve reaksiyon ritmi olabilir.",
         },
         {
-          title: "Shopfloor board gercekte nasil calisir?",
+          title: "Shopfloor board gerçekte nasıl çalışır?",
           excerpt:
-            "Bir pano tek basina cozum degildir; dogru soruyu gorunur kilan yonetim ritmiyle anlam kazanir.",
+            "Bir pano tek başına çözüm değildir; doğru soruyu görünür kılan yönetim ritmiyle anlam kazanır.",
         },
       ],
     },
     references: {
       eyebrow: "Referanslar",
-      title: "Birlikte calistigimiz ekiplerden secili bir gorunum.",
+      title: "Birlikte çalıştığımız ekiplerden seçili bir görünüm.",
       intro:
-        "Eski referans bolumundeki gorsel varliklari yeni sayfada daha sakin bir grid duzeniyle kullaniyoruz.",
+        "Eski referans bölümündeki görsel varlıkları yeni sayfada daha sakin bir grid düzeniyle kullanıyoruz.",
     },
     contact: {
-      eyebrow: "Iletisim",
-      title: "Kisa bir mesaj birakin, en hizli sekilde donus yapalim.",
+      eyebrow: "İletişim",
+      title: "Kısa bir mesaj bırakın, en hızlı şekilde dönüş yapalım.",
       intro:
-        "Eski iletisim panelindeki temel bilgiler yeni ana sayfaya tasindi. Bu alan istersek daha sonra form servisine veya CRM akisina baglanabilir.",
-      companyName: "EJS Muhendislik Danismanlik ve Egitim",
+        "Eski iletişim panelindeki temel bilgiler yeni ana sayfaya taşındı. Bu alan istersek daha sonra form servisine veya CRM akışına bağlanabilir.",
+      companyName: "EJS Mühendislik Danışmanlık ve Eğitim",
       companyNote:
-        "Tum sureclerimiz hakkinda detayli bilgi icin iletisim kanallarimizdan bize ulasabilirsiniz.",
+        "Tüm süreçlerimiz hakkında detaylı bilgi için iletişim kanallarımızdan bize ulaşabilirsiniz.",
       address:
-        "Aydintepe Mah. Alaaddin Sk. No.7 Evora Sitesi A Parsel, A13, Ic Kapi No: 19 Tuzla / Istanbul",
+        "Aydıntepe Mah. Alaaddin Sk. No.7 Evora Sitesi A Parsel, A13, İç Kapı No: 19 Tuzla / İstanbul",
       phones: ["+90 216 906 03 25", "+90 532 636 72 00"],
-      hours: "Pazartesi-Cuma: 8:00 - 17:00 / Cumartesi-Pazar: Kapali",
+      hours: "Pazartesi-Cuma: 8:00 - 17:00 / Cumartesi-Pazar: Kapalı",
       fields: {
-        name: "Isim Soyisim",
-        email: "Mail adresiniz",
-        message: "Mesajiniz",
-        submit: "Gonder",
+        name: "İsim Soyisim",
+        email: "E-posta adresiniz",
+        message: "Mesajınız",
+        submit: "Gönder",
       },
       placeholders: {
-        name: "Adiniz ve soyadiniz",
+        name: "Adınız ve soyadınız",
         email: "hello@example.com",
-        message: "Mesajinizi buraya kisaca yazin...",
+        message: "Mesajınızı buraya kısaca yazın...",
       },
     },
     footer: {
       eyebrow: "Merkez",
       title: "Merkez Ofis",
-      officeName: "Istanbul Office",
+      officeName: "İstanbul Ofisi",
       addressLines: [
-        "EJS Muhendislik Danismanlik ve Egitim",
-        "Aydintepe Mah. Alaaddin Sk. No.7",
-        "Evora Sitesi A Parsel, A13, Ic Kapi No: 19",
-        "Tuzla / Istanbul",
-        "Turkiye",
+        "EJS Mühendislik Danışmanlık ve Eğitim",
+        "Aydıntepe Mah. Alaaddin Sk. No.7",
+        "Evora Sitesi A Parsel, A13, İç Kapı No: 19",
+        "Tuzla / İstanbul",
+        "Türkiye",
       ],
       contactRows: [
         { label: "Telefon", value: "+90 216 906 03 25", href: "tel:+902169060325" },
         { label: "Mobil", value: "+90 532 636 72 00", href: "tel:+905326367200" },
-        { label: "Mail", value: "Mesaj gonderin", href: "#iletisim" },
+        { label: "Mail", value: "Mesaj gönderin", href: "#iletisim" },
       ],
       links: [
-        { label: "Yazilarimiz", href: "#yazilarimiz" },
+        { label: "Yazılarımız", href: "#yazilarimiz" },
         { label: "Kurumsal", href: "#kimligimiz" },
-        { label: "Yardim", href: "#iletisim" },
+        { label: "Yardım", href: "#iletisim" },
         { label: "Gizlilik", href: "#top" },
-        { label: "Cerezler", href: "#top" },
-        { label: "Iletisim", href: "#iletisim" },
+        { label: "Çerezler", href: "#top" },
+        { label: "İletişim", href: "#iletisim" },
       ],
       navLabel: "Alt gezinme",
     },
@@ -421,63 +421,63 @@ export const homepageContent = {
       eyebrow: "Identität",
       title: "Wir produzieren gemeinsam vor Ort und bleiben bis zum Ergebnis.",
       intro:
-        "TODO: DE translation", // TODO
+        "Die Identitäts-Sektion der alten Homepage wurde in die neue Struktur übernommen. Der Ton betont die gemeinsame Erstellung vor Ort und das Verbleiben im Team bis Ergebnisse sichtbar werden.",
       bullets: [
-        "TODO: Bullet 1", // TODO
-        "TODO: Bullet 2",
-        "TODO: Bullet 3",
-        "TODO: Bullet 4",
-        "TODO: Bullet 5",
+        "Wir bringen umfassende Felderfahrung aus der Produktion in nationalen und internationalen Umgebungen mit.",
+        "Unsere Expertise deckt Lean-Prozesse, Lean-Produktion, Qualität und Projektmanagement ab.",
+        "Wir betrachten Ihre Teams als Partner und entwickeln Lösungen gemeinsam.",
+        "Wir hören nicht bei Empfehlungen auf; wir bleiben beteiligt, bis der Prozess in der täglichen Praxis ankommt.",
+        "Wir arbeiten bevorzugt durch Handeln statt durch Worte.",
       ],
     },
     mission: {
       eyebrow: "Mission",
       title: "Rentabilität, Governance und operative Disziplin gemeinsam stärken.",
-      intro: "TODO: DE translation", // TODO
+      intro: "Dieser Abschnitt wurde von der Mission-Text des alten Standorts übernommen und hier in einer klareren zweisprachigen Struktur platziert.",
       bullets: [
-        "TODO: Bullet 1",
-        "TODO: Bullet 2",
-        "TODO: Bullet 3",
-        "TODO: Bullet 4",
-        "TODO: Bullet 5",
+        "Beitrag zur Industrie mit nationaler und internationaler Erfahrung leisten.",
+        "Unternehmensrentabilität und institutionelle Fähigkeit stärken.",
+        "Organisationen auf die digitale Ära vorbereiten und für Erfolg positionieren.",
+        "Lean-, agile, schnelle und effiziente Betriebssysteme aufbauen.",
+        "Mitarbeiterfähigkeiten entwickeln, um klare und nachhaltige Prozesse zu schaffen.",
       ],
     },
     methodology: {
       eyebrow: "Methodik",
       title: "Unsere Arbeitsweise basiert auf acht klaren Prinzipien.",
-      intro: "TODO: DE translation", // TODO
+      intro: "Vom ersten Besuch bis zur Ausführung ist jeder Schritt so gestaltet, dass er vor Ort praktisch, messbar und nachhaltig bleibt.",
       steps: [
-        { title: "Kostenlose Analyse", icon: "analysis", description: "TODO" },
-        { title: "Effizienzoptimierung", icon: "growth", description: "TODO" },
-        { title: "Institutionelle Kompetenz", icon: "governance", description: "TODO" },
-        { title: "Transparenz", icon: "balance", description: "TODO" },
-        { title: "Professionalität", icon: "check", description: "TODO" },
-        { title: "Kontinuierliche Verbesserung", icon: "edit", description: "TODO" },
-        { title: "Umsetzung bis zum Ergebnis", icon: "hourglass", description: "TODO" },
-        { title: "Budgetkontrolle", icon: "budget", description: "TODO" },
+        { title: "Kostenlose Analyse", icon: "analysis", description: "Wenn Sie an einer Zusammenarbeit mit uns interessiert sind, besuchen wir Sie kostenlos, führen einen kurzen Rundgang durch die Prozessbereiche durch, stellen uns vor, bewerten, ob wir einen Mehrwert für Ihr Unternehmen schaffen können, und teilen unsere Beobachtungen mit Ihnen." },
+        { title: "Effizienzoptimierung", icon: "growth", description: "Wenn wir uns für eine Zusammenarbeit entscheiden, verwandeln wir Ihre Prozesse und Produktionsbereiche schrittweise, jedoch so schnell wie möglich, in ein schlankeres, effizienteres, institutionelleres und profitableres Betriebsmodell." },
+        { title: "Institutionelle Kompetenz", icon: "governance", description: "Während unserer Arbeit sind für uns die Unterstützung des Top-Managements und eine unternehmenskultur, die bereit für Veränderungen ist, unerlässlich." },
+        { title: "Transparenz", icon: "balance", description: "Wir sind offen, klar, transparent und ehrlich in unserer Kommunikation. Es gibt keine Lücke zwischen dem, was wir denken, sagen und tun. Wir bauen Arbeitsbeziehungen auf Vertrauen und Integrität auf." },
+        { title: "Professionalität", icon: "check", description: "Wir arbeiten in den Bereichen, in denen wir nachgewiesene Expertise haben." },
+        { title: "Kontinuierliche Verbesserung", icon: "edit", description: "Wir verfolgen eng Entwicklungen im Zusammenhang mit unserer Expertise und integrieren sinnvolle Innovationen in unsere Arbeit." },
+        { title: "Umsetzung bis zum Ergebnis", icon: "hourglass", description: "Während der Implementierung investieren wir die erforderliche Arbeit, bis Ergebnisse erzielt werden, und bleiben als praktische Praktiker an Ihrer Seite." },
+        { title: "Budgetkontrolle", icon: "budget", description: "Wir überwachen kontinuierlich die benötigte Beratungszeit und -besetzung und wenden wirtschaftliche Liefermethoden während des gesamten Engagements an." },
       ],
     },
     articles: {
       eyebrow: "Artikel",
-      title: "Wir beleuchten wiederkehrende Shopfloor-Probleme.",
-      intro: "TODO: DE translation", // TODO
+      title: "Wir beleuchten wiederkehrende Shopfloor-Probleme durch Schreiben.",
+      intro: "Titel und Zusammenfassungen aus dem alten Artikelbereich werden hier übernommen. Sie können später mit vollständigen Detailseiten oder einem CMS verbunden werden.",
       items: [
-        { title: "TODO: Artikel 1", excerpt: "TODO" },
-        { title: "TODO: Artikel 2", excerpt: "TODO" },
-        { title: "TODO: Artikel 3", excerpt: "TODO" },
+        { title: "Was sollten Sie bei einer Lean-Transformation erwarten?", excerpt: "Viele Unternehmen beginnen mit dringenden täglichen Problemen, doch die Muster, die wir beobachten, sind in den Abläufen bemerkenswert ähnlich." },
+        { title: "Wo bricht die Planungsstabilität eigentlich?", excerpt: "Wenn sich der Plan jeden Tag ändert, liegt das Problem oft nicht am Plan selbst, sondern an Sichtbarkeit, WIP und Reaktionsrhythmus." },
+        { title: "Wie funktioniert ein Shopfloor-Board wirklich?", excerpt: "Ein Board allein ist nicht die Lösung; es wird erst in Kombination mit dem richtigen Management-Rhythmus nützlich." },
       ],
     },
     references: {
       eyebrow: "Referenzen",
       title: "Eine Auswahl der Teams und Umgebungen, mit denen wir gearbeitet haben.",
-      intro: "TODO: DE translation", // TODO
+      intro: "Visuelle Assets aus dem alten Referenzbereich werden hier in einem ruhigeren Grid-Format wiederverwendet.",
     },
     contact: {
       eyebrow: "Kontakt",
       title: "Hinterlassen Sie eine kurze Nachricht, wir melden uns schnell.",
-      intro: "TODO: DE translation", // TODO
+      intro: "Die grundlegenden Informationen aus dem alten Kontaktbereich wurden in die neue Hauptseite übertragen. Dieser Bereich kann später mit einem Form-Service oder CRM-Workflow verbunden werden.",
       companyName: "EJS Engineering Beratung & Schulung",
-      companyNote: "TODO: DE translation", // TODO
+      companyNote: "Alle unsere Prozesse können Sie über unsere Kontaktkanäle erreichen.",
       address: "Aydintepe Mah. Alaaddin Sk. No.7 Evora Sitesi A Parsel, A13, Tuzla / Istanbul",
       phones: ["+90 216 906 03 25", "+90 532 636 72 00"],
       hours: "Mo-Fr: 8:00 - 17:00 / Sa-So: Geschlossen",

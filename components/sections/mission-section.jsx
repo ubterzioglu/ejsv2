@@ -17,7 +17,7 @@ export function MissionSection({ mission, lang }) {
       <div className="mission-image-card">
         <Image
           src={missionImage}
-          alt={lang === "tr" ? "Misyon gorseli" : "Mission visual"}
+          alt={lang === "tr" ? "Misyon görseli" : "Mission visual"}
           className="mission-image"
           width={800}
           height={500}

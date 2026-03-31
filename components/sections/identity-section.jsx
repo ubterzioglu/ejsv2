@@ -26,7 +26,7 @@ export function IdentitySection({ identity, lang }) {
         <div className="identity-feature-image-wrap">
           <Image
             src={identityImage}
-            alt={lang === "tr" ? "Kimligimiz gorseli" : "Identity visual"}
+            alt={lang === "tr" ? "Kimliğimiz görseli" : "Identity visual"}
             className="identity-feature-image"
             width={600}
             height={400}

@@ -5,8 +5,8 @@ const highlightImage = "/assets/workflow/step-6-teamwork.jpg";
 const highlightCopy = {
   tr: {
     text:
-      "Tum sirketler icin standart bir cozum yoktur. Tum sureclerinizde kullandiginiz kaynaklarin alan, makine, insan, malzeme ve metot bazinda dogru ve verimli kullanilabilmesi icin tum surecleri, metodlari, uretim ve hizmet alanlarini ve teknik cozumleri tasarliyoruz; uretim ve hizmet kapasitelerini artiriyoruz.",
-    alt: "Surec gelistirme calismasi",
+      "Tüm şirketler için standart bir çözüm yoktur. Tüm süreçlerinizde kullandığınız kaynakların alan, makine, insan, malzeme ve metot bazında doğru ve verimli kullanılabilmesi için tüm süreçleri, metodları, üretim ve hizmet alanlarını ve teknik çözümleri tasarlıyoruz; üretim ve hizmet kapasitelerini artırıyoruz.",
+    alt: "Süreç geliştirme çalışması",
   },
   en: {
     text:
