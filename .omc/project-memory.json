@@ -130,21 +130,189 @@
   },
   "hotPaths": [
     {
+      "path": "app\\page.jsx",
+      "accessCount": 35,
+      "lastAccessed": 1774956581949,
+      "type": "file"
+    },
+    {
       "path": "app\\globals.css",
-      "accessCount": 13,
-      "lastAccessed": 1774879010026,
+      "accessCount": 25,
+      "lastAccessed": 1774965849298,
       "type": "directory"
     },
     {
-      "path": "app\\page.jsx",
+      "path": "app\\data\\homepage-content.js",
+      "accessCount": 15,
+      "lastAccessed": 1774966439846,
+      "type": "file"
+    },
+    {
+      "path": "TODO.md",
+      "accessCount": 11,
+      "lastAccessed": 1774957054056,
+      "type": "file"
+    },
+    {
+      "path": "components\\site-header.jsx",
+      "accessCount": 10,
+      "lastAccessed": 1774956398183,
+      "type": "file"
+    },
+    {
+      "path": "app\\layout.jsx",
+      "accessCount": 8,
+      "lastAccessed": 1774956573948,
+      "type": "file"
+    },
+    {
+      "path": "components\\hero-video-carousel.jsx",
       "accessCount": 6,
-      "lastAccessed": 1774878990403,
+      "lastAccessed": 1774955516299,
       "type": "file"
     },
     {
       "path": "",
+      "accessCount": 5,
+      "lastAccessed": 1774954456913,
+      "type": "directory"
+    },
+    {
+      "path": "components\\site-footer.jsx",
+      "accessCount": 4,
+      "lastAccessed": 1774966169629,
+      "type": "file"
+    },
+    {
+      "path": "components\\expert-spotlight.jsx",
+      "accessCount": 4,
+      "lastAccessed": 1774966445478,
+      "type": "file"
+    },
+    {
+      "path": "components\\process-highlight.jsx",
       "accessCount": 3,
-      "lastAccessed": 1774878888574,
+      "lastAccessed": 1774966452438,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\identity-section.jsx",
+      "accessCount": 3,
+      "lastAccessed": 1774966481351,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\mission-section.jsx",
+      "accessCount": 3,
+      "lastAccessed": 1774966482307,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\references-section.jsx",
+      "accessCount": 2,
+      "lastAccessed": 1774955944296,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\share-section.jsx",
+      "accessCount": 2,
+      "lastAccessed": 1774956379921,
+      "type": "file"
+    },
+    {
+      "path": "proxy.js",
+      "accessCount": 2,
+      "lastAccessed": 1774956718541,
+      "type": "file"
+    },
+    {
+      "path": "next.config.mjs",
+      "accessCount": 2,
+      "lastAccessed": 1774956979423,
+      "type": "file"
+    },
+    {
+      "path": "AGENTS.md",
+      "accessCount": 2,
+      "lastAccessed": 1774957027946,
+      "type": "file"
+    },
+    {
+      "path": "app\\[lang]\\page.jsx",
+      "accessCount": 2,
+      "lastAccessed": 1774966462859,
+      "type": "file"
+    },
+    {
+      "path": "components\\methodology-cards.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1774954987725,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\articles-section.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1774955743681,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\contact-section.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1774955751114,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\index.js",
+      "accessCount": 1,
+      "lastAccessed": 1774955817915,
+      "type": "file"
+    },
+    {
+      "path": "lib\\language-context.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1774955941787,
+      "type": "file"
+    },
+    {
+      "path": "lib\\locales.js",
+      "accessCount": 1,
+      "lastAccessed": 1774956251425,
+      "type": "file"
+    },
+    {
+      "path": "middleware.js",
+      "accessCount": 1,
+      "lastAccessed": 1774956254710,
+      "type": "file"
+    },
+    {
+      "path": "app\\[lang]\\layout.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1774956399817,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 1,
+      "lastAccessed": 1774956979671,
+      "type": "file"
+    },
+    {
+      "path": "public\\assets\\ejsmenulogo.png",
+      "accessCount": 1,
+      "lastAccessed": 1774963187899,
+      "type": "file"
+    },
+    {
+      "path": "public\\assets\\ejsprofil.png",
+      "accessCount": 1,
+      "lastAccessed": 1774963255566,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections",
+      "accessCount": 1,
+      "lastAccessed": 1774966470565,
       "type": "directory"
     }
   ],

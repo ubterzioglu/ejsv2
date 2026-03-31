@@ -2,10 +2,9 @@
 
 ## Critical Patterns
 
-- **Image imports**: Always use `next/image` with `@/old/src/assets/` prefix for legacy assets
-- **Content structure**: Bilingual content in `app/data/homepage-content.js` with `tr`/`en` objects
-- **Language state**: Managed in `app/page.jsx` with `useState("tr")` default
-- **Legacy assets**: Components reference `old/src/assets/` directory structure
+- **Image imports**: Always use `next/image` with `/assets/` prefix (assets under `/public/assets/`)
+- **Content structure**: Bilingual content in [`app/data/homepage-content.js`](app/data/homepage-content.js) with `tr`/`en`/`de` objects
+- **Language state**: Read from URL via `usePathname()` — no context/global state
 - **Video carousel**: Uses external Pexels video URLs with credit tracking
 - **Share functionality**: Built-in social sharing with LinkedIn, X, Facebook, Email, WhatsApp
 - **Contact form**: Static form with `onSubmit={(event) => event.preventDefault()}`

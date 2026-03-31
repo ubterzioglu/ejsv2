@@ -22,13 +22,16 @@ export function ReferencesSection({ references }) {
       <div className="reference-carousel">
         <div className="reference-track">
           {[...referenceImages, ...referenceImages].map((image, index) => (
-            <div key={index} className="reference-card">
-              <img
-                src={image}
-                alt={`${references.eyebrow} ${(index % referenceImages.length) + 1}`}
-                className="reference-image"
-              />
-            </div>
+          <div key={index} className="reference-card">
+               <img
+                 src={image}
+                 alt={`${references.eyebrow} ${(index % referenceImages.length) + 1}`}
+                 className="reference-image"
+                 loading="lazy"
+                 fetchPriority="low"
+                 decoding="async"
+               />
+             </div>
           ))}
         </div>
       </div>

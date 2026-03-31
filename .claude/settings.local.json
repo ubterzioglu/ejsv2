@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -r old/ --include=*.js --include=*.jsx --include=*.ts --include=*.tsx --include=*.css --include=*.json -l)",
+      "Bash(grep -rn \"@/old\\\\|from.*old/\\\\|import.*old/\" --include=*.js --include=*.jsx --include=*.ts --include=*.tsx --include=*.css .)",
+      "Bash(cmd /c \"taskkill /PID 48120 /F\" 2>&1)",
+      "Bash(powershell -Command \"Stop-Process -Id 48120 -Force\" 2>&1)",
+      "Bash(npx next:*)"
+    ]
+  }
+}

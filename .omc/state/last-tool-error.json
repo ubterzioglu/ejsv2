@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd \\\"C:/.temp_private/ejsv2\\\" && git rm --cached old && git submodule deinit -f old && rm -rf .git/modules/old && rm -rf old && echo \\\"old/ removed\\\"\",\"description\":\"Remove old/ submodule ...",
+  "error": "Exit code 1\nrm 'old'\nerror: pathspec 'old' did not match any file(s) known to git",
+  "timestamp": "2026-03-31T11:19:13.536Z",
+  "retry_count": 1
+}
