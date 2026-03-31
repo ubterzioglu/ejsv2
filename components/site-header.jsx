@@ -1,13 +1,10 @@
 ﻿"use client";
 
 import { Fragment, useState } from "react";
+import { useLanguage } from "@/lib/language-context";
 
-export function SiteHeader({
-  utilityLinks,
-  mainLinks,
-  lang,
-  onLangChange,
-}) {
+export function SiteHeader({ utilityLinks, mainLinks, ariaLabels }) {
+  const { lang, setLang } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
 
   const languageItems = [
@@ -20,7 +17,7 @@ export function SiteHeader({
       <div className="utility-bar">
         <div className="utility-inner">
           <div className="utility-nav-wrap">
-            <nav className="utility-nav" aria-label="Ust Navigasyon">
+            <nav className="utility-nav" aria-label={ariaLabels.utilityNav}>
               {utilityLinks.map((item, index) => (
                 <Fragment key={item.label}>
                   {index > 0 ? (
@@ -49,7 +46,7 @@ export function SiteHeader({
                     className={`utility-link ${isActive ? "is-active" : ""} ${
                       isMuted ? "is-muted" : ""
                     }`}
-                    onClick={() => onLangChange(item.code)}
+                    onClick={() => setLang(item.code)}
                   >
                     {item.label}
                   </button>
@@ -82,7 +79,7 @@ export function SiteHeader({
         <nav
           className={`main-nav ${isOpen ? "is-open" : ""}`}
           id="main-navigation"
-          aria-label="Hauptnavigation"
+          aria-label={ariaLabels.mainNav}
         >
           {mainLinks.map((link) => (
             <a
@@ -97,10 +94,15 @@ export function SiteHeader({
         </nav>
 
         <div className="header-actions">
-          <a className="search-trigger" href="#search" aria-label="Suche">
+          <button
+            type="button"
+            className="search-trigger"
+            aria-label={ariaLabels.search}
+            onClick={() => console.info("search açılacak")}
+          >
             <span className="search-circle" />
             <span className="search-stick" />
-          </a>
+          </button>
         </div>
       </div>
     </header>

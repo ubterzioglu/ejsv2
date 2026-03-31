@@ -1,12 +1,12 @@
 ﻿"use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function HeroVideoCarousel({ videos, ctaLabel }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const videoRef = useRef(null);
 
-  const activeVideo = useMemo(() => videos[activeIndex], [videos, activeIndex]);
+  const activeVideo = videos[activeIndex];
 
   useEffect(() => {
     const videoNode = videoRef.current;
@@ -70,9 +70,7 @@ export function HeroVideoCarousel({ videos, ctaLabel }) {
 
           <a
             className="hero-approach-link"
-            href={activeVideo.creditUrl}
-            target="_blank"
-            rel="noreferrer"
+            href="#metodoloji"
           >
             {ctaLabel}
             <span aria-hidden="true">-&gt;</span>

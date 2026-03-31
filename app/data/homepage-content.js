@@ -33,6 +33,11 @@
 
 export const homepageContent = {
   tr: {
+    ariaLabels: {
+      utilityNav: "Üst Navigasyon",
+      mainNav: "Ana Navigasyon",
+      search: "Ara",
+    },
     utilityLinks: [
       { label: "Kimligimiz", href: "#kimligimiz" },
       { label: "Misyonumuz", href: "#misyonumuz" },
@@ -182,8 +187,39 @@ export const homepageContent = {
         message: "Mesajinizi buraya kisaca yazin...",
       },
     },
+    footer: {
+      eyebrow: "Merkez",
+      title: "Merkez Ofis",
+      officeName: "Istanbul Office",
+      addressLines: [
+        "EJS Muhendislik Danismanlik ve Egitim",
+        "Aydintepe Mah. Alaaddin Sk. No.7",
+        "Evora Sitesi A Parsel, A13, Ic Kapi No: 19",
+        "Tuzla / Istanbul",
+        "Turkiye",
+      ],
+      contactRows: [
+        { label: "Telefon", value: "+90 216 906 03 25", href: "tel:+902169060325" },
+        { label: "Mobil", value: "+90 532 636 72 00", href: "tel:+905326367200" },
+        { label: "Mail", value: "Mesaj gonderin", href: "#iletisim" },
+      ],
+      links: [
+        { label: "Yazilarimiz", href: "#yazilarimiz" },
+        { label: "Kurumsal", href: "#kimligimiz" },
+        { label: "Yardim", href: "#iletisim" },
+        { label: "Gizlilik", href: "#top" },
+        { label: "Cerezler", href: "#top" },
+        { label: "Iletisim", href: "#iletisim" },
+      ],
+      navLabel: "Alt gezinme",
+    },
   },
   en: {
+    ariaLabels: {
+      utilityNav: "Top Navigation",
+      mainNav: "Main Navigation",
+      search: "Search",
+    },
     utilityLinks: [
       { label: "Identity", href: "#kimligimiz" },
       { label: "Mission", href: "#misyonumuz" },
@@ -332,6 +368,32 @@ export const homepageContent = {
         email: "hello@example.com",
         message: "Write your message here...",
       },
+    },
+    footer: {
+      eyebrow: "Headquarters",
+      title: "Head Office",
+      officeName: "Istanbul Office",
+      addressLines: [
+        "EJS Engineering Consulting & Training",
+        "Aydintepe Mah. Alaaddin Sk. No.7",
+        "Evora Sitesi A Parsel, A13, Unit 19",
+        "Tuzla / Istanbul",
+        "Turkey",
+      ],
+      contactRows: [
+        { label: "Phone", value: "+90 216 906 03 25", href: "tel:+902169060325" },
+        { label: "Mobile", value: "+90 532 636 72 00", href: "tel:+905326367200" },
+        { label: "Mail", value: "Send a message", href: "#iletisim" },
+      ],
+      links: [
+        { label: "Newsroom", href: "#yazilarimiz" },
+        { label: "Legal", href: "#kimligimiz" },
+        { label: "Help", href: "#iletisim" },
+        { label: "Privacy", href: "#top" },
+        { label: "Cookies", href: "#top" },
+        { label: "Contact", href: "#iletisim" },
+      ],
+      navLabel: "Footer navigation",
     },
   },
 };
