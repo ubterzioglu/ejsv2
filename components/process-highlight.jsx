@@ -1,5 +1,6 @@
 ﻿import Image from "next/image";
-import highlightImage from "@/old/src/assets/workflow/step-6-teamwork.jpg";
+
+const highlightImage = "/assets/workflow/step-6-teamwork.jpg";
 
 const highlightCopy = {
   tr: {

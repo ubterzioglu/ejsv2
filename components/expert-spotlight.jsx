@@ -1,7 +1,8 @@
 ﻿"use client";
 
 import Image from "next/image";
-import profilePhoto from "@/old/src/assets/ejsprofil.png";
+
+const profilePhoto = "/assets/ejsprofil.png";
 
 const spotlightCopy = {
   tr: {

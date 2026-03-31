@@ -2,15 +2,6 @@
 
 import Image from "next/image";
 import { Fragment, useState } from "react";
-import ref1 from "@/old/src/assets/references/1.jpg";
-import ref2 from "@/old/src/assets/references/2.jpg";
-import ref3 from "@/old/src/assets/references/3.jpg";
-import ref4 from "@/old/src/assets/references/4.jpg";
-import ref5 from "@/old/src/assets/references/5.jpg";
-import ref6 from "@/old/src/assets/references/6.jpg";
-import footerLogo from "@/old/src/assets/ejsmenulogo.png";
-import missionImage from "@/old/src/assets/workflow/step-2-factory.jpg";
-import identityImage from "@/old/src/assets/workflow/step-2-factory.jpg";
 import { heroVideos, homepageContent } from "@/app/data/homepage-content";
 import { ExpertSpotlight } from "@/components/expert-spotlight";
 import { ProcessHighlight } from "@/components/process-highlight";
@@ -18,7 +9,18 @@ import { HeroVideoCarousel } from "@/components/hero-video-carousel";
 import { MethodologyCards } from "@/components/methodology-cards";
 import { SiteHeader } from "@/components/site-header";
 
-const referenceImages = [ref1, ref2, ref3, ref4, ref5, ref6];
+const referenceImages = [
+  "/assets/references/1.jpg",
+  "/assets/references/2.jpg",
+  "/assets/references/3.jpg",
+  "/assets/references/4.jpg",
+  "/assets/references/5.jpg",
+  "/assets/references/6.jpg",
+];
+
+const footerLogo = "/assets/ejsmenulogo.png";
+const missionImage = "/assets/workflow/step-2-factory.jpg";
+const identityImage = "/assets/workflow/step-2-factory.jpg";
 
 export default function HomePage() {
   const [lang, setLang] = useState("tr");
