@@ -18,6 +18,7 @@ export function SiteFooter({ footer, shareLinks, lang }) {
               width={320}
               height={320}
               sizes="(max-width: 760px) 220px, 320px"
+              style={{ mixBlendMode: "multiply" }}
             />
           </div>
         </div>
