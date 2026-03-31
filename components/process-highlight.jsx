@@ -26,6 +26,8 @@ export function ProcessHighlight({ lang }) {
             src={highlightImage}
             alt={copy.alt}
             className="process-highlight-image"
+            width={700}
+            height={450}
             sizes="(max-width: 1040px) 100vw, 28vw"
           />
         </div>

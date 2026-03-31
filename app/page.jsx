@@ -172,6 +172,8 @@ export default function HomePage() {
                 src={identityImage}
                 alt={lang === "tr" ? "Kimligimiz gorseli" : "Identity visual"}
                 className="identity-feature-image"
+                width={600}
+                height={400}
                 sizes="(max-width: 1040px) 100vw, 46vw"
                 loading="eager"
               />
@@ -194,6 +196,8 @@ export default function HomePage() {
               src={missionImage}
               alt={lang === "tr" ? "Misyon gorseli" : "Mission visual"}
               className="mission-image"
+              width={800}
+              height={500}
               sizes="(max-width: 1040px) 100vw, 48vw"
               loading="eager"
             />
@@ -327,6 +331,8 @@ export default function HomePage() {
                 src={footerLogo}
                 alt=""
                 className="footer-logo-mark"
+                width={320}
+                height={320}
                 sizes="(max-width: 760px) 220px, 320px"
               />
             </div>

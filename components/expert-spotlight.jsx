@@ -37,6 +37,8 @@ export function ExpertSpotlight({ lang }) {
               src={profilePhoto}
               alt={copy.name}
               className="expert-portrait-image"
+              width={340}
+              height={340}
               sizes="(max-width: 760px) 240px, 340px"
             />
           </div>
