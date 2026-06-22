@@ -235,6 +235,18 @@
   font-size: 12px;
   margin-top: 8px;
 }
+.admin-update-list {
+  margin: 14px 0 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.admin-update-list li {
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.55;
+}
 .admin-card__muted {
   color: var(--muted);
   font-weight: 400;

@@ -1,65 +1,54 @@
-import Link from "next/link";
-import { createServerClient } from "@/lib/supabase/server";
-import { locales, defaultLocale } from "@/lib/locales";
+// Guncellemeler bolumu: SABIT (hardcoded) icerik.
+// Veritabani kullanmaz. Yeni bir is yapildikca buradaki "UPDATES" dizisine
+// en uste yeni bir madde eklemen yeterli.
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
 
-const LANG_LABELS = { tr: "TR", en: "EN", de: "DE" };
+/**
+ * Her giris bir "gun" karti. items = o gun yapilan isler (gunluk dille, madde madde).
+ * @type {Array<{ date: string, title: string, items: string[] }>}
+ */
+const UPDATES = [
+  {
+    date: "22 Haziran 2026",
+    title: "Yönetim paneli ve site içeriği hayata geçti",
+    items: [
+      "Şifreyle giriş yapılan yönetim paneli kuruldu (giriş, çıkış, sol menü ve sayfa düzeni).",
+      "Makaleler bölümü eklendi: panelden yazı ekleyebilir, düzenleyebilir, silebilir ve her yazıya kapak görseli yükleyebilirsiniz.",
+      "Revizyon İstekleri bölümü eklendi; gelen talepler panelden takip edilebiliyor.",
+      "Güncellemeler bölümü eklendi (şu an okuduğunuz bu liste).",
+      "Veritabanı bağlantısı kuruldu; makaleler ve görseller güvenli şekilde Supabase üzerinde saklanıyor.",
+      "Ana sayfa baştan elden geçirildi: 'Yaklaşımımız', 'Uzmanlık Alanları' ve 'Kurucu Hikayesi' bölümleri eklendi.",
+      "Kimlik, misyon, referanslar ve paylaşım bölümleri yeniden düzenlendi; alt bilgi (footer) ve tanıtım videosu galerisi güncellendi.",
+      "Site Türkçe/İngilizce/Almanca olacak şekilde çok dilli altyapıya hazırlandı.",
+      "Yeni yin-yang logosu (favicon), kurucu görseli ve genel görsel stil güncellemeleri yapıldı.",
+    ],
+  },
+];
 
-export default async function UpdatesFeedPage({ searchParams }) {
-  const params = await searchParams;
-  const lang = locales.includes(params?.lang) ? params.lang : defaultLocale;
-
-  const supabase = createServerClient();
-  const { data, error } = await supabase
-    .from("changelog")
-    .select("*")
-    .eq("lang", lang)
-    .order("sort_order", { ascending: true })
-    .order("created_at", { ascending: false });
-
-  const items = data ?? [];
-
+export default function UpdatesFeedPage() {
   return (
     <div>
       <h1 className="admin-page__title">Güncellemeler</h1>
       <p className="admin-page__subtitle">
-        Panel ve site güncellemeleri (salt-okunur). Buradan ekleme veya
-        düzenleme yapılmaz.
+        Panel ve site üzerinde yapılan çalışmaların günlük kaydı (salt-okunur).
       </p>
 
-      <div className="admin-tabs">
-        {locales.map((code) => (
-          <Link
-            key={code}
-            href={`/admin/updates-feed?lang=${code}`}
-            className={
-              "admin-tab" + (code === lang ? " admin-tab--active" : "")
-            }
-          >
-            {LANG_LABELS[code]}
-          </Link>
+      <div className="admin-list">
+        {UPDATES.map((day) => (
+          <article key={day.date} className="admin-card">
+            <div className="admin-card__head">
+              <h3 className="admin-card__title">{day.title}</h3>
+              <span className="admin-badge">{day.date}</span>
+            </div>
+            <ul className="admin-update-list">
+              {day.items.map((line, i) => (
+                <li key={i}>{line}</li>
+              ))}
+            </ul>
+          </article>
         ))}
       </div>
-
-      {error ? (
-        <p className="admin-error">
-          Veri okunamadı: {error.message}. Supabase tablosu (changelog)
-          oluşturuldu mu?
-        </p>
-      ) : items.length === 0 ? (
-        <p className="admin-empty">Bu dilde henüz güncelleme yok.</p>
-      ) : (
-        <div className="admin-list">
-          {items.map((item) => (
-            <article key={item.id} className="admin-card">
-              <h3 className="admin-card__title">{item.title}</h3>
-              <p className="admin-card__excerpt">{item.body}</p>
-              <p className="admin-card__meta">Sıra: {item.sort_order}</p>
-            </article>
-          ))}
-        </div>
-      )}
     </div>
   );
 }

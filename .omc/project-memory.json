@@ -152,20 +152,26 @@
   "hotPaths": [
     {
       "path": "app\\globals.css",
-      "accessCount": 46,
-      "lastAccessed": 1782144039046,
+      "accessCount": 53,
+      "lastAccessed": 1782161370014,
       "type": "file"
     },
     {
       "path": "app\\data\\homepage-content.js",
-      "accessCount": 14,
-      "lastAccessed": 1782143877065,
+      "accessCount": 15,
+      "lastAccessed": 1782161277110,
       "type": "file"
     },
     {
       "path": "app\\admin\\(panel)\\updates\\actions.js",
       "accessCount": 14,
       "lastAccessed": 1782160528067,
+      "type": "file"
+    },
+    {
+      "path": "app\\[lang]\\page.jsx",
+      "accessCount": 13,
+      "lastAccessed": 1782161294419,
       "type": "file"
     },
     {
@@ -187,15 +193,15 @@
       "type": "file"
     },
     {
-      "path": "app\\[lang]\\page.jsx",
-      "accessCount": 11,
-      "lastAccessed": 1782147878451,
-      "type": "file"
-    },
-    {
       "path": "app\\admin\\(panel)\\updates\\updates-manager.jsx",
       "accessCount": 11,
       "lastAccessed": 1782160538654,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\admin.css",
+      "accessCount": 10,
+      "lastAccessed": 1782160986017,
       "type": "file"
     },
     {
@@ -211,12 +217,6 @@
       "type": "file"
     },
     {
-      "path": "app\\admin\\admin.css",
-      "accessCount": 9,
-      "lastAccessed": 1782160689062,
-      "type": "file"
-    },
-    {
       "path": "app\\admin\\(panel)\\sidebar.jsx",
       "accessCount": 8,
       "lastAccessed": 1782146065975,
@@ -226,6 +226,12 @@
       "path": "app\\admin\\login\\page.jsx",
       "accessCount": 8,
       "lastAccessed": 1782146094183,
+      "type": "file"
+    },
+    {
+      "path": "components\\site-header.jsx",
+      "accessCount": 8,
+      "lastAccessed": 1782161310647,
       "type": "file"
     },
     {
@@ -316,12 +322,6 @@
       "path": "components\\sections\\references-section.jsx",
       "accessCount": 5,
       "lastAccessed": 1782143910855,
-      "type": "file"
-    },
-    {
-      "path": "components\\site-header.jsx",
-      "accessCount": 5,
-      "lastAccessed": 1782149683781,
       "type": "file"
     },
     {
@@ -427,15 +427,15 @@
       "type": "file"
     },
     {
-      "path": "components\\sections\\index.js",
-      "accessCount": 1,
-      "lastAccessed": 1782128747628,
+      "path": "components\\sections\\approach-section.jsx",
+      "accessCount": 2,
+      "lastAccessed": 1782161276845,
       "type": "file"
     },
     {
-      "path": "components\\sections\\approach-section.jsx",
+      "path": "components\\sections\\index.js",
       "accessCount": 1,
-      "lastAccessed": 1782130589465,
+      "lastAccessed": 1782128747628,
       "type": "file"
     },
     {

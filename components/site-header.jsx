@@ -10,7 +10,7 @@ const languageItems = [
   { label: "DE", code: "de" },
 ];
 
-export function SiteHeader({ utilityLinks, mainLinks, ariaLabels }) {
+export function SiteHeader({ utilityLinks, mainLinks, ariaLabels, approachCta }) {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
@@ -101,13 +101,50 @@ export function SiteHeader({ utilityLinks, mainLinks, ariaLabels }) {
             type="button"
             className="search-trigger"
             aria-label={ariaLabels?.search}
-            onClick={() => console.info("search açılacak")}
           >
-            <span className="search-circle" />
-            <span className="search-stick" />
+            <svg
+              className="search-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <circle cx="10.5" cy="10.5" r="7" stroke="currentColor" strokeWidth="2" />
+              <line
+                x1="15.6"
+                y1="15.6"
+                x2="21"
+                y2="21"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+            </svg>
           </button>
         </div>
       </div>
+
+      {approachCta ? (
+        <a className="approach-cta" href={approachCta.href}>
+          <span className="approach-cta-label">{approachCta.label}</span>
+          <svg
+            className="approach-cta-arrow"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <circle cx="12" cy="12" r="11" stroke="currentColor" strokeWidth="1.5" />
+            <path
+              d="M9 12h6m0 0-2.5-2.5M15 12l-2.5 2.5"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </a>
+      ) : null}
     </header>
   );
 }
