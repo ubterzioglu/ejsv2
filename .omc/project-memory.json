@@ -164,8 +164,8 @@
     },
     {
       "path": "app\\admin\\(panel)\\updates\\actions.js",
-      "accessCount": 13,
-      "lastAccessed": 1782148866247,
+      "accessCount": 14,
+      "lastAccessed": 1782160528067,
       "type": "file"
     },
     {
@@ -175,9 +175,15 @@
       "type": "file"
     },
     {
+      "path": "app\\admin\\(panel)\\updates\\page.jsx",
+      "accessCount": 12,
+      "lastAccessed": 1782160527606,
+      "type": "file"
+    },
+    {
       "path": ".env.local",
-      "accessCount": 11,
-      "lastAccessed": 1782130277999,
+      "accessCount": 12,
+      "lastAccessed": 1782160538775,
       "type": "file"
     },
     {
@@ -187,15 +193,9 @@
       "type": "file"
     },
     {
-      "path": "app\\admin\\(panel)\\updates\\page.jsx",
-      "accessCount": 11,
-      "lastAccessed": 1782148875441,
-      "type": "file"
-    },
-    {
       "path": "app\\admin\\(panel)\\updates\\updates-manager.jsx",
-      "accessCount": 10,
-      "lastAccessed": 1782147445855,
+      "accessCount": 11,
+      "lastAccessed": 1782160538654,
       "type": "file"
     },
     {
@@ -206,8 +206,14 @@
     },
     {
       "path": "components\\site-footer.jsx",
-      "accessCount": 8,
-      "lastAccessed": 1782142746613,
+      "accessCount": 9,
+      "lastAccessed": 1782149684113,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\admin.css",
+      "accessCount": 9,
+      "lastAccessed": 1782160689062,
       "type": "file"
     },
     {
@@ -235,6 +241,12 @@
       "type": "file"
     },
     {
+      "path": "app\\admin\\sections.js",
+      "accessCount": 7,
+      "lastAccessed": 1782160528937,
+      "type": "file"
+    },
+    {
       "path": "components\\hero-video-carousel.jsx",
       "accessCount": 6,
       "lastAccessed": 1782130569832,
@@ -259,21 +271,21 @@
       "type": "file"
     },
     {
-      "path": "app\\admin\\admin.css",
-      "accessCount": 6,
-      "lastAccessed": 1782147283967,
-      "type": "file"
-    },
-    {
       "path": "components\\sections\\articles-section.jsx",
       "accessCount": 6,
       "lastAccessed": 1782147878903,
       "type": "file"
     },
     {
-      "path": "app\\admin\\sections.js",
+      "path": "lib\\supabase\\server.js",
       "accessCount": 6,
-      "lastAccessed": 1782148772805,
+      "lastAccessed": 1782160538176,
+      "type": "file"
+    },
+    {
+      "path": "lib\\admin-auth.js",
+      "accessCount": 6,
+      "lastAccessed": 1782160631387,
       "type": "file"
     },
     {
@@ -301,33 +313,33 @@
       "type": "file"
     },
     {
-      "path": "lib\\admin-auth.js",
-      "accessCount": 5,
-      "lastAccessed": 1782143896632,
-      "type": "file"
-    },
-    {
       "path": "components\\sections\\references-section.jsx",
       "accessCount": 5,
       "lastAccessed": 1782143910855,
       "type": "file"
     },
     {
-      "path": "lib\\supabase\\server.js",
+      "path": "components\\site-header.jsx",
       "accessCount": 5,
-      "lastAccessed": 1782147456770,
+      "lastAccessed": 1782149683781,
+      "type": "file"
+    },
+    {
+      "path": "lib\\locales.js",
+      "accessCount": 5,
+      "lastAccessed": 1782160631432,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\layout.jsx",
+      "accessCount": 5,
+      "lastAccessed": 1782160667218,
       "type": "file"
     },
     {
       "path": "components\\methodology-cards.jsx",
       "accessCount": 4,
       "lastAccessed": 1782130299472,
-      "type": "file"
-    },
-    {
-      "path": "components\\site-header.jsx",
-      "accessCount": 4,
-      "lastAccessed": 1782130352030,
       "type": "file"
     },
     {
@@ -355,21 +367,9 @@
       "type": "file"
     },
     {
-      "path": "app\\admin\\(panel)\\layout.jsx",
-      "accessCount": 4,
-      "lastAccessed": 1782144010901,
-      "type": "file"
-    },
-    {
       "path": "app\\admin\\(panel)\\page.jsx",
       "accessCount": 4,
       "lastAccessed": 1782144020830,
-      "type": "file"
-    },
-    {
-      "path": "lib\\locales.js",
-      "accessCount": 4,
-      "lastAccessed": 1782146982130,
       "type": "file"
     },
     {
@@ -382,6 +382,12 @@
       "path": "scripts\\seed-updates.mjs",
       "accessCount": 4,
       "lastAccessed": 1782147463410,
+      "type": "file"
+    },
+    {
+      "path": "app\\page.jsx",
+      "accessCount": 4,
+      "lastAccessed": 1782160548850,
       "type": "file"
     },
     {
@@ -403,9 +409,9 @@
       "type": "file"
     },
     {
-      "path": "app\\page.jsx",
+      "path": "supabase\\migrations\\0002_changelog.sql",
       "accessCount": 3,
-      "lastAccessed": 1782144045336,
+      "lastAccessed": 1782160548384,
       "type": "file"
     },
     {
@@ -418,12 +424,6 @@
       "path": "app\\admin\\logout\\route.js",
       "accessCount": 2,
       "lastAccessed": 1782143866818,
-      "type": "file"
-    },
-    {
-      "path": "supabase\\migrations\\0002_changelog.sql",
-      "accessCount": 2,
-      "lastAccessed": 1782147450870,
       "type": "file"
     },
     {
