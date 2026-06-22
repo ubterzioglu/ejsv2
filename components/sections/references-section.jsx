@@ -23,6 +23,9 @@ export function ReferencesSection({ references }) {
         <div className="reference-track">
           {[...referenceImages, ...referenceImages].map((image, index) => (
           <div key={index} className="reference-card">
+               {/* Bilincli tercih: CSS marquee (width:max-content) icinde 20 dekoratif logo;
+                   next/image bu sonsuz kayan serit duzenine uymuyor. Perf elle yonetiliyor. */}
+               {/* eslint-disable-next-line @next/next/no-img-element */}
                <img
                  src={image}
                  alt={`${references.eyebrow} ${(index % referenceImages.length) + 1}`}

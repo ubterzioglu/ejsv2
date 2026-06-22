@@ -205,6 +205,12 @@
       "type": "file"
     },
     {
+      "path": "package.json",
+      "accessCount": 5,
+      "lastAccessed": 1782131465214,
+      "type": "file"
+    },
+    {
       "path": "app\\layout.jsx",
       "accessCount": 4,
       "lastAccessed": 1782129449000,
@@ -235,9 +241,15 @@
       "type": "file"
     },
     {
-      "path": "package.json",
+      "path": "components\\sections\\references-section.jsx",
       "accessCount": 4,
-      "lastAccessed": 1782131121295,
+      "lastAccessed": 1782131386556,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\sidebar.jsx",
+      "accessCount": 4,
+      "lastAccessed": 1782131465351,
       "type": "file"
     },
     {
@@ -256,12 +268,6 @@
       "path": "components\\site-footer.jsx",
       "accessCount": 3,
       "lastAccessed": 1782130305205,
-      "type": "file"
-    },
-    {
-      "path": "components\\sections\\references-section.jsx",
-      "accessCount": 2,
-      "lastAccessed": 1782129018506,
       "type": "file"
     },
     {
@@ -298,12 +304,6 @@
       "path": "eslint.config.mjs",
       "accessCount": 2,
       "lastAccessed": 1782131320826,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\(panel)\\sidebar.jsx",
-      "accessCount": 2,
-      "lastAccessed": 1782131356496,
       "type": "file"
     },
     {

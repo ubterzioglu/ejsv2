@@ -29,9 +29,13 @@ export function AdminSidebar() {
         })}
       </nav>
 
-      <a className="admin-sidebar__logout" href="/admin/logout">
+      <Link
+        className="admin-sidebar__logout"
+        href="/admin/logout"
+        prefetch={false}
+      >
         Cikis yap
-      </a>
+      </Link>
     </aside>
   );
 }
