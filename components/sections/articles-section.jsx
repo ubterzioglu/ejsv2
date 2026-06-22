@@ -12,7 +12,7 @@ export function ArticlesSection({ articles }) {
             <h3>{article.title}</h3>
             <p>{article.excerpt}</p>
             <a href="#iletisim" className="article-link">
-              {articles.cta}
+              {articles.ctaLabel}
             </a>
           </article>
         ))}

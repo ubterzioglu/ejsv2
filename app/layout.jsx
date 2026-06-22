@@ -11,6 +11,12 @@ export const metadata = {
   title: "EJS Consulting | Üretim ve Proje Yönetimi Danışmanlığı",
   description:
     "EJS Consulting, üretim sektöründe yalin süreçler, kalite yönetimi ve proje danışmanlığı alanlarında sahada birlikte çalışan uzman ekibiniz.",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
