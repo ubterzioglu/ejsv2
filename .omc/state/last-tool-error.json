@@ -1,7 +1,0 @@
-{
-  "tool_name": "PowerShell",
-  "tool_input_preview": "{\"command\":\"Read-Host -Prompt $null 2>$null; cd 'C:\\\\temp_private\\\\EJS'; & \\\"C:\\\\temp_private\\\\EJS\\\\node_modules\\\\.bin\\\\next.cmd\\\" lint --file app/globals.css 2>&1 | Select-Object -First 20\",\"descript...",
-  "error": "Exit code 1\n\u001b[31;1mRead-Host: \u001b[31;1mPowerShell is in NonInteractive mode. Read and Prompt functionality is not available.\u001b[0m\r\n\u001b[31;1merror: unknown option '--file'\u001b[0m",
-  "timestamp": "2026-06-22T13:33:17.186Z",
-  "retry_count": 1
-}
