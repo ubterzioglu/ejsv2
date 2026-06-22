@@ -24,14 +24,14 @@ export function UpdateForm({ lang, editing = null, onDone }) {
   return (
     <form ref={formRef} action={formAction} className="admin-form">
       <p className="admin-section-title">
-        {isEdit ? "Yaziyi duzenle" : "Yeni yazi ekle"}
+        {isEdit ? "Yazıyı düzenle" : "Yeni yazı ekle"}
       </p>
 
       {isEdit ? <input type="hidden" name="id" defaultValue={editing.id} /> : null}
       <input type="hidden" name="lang" value={lang} readOnly />
 
       <div className="admin-form__row">
-        <label className="admin-label" htmlFor="title">Baslik</label>
+        <label className="admin-label" htmlFor="title">Başlık</label>
         <input
           id="title"
           name="title"
@@ -42,7 +42,7 @@ export function UpdateForm({ lang, editing = null, onDone }) {
       </div>
 
       <div className="admin-form__row">
-        <label className="admin-label" htmlFor="excerpt">Ozet</label>
+        <label className="admin-label" htmlFor="excerpt">Özet</label>
         <textarea
           id="excerpt"
           name="excerpt"
@@ -54,7 +54,7 @@ export function UpdateForm({ lang, editing = null, onDone }) {
 
       <div className="admin-form__row admin-form__row--inline">
         <label className="admin-label" htmlFor="sort_order">
-          Sira
+          Sıra
           <input
             id="sort_order"
             name="sort_order"
@@ -70,7 +70,7 @@ export function UpdateForm({ lang, editing = null, onDone }) {
             name="published"
             defaultChecked={editing ? editing.published : true}
           />
-          Yayinda
+          Yayında
         </label>
       </div>
 
@@ -78,11 +78,11 @@ export function UpdateForm({ lang, editing = null, onDone }) {
 
       <div style={{ display: "flex", gap: 10 }}>
         <button type="submit" className="admin-button" disabled={pending}>
-          {pending ? "Kaydediliyor..." : isEdit ? "Guncelle" : "Ekle"}
+          {pending ? "Kaydediliyor..." : isEdit ? "Güncelle" : "Ekle"}
         </button>
         {isEdit ? (
           <button type="button" className="admin-button--ghost" onClick={onDone}>
-            Iptal
+            İptal
           </button>
         ) : null}
       </div>

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { UpdateForm } from "./update-form";
 import { deleteUpdate } from "./actions";
 
-const LANG_LABELS = { tr: "Turkce", en: "English", de: "Deutsch" };
+const LANG_LABELS = { tr: "Türkçe", en: "English", de: "Deutsch" };
 
 /**
  * @param {{ lang: string, items: Array<object> }} props
@@ -16,7 +16,7 @@ export function UpdatesManager({ lang, items }) {
     <>
       <div className="admin-list">
         {items.length === 0 ? (
-          <p className="admin-empty">Bu dilde henuz yazi yok.</p>
+          <p className="admin-empty">Bu dilde henüz yazı yok.</p>
         ) : (
           items.map((item) =>
             editingId === item.id ? (
@@ -38,7 +38,7 @@ export function UpdatesManager({ lang, items }) {
                       className="admin-button--ghost"
                       onClick={() => setEditingId(item.id)}
                     >
-                      Duzenle
+                      Düzenle
                     </button>
                     <form action={deleteUpdate}>
                       <input type="hidden" name="id" value={item.id} />
@@ -49,8 +49,8 @@ export function UpdatesManager({ lang, items }) {
                   </div>
                 </div>
                 <p className="admin-card__meta">
-                  Sira: {item.sort_order} ·{" "}
-                  {item.published ? "Yayinda" : "Taslak"} ·{" "}
+                  Sıra: {item.sort_order} ·{" "}
+                  {item.published ? "Yayında" : "Taslak"} ·{" "}
                   {LANG_LABELS[item.lang] ?? item.lang}
                 </p>
               </article>

@@ -7,7 +7,7 @@ export const dynamic = "force-dynamic";
 const STATUS_LABELS = {
   new: "Yeni",
   in_progress: "Devam ediyor",
-  done: "Tamamlandi",
+  done: "Tamamlandı",
 };
 const STATUS_ORDER = ["new", "in_progress", "done"];
 
@@ -26,29 +26,29 @@ export default async function RevisionsPage() {
 
   return (
     <div>
-      <h1 className="admin-page__title">Revizyon Istekleri</h1>
+      <h1 className="admin-page__title">Revizyon İstekleri</h1>
       <p className="admin-page__subtitle">
-        Kullanici isteklerini buraya girin ve durumlarini takip edin.
+        Kullanıcı isteklerini buraya girin ve durumlarını takip edin.
       </p>
 
       {error ? (
         <p className="admin-error">
-          Veri okunamadi: {error.message}. Supabase tablosu (revision_requests) olusturuldu mu?
+          Veri okunamadı: {error.message}. Supabase tablosu (revision_requests) oluşturuldu mu?
         </p>
       ) : (
         <>
           <div className="admin-list">
             {(data ?? []).length === 0 ? (
-              <p className="admin-empty">Henuz revizyon istegi yok.</p>
+              <p className="admin-empty">Henüz revizyon isteği yok.</p>
             ) : (
               data.map((req) => (
                 <article key={req.id} className="admin-card">
                   <div className="admin-card__head">
                     <div>
                       <h3 className="admin-card__title">
-                        {req.name || "Isimsiz"}
+                        {req.name || "İsimsiz"}
                         {req.email ? (
-                          <span style={{ color: "#8a90a0", fontWeight: 400 }}>
+                          <span className="admin-card__muted">
                             {" "}
                             · {req.email}
                           </span>

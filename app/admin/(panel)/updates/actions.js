@@ -7,7 +7,7 @@ import { locales } from "@/lib/locales";
 
 async function requireAdmin() {
   if (!(await isAuthed())) {
-    throw new Error("Yetkisiz.");
+    throw new Error("Yetkisiz işlem.");
   }
 }
 
@@ -18,9 +18,9 @@ function parseUpdate(formData) {
   const sortRaw = String(formData.get("sort_order") ?? "0").trim();
   const published = formData.get("published") === "on";
 
-  if (!locales.includes(lang)) return { error: "Gecersiz dil." };
-  if (!title) return { error: "Baslik bos olamaz." };
-  if (!excerpt) return { error: "Ozet bos olamaz." };
+  if (!locales.includes(lang)) return { error: "Geçersiz dil." };
+  if (!title) return { error: "Başlık boş olamaz." };
+  if (!excerpt) return { error: "Özet boş olamaz." };
 
   const sort_order = Number.isFinite(Number(sortRaw)) ? parseInt(sortRaw, 10) : 0;
 
@@ -43,7 +43,7 @@ export async function createUpdate(_prevState, formData) {
 export async function updateUpdate(_prevState, formData) {
   await requireAdmin();
   const id = String(formData.get("id") ?? "");
-  if (!id) return { error: "Kayit bulunamadi." };
+  if (!id) return { error: "Kayıt bulunamadı." };
 
   const parsed = parseUpdate(formData);
   if (parsed.error) return { error: parsed.error };

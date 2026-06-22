@@ -12,11 +12,12 @@ export default function AdminLoginPage() {
   return (
     <div className="admin-login">
       <form className="admin-login__card" action={formAction}>
-        <h1 className="admin-login__title">EJS Admin</h1>
-        <p className="admin-login__hint">Devam etmek icin sifrenizi girin.</p>
+        <span className="admin-login__badge">Yönetim Paneli</span>
+        <h1 className="admin-login__title">EJS Consulting</h1>
+        <p className="admin-login__hint">Devam etmek için şifrenizi girin.</p>
 
         <label className="admin-login__label" htmlFor="password">
-          Sifre
+          Şifre
         </label>
         <input
           id="password"
@@ -32,7 +33,7 @@ export default function AdminLoginPage() {
         ) : null}
 
         <button type="submit" className="admin-login__button" disabled={pending}>
-          {pending ? "Giris yapiliyor..." : "Giris yap"}
+          {pending ? "Giriş yapılıyor..." : "Giriş yap"}
         </button>
       </form>
     </div>

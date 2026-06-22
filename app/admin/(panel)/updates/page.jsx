@@ -21,9 +21,9 @@ export default async function UpdatesPage({ searchParams }) {
 
   return (
     <div>
-      <h1 className="admin-page__title">Guncellemeler</h1>
+      <h1 className="admin-page__title">Makaleler</h1>
       <p className="admin-page__subtitle">
-        Ana sayfadaki &quot;Yazilarimiz&quot; bolumunu buradan yonetin.
+        Ana sayfadaki &quot;Yazılarımız&quot; bölümünü buradan yönetin.
       </p>
 
       <div className="admin-tabs">
@@ -42,7 +42,7 @@ export default async function UpdatesPage({ searchParams }) {
 
       {error ? (
         <p className="admin-error">
-          Veri okunamadi: {error.message}. Supabase tablosu (updates) olusturuldu mu?
+          Veri okunamadı: {error.message}. Supabase tablosu (updates) oluşturuldu mu?
         </p>
       ) : (
         <UpdatesManager lang={lang} items={data ?? []} />

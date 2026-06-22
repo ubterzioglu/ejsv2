@@ -9,11 +9,30 @@ export function AdminSidebar() {
 
   return (
     <aside className="admin-sidebar">
-      <div className="admin-sidebar__brand">EJS Admin</div>
+      <div className="admin-brand">
+        <span className="admin-brand__badge">Yönetim Paneli</span>
+        <div className="admin-brand__name">EJS Consulting</div>
+        <div className="admin-brand__subtitle">İçerik yönetimi</div>
 
-      <nav className="admin-sidebar__nav" aria-label="Admin bolumleri">
+        <div className="admin-session">
+          <div className="admin-session__label">Oturum</div>
+          <div className="admin-session__actions">
+            <Link
+              className="admin-sidebar__logout"
+              href="/admin/logout"
+              prefetch={false}
+            >
+              Çıkış
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <nav className="admin-sidebar__nav" aria-label="Admin bölümleri">
         {adminSections.map((section) => {
-          const active = pathname.startsWith(section.href);
+          const active =
+            pathname === section.href ||
+            pathname.startsWith(section.href + "/");
           return (
             <Link
               key={section.href}
@@ -28,14 +47,6 @@ export function AdminSidebar() {
           );
         })}
       </nav>
-
-      <Link
-        className="admin-sidebar__logout"
-        href="/admin/logout"
-        prefetch={false}
-      >
-        Cikis yap
-      </Link>
     </aside>
   );
 }
