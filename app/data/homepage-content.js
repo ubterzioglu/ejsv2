@@ -302,11 +302,7 @@ export const homepageContent = {
       title: "Merkez Ofis",
       officeName: "İstanbul Ofisi",
       addressLines: [
-        "EJS Mühendislik Danışmanlık ve Eğitim",
-        "Aydıntepe Mah. Alaaddin Sk. No.7",
-        "Evora Sitesi A Parsel, A13, İç Kapı No: 19",
-        "Tuzla / İstanbul",
-        "Türkiye",
+        "EJS Mühendislik Danışmanlık ve Eğitim, Aydıntepe Mah. Alaaddin Sk. No.7, Evora Sitesi A Parsel, A13, İç Kapı No: 19, Tuzla / İstanbul, Türkiye",
       ],
       contactRows: [
         { label: "Telefon", value: "+90 216 906 03 25", href: "tel:+902169060325" },
@@ -569,11 +565,7 @@ export const homepageContent = {
       title: "Head Office",
       officeName: "Istanbul Office",
       addressLines: [
-        "EJS Engineering Consulting & Training",
-        "Aydintepe Mah. Alaaddin Sk. No.7",
-        "Evora Sitesi A Parsel, A13, Unit 19",
-        "Tuzla / Istanbul",
-        "Turkey",
+        "EJS Engineering Consulting & Training, Aydintepe Mah. Alaaddin Sk. No.7, Evora Sitesi A Parsel, A13, Unit 19, Tuzla / Istanbul, Turkey",
       ],
       contactRows: [
         { label: "Phone", value: "+90 216 906 03 25", href: "tel:+902169060325" },
@@ -836,11 +828,7 @@ export const homepageContent = {
       title: "Hauptbüro",
       officeName: "Istanbul Office",
       addressLines: [
-        "EJS Engineering Beratung & Schulung",
-        "Aydintepe Mah. Alaaddin Sk. No.7",
-        "Evora Sitesi A Parsel, A13, Einheit 19",
-        "Tuzla / Istanbul",
-        "Türkei",
+        "EJS Engineering Beratung & Schulung, Aydintepe Mah. Alaaddin Sk. No.7, Evora Sitesi A Parsel, A13, Einheit 19, Tuzla / Istanbul, Türkei",
       ],
       contactRows: [
         { label: "Telefon", value: "+90 216 906 03 25", href: "tel:+902169060325" },

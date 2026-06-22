@@ -157,6 +157,12 @@
       "type": "file"
     },
     {
+      "path": "app\\data\\homepage-content.js",
+      "accessCount": 12,
+      "lastAccessed": 1782139382615,
+      "type": "file"
+    },
+    {
       "path": ".env.local",
       "accessCount": 11,
       "lastAccessed": 1782130277999,
@@ -172,12 +178,6 @@
       "path": "components\\expert-spotlight.jsx",
       "accessCount": 6,
       "lastAccessed": 1782130672236,
-      "type": "file"
-    },
-    {
-      "path": "app\\data\\homepage-content.js",
-      "accessCount": 5,
-      "lastAccessed": 1782130539703,
       "type": "file"
     },
     {
@@ -253,6 +253,12 @@
       "type": "file"
     },
     {
+      "path": "components\\site-footer.jsx",
+      "accessCount": 4,
+      "lastAccessed": 1782139352386,
+      "type": "file"
+    },
+    {
       "path": "components\\process-highlight.jsx",
       "accessCount": 3,
       "lastAccessed": 1782129011695,
@@ -265,33 +271,33 @@
       "type": "file"
     },
     {
-      "path": "components\\site-footer.jsx",
+      "path": "app\\admin\\login\\page.jsx",
       "accessCount": 3,
-      "lastAccessed": 1782130305205,
+      "lastAccessed": 1782139155986,
       "type": "file"
     },
     {
-      "path": "app\\admin\\login\\page.jsx",
-      "accessCount": 2,
-      "lastAccessed": 1782129458741,
+      "path": "lib\\admin-auth.js",
+      "accessCount": 3,
+      "lastAccessed": 1782139160885,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\login\\actions.js",
+      "accessCount": 3,
+      "lastAccessed": 1782139165815,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\founder-story-section.jsx",
+      "accessCount": 3,
+      "lastAccessed": 1782139332394,
       "type": "file"
     },
     {
       "path": "lib\\supabase\\server.js",
       "accessCount": 2,
       "lastAccessed": 1782130071085,
-      "type": "file"
-    },
-    {
-      "path": "lib\\admin-auth.js",
-      "accessCount": 2,
-      "lastAccessed": 1782130071582,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\login\\actions.js",
-      "accessCount": 2,
-      "lastAccessed": 1782130072524,
       "type": "file"
     },
     {
@@ -418,12 +424,6 @@
       "path": "components\\sections\\expertise-section.jsx",
       "accessCount": 1,
       "lastAccessed": 1782130602085,
-      "type": "file"
-    },
-    {
-      "path": "components\\sections\\founder-story-section.jsx",
-      "accessCount": 1,
-      "lastAccessed": 1782130613621,
       "type": "file"
     }
   ],

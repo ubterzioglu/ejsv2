@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const founderPhoto = "/assets/ejsprofil.png";
+const founderPhoto = "/assets/enveramain.jpeg";
 
 export function FounderStorySection({ founder, lang }) {
   return (
