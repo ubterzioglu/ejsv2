@@ -152,8 +152,8 @@
   "hotPaths": [
     {
       "path": "app\\globals.css",
-      "accessCount": 35,
-      "lastAccessed": 1782139727240,
+      "accessCount": 36,
+      "lastAccessed": 1782140653972,
       "type": "file"
     },
     {
@@ -170,8 +170,8 @@
     },
     {
       "path": "app\\[lang]\\page.jsx",
-      "accessCount": 8,
-      "lastAccessed": 1782139785278,
+      "accessCount": 10,
+      "lastAccessed": 1782139806908,
       "type": "file"
     },
     {
@@ -295,6 +295,12 @@
       "type": "file"
     },
     {
+      "path": "next.config.mjs",
+      "accessCount": 3,
+      "lastAccessed": 1782140180828,
+      "type": "file"
+    },
+    {
       "path": "lib\\supabase\\server.js",
       "accessCount": 2,
       "lastAccessed": 1782130071085,
@@ -313,15 +319,27 @@
       "type": "file"
     },
     {
-      "path": "components\\sections\\index.js",
-      "accessCount": 1,
-      "lastAccessed": 1782128747628,
+      "path": "app\\page.jsx",
+      "accessCount": 2,
+      "lastAccessed": 1782139817789,
       "type": "file"
     },
     {
-      "path": "app\\page.jsx",
+      "path": "lib\\locales.js",
+      "accessCount": 2,
+      "lastAccessed": 1782139828389,
+      "type": "file"
+    },
+    {
+      "path": "proxy.js",
+      "accessCount": 2,
+      "lastAccessed": 1782140473783,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\index.js",
       "accessCount": 1,
-      "lastAccessed": 1782128758487,
+      "lastAccessed": 1782128747628,
       "type": "file"
     },
     {
@@ -329,12 +347,6 @@
       "accessCount": 1,
       "lastAccessed": 1782128769524,
       "type": "directory"
-    },
-    {
-      "path": "lib\\locales.js",
-      "accessCount": 1,
-      "lastAccessed": 1782129020644,
-      "type": "file"
     },
     {
       "path": "supabase\\migrations\\0001_admin_tables.sql",

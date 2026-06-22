@@ -13,7 +13,6 @@ import { FounderStorySection } from "@/components/sections/founder-story-section
 import { ArticlesSection } from "@/components/sections/articles-section";
 import { ReferencesSection } from "@/components/sections/references-section";
 import { ContactSection } from "@/components/sections/contact-section";
-import { ShareSection } from "@/components/sections/share-section";
 
 export default async function HomePage({ params }) {
   const { lang } = await params;
