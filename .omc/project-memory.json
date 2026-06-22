@@ -152,14 +152,14 @@
   "hotPaths": [
     {
       "path": "app\\globals.css",
-      "accessCount": 44,
-      "lastAccessed": 1782142843119,
+      "accessCount": 45,
+      "lastAccessed": 1782143876530,
       "type": "file"
     },
     {
       "path": "app\\data\\homepage-content.js",
-      "accessCount": 13,
-      "lastAccessed": 1782139679796,
+      "accessCount": 14,
+      "lastAccessed": 1782143877065,
       "type": "file"
     },
     {
@@ -181,15 +181,27 @@
       "type": "file"
     },
     {
+      "path": "components\\expert-spotlight.jsx",
+      "accessCount": 7,
+      "lastAccessed": 1782143881611,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 7,
+      "lastAccessed": 1782143883564,
+      "type": "file"
+    },
+    {
       "path": "components\\hero-video-carousel.jsx",
       "accessCount": 6,
       "lastAccessed": 1782130569832,
       "type": "file"
     },
     {
-      "path": "components\\expert-spotlight.jsx",
+      "path": "app\\admin\\(panel)\\sidebar.jsx",
       "accessCount": 6,
-      "lastAccessed": 1782130672236,
+      "lastAccessed": 1782143863654,
       "type": "file"
     },
     {
@@ -211,12 +223,6 @@
       "type": "file"
     },
     {
-      "path": "package.json",
-      "accessCount": 5,
-      "lastAccessed": 1782131465214,
-      "type": "file"
-    },
-    {
       "path": "components\\sections\\share-section.jsx",
       "accessCount": 5,
       "lastAccessed": 1782139708039,
@@ -224,8 +230,32 @@
     },
     {
       "path": "app\\layout.jsx",
-      "accessCount": 4,
-      "lastAccessed": 1782129449000,
+      "accessCount": 5,
+      "lastAccessed": 1782143857687,
+      "type": "file"
+    },
+    {
+      "path": "app\\[lang]\\layout.jsx",
+      "accessCount": 5,
+      "lastAccessed": 1782143868531,
+      "type": "file"
+    },
+    {
+      "path": "lib\\admin-auth.js",
+      "accessCount": 5,
+      "lastAccessed": 1782143896632,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\login\\page.jsx",
+      "accessCount": 5,
+      "lastAccessed": 1782143910286,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\references-section.jsx",
+      "accessCount": 5,
+      "lastAccessed": 1782143910855,
       "type": "file"
     },
     {
@@ -241,27 +271,27 @@
       "type": "file"
     },
     {
-      "path": "app\\[lang]\\layout.jsx",
-      "accessCount": 4,
-      "lastAccessed": 1782130716223,
-      "type": "file"
-    },
-    {
-      "path": "components\\sections\\references-section.jsx",
-      "accessCount": 4,
-      "lastAccessed": 1782131386556,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\(panel)\\sidebar.jsx",
-      "accessCount": 4,
-      "lastAccessed": 1782131465351,
-      "type": "file"
-    },
-    {
       "path": "components\\sections\\contact-section.jsx",
       "accessCount": 4,
       "lastAccessed": 1782139679434,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\login\\actions.js",
+      "accessCount": 4,
+      "lastAccessed": 1782143859387,
+      "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 4,
+      "lastAccessed": 1782143872541,
+      "type": "directory"
+    },
+    {
+      "path": "next.config.mjs",
+      "accessCount": 4,
+      "lastAccessed": 1782143885599,
       "type": "file"
     },
     {
@@ -271,39 +301,93 @@
       "type": "file"
     },
     {
-      "path": "app\\admin\\login\\page.jsx",
-      "accessCount": 3,
-      "lastAccessed": 1782139155986,
-      "type": "file"
-    },
-    {
-      "path": "lib\\admin-auth.js",
-      "accessCount": 3,
-      "lastAccessed": 1782139160885,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\login\\actions.js",
-      "accessCount": 3,
-      "lastAccessed": 1782139165815,
-      "type": "file"
-    },
-    {
       "path": "components\\sections\\founder-story-section.jsx",
       "accessCount": 3,
       "lastAccessed": 1782139332394,
       "type": "file"
     },
     {
-      "path": "next.config.mjs",
+      "path": "proxy.js",
       "accessCount": 3,
-      "lastAccessed": 1782140180828,
+      "lastAccessed": 1782143858308,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\layout.jsx",
+      "accessCount": 3,
+      "lastAccessed": 1782143863262,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\page.jsx",
+      "accessCount": 3,
+      "lastAccessed": 1782143863473,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\sections.js",
+      "accessCount": 3,
+      "lastAccessed": 1782143863757,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\updates\\update-form.jsx",
+      "accessCount": 3,
+      "lastAccessed": 1782143867957,
+      "type": "file"
+    },
+    {
+      "path": "lib\\locales.js",
+      "accessCount": 3,
+      "lastAccessed": 1782143868634,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\updates\\actions.js",
+      "accessCount": 3,
+      "lastAccessed": 1782143876286,
       "type": "file"
     },
     {
       "path": "lib\\supabase\\server.js",
-      "accessCount": 2,
-      "lastAccessed": 1782130071085,
+      "accessCount": 3,
+      "lastAccessed": 1782143881706,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\revisions\\actions.js",
+      "accessCount": 3,
+      "lastAccessed": 1782143889884,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\revisions\\revision-form.jsx",
+      "accessCount": 3,
+      "lastAccessed": 1782143889967,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\admin.css",
+      "accessCount": 3,
+      "lastAccessed": 1782143896830,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\updates\\page.jsx",
+      "accessCount": 3,
+      "lastAccessed": 1782143900999,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\revisions\\page.jsx",
+      "accessCount": 3,
+      "lastAccessed": 1782143901323,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\updates\\updates-manager.jsx",
+      "accessCount": 3,
+      "lastAccessed": 1782143910954,
       "type": "file"
     },
     {
@@ -325,105 +409,21 @@
       "type": "file"
     },
     {
-      "path": "lib\\locales.js",
+      "path": "supabase\\migrations\\0001_admin_tables.sql",
       "accessCount": 2,
-      "lastAccessed": 1782139828389,
+      "lastAccessed": 1782143862756,
       "type": "file"
     },
     {
-      "path": "proxy.js",
+      "path": "app\\admin\\logout\\route.js",
       "accessCount": 2,
-      "lastAccessed": 1782140473783,
+      "lastAccessed": 1782143866818,
       "type": "file"
     },
     {
       "path": "components\\sections\\index.js",
       "accessCount": 1,
       "lastAccessed": 1782128747628,
-      "type": "file"
-    },
-    {
-      "path": "",
-      "accessCount": 1,
-      "lastAccessed": 1782128769524,
-      "type": "directory"
-    },
-    {
-      "path": "supabase\\migrations\\0001_admin_tables.sql",
-      "accessCount": 1,
-      "lastAccessed": 1782129340652,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\logout\\route.js",
-      "accessCount": 1,
-      "lastAccessed": 1782129384867,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\sections.js",
-      "accessCount": 1,
-      "lastAccessed": 1782129393435,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\(panel)\\layout.jsx",
-      "accessCount": 1,
-      "lastAccessed": 1782129400335,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\(panel)\\page.jsx",
-      "accessCount": 1,
-      "lastAccessed": 1782129413162,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\admin.css",
-      "accessCount": 1,
-      "lastAccessed": 1782129443130,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\(panel)\\updates\\actions.js",
-      "accessCount": 1,
-      "lastAccessed": 1782129470421,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\(panel)\\updates\\update-form.jsx",
-      "accessCount": 1,
-      "lastAccessed": 1782129484136,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\(panel)\\updates\\updates-manager.jsx",
-      "accessCount": 1,
-      "lastAccessed": 1782129497659,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\(panel)\\updates\\page.jsx",
-      "accessCount": 1,
-      "lastAccessed": 1782129507396,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\(panel)\\revisions\\actions.js",
-      "accessCount": 1,
-      "lastAccessed": 1782129524582,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\(panel)\\revisions\\revision-form.jsx",
-      "accessCount": 1,
-      "lastAccessed": 1782129533604,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\(panel)\\revisions\\page.jsx",
-      "accessCount": 1,
-      "lastAccessed": 1782129549569,
       "type": "file"
     },
     {
@@ -436,6 +436,12 @@
       "path": "components\\sections\\expertise-section.jsx",
       "accessCount": 1,
       "lastAccessed": 1782130602085,
+      "type": "file"
+    },
+    {
+      "path": "jsconfig.json",
+      "accessCount": 1,
+      "lastAccessed": 1782143914887,
       "type": "file"
     }
   ],

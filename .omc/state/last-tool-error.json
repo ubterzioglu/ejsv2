@@ -1,7 +1,7 @@
 {
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"taskkill /PID 8116 /F 2>/dev/null\\nsleep 2\\n# teyit: kalan var mi?\\npowershell.exe -NoProfile -Command \\\"Get-CimInstance Win32_Process -Filter \\\\\\\"Name='node.exe'\\\\\\\" | Where-Object { \\\\$_...",
-  "error": "Exit code 7\n1\r\nlocalhost:3000 -> 000",
-  "timestamp": "2026-06-22T14:59:25.272Z",
-  "retry_count": 1
+  "tool_name": "Read",
+  "tool_input_preview": "{\"file_path\":\"C:\\\\temp_private\\\\EJS\\\\middleware.js\"}",
+  "error": "File does not exist. Note: your current working directory is c:\\temp_private\\EJS.",
+  "timestamp": "2026-06-22T15:58:05.727Z",
+  "retry_count": 2
 }
