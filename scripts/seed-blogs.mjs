@@ -1,17 +1,20 @@
-// EJS blog yazilarini (docs/ejs_blog_export/posts/*.md) Supabase "updates"
+// EJS blog yazilarini (docs/ejs_blog_export/posts/*.md) Supabase "articles"
 // tablosuna ekler. Body ham Markdown olarak yazilir; her yazinin ilk gorseli
 // indirilip "article-images" bucket'ina yuklenir ve image_url doldurulur.
 //
+// NOT: Blog yazilari "articles" tablosunda tutulur. "updates" tablosu ayridir
+// ve panel/site GUNCELLEMELERI icindir.
+//
 // Onkosul:
-//   1) supabase/migrations/0001_admin_tables.sql + 0003_updates_body_image.sql
-//      Supabase'de calistirilmis olmali (body, image_url sutunlari + bucket).
+//   1) supabase/migrations/0004_articles.sql + 0003_updates_body_image.sql
+//      Supabase'de calistirilmis olmali (articles tablosu + article-images bucket).
 //   2) docs scraper'i calistirilmis olmali (docs/ejs_blog_export/posts/*.md var).
 //   3) .env.local icinde SUPABASE_SERVICE_ROLE_KEY dolu olmali.
 //
 // Calistir: node scripts/seed-blogs.mjs
 //
 // UYARI: Tek seferlik seed. Tekrar calistirilirsa kayitlar TEKRAR eklenir
-// (mukerrer). Yeniden calistirmadan once ilgili "updates" kayitlarini silin.
+// (mukerrer). Yeniden calistirmadan once ilgili "articles" kayitlarini silin.
 
 import { readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
@@ -224,7 +227,7 @@ for (let i = 0; i < files.length; i += 1) {
   });
 }
 
-const { data, error } = await supabase.from("updates").insert(rows).select();
+const { data, error } = await supabase.from("articles").insert(rows).select();
 if (error) {
   console.error("HATA:", error.message);
   process.exit(1);

@@ -73,7 +73,7 @@ export async function createUpdate(_prevState, formData) {
   const parsed = await parseUpdate(supabase, formData);
   if (parsed.error) return { error: parsed.error };
 
-  const { error } = await supabase.from("updates").insert(parsed.data);
+  const { error } = await supabase.from("articles").insert(parsed.data);
   if (error) return { error: error.message };
 
   revalidatePath("/admin/updates");
@@ -90,7 +90,7 @@ export async function updateUpdate(_prevState, formData) {
   if (parsed.error) return { error: parsed.error };
 
   const { error } = await supabase
-    .from("updates")
+    .from("articles")
     .update(parsed.data)
     .eq("id", id);
   if (error) return { error: error.message };
@@ -105,6 +105,6 @@ export async function deleteUpdate(formData) {
   if (!id) return;
 
   const supabase = createServerClient();
-  await supabase.from("updates").delete().eq("id", id);
+  await supabase.from("articles").delete().eq("id", id);
   revalidatePath("/admin/updates");
 }

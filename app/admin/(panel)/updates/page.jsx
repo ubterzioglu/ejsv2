@@ -10,7 +10,7 @@ export default async function UpdatesPage() {
 
   const supabase = createServerClient();
   const { data, error } = await supabase
-    .from("updates")
+    .from("articles")
     .select("*")
     .eq("lang", lang)
     .order("sort_order", { ascending: true })
@@ -25,7 +25,7 @@ export default async function UpdatesPage() {
 
       {error ? (
         <p className="admin-error">
-          Veri okunamadı: {error.message}. Supabase tablosu (updates) oluşturuldu mu?
+          Veri okunamadı: {error.message}. Supabase tablosu (articles) oluşturuldu mu?
         </p>
       ) : (
         <UpdatesManager lang={lang} items={data ?? []} />

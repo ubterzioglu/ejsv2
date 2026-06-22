@@ -163,6 +163,12 @@
       "type": "file"
     },
     {
+      "path": "app\\admin\\(panel)\\updates\\actions.js",
+      "accessCount": 13,
+      "lastAccessed": 1782148866247,
+      "type": "file"
+    },
+    {
       "path": "app\\admin\\(panel)\\updates\\update-form.jsx",
       "accessCount": 12,
       "lastAccessed": 1782147438857,
@@ -181,9 +187,9 @@
       "type": "file"
     },
     {
-      "path": "app\\admin\\(panel)\\updates\\actions.js",
-      "accessCount": 10,
-      "lastAccessed": 1782147438765,
+      "path": "app\\admin\\(panel)\\updates\\page.jsx",
+      "accessCount": 11,
+      "lastAccessed": 1782148875441,
       "type": "file"
     },
     {
@@ -196,12 +202,6 @@
       "path": "app\\admin\\(panel)\\revisions\\page.jsx",
       "accessCount": 9,
       "lastAccessed": 1782146222775,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\(panel)\\updates\\page.jsx",
-      "accessCount": 9,
-      "lastAccessed": 1782147445772,
       "type": "file"
     },
     {
@@ -271,6 +271,12 @@
       "type": "file"
     },
     {
+      "path": "app\\admin\\sections.js",
+      "accessCount": 6,
+      "lastAccessed": 1782148772805,
+      "type": "file"
+    },
+    {
       "path": "components\\sections\\identity-section.jsx",
       "accessCount": 5,
       "lastAccessed": 1782130633531,
@@ -304,12 +310,6 @@
       "path": "components\\sections\\references-section.jsx",
       "accessCount": 5,
       "lastAccessed": 1782143910855,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\sections.js",
-      "accessCount": 5,
-      "lastAccessed": 1782146072954,
       "type": "file"
     },
     {
