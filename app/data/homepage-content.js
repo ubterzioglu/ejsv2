@@ -1,33 +1,58 @@
-﻿export const heroVideos = [
+export const heroVideos = [
   {
     title: "Smart factory automation",
     src: "https://videos.pexels.com/video-files/32386599/13814607_3840_2160_100fps.mp4",
     creditUrl:
       "https://www.pexels.com/video/high-tech-automated-manufacturing-process-32386581/",
+    captions: {
+      tr: "Danışman Değil, Uygulamacı Dönüşüm Ortağı.",
+      en: "Not a Consultant — a Hands-On Transformation Partner.",
+      de: "Kein Berater — ein praxisnaher Transformationspartner.",
+    },
   },
   {
     title: "Industrial control systems",
     src: "https://videos.pexels.com/video-files/34508889/14621114_3840_2160_25fps.mp4",
     creditUrl:
       "https://www.pexels.com/video/operator-uses-industrial-control-panel-for-machinery-31751360/",
+    captions: {
+      tr: "Sahada birlikte üretir, sonuca kadar kalırız.",
+      en: "We build on the floor and stay until the result is real.",
+      de: "Wir arbeiten vor Ort und bleiben, bis das Ergebnis steht.",
+    },
   },
   {
     title: "Production teamwork on site",
     src: "https://videos.pexels.com/video-files/7192922/7192922-uhd_3840_2160_30fps.mp4",
     creditUrl:
       "https://www.pexels.com/video/two-men-are-working-on-a-machine-in-a-factory-20687170/",
+    captions: {
+      tr: "Bilgi, tecrübe ve eylem bir arada.",
+      en: "Knowledge, experience, and action — together.",
+      de: "Wissen, Erfahrung und Handeln — vereint.",
+    },
   },
   {
     title: "Industrial footprint overview",
     src: "https://videos.pexels.com/video-files/30900257/13212332_3840_2160_60fps.mp4",
     creditUrl:
       "https://www.pexels.com/video/aerial-view-of-industrial-factory-complex-30900254/",
+    captions: {
+      tr: "Süreçlerinizi yalın, hızlı ve karlı hale getiririz.",
+      en: "We make your processes lean, fast, and profitable.",
+      de: "Wir machen Ihre Prozesse schlank, schnell und profitabel.",
+    },
   },
   {
     title: "Control room decision making",
     src: "https://videos.pexels.com/video-files/4038983/4038983-hd_1920_1080_24fps.mp4",
     creditUrl:
       "https://www.pexels.com/video/a-director-in-a-production-control-room-5028976/",
+    captions: {
+      tr: "33 yılı aşkın uluslararası saha tecrübesi.",
+      en: "Over 33 years of international field experience.",
+      de: "Über 33 Jahre internationale Praxiserfahrung.",
+    },
   },
 ];
 
@@ -40,13 +65,14 @@ export const homepageContent = {
     },
     utilityLinks: [
       { label: "Kimliğimiz", href: "#kimligimiz" },
-      { label: "Misyonumuz", href: "#misyonumuz" },
+      { label: "Yaklaşımımız", href: "#yaklasimimiz" },
       { label: "İletişim", href: "#iletisim" },
     ],
     mainLinks: [
       { label: "Hemen Başla!", href: "#hemen-basla" },
-      { label: "Metodoloji", href: "#metodoloji" },
-      { label: "Yazılarımız", href: "#yazilarimiz" },
+      { label: "Çalışmamız Hakkında", href: "#calismamiz-hakkinda" },
+      { label: "Uzmanlık Alanlarımız", href: "#uzmanlik-alanlarimiz" },
+      { label: "Öğren ve Geliş", href: "#ogren-ve-gelis" },
       { label: "Referanslar", href: "#referanslar" },
     ],
     hero: {
@@ -54,32 +80,43 @@ export const homepageContent = {
     },
     identity: {
       eyebrow: "Kimliğimiz",
-      title: "Sahada birlikte üretir, sonuca kadar kalırız.",
+      title: "33 yılı aşkın uluslararası saha tecrübesi.",
+      tag: "Yaklaşım",
       intro:
-        "Eski ana sayfadaki kimlik bölümünü yeni yapıya taşıdık. Buradaki dil, sahada birlikte üretme ve sonuç alana kadar masada kalmama fikrini öne çıkarıyor.",
+        "Üretim sektöründe yurt içinde ve yurt dışında edindiğimiz geniş saha tecrübesini, masada değil sahada kullanıyoruz.",
+      body:
+        "Şirketinizin çalışanlarını iş ortağı olarak görür, çözümleri onlarla birlikte üretiriz. Sadece ne yapılacağını söylemekle kalmaz; süreç sonuçlanana kadar ekiplerle birlikte sahada kalırız. Çalışırken kelimeler yerine eylemi tercih ederiz.",
+      highlight: "Bilgi, tecrübe ve eylem bir arada.",
       bullets: [
-        "Üretim sektöründe yurt içi ve yurt dışında edinilmiş geniş saha tecrübemiz var.",
-        "Uzmanlığımız yalın süreçler, yalın üretim, kalite ve proje yönetimi alanlarındadır.",
-        "Şirketinizin çalışanlarını iş ortağı olarak görür, çözümleri birlikte üretiriz.",
-        "Sadece ne yapılacağını söylemeyiz; süreç sonuçlanana kadar ekiplerle birlikte kalırız.",
-        "Çalışırken kelimeler yerine eylemi tercih ederiz.",
+        "Yalın süreçler, yalın üretim, kalite ve proje yönetiminde derin uzmanlık.",
+        "Yurt içi ve yurt dışında, çok sektörlü saha deneyimi.",
+        "Çözümleri ekiplerinizle birlikte, sahada kuran uygulamacı yaklaşım.",
       ],
+      cta: { label: "Kurucumuzun hikayesine bir göz atın", href: "#kurucumuzun-hikayesi" },
+    },
+    approach: {
+      eyebrow: "Yaklaşımımız",
+      body: [
+        "Klasik danışmanlığın aksine biz raporla gelip raporla gitmeyiz. Dönüşümü sizinle birlikte sahada tasarlar, uygular ve sonuç alınana kadar yanınızda kalırız.",
+        "Bizim için başarılı bir dönüşüm, uygulamayı konseptin doğal bir parçası haline getirir. Çözümü size dayatmaz; ekibinizle birlikte, sizin gerçeğinize uygun şekilde inşa ederiz.",
+      ],
+      highlight: "Danışman Değil, Uygulamacı Dönüşüm Ortağı.",
     },
     mission: {
       eyebrow: "Misyonumuz",
       title: "Karlılığı, kurumsal yapıları ve saha disiplinini birlikte güçlendirmek.",
       intro:
-        "Bu bölüm eski sitedeki misyon metinlerinden uyarlandı. Yeni ana sayfada daha net ve okunur bir yapıyla yer alıyor.",
+        "Sanayiye yurt içi ve yurt dışı bilgi birikimiyle katkı sağlamak ve şirketleri dijital çağa hazırlamak için çalışıyoruz.",
       bullets: [
-        "Sanayiye yurt içi ve yurt dışı bilgi birikimiyle katkı sağlamak.",
         "Şirketlerin karlılığını ve kurumsal yapısını güçlendirmek.",
         "Organizasyonları dijital çağa hazırlayıp bu dönüşümde başarıyla konumlandırmak.",
         "Yalın, çevik, hızlı ve verimli çalışma sistemleri kurmak.",
         "Çalışanlara nitelik kazandırarak anlaşılır ve sürdürülebilir süreçler oluşturmak.",
       ],
+      highlight: "Bilgi ve Tecrübeden Güce, Güçten Sonuca.",
     },
     methodology: {
-      eyebrow: "Metodoloji",
+      eyebrow: "Çalışmamız Hakkında Mutlaka Bilmeniz Gerekenler",
       title: "Çalışma biçimimizi sekiz net prensip etrafında kurguluyoruz.",
       intro:
         "İlk temastan sonuçlandırmaya kadar her adımda sahada uygulanabilir, ölçülebilir ve sürdürülebilir bir yaklaşım izliyoruz.",
@@ -88,57 +125,130 @@ export const homepageContent = {
           title: "Ücretsiz Analiz",
           icon: "analysis",
           description:
-            "Bizimle çalışmaya ilgileniyorsanız sizleri ücretsiz olarak ziyaret eder, kısa bir saha süreç alanı turu yapar, kendimizi tanıtır, firmanıza katkı sağlayıp sağlayamayacağımızı analiz eder ve tespitlerimizi sizlerle paylaşırız.",
+            "Bizimle çalışmaya ilgileniyorsanız sizleri ücretsiz olarak ziyaret eder, kısa bir saha turu yapar, kendimizi tanıtır, firmanıza katkı sağlayıp sağlayamayacağımızı analiz eder ve tespitlerimizi sizlerle paylaşırız.",
         },
         {
           title: "Verimlilik Optimizasyonu",
           icon: "growth",
           description:
-            "Sizinle çalışmaya karar verirsek firmanızı aşamalı olarak ama aynı zamanda mümkün olduğu kadar hızlı bir şekilde süreçlerinizi ve üretim alanlarınızı daha yalın, daha verimli, daha kurumsal ve dolayısıyla daha karlı bir hale dönüştürüyoruz.",
+            "Birlikte çalışmaya karar verirsek süreçlerinizi ve üretim alanlarınızı aşamalı ama mümkün olduğunca hızlı bir şekilde daha yalın, daha verimli, daha kurumsal ve dolayısıyla daha karlı bir hale dönüştürürüz.",
         },
         {
           title: "Kurumsallık",
           icon: "governance",
           description:
-            "Çalışmalarımız sırasında üst yönetimin desteği ve değişime hazır kurumsal çalışma kültürü bizler için esastır.",
+            "Çalışmalarımız sırasında üst yönetimin desteği ve değişime hazır bir kurumsal çalışma kültürü bizler için esastır.",
         },
         {
           title: "Şeffaflık",
           icon: "balance",
           description:
-            "İletişimimizde açık, net, şeffaf ve dürüstüz. Düşüncemiz, söylemimiz ve eylemimiz arasında bir fark yoktur. Karşılıklı güvene ve dürüstlüğe dayalı iş ilişkileri kurarız.",
+            "İletişimimizde açık, net, şeffaf ve dürüstüz. Düşüncemiz, söylemimiz ve eylemimiz arasında bir fark yoktur; karşılıklı güven ve dürüstlük üzerine ilişkiler kurarız.",
         },
         {
           title: "Profesyonellik",
           icon: "check",
           description:
-            "Uzmanlığımız olan konularda çalışma yaparız.",
+            "Yalnızca uzmanlığımız olan konularda çalışma yaparız.",
         },
         {
           title: "Sürekli Gelişim",
           icon: "edit",
           description:
-            "Uzmanlığımızla ilgili olan gelişmeleri takip edip yenilikleri işlerimize katarız.",
+            "Uzmanlığımızla ilgili gelişmeleri takip eder, anlamlı yenilikleri işlerimize katarız.",
         },
         {
           title: "Sonuçlandırma",
           icon: "hourglass",
           description:
-            "Uygulama esnasında sonuç alana kadar ciddi çabayı gösteririz ve uygulamacı olarak sürekli yanınızdayız.",
+            "Uygulama esnasında sonuç alana kadar ciddi çabayı gösterir ve uygulamacı olarak sürekli yanınızda kalırız.",
         },
         {
           title: "Bütçe Kontrolü",
           icon: "budget",
           description:
-            "İşin gerektirdiği danışmanlık sürelerimizi veya danışman sayımızı sürekli izleyerek ekonomik çalışma yöntemleri uygularız.",
+            "İşin gerektirdiği danışmanlık sürelerini ve danışman sayısını sürekli izleyerek ekonomik çalışma yöntemleri uygularız.",
         },
       ],
     },
+    expertise: {
+      eyebrow: "Uzmanlık Alanlarımız",
+      title: "Beş ana alanda derin saha uzmanlığı.",
+      intro:
+        "Her alanı, raporla değil sahada uygulanan somut yöntemlerle ele alıyoruz. Detayları görmek için kartları açabilirsiniz.",
+      detailsLabel: "Detaylı incele",
+      areas: [
+        {
+          title: "Süreçlerin Yalın Dönüşümü",
+          summary:
+            "Ofis ve idari süreçlerdeki israfı görünür kılar, akışı hızlandırır ve sürdürülebilir bir ritim kurarız.",
+          details: [
+            "Değer akışı haritalama (VSM) ile uçtan uca süreç görünürlüğü.",
+            "İdari ve planlama süreçlerinde israfların tespiti ve giderilmesi.",
+            "Standart iş, görsel yönetim ve düzenli yönetim ritmi kurulumu.",
+          ],
+        },
+        {
+          title: "Üretimin Yalın Dönüşümü",
+          summary:
+            "Üretim sahasını daha yalın, daha akışkan ve daha verimli hale getirir; duruşları ve israfları azaltırız.",
+          details: [
+            "Hat dengeleme, hücresel üretim ve akış tasarımı.",
+            "SMED ile hızlı kalıp/ürün değişimi ve esneklik artışı.",
+            "5S, TPM ve OEE ile saha disiplini ve ekipman etkinliği.",
+          ],
+        },
+        {
+          title: "Problem Çözme",
+          summary:
+            "Kök neden odaklı, kalıcı çözümler üretir; ekiplere bu kası kazandırırız.",
+          details: [
+            "8D, A3 ve PDCA ile yapılandırılmış problem çözme.",
+            "5 Neden ve Ishikawa ile kök neden analizi.",
+            "Kalıcı önlemler ve tekrarın önlenmesi için takip sistemi.",
+          ],
+        },
+        {
+          title: "Tedarikçiden Müşteriye Kalite",
+          summary:
+            "Kaliteyi tek bir noktada değil, tedarik zincirinin tamamında güvence altına alırız.",
+          details: [
+            "Tedarikçi geliştirme, denetim ve giriş kalite kontrol.",
+            "Süreç içi kalite (APQP, PPAP, FMEA) ve hata önleme (poka-yoke).",
+            "Müşteriye sevkiyat öncesi kalite kapıları ve geri bildirim döngüsü.",
+          ],
+        },
+        {
+          title: "Satış Sonrası Şikayet Yönetimi",
+          summary:
+            "Müşteri şikayetlerini hızlı, izlenebilir ve kalıcı çözümlere dönüştüren bir sistem kurarız.",
+          details: [
+            "Şikayet alma, sınıflandırma ve önceliklendirme süreçleri.",
+            "Hızlı müdahale ile kök neden analizinin birlikte yürütülmesi.",
+            "Müşteri memnuniyeti ölçümü ve sürekli iyileştirme döngüsü.",
+          ],
+        },
+      ],
+    },
+    founder: {
+      eyebrow: "Kurucumuzun Hikayesi",
+      subtitle: "Sahadan gelen, sahada kalan bir dönüşüm yolculuğu.",
+      name: "Envera Jahovic Saraylı",
+      role: "Kurucu Danışman, EJS Consulting",
+      paragraphs: [
+        "33 yılı aşkın süredir üretim sektörünün içinde; hatların, süreçlerin ve ekiplerin gerçeğini masadan değil sahadan tanıyan bir profesyonel.",
+        "Kariyeri boyunca yurt içinde ve yurt dışında çok sayıda fabrikada yalın dönüşüm, kalite ve proje yönetimi projeleri yürüttü. Her projede ortak nokta aynıydı: çözüm ancak ekiple birlikte sahada kurulursa kalıcı oluyordu.",
+        "EJS Consulting'i bu inançla kurdu: danışman gibi gelip rapor bırakan değil, uygulamacı gibi yanında kalan bir dönüşüm ortağı olmak. Bilgi ve tecrübeyi, sonuç alınana kadar eyleme çevirmek.",
+      ],
+      languagesLabel: "Konuştuğu diller",
+      languages: ["Türkçe", "İngilizce", "Almanca"],
+    },
     articles: {
-      eyebrow: "Yazılarımız",
+      eyebrow: "Öğren ve Geliş",
       title: "Sahada tekrar eden problemleri yazılarla açıyoruz.",
       intro:
-        "Eski sitedeki yazı bölümündeki başlık ve özetler buraya taşındı. Bunlar daha sonra detay sayfalara veya CMS'e bağlanabilir.",
+        "Yalın dönüşüm, planlama ve saha yönetimi üzerine deneyimlerimizi paylaşıyoruz. Daha fazlasını birlikte konuşabiliriz.",
+      cta: "Detaylı incele",
       items: [
         {
           title: "Yalın dönüşümde sizi ne bekliyor?",
@@ -148,7 +258,7 @@ export const homepageContent = {
         {
           title: "Planlama stabilitesi nerede kırılır?",
           excerpt:
-            "Plan her gün değişiyorsa sorun plan değil, görünürlük, WIP ve reaksiyon ritmi olabilir.",
+            "Plan her gün değişiyorsa sorun plan değil; görünürlük, WIP ve reaksiyon ritmi olabilir.",
         },
         {
           title: "Shopfloor board gerçekte nasıl çalışır?",
@@ -161,13 +271,13 @@ export const homepageContent = {
       eyebrow: "Referanslar",
       title: "Birlikte çalıştığımız ekiplerden seçili bir görünüm.",
       intro:
-        "Eski referans bölümündeki görsel varlıkları yeni sayfada daha sakin bir grid düzeniyle kullanıyoruz.",
+        "Farklı sektörlerden ekiplerle yürüttüğümüz çalışmaları sakin bir grid düzeniyle paylaşıyoruz.",
     },
     contact: {
       eyebrow: "İletişim",
       title: "Kısa bir mesaj bırakın, en hızlı şekilde dönüş yapalım.",
       intro:
-        "Eski iletişim panelindeki temel bilgiler yeni ana sayfaya taşındı. Bu alan istersek daha sonra form servisine veya CRM akışına bağlanabilir.",
+        "Süreçlerimiz hakkında detaylı bilgi için iletişim kanallarımızdan bize ulaşabilirsiniz.",
       companyName: "EJS Mühendislik Danışmanlık ve Eğitim",
       companyNote:
         "Tüm süreçlerimiz hakkında detaylı bilgi için iletişim kanallarımızdan bize ulaşabilirsiniz.",
@@ -204,7 +314,7 @@ export const homepageContent = {
         { label: "Mail", value: "Mesaj gönderin", href: "#iletisim" },
       ],
       links: [
-        { label: "Yazılarımız", href: "#yazilarimiz" },
+        { label: "Öğren ve Geliş", href: "#ogren-ve-gelis" },
         { label: "Kurumsal", href: "#kimligimiz" },
         { label: "Yardım", href: "#iletisim" },
         { label: "Gizlilik", href: "#top" },
@@ -222,13 +332,14 @@ export const homepageContent = {
     },
     utilityLinks: [
       { label: "Identity", href: "#kimligimiz" },
-      { label: "Mission", href: "#misyonumuz" },
+      { label: "Our Approach", href: "#yaklasimimiz" },
       { label: "Contact", href: "#iletisim" },
     ],
     mainLinks: [
       { label: "Start Now", href: "#hemen-basla" },
-      { label: "Methodology", href: "#metodoloji" },
-      { label: "Articles", href: "#yazilarimiz" },
+      { label: "About Our Work", href: "#calismamiz-hakkinda" },
+      { label: "Expertise", href: "#uzmanlik-alanlarimiz" },
+      { label: "Learn & Grow", href: "#ogren-ve-gelis" },
       { label: "References", href: "#referanslar" },
     ],
     hero: {
@@ -236,32 +347,43 @@ export const homepageContent = {
     },
     identity: {
       eyebrow: "Identity",
-      title: "We produce on the floor, we stay until results.",
+      title: "Over 33 years of international field experience.",
+      tag: "Approach",
       intro:
-        "The identity section from the old homepage has been moved into the new structure. The tone emphasizes co-creation on the shopfloor and staying with the team until results appear.",
+        "We use the broad field experience gained in manufacturing — at home and abroad — on the shopfloor, not at the desk.",
+      body:
+        "We treat your people as partners and build solutions together with them. We do not stop at telling you what to do; we stay on the floor with the teams until the process lands. We prefer action over words.",
+      highlight: "Knowledge, experience, and action — together.",
       bullets: [
-        "We bring broad field experience gained in manufacturing across domestic and international environments.",
-        "Our expertise covers lean processes, lean manufacturing, quality, and project management.",
-        "We treat your teams as partners and build solutions together.",
-        "We do not stop at recommendations; we stay involved until the process lands in daily practice.",
-        "We prefer action over words while working.",
+        "Deep expertise in lean processes, lean manufacturing, quality, and project management.",
+        "Multi-sector field experience across domestic and international environments.",
+        "A hands-on approach that builds solutions with your teams, on the ground.",
       ],
+      cta: { label: "Take a look at our founder's story", href: "#kurucumuzun-hikayesi" },
+    },
+    approach: {
+      eyebrow: "Our Approach",
+      body: [
+        "Unlike classic consulting, we do not arrive with a report and leave with one. We design the transformation with you on the floor, implement it, and stay until results are real.",
+        "For us, a successful transformation makes execution part of the concept itself. We do not impose a solution; we build it with your team, shaped around your reality.",
+      ],
+      highlight: "Not a Consultant — a Hands-On Transformation Partner.",
     },
     mission: {
       eyebrow: "Mission",
       title: "Strengthening profitability, governance, and operational discipline together.",
       intro:
-        "This section is adapted from the mission copy on the old site and placed here in a clearer bilingual structure.",
+        "We work to contribute to industry with domestic and international experience and to prepare companies for the digital era.",
       bullets: [
-        "Contribute to industry with domestic and international experience.",
         "Strengthen company profitability and institutional capability.",
         "Prepare organizations for the digital era and position them for success.",
         "Build lean, agile, fast, and efficient operating systems.",
         "Develop people capabilities to create clear and sustainable processes.",
       ],
+      highlight: "From Knowledge and Experience to Strength, from Strength to Results.",
     },
     methodology: {
-      eyebrow: "Methodology",
+      eyebrow: "What You Should Know About How We Work",
       title: "We structure our way of working around eight clear principles.",
       intro:
         "From the first visit to execution, every step is designed to stay practical, measurable, and sustainable on the ground.",
@@ -270,37 +392,37 @@ export const homepageContent = {
           title: "Free Assessment",
           icon: "analysis",
           description:
-            "If you are interested in working with us, we visit you free of charge, take a short walkthrough of the process areas, introduce ourselves, assess whether we can create value for your company, and share our observations with you.",
+            "If you are interested in working with us, we visit you free of charge, take a short walkthrough of your process areas, introduce ourselves, assess whether we can create value, and share our observations with you.",
         },
         {
           title: "Efficiency Optimization",
           icon: "growth",
           description:
-            "If we decide to work together, we transform your processes and production areas step by step, yet as quickly as possible, into a leaner, more efficient, more institutional, and more profitable operating model.",
+            "If we decide to work together, we transform your processes and production areas step by step — yet as fast as possible — into a leaner, more efficient, more institutional, and more profitable operating model.",
         },
         {
           title: "Institutional Capability",
           icon: "governance",
           description:
-            "During our work, support from top management and a company culture that is ready for change are essential for us.",
+            "Support from top management and a company culture that is ready for change are essential to us throughout our work.",
         },
         {
           title: "Transparency",
           icon: "balance",
           description:
-            "We are open, clear, transparent, and honest in our communication. There is no gap between what we think, say, and do. We build working relationships based on trust and integrity.",
+            "We are open, clear, transparent, and honest in our communication. There is no gap between what we think, say, and do; we build relationships on trust and integrity.",
         },
         {
           title: "Professionalism",
           icon: "check",
           description:
-            "We work in the areas where we have proven expertise.",
+            "We only take on work in the areas where we have proven expertise.",
         },
         {
           title: "Continuous Improvement",
           icon: "edit",
           description:
-            "We closely follow developments related to our expertise and integrate meaningful innovations into our work.",
+            "We follow developments in our field and integrate meaningful innovations into our work.",
         },
         {
           title: "Execution to Results",
@@ -312,15 +434,88 @@ export const homepageContent = {
           title: "Budget Control",
           icon: "budget",
           description:
-            "We continuously monitor the consulting time and staffing the work requires and apply economical delivery methods throughout the engagement.",
+            "We continuously monitor the consulting time and staffing the work requires and apply economical delivery methods throughout.",
         },
       ],
     },
+    expertise: {
+      eyebrow: "Expertise",
+      title: "Deep field expertise across five core areas.",
+      intro:
+        "We address each area with concrete methods applied on the floor — not in a report. Open a card to see the details.",
+      detailsLabel: "Read more",
+      areas: [
+        {
+          title: "Lean Transformation of Processes",
+          summary:
+            "We make waste in office and administrative processes visible, speed up flow, and establish a sustainable rhythm.",
+          details: [
+            "End-to-end process visibility through value stream mapping (VSM).",
+            "Identifying and removing waste in administrative and planning processes.",
+            "Standard work, visual management, and a regular management cadence.",
+          ],
+        },
+        {
+          title: "Lean Transformation of Production",
+          summary:
+            "We make the shopfloor leaner, smoother, and more efficient while reducing downtime and waste.",
+          details: [
+            "Line balancing, cellular manufacturing, and flow design.",
+            "SMED for fast changeovers and increased flexibility.",
+            "5S, TPM, and OEE for shopfloor discipline and equipment effectiveness.",
+          ],
+        },
+        {
+          title: "Problem Solving",
+          summary:
+            "We produce permanent, root-cause-driven solutions and build this muscle in your teams.",
+          details: [
+            "Structured problem solving with 8D, A3, and PDCA.",
+            "Root cause analysis with 5 Whys and Ishikawa.",
+            "Permanent countermeasures and a follow-up system to prevent recurrence.",
+          ],
+        },
+        {
+          title: "Quality from Supplier to Customer",
+          summary:
+            "We secure quality across the entire supply chain, not at a single point.",
+          details: [
+            "Supplier development, audits, and incoming quality control.",
+            "In-process quality (APQP, PPAP, FMEA) and error-proofing (poka-yoke).",
+            "Pre-shipment quality gates and a customer feedback loop.",
+          ],
+        },
+        {
+          title: "After-Sales Complaint Management",
+          summary:
+            "We build a system that turns customer complaints into fast, traceable, and lasting solutions.",
+          details: [
+            "Intake, classification, and prioritization of complaints.",
+            "Rapid response run together with root cause analysis.",
+            "Customer satisfaction measurement and a continuous improvement loop.",
+          ],
+        },
+      ],
+    },
+    founder: {
+      eyebrow: "Our Founder's Story",
+      subtitle: "A transformation journey that comes from the floor and stays on the floor.",
+      name: "Envera Jahovic Saraylı",
+      role: "Founder Consultant, EJS Consulting",
+      paragraphs: [
+        "For over 33 years inside the manufacturing industry — knowing the reality of lines, processes, and teams from the floor, not the desk.",
+        "Throughout a career spanning many factories at home and abroad, leading lean transformation, quality, and project management projects. Every project shared one truth: solutions only last when they are built with the team, on the ground.",
+        "EJS Consulting was founded on that belief — to be a transformation partner who stays like a practitioner, not a consultant who leaves a report. To turn knowledge and experience into action until results are achieved.",
+      ],
+      languagesLabel: "Languages spoken",
+      languages: ["Turkish", "English", "German"],
+    },
     articles: {
-      eyebrow: "Articles",
+      eyebrow: "Learn & Grow",
       title: "We unpack recurring shopfloor problems through writing.",
       intro:
-        "Titles and summaries from the old article section are carried over here. They can later connect to full detail pages or a CMS.",
+        "We share our experience on lean transformation, planning, and shopfloor management. We can explore more together.",
+      cta: "Read more",
       items: [
         {
           title: "What should you expect in a lean transformation?",
@@ -343,13 +538,13 @@ export const homepageContent = {
       eyebrow: "References",
       title: "A selection of teams and environments we have worked with.",
       intro:
-        "Visual assets from the old references area are reused here in a calmer grid format.",
+        "We share work delivered with teams from different sectors in a calmer grid format.",
     },
     contact: {
       eyebrow: "Contact",
       title: "Leave a short message and we will get back to you quickly.",
       intro:
-        "The key information from the old contact panel is now part of the new homepage. This can later connect to a real form flow or CRM automation.",
+        "For detailed information about our services, reach us through the channels below.",
       companyName: "EJS Engineering Consulting & Training",
       companyNote:
         "For detailed information about our services, reach us through the channels below.",
@@ -386,8 +581,8 @@ export const homepageContent = {
         { label: "Mail", value: "Send a message", href: "#iletisim" },
       ],
       links: [
-        { label: "Newsroom", href: "#yazilarimiz" },
-        { label: "Legal", href: "#kimligimiz" },
+        { label: "Learn & Grow", href: "#ogren-ve-gelis" },
+        { label: "Company", href: "#kimligimiz" },
         { label: "Help", href: "#iletisim" },
         { label: "Privacy", href: "#top" },
         { label: "Cookies", href: "#top" },
@@ -396,7 +591,6 @@ export const homepageContent = {
       navLabel: "Footer navigation",
     },
   },
-  // TODO: German translations — copy of TR skeleton, replace all strings
   de: {
     ariaLabels: {
       utilityNav: "Obere Navigation",
@@ -405,13 +599,14 @@ export const homepageContent = {
     },
     utilityLinks: [
       { label: "Identität", href: "#kimligimiz" },
-      { label: "Mission", href: "#misyonumuz" },
+      { label: "Unser Ansatz", href: "#yaklasimimiz" },
       { label: "Kontakt", href: "#iletisim" },
     ],
     mainLinks: [
       { label: "Jetzt starten", href: "#hemen-basla" },
-      { label: "Methodik", href: "#metodoloji" },
-      { label: "Artikel", href: "#yazilarimiz" },
+      { label: "Über unsere Arbeit", href: "#calismamiz-hakkinda" },
+      { label: "Fachgebiete", href: "#uzmanlik-alanlarimiz" },
+      { label: "Lernen & Wachsen", href: "#ogren-ve-gelis" },
       { label: "Referenzen", href: "#referanslar" },
     ],
     hero: {
@@ -419,66 +614,209 @@ export const homepageContent = {
     },
     identity: {
       eyebrow: "Identität",
-      title: "Wir produzieren gemeinsam vor Ort und bleiben bis zum Ergebnis.",
+      title: "Über 33 Jahre internationale Praxiserfahrung.",
+      tag: "Ansatz",
       intro:
-        "Die Identitäts-Sektion der alten Homepage wurde in die neue Struktur übernommen. Der Ton betont die gemeinsame Erstellung vor Ort und das Verbleiben im Team bis Ergebnisse sichtbar werden.",
+        "Die in der Produktion im In- und Ausland gewonnene umfassende Praxiserfahrung setzen wir vor Ort ein — nicht am Schreibtisch.",
+      body:
+        "Wir betrachten Ihre Mitarbeiter als Partner und entwickeln Lösungen gemeinsam mit ihnen. Wir sagen Ihnen nicht nur, was zu tun ist; wir bleiben mit den Teams vor Ort, bis der Prozess in der Praxis ankommt. Wir bevorzugen Handeln statt Worte.",
+      highlight: "Wissen, Erfahrung und Handeln — vereint.",
       bullets: [
-        "Wir bringen umfassende Felderfahrung aus der Produktion in nationalen und internationalen Umgebungen mit.",
-        "Unsere Expertise deckt Lean-Prozesse, Lean-Produktion, Qualität und Projektmanagement ab.",
-        "Wir betrachten Ihre Teams als Partner und entwickeln Lösungen gemeinsam.",
-        "Wir hören nicht bei Empfehlungen auf; wir bleiben beteiligt, bis der Prozess in der täglichen Praxis ankommt.",
-        "Wir arbeiten bevorzugt durch Handeln statt durch Worte.",
+        "Tiefe Expertise in Lean-Prozessen, Lean-Produktion, Qualität und Projektmanagement.",
+        "Branchenübergreifende Praxiserfahrung im In- und Ausland.",
+        "Ein praxisnaher Ansatz, der Lösungen mit Ihren Teams vor Ort aufbaut.",
       ],
+      cta: { label: "Werfen Sie einen Blick auf die Geschichte unseres Gründers", href: "#kurucumuzun-hikayesi" },
+    },
+    approach: {
+      eyebrow: "Unser Ansatz",
+      body: [
+        "Anders als die klassische Beratung kommen und gehen wir nicht mit einem Bericht. Wir gestalten die Transformation gemeinsam mit Ihnen vor Ort, setzen sie um und bleiben, bis Ergebnisse real sind.",
+        "Für uns macht eine erfolgreiche Transformation die Umsetzung zum natürlichen Teil des Konzepts. Wir drängen Ihnen keine Lösung auf; wir bauen sie mit Ihrem Team, passend zu Ihrer Realität.",
+      ],
+      highlight: "Kein Berater — ein praxisnaher Transformationspartner.",
     },
     mission: {
       eyebrow: "Mission",
       title: "Rentabilität, Governance und operative Disziplin gemeinsam stärken.",
-      intro: "Dieser Abschnitt wurde von der Mission-Text des alten Standorts übernommen und hier in einer klareren zweisprachigen Struktur platziert.",
+      intro:
+        "Wir arbeiten daran, mit nationaler und internationaler Erfahrung zur Industrie beizutragen und Unternehmen auf das digitale Zeitalter vorzubereiten.",
       bullets: [
-        "Beitrag zur Industrie mit nationaler und internationaler Erfahrung leisten.",
         "Unternehmensrentabilität und institutionelle Fähigkeit stärken.",
-        "Organisationen auf die digitale Ära vorbereiten und für Erfolg positionieren.",
-        "Lean-, agile, schnelle und effiziente Betriebssysteme aufbauen.",
+        "Organisationen auf das digitale Zeitalter vorbereiten und für Erfolg positionieren.",
+        "Schlanke, agile, schnelle und effiziente Betriebssysteme aufbauen.",
         "Mitarbeiterfähigkeiten entwickeln, um klare und nachhaltige Prozesse zu schaffen.",
       ],
+      highlight: "Von Wissen und Erfahrung zur Stärke, von der Stärke zum Ergebnis.",
     },
     methodology: {
-      eyebrow: "Methodik",
+      eyebrow: "Was Sie über unsere Arbeitsweise wissen sollten",
       title: "Unsere Arbeitsweise basiert auf acht klaren Prinzipien.",
-      intro: "Vom ersten Besuch bis zur Ausführung ist jeder Schritt so gestaltet, dass er vor Ort praktisch, messbar und nachhaltig bleibt.",
+      intro:
+        "Vom ersten Besuch bis zur Umsetzung ist jeder Schritt so gestaltet, dass er vor Ort praktisch, messbar und nachhaltig bleibt.",
       steps: [
-        { title: "Kostenlose Analyse", icon: "analysis", description: "Wenn Sie an einer Zusammenarbeit mit uns interessiert sind, besuchen wir Sie kostenlos, führen einen kurzen Rundgang durch die Prozessbereiche durch, stellen uns vor, bewerten, ob wir einen Mehrwert für Ihr Unternehmen schaffen können, und teilen unsere Beobachtungen mit Ihnen." },
-        { title: "Effizienzoptimierung", icon: "growth", description: "Wenn wir uns für eine Zusammenarbeit entscheiden, verwandeln wir Ihre Prozesse und Produktionsbereiche schrittweise, jedoch so schnell wie möglich, in ein schlankeres, effizienteres, institutionelleres und profitableres Betriebsmodell." },
-        { title: "Institutionelle Kompetenz", icon: "governance", description: "Während unserer Arbeit sind für uns die Unterstützung des Top-Managements und eine unternehmenskultur, die bereit für Veränderungen ist, unerlässlich." },
-        { title: "Transparenz", icon: "balance", description: "Wir sind offen, klar, transparent und ehrlich in unserer Kommunikation. Es gibt keine Lücke zwischen dem, was wir denken, sagen und tun. Wir bauen Arbeitsbeziehungen auf Vertrauen und Integrität auf." },
-        { title: "Professionalität", icon: "check", description: "Wir arbeiten in den Bereichen, in denen wir nachgewiesene Expertise haben." },
-        { title: "Kontinuierliche Verbesserung", icon: "edit", description: "Wir verfolgen eng Entwicklungen im Zusammenhang mit unserer Expertise und integrieren sinnvolle Innovationen in unsere Arbeit." },
-        { title: "Umsetzung bis zum Ergebnis", icon: "hourglass", description: "Während der Implementierung investieren wir die erforderliche Arbeit, bis Ergebnisse erzielt werden, und bleiben als praktische Praktiker an Ihrer Seite." },
-        { title: "Budgetkontrolle", icon: "budget", description: "Wir überwachen kontinuierlich die benötigte Beratungszeit und -besetzung und wenden wirtschaftliche Liefermethoden während des gesamten Engagements an." },
+        {
+          title: "Kostenlose Analyse",
+          icon: "analysis",
+          description:
+            "Wenn Sie an einer Zusammenarbeit interessiert sind, besuchen wir Sie kostenlos, führen einen kurzen Rundgang durch Ihre Prozessbereiche durch, stellen uns vor, bewerten, ob wir einen Mehrwert schaffen können, und teilen unsere Beobachtungen mit Ihnen.",
+        },
+        {
+          title: "Effizienzoptimierung",
+          icon: "growth",
+          description:
+            "Wenn wir uns für eine Zusammenarbeit entscheiden, verwandeln wir Ihre Prozesse und Produktionsbereiche schrittweise — aber so schnell wie möglich — in ein schlankeres, effizienteres, institutionelleres und profitableres Betriebsmodell.",
+        },
+        {
+          title: "Institutionelle Kompetenz",
+          icon: "governance",
+          description:
+            "Die Unterstützung des Top-Managements und eine veränderungsbereite Unternehmenskultur sind für uns während unserer gesamten Arbeit unerlässlich.",
+        },
+        {
+          title: "Transparenz",
+          icon: "balance",
+          description:
+            "Wir sind offen, klar, transparent und ehrlich in unserer Kommunikation. Es gibt keine Lücke zwischen Denken, Sagen und Tun; wir bauen Beziehungen auf Vertrauen und Integrität auf.",
+        },
+        {
+          title: "Professionalität",
+          icon: "check",
+          description:
+            "Wir übernehmen nur Arbeiten in den Bereichen, in denen wir nachgewiesene Expertise haben.",
+        },
+        {
+          title: "Kontinuierliche Verbesserung",
+          icon: "edit",
+          description:
+            "Wir verfolgen Entwicklungen in unserem Fachgebiet und integrieren sinnvolle Innovationen in unsere Arbeit.",
+        },
+        {
+          title: "Umsetzung bis zum Ergebnis",
+          icon: "hourglass",
+          description:
+            "Während der Umsetzung investieren wir die erforderliche Arbeit, bis Ergebnisse erzielt werden, und bleiben als praxisnahe Praktiker an Ihrer Seite.",
+        },
+        {
+          title: "Budgetkontrolle",
+          icon: "budget",
+          description:
+            "Wir überwachen kontinuierlich die benötigte Beratungszeit und -besetzung und wenden durchgehend wirtschaftliche Liefermethoden an.",
+        },
       ],
     },
+    expertise: {
+      eyebrow: "Fachgebiete",
+      title: "Tiefe Praxisexpertise in fünf Kernbereichen.",
+      intro:
+        "Wir bearbeiten jeden Bereich mit konkreten, vor Ort angewandten Methoden — nicht im Bericht. Öffnen Sie eine Karte, um die Details zu sehen.",
+      detailsLabel: "Mehr erfahren",
+      areas: [
+        {
+          title: "Lean-Transformation der Prozesse",
+          summary:
+            "Wir machen Verschwendung in Büro- und Verwaltungsprozessen sichtbar, beschleunigen den Fluss und etablieren einen nachhaltigen Rhythmus.",
+          details: [
+            "Durchgängige Prozesstransparenz durch Wertstromanalyse (VSM).",
+            "Erkennen und Beseitigen von Verschwendung in Verwaltungs- und Planungsprozessen.",
+            "Standardarbeit, visuelles Management und ein regelmäßiger Management-Rhythmus.",
+          ],
+        },
+        {
+          title: "Lean-Transformation der Produktion",
+          summary:
+            "Wir machen den Shopfloor schlanker, flüssiger und effizienter und reduzieren Stillstände und Verschwendung.",
+          details: [
+            "Linienausgleich, zelluläre Fertigung und Flussgestaltung.",
+            "SMED für schnelle Rüstvorgänge und mehr Flexibilität.",
+            "5S, TPM und OEE für Shopfloor-Disziplin und Anlageneffektivität.",
+          ],
+        },
+        {
+          title: "Problemlösung",
+          summary:
+            "Wir erarbeiten dauerhafte, ursachenorientierte Lösungen und bauen diese Fähigkeit in Ihren Teams auf.",
+          details: [
+            "Strukturierte Problemlösung mit 8D, A3 und PDCA.",
+            "Ursachenanalyse mit 5-Why und Ishikawa.",
+            "Dauerhafte Gegenmaßnahmen und ein Nachverfolgungssystem zur Vermeidung von Wiederholungen.",
+          ],
+        },
+        {
+          title: "Qualität vom Lieferanten bis zum Kunden",
+          summary:
+            "Wir sichern Qualität entlang der gesamten Lieferkette, nicht nur an einem Punkt.",
+          details: [
+            "Lieferantenentwicklung, Audits und Wareneingangsprüfung.",
+            "Prozessbegleitende Qualität (APQP, PPAP, FMEA) und Fehlervermeidung (Poka-Yoke).",
+            "Qualitäts-Gates vor dem Versand und eine Kunden-Feedbackschleife.",
+          ],
+        },
+        {
+          title: "Reklamationsmanagement im After-Sales",
+          summary:
+            "Wir bauen ein System, das Kundenreklamationen in schnelle, nachvollziehbare und dauerhafte Lösungen verwandelt.",
+          details: [
+            "Erfassung, Klassifizierung und Priorisierung von Reklamationen.",
+            "Schnelle Reaktion gemeinsam mit der Ursachenanalyse.",
+            "Messung der Kundenzufriedenheit und eine kontinuierliche Verbesserungsschleife.",
+          ],
+        },
+      ],
+    },
+    founder: {
+      eyebrow: "Die Geschichte unseres Gründers",
+      subtitle: "Eine Transformationsreise, die vom Shopfloor kommt und auf dem Shopfloor bleibt.",
+      name: "Envera Jahovic Saraylı",
+      role: "Gründungsberater, EJS Consulting",
+      paragraphs: [
+        "Seit über 33 Jahren in der Fertigungsindustrie — mit der Realität von Linien, Prozessen und Teams vertraut, vom Shopfloor aus, nicht vom Schreibtisch.",
+        "In einer Laufbahn über viele Fabriken im In- und Ausland hinweg leitete er Projekte in Lean-Transformation, Qualität und Projektmanagement. Jedes Projekt teilte eine Wahrheit: Lösungen halten nur, wenn sie gemeinsam mit dem Team vor Ort aufgebaut werden.",
+        "EJS Consulting wurde aus dieser Überzeugung gegründet — ein Transformationspartner zu sein, der wie ein Praktiker an Ihrer Seite bleibt, statt ein Berater, der einen Bericht hinterlässt. Wissen und Erfahrung in Handeln zu verwandeln, bis Ergebnisse erzielt sind.",
+      ],
+      languagesLabel: "Gesprochene Sprachen",
+      languages: ["Türkisch", "Englisch", "Deutsch"],
+    },
     articles: {
-      eyebrow: "Artikel",
+      eyebrow: "Lernen & Wachsen",
       title: "Wir beleuchten wiederkehrende Shopfloor-Probleme durch Schreiben.",
-      intro: "Titel und Zusammenfassungen aus dem alten Artikelbereich werden hier übernommen. Sie können später mit vollständigen Detailseiten oder einem CMS verbunden werden.",
+      intro:
+        "Wir teilen unsere Erfahrung zu Lean-Transformation, Planung und Shopfloor-Management. Mehr können wir gemeinsam besprechen.",
+      cta: "Mehr erfahren",
       items: [
-        { title: "Was sollten Sie bei einer Lean-Transformation erwarten?", excerpt: "Viele Unternehmen beginnen mit dringenden täglichen Problemen, doch die Muster, die wir beobachten, sind in den Abläufen bemerkenswert ähnlich." },
-        { title: "Wo bricht die Planungsstabilität eigentlich?", excerpt: "Wenn sich der Plan jeden Tag ändert, liegt das Problem oft nicht am Plan selbst, sondern an Sichtbarkeit, WIP und Reaktionsrhythmus." },
-        { title: "Wie funktioniert ein Shopfloor-Board wirklich?", excerpt: "Ein Board allein ist nicht die Lösung; es wird erst in Kombination mit dem richtigen Management-Rhythmus nützlich." },
+        {
+          title: "Was sollten Sie bei einer Lean-Transformation erwarten?",
+          excerpt:
+            "Viele Unternehmen beginnen mit dringenden täglichen Problemen, doch die Muster, die wir beobachten, sind über die Abläufe hinweg bemerkenswert ähnlich.",
+        },
+        {
+          title: "Wo bricht die Planungsstabilität eigentlich?",
+          excerpt:
+            "Wenn sich der Plan jeden Tag ändert, liegt das Problem oft nicht am Plan selbst, sondern an Sichtbarkeit, WIP und Reaktionsrhythmus.",
+        },
+        {
+          title: "Wie funktioniert ein Shopfloor-Board wirklich?",
+          excerpt:
+            "Ein Board allein ist nicht die Lösung; es wird erst in Kombination mit dem richtigen Management-Rhythmus nützlich.",
+        },
       ],
     },
     references: {
       eyebrow: "Referenzen",
       title: "Eine Auswahl der Teams und Umgebungen, mit denen wir gearbeitet haben.",
-      intro: "Visuelle Assets aus dem alten Referenzbereich werden hier in einem ruhigeren Grid-Format wiederverwendet.",
+      intro:
+        "Wir teilen Arbeiten mit Teams aus verschiedenen Branchen in einem ruhigeren Grid-Format.",
     },
     contact: {
       eyebrow: "Kontakt",
       title: "Hinterlassen Sie eine kurze Nachricht, wir melden uns schnell.",
-      intro: "Die grundlegenden Informationen aus dem alten Kontaktbereich wurden in die neue Hauptseite übertragen. Dieser Bereich kann später mit einem Form-Service oder CRM-Workflow verbunden werden.",
+      intro:
+        "Für detaillierte Informationen zu unseren Leistungen erreichen Sie uns über die untenstehenden Kanäle.",
       companyName: "EJS Engineering Beratung & Schulung",
-      companyNote: "Alle unsere Prozesse können Sie über unsere Kontaktkanäle erreichen.",
-      address: "Aydintepe Mah. Alaaddin Sk. No.7 Evora Sitesi A Parsel, A13, Tuzla / Istanbul",
+      companyNote:
+        "Für detaillierte Informationen zu unseren Leistungen erreichen Sie uns über unsere Kontaktkanäle.",
+      address:
+        "Aydintepe Mah. Alaaddin Sk. No.7 Evora Sitesi A Parsel, A13, Tuzla / Istanbul",
       phones: ["+90 216 906 03 25", "+90 532 636 72 00"],
       hours: "Mo-Fr: 8:00 - 17:00 / Sa-So: Geschlossen",
       fields: {
@@ -510,7 +848,7 @@ export const homepageContent = {
         { label: "Mail", value: "Nachricht senden", href: "#iletisim" },
       ],
       links: [
-        { label: "Artikel", href: "#yazilarimiz" },
+        { label: "Lernen & Wachsen", href: "#ogren-ve-gelis" },
         { label: "Unternehmen", href: "#kimligimiz" },
         { label: "Hilfe", href: "#iletisim" },
         { label: "Datenschutz", href: "#top" },

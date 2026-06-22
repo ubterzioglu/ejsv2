@@ -8,7 +8,7 @@ const spotlightCopy = {
   tr: {
     quote:
       "Başarılı bir dönüşüm, uygulamayı konseptin doğal bir parçası haline getirir ve bunu müşteriyle birlikte sahada kurar.",
-    name: "Envera Jahovic Sarayli",
+    name: "Envera Jahovic Saraylı",
     title: "Kurucu Danışman",
     location: "EJS Consulting, İstanbul",
     primaryCta: "Tüm Uzmanlıklar",
@@ -17,11 +17,20 @@ const spotlightCopy = {
   en: {
     quote:
       "A successful transformation makes execution part of the concept itself and builds it together with the client on the ground.",
-    name: "Envera Jahovic Sarayli",
+    name: "Envera Jahovic Saraylı",
     title: "Founder Consultant",
     location: "EJS Consulting, Istanbul",
     primaryCta: "All Expertise",
     secondaryCta: "View Full Profile",
+  },
+  de: {
+    quote:
+      "Eine erfolgreiche Transformation macht die Umsetzung zum natürlichen Teil des Konzepts und baut sie gemeinsam mit dem Kunden vor Ort auf.",
+    name: "Envera Jahovic Saraylı",
+    title: "Gründungsberater",
+    location: "EJS Consulting, Istanbul",
+    primaryCta: "Alle Fachgebiete",
+    secondaryCta: "Vollständiges Profil ansehen",
   },
 };
 
@@ -54,10 +63,10 @@ export function ExpertSpotlight({ lang }) {
           </div>
 
           <div className="expert-cta-row">
-            <a href="#metodoloji" className="expert-cta expert-cta-primary">
+            <a href="#uzmanlik-alanlarimiz" className="expert-cta expert-cta-primary">
               {copy.primaryCta}
             </a>
-            <a href="#iletisim" className="expert-cta expert-cta-secondary">
+            <a href="#kurucumuzun-hikayesi" className="expert-cta expert-cta-secondary">
               {copy.secondaryCta}
             </a>
           </div>

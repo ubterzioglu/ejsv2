@@ -1,6 +1,6 @@
-export function ArticlesSection({ articles, lang }) {
+export function ArticlesSection({ articles }) {
   return (
-    <section id="yazilarimiz" className="content-section section">
+    <section id="ogren-ve-gelis" className="content-section section">
       <div className="section-heading-block compact-heading">
         <p className="structure-label">{articles.eyebrow}</p>
         <h2 className="section-title">{articles.title}</h2>
@@ -12,7 +12,7 @@ export function ArticlesSection({ articles, lang }) {
             <h3>{article.title}</h3>
             <p>{article.excerpt}</p>
             <a href="#iletisim" className="article-link">
-              {lang === "tr" ? "Detay konusalim" : "Discuss details"}
+              {articles.cta}
             </a>
           </article>
         ))}

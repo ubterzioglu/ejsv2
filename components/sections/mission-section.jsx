@@ -7,11 +7,15 @@ export function MissionSection({ mission, lang }) {
     <section id="misyonumuz" className="content-section section mission-showcase">
       <div className="mission-copy">
         <h2 className="mission-showcase-title">{mission.eyebrow}</h2>
+        {mission.intro ? <p className="mission-intro">{mission.intro}</p> : null}
         <ul className="mission-bullets">
           {mission.bullets.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
+        {mission.highlight ? (
+          <p className="mission-highlight">{mission.highlight}</p>
+        ) : null}
       </div>
 
       <div className="mission-image-card">

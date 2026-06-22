@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1774878406002,
-  "projectRoot": "C:\\.temp_private\\ejsv2",
+  "lastScanned": 1782123694816,
+  "projectRoot": "c:\\temp_private\\EJS",
   "techStack": {
     "languages": [
       {
@@ -64,9 +64,14 @@
     "workspaces": [],
     "mainDirectories": [
       "app",
-      "components"
+      "components",
+      "lib",
+      "public"
     ],
-    "gitBranches": null
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
   },
   "customNotes": [],
   "directoryMap": {
@@ -74,7 +79,7 @@
       "path": "app",
       "purpose": "Application code",
       "fileCount": 3,
-      "lastAccessed": 1774878405956,
+      "lastAccessed": 1782123694740,
       "keyFiles": [
         "globals.css",
         "layout.jsx",
@@ -84,236 +89,342 @@
     "components": {
       "path": "components",
       "purpose": "UI components",
-      "fileCount": 5,
-      "lastAccessed": 1774878405956,
+      "fileCount": 6,
+      "lastAccessed": 1782123694741,
       "keyFiles": [
         "expert-spotlight.jsx",
         "hero-video-carousel.jsx",
         "methodology-cards.jsx",
         "process-highlight.jsx",
-        "site-header.jsx"
+        "site-footer.jsx"
       ]
     },
-    "old": {
-      "path": "old",
-      "purpose": null,
-      "fileCount": 17,
-      "lastAccessed": 1774878405979,
+    "lib": {
+      "path": "lib",
+      "purpose": "Library code",
+      "fileCount": 2,
+      "lastAccessed": 1782123694784,
       "keyFiles": [
-        "bun.lockb",
-        "components.json",
-        "eslint.config.js",
-        "index.html",
-        "package-lock.json"
+        "language-context.jsx",
+        "locales.js"
+      ]
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 3,
+      "lastAccessed": 1782123694784,
+      "keyFiles": [
+        "favicon.ico",
+        "favicon.svg",
+        "robots.txt"
+      ]
+    },
+    "screenshots": {
+      "path": "screenshots",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1782123694785,
+      "keyFiles": [
+        "error.png"
       ]
     },
     "app\\data": {
       "path": "app\\data",
       "purpose": "Data files",
       "fileCount": 1,
-      "lastAccessed": 1774878405980,
+      "lastAccessed": 1782123694785,
       "keyFiles": [
         "homepage-content.js"
       ]
     },
-    "old\\dist": {
-      "path": "old\\dist",
-      "purpose": "Distribution/build output",
-      "fileCount": 5,
-      "lastAccessed": 1774878405981,
+    "public\\assets": {
+      "path": "public\\assets",
+      "purpose": "Static assets",
+      "fileCount": 2,
+      "lastAccessed": 1782123694787,
       "keyFiles": [
-        "favicon.ico",
-        "favicon.svg",
-        "index.html"
+        "ejsmenulogo.png",
+        "ejsprofil.png"
       ]
     }
   },
   "hotPaths": [
     {
-      "path": "app\\page.jsx",
-      "accessCount": 35,
-      "lastAccessed": 1774956581949,
-      "type": "file"
-    },
-    {
       "path": "app\\globals.css",
-      "accessCount": 25,
-      "lastAccessed": 1774965849298,
-      "type": "directory"
-    },
-    {
-      "path": "app\\data\\homepage-content.js",
-      "accessCount": 15,
-      "lastAccessed": 1774966439846,
+      "accessCount": 18,
+      "lastAccessed": 1782130797275,
       "type": "file"
     },
     {
-      "path": "TODO.md",
+      "path": ".env.local",
       "accessCount": 11,
-      "lastAccessed": 1774957054056,
-      "type": "file"
-    },
-    {
-      "path": "components\\site-header.jsx",
-      "accessCount": 10,
-      "lastAccessed": 1774956398183,
-      "type": "file"
-    },
-    {
-      "path": "app\\layout.jsx",
-      "accessCount": 8,
-      "lastAccessed": 1774956573948,
+      "lastAccessed": 1782130277999,
       "type": "file"
     },
     {
       "path": "components\\hero-video-carousel.jsx",
       "accessCount": 6,
-      "lastAccessed": 1774955516299,
-      "type": "file"
-    },
-    {
-      "path": "",
-      "accessCount": 5,
-      "lastAccessed": 1774954456913,
-      "type": "directory"
-    },
-    {
-      "path": "components\\site-footer.jsx",
-      "accessCount": 4,
-      "lastAccessed": 1774966169629,
+      "lastAccessed": 1782130569832,
       "type": "file"
     },
     {
       "path": "components\\expert-spotlight.jsx",
+      "accessCount": 6,
+      "lastAccessed": 1782130672236,
+      "type": "file"
+    },
+    {
+      "path": "app\\data\\homepage-content.js",
+      "accessCount": 5,
+      "lastAccessed": 1782130539703,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\identity-section.jsx",
+      "accessCount": 5,
+      "lastAccessed": 1782130633531,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\mission-section.jsx",
+      "accessCount": 5,
+      "lastAccessed": 1782130640719,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\articles-section.jsx",
+      "accessCount": 5,
+      "lastAccessed": 1782130651624,
+      "type": "file"
+    },
+    {
+      "path": "app\\[lang]\\page.jsx",
+      "accessCount": 5,
+      "lastAccessed": 1782130702398,
+      "type": "file"
+    },
+    {
+      "path": "app\\layout.jsx",
       "accessCount": 4,
-      "lastAccessed": 1774966445478,
+      "lastAccessed": 1782129449000,
+      "type": "file"
+    },
+    {
+      "path": "components\\methodology-cards.jsx",
+      "accessCount": 4,
+      "lastAccessed": 1782130299472,
+      "type": "file"
+    },
+    {
+      "path": "components\\site-header.jsx",
+      "accessCount": 4,
+      "lastAccessed": 1782130352030,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\share-section.jsx",
+      "accessCount": 4,
+      "lastAccessed": 1782130679037,
+      "type": "file"
+    },
+    {
+      "path": "app\\[lang]\\layout.jsx",
+      "accessCount": 4,
+      "lastAccessed": 1782130716223,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 4,
+      "lastAccessed": 1782131121295,
       "type": "file"
     },
     {
       "path": "components\\process-highlight.jsx",
       "accessCount": 3,
-      "lastAccessed": 1774966452438,
+      "lastAccessed": 1782129011695,
       "type": "file"
     },
     {
-      "path": "components\\sections\\identity-section.jsx",
+      "path": "components\\sections\\contact-section.jsx",
       "accessCount": 3,
-      "lastAccessed": 1774966481351,
+      "lastAccessed": 1782129029685,
       "type": "file"
     },
     {
-      "path": "components\\sections\\mission-section.jsx",
+      "path": "components\\site-footer.jsx",
       "accessCount": 3,
-      "lastAccessed": 1774966482307,
+      "lastAccessed": 1782130305205,
       "type": "file"
     },
     {
       "path": "components\\sections\\references-section.jsx",
       "accessCount": 2,
-      "lastAccessed": 1774955944296,
+      "lastAccessed": 1782129018506,
       "type": "file"
     },
     {
-      "path": "components\\sections\\share-section.jsx",
+      "path": "app\\admin\\login\\page.jsx",
       "accessCount": 2,
-      "lastAccessed": 1774956379921,
+      "lastAccessed": 1782129458741,
       "type": "file"
     },
     {
-      "path": "proxy.js",
+      "path": "lib\\supabase\\server.js",
       "accessCount": 2,
-      "lastAccessed": 1774956718541,
+      "lastAccessed": 1782130071085,
       "type": "file"
     },
     {
-      "path": "next.config.mjs",
+      "path": "lib\\admin-auth.js",
       "accessCount": 2,
-      "lastAccessed": 1774956979423,
+      "lastAccessed": 1782130071582,
       "type": "file"
     },
     {
-      "path": "AGENTS.md",
+      "path": "app\\admin\\login\\actions.js",
       "accessCount": 2,
-      "lastAccessed": 1774957027946,
+      "lastAccessed": 1782130072524,
       "type": "file"
     },
     {
-      "path": "app\\[lang]\\page.jsx",
+      "path": "scripts\\seed-updates.mjs",
       "accessCount": 2,
-      "lastAccessed": 1774966462859,
+      "lastAccessed": 1782130072609,
       "type": "file"
     },
     {
-      "path": "components\\methodology-cards.jsx",
-      "accessCount": 1,
-      "lastAccessed": 1774954987725,
+      "path": "eslint.config.mjs",
+      "accessCount": 2,
+      "lastAccessed": 1782131320826,
       "type": "file"
     },
     {
-      "path": "components\\sections\\articles-section.jsx",
-      "accessCount": 1,
-      "lastAccessed": 1774955743681,
-      "type": "file"
-    },
-    {
-      "path": "components\\sections\\contact-section.jsx",
-      "accessCount": 1,
-      "lastAccessed": 1774955751114,
+      "path": "app\\admin\\(panel)\\sidebar.jsx",
+      "accessCount": 2,
+      "lastAccessed": 1782131356496,
       "type": "file"
     },
     {
       "path": "components\\sections\\index.js",
       "accessCount": 1,
-      "lastAccessed": 1774955817915,
+      "lastAccessed": 1782128747628,
       "type": "file"
     },
     {
-      "path": "lib\\language-context.jsx",
+      "path": "app\\page.jsx",
       "accessCount": 1,
-      "lastAccessed": 1774955941787,
+      "lastAccessed": 1782128758487,
       "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 1,
+      "lastAccessed": 1782128769524,
+      "type": "directory"
     },
     {
       "path": "lib\\locales.js",
       "accessCount": 1,
-      "lastAccessed": 1774956251425,
+      "lastAccessed": 1782129020644,
       "type": "file"
     },
     {
-      "path": "middleware.js",
+      "path": "supabase\\migrations\\0001_admin_tables.sql",
       "accessCount": 1,
-      "lastAccessed": 1774956254710,
+      "lastAccessed": 1782129340652,
       "type": "file"
     },
     {
-      "path": "app\\[lang]\\layout.jsx",
+      "path": "app\\admin\\logout\\route.js",
       "accessCount": 1,
-      "lastAccessed": 1774956399817,
+      "lastAccessed": 1782129384867,
       "type": "file"
     },
     {
-      "path": "package.json",
+      "path": "app\\admin\\sections.js",
       "accessCount": 1,
-      "lastAccessed": 1774956979671,
+      "lastAccessed": 1782129393435,
       "type": "file"
     },
     {
-      "path": "public\\assets\\ejsmenulogo.png",
+      "path": "app\\admin\\(panel)\\layout.jsx",
       "accessCount": 1,
-      "lastAccessed": 1774963187899,
+      "lastAccessed": 1782129400335,
       "type": "file"
     },
     {
-      "path": "public\\assets\\ejsprofil.png",
+      "path": "app\\admin\\(panel)\\page.jsx",
       "accessCount": 1,
-      "lastAccessed": 1774963255566,
+      "lastAccessed": 1782129413162,
       "type": "file"
     },
     {
-      "path": "components\\sections",
+      "path": "app\\admin\\admin.css",
       "accessCount": 1,
-      "lastAccessed": 1774966470565,
-      "type": "directory"
+      "lastAccessed": 1782129443130,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\updates\\actions.js",
+      "accessCount": 1,
+      "lastAccessed": 1782129470421,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\updates\\update-form.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1782129484136,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\updates\\updates-manager.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1782129497659,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\updates\\page.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1782129507396,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\revisions\\actions.js",
+      "accessCount": 1,
+      "lastAccessed": 1782129524582,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\revisions\\revision-form.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1782129533604,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\revisions\\page.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1782129549569,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\approach-section.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1782130589465,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\expertise-section.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1782130602085,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\founder-story-section.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1782130613621,
+      "type": "file"
     }
   ],
   "userDirectives": []

@@ -1,7 +1,7 @@
 {
   "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"cd \\\"C:/.temp_private/ejsv2\\\" && git rm --cached old && git submodule deinit -f old && rm -rf .git/modules/old && rm -rf old && echo \\\"old/ removed\\\"\",\"description\":\"Remove old/ submodule ...",
-  "error": "Exit code 1\nrm 'old'\nerror: pathspec 'old' did not match any file(s) known to git",
-  "timestamp": "2026-03-31T11:19:13.536Z",
+  "tool_input_preview": "{\"command\":\"echo \\\"=== eslint-config-next exports ===\\\"; node -e \\\"const p=require('eslint-config-next/package.json'); console.log(JSON.stringify(p.exports||p.main,null,2))\\\" 2>&1\\necho \\\"=== files ==...",
+  "error": "Exit code 2\n=== eslint-config-next exports ===\nnode:internal/modules/cjs/loader:686\r\n      throw e;\r\n      ^\r\n\r\nError [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by \"exports\" in C:\\temp_private\\EJS\\node_modules\\eslint-config-next\\package.json\r\n    at exportsNotFound (node:internal/modules/esm/resolve:314:10)\r\n    at packageExportsResolve (node:internal/modules/esm/resolve:662:9)\r\n    at resolveExports (node:internal/modules/cjs/loader:679:36)\r\n    at Module._...",
+  "timestamp": "2026-06-22T12:28:11.416Z",
   "retry_count": 1
 }

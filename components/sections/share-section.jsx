@@ -31,8 +31,8 @@ const WhatsAppIcon = (
 );
 
 const shareLabels = { tr: "E-posta", en: "Email", de: "E-Mail" };
-const shareTitles = { tr: "Sayfamizi paylasin", en: "Share this page", de: "Seite teilen" };
-const shareAriaLabels = { tr: "Paylasim baglantilari", en: "Share links", de: "Teilen-Links" };
+const shareTitles = { tr: "Sayfamızı paylaşın", en: "Share this page", de: "Seite teilen" };
+const shareAriaLabels = { tr: "Paylaşım bağlantıları", en: "Share links", de: "Teilen-Links" };
 
 export function ShareSection({ lang, shareUrl, shareText }) {
   const links = [

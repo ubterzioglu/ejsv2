@@ -2,11 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export function HeroVideoCarousel({ videos, ctaLabel }) {
+export function HeroVideoCarousel({ videos, ctaLabel, lang = "tr" }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const videoRef = useRef(null);
 
   const activeVideo = videos[activeIndex];
+  const activeCaption = activeVideo.captions?.[lang] ?? activeVideo.captions?.tr ?? "";
 
   useEffect(() => {
     const videoNode = videoRef.current;
@@ -53,6 +54,12 @@ export function HeroVideoCarousel({ videos, ctaLabel }) {
       <div className="hero-video-overlay" />
 
       <div className="hero-video-content">
+        {activeCaption ? (
+          <p key={activeIndex} className="hero-caption">
+            {activeCaption}
+          </p>
+        ) : null}
+
         <div className="hero-lower-bar">
           <div className="hero-indicators" aria-label="Video navigation">
             {videos.map((video, index) => (
@@ -70,7 +77,7 @@ export function HeroVideoCarousel({ videos, ctaLabel }) {
 
           <a
             className="hero-approach-link"
-            href="#metodoloji"
+            href="#yaklasimimiz"
           >
             {ctaLabel}
             <span aria-hidden="true">-&gt;</span>

@@ -6,7 +6,10 @@ import { ExpertSpotlight } from "@/components/expert-spotlight";
 import { ProcessHighlight } from "@/components/process-highlight";
 import { MethodologyCards } from "@/components/methodology-cards";
 import { IdentitySection } from "@/components/sections/identity-section";
+import { ApproachSection } from "@/components/sections/approach-section";
 import { MissionSection } from "@/components/sections/mission-section";
+import { ExpertiseSection } from "@/components/sections/expertise-section";
+import { FounderStorySection } from "@/components/sections/founder-story-section";
 import { ArticlesSection } from "@/components/sections/articles-section";
 import { ReferencesSection } from "@/components/sections/references-section";
 import { ContactSection } from "@/components/sections/contact-section";
@@ -34,14 +37,22 @@ export default async function HomePage({ params }) {
 
       <main className="hero-page">
         <section className="hero-stage">
-          <HeroVideoCarousel videos={heroVideos} ctaLabel={page.hero.ctaLabel} />
+          <HeroVideoCarousel
+            videos={heroVideos}
+            ctaLabel={page.hero.ctaLabel}
+            lang={lang}
+          />
         </section>
 
         <IdentitySection identity={page.identity} lang={lang} />
+        <ApproachSection approach={page.approach} />
         <MissionSection mission={page.mission} lang={lang} />
         <ProcessHighlight lang={lang} />
 
-        <section id="metodoloji" className="content-section section methodology-section">
+        <section
+          id="calismamiz-hakkinda"
+          className="content-section section methodology-section"
+        >
           <div className="section-heading-block compact-heading methodology-heading">
             <p className="structure-label">{page.methodology.eyebrow}</p>
             <h2 className="section-title methodology-title">{page.methodology.title}</h2>
@@ -50,8 +61,10 @@ export default async function HomePage({ params }) {
           <MethodologyCards steps={page.methodology.steps} />
         </section>
 
+        <ExpertiseSection expertise={page.expertise} />
         <ExpertSpotlight lang={lang} />
-        <ArticlesSection articles={page.articles} lang={lang} />
+        <FounderStorySection founder={page.founder} lang={lang} />
+        <ArticlesSection articles={page.articles} />
         <ShareSection lang={lang} shareUrl={shareUrl} shareText={shareText} />
         <ReferencesSection references={page.references} />
         <ContactSection contact={page.contact} lang={lang} />

@@ -14,13 +14,25 @@ export function IdentitySection({ identity, lang }) {
 
       <div className="identity-feature-card">
         <div className="identity-feature-copy">
-          <span className="identity-feature-tag">{lang === "tr" ? "Yaklasim" : "Approach"}</span>
+          <span className="identity-feature-tag">{identity.tag}</span>
           <p className="identity-feature-intro">{identity.intro}</p>
+          {identity.body ? (
+            <p className="identity-feature-body">{identity.body}</p>
+          ) : null}
           <ul className="identity-feature-list">
             {identity.bullets.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
+          {identity.highlight ? (
+            <p className="identity-feature-highlight">{identity.highlight}</p>
+          ) : null}
+          {identity.cta ? (
+            <a className="identity-feature-cta" href={identity.cta.href}>
+              {identity.cta.label}
+              <span aria-hidden="true"> -&gt;</span>
+            </a>
+          ) : null}
         </div>
 
         <div className="identity-feature-image-wrap">
