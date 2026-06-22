@@ -9,3 +9,8 @@ yarn-error.log*
 pnpm-debug.log*
 old/
 .omc/
+
+# Python scraper artifacts (docs/)
+__pycache__/
+*.pyc
+docs/rolandberger_homepage/
