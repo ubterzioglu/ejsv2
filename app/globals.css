@@ -320,7 +320,7 @@ img {
   margin: 2.75rem auto 0;
   min-height: 8.15rem;
   display: grid;
-  grid-template-columns: 285px 1fr 84px;
+  grid-template-columns: 285px minmax(0, 1fr) 84px;
   align-items: center;
   background: #020202;
   color: #fff;
@@ -365,16 +365,18 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(1.8rem, 3.6vw, 4.2rem);
-  padding: 0 2rem 0 1rem;
+  flex-wrap: nowrap;
+  min-width: 0;
+  gap: clamp(1rem, 2.2vw, 3rem);
+  padding: 0 1.5rem 0 1rem;
 }
 
 .header-link {
-  font-size: clamp(1.3rem, 1.7vw, 1.8rem);
+  font-size: clamp(1.05rem, 1.35vw, 1.6rem);
   font-weight: 500;
   letter-spacing: -0.03em;
   white-space: nowrap;
-  padding: 0.5rem 0.8rem;
+  padding: 0.5rem 0.7rem;
   border-radius: 4px;
   transition: background-color 180ms ease, color 180ms ease;
 }
@@ -767,11 +769,16 @@ img {
 .contact-grid {
   display: grid;
   grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1fr);
-  gap: clamp(1rem, 2vw, 1.5rem);
+  gap: clamp(1.25rem, 2vw, 2rem);
+  align-items: start;
 }
 
 .contact-card {
-  padding: var(--card-padding);
+  padding: clamp(1.5rem, 2.4vw, 2.25rem);
+  background: var(--surface-strong);
+  border: 1px solid rgba(16, 16, 16, 0.14);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-card);
 }
 
 .contact-lines {
@@ -791,6 +798,13 @@ img {
   gap: 0.45rem;
 }
 
+.contact-form label > span {
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
 .contact-form .full-span {
   grid-column: 1 / -1;
 }
@@ -798,8 +812,8 @@ img {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(16, 16, 16, 0.22);
+  background: #fff;
   padding: 0.9rem 1rem;
   resize: vertical;
   border-radius: var(--card-radius);
