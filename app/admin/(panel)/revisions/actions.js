@@ -8,7 +8,7 @@ const STATUSES = ["new", "in_progress", "done"];
 
 async function requireAdmin() {
   if (!(await isAuthed())) {
-    throw new Error("Yetkisiz.");
+    throw new Error("Yetkisiz işlem.");
   }
 }
 
@@ -19,7 +19,7 @@ export async function createRevision(_prevState, formData) {
   const email = String(formData.get("email") ?? "").trim() || null;
   const message = String(formData.get("message") ?? "").trim();
 
-  if (!message) return { error: "Mesaj bos olamaz." };
+  if (!message) return { error: "Mesaj boş olamaz." };
 
   const supabase = createServerClient();
   const { error } = await supabase

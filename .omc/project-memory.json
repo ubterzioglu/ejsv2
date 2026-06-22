@@ -247,6 +247,18 @@
       "type": "file"
     },
     {
+      "path": "app\\admin\\(panel)\\revisions\\revision-form.jsx",
+      "accessCount": 6,
+      "lastAccessed": 1782146236536,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(panel)\\revisions\\actions.js",
+      "accessCount": 6,
+      "lastAccessed": 1782146248867,
+      "type": "file"
+    },
+    {
       "path": "components\\sections\\identity-section.jsx",
       "accessCount": 5,
       "lastAccessed": 1782130633531,
@@ -349,15 +361,9 @@
       "type": "file"
     },
     {
-      "path": "app\\admin\\(panel)\\revisions\\revision-form.jsx",
+      "path": "lib\\supabase\\server.js",
       "accessCount": 4,
-      "lastAccessed": 1782144028542,
-      "type": "file"
-    },
-    {
-      "path": "app\\admin\\(panel)\\revisions\\actions.js",
-      "accessCount": 4,
-      "lastAccessed": 1782144029510,
+      "lastAccessed": 1782146255668,
       "type": "file"
     },
     {
@@ -385,12 +391,6 @@
       "type": "file"
     },
     {
-      "path": "lib\\supabase\\server.js",
-      "accessCount": 3,
-      "lastAccessed": 1782143881706,
-      "type": "file"
-    },
-    {
       "path": "supabase\\migrations\\0001_admin_tables.sql",
       "accessCount": 3,
       "lastAccessed": 1782144044669,
@@ -404,8 +404,8 @@
     },
     {
       "path": "scripts\\seed-updates.mjs",
-      "accessCount": 2,
-      "lastAccessed": 1782130072609,
+      "accessCount": 3,
+      "lastAccessed": 1782146255508,
       "type": "file"
     },
     {
@@ -442,6 +442,12 @@
       "path": "jsconfig.json",
       "accessCount": 1,
       "lastAccessed": 1782143914887,
+      "type": "file"
+    },
+    {
+      "path": "supabase\\migrations\\0002_changelog.sql",
+      "accessCount": 1,
+      "lastAccessed": 1782146272987,
       "type": "file"
     }
   ],

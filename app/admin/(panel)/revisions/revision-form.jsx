@@ -15,10 +15,10 @@ export function RevisionForm() {
 
   return (
     <form ref={formRef} action={formAction} className="admin-form">
-      <p className="admin-section-title">Yeni revizyon istegi</p>
+      <p className="admin-section-title">Yeni revizyon isteği</p>
 
       <div className="admin-form__row">
-        <label className="admin-label" htmlFor="name">Isim (opsiyonel)</label>
+        <label className="admin-label" htmlFor="name">İsim (opsiyonel)</label>
         <input id="name" name="name" className="admin-input" />
       </div>
 
@@ -28,7 +28,7 @@ export function RevisionForm() {
       </div>
 
       <div className="admin-form__row">
-        <label className="admin-label" htmlFor="message">Istek / Mesaj</label>
+        <label className="admin-label" htmlFor="message">İstek / Mesaj</label>
         <textarea id="message" name="message" className="admin-textarea" required />
       </div>
 

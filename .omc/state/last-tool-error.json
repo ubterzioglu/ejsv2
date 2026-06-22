@@ -1,7 +1,0 @@
-{
-  "tool_name": "Read",
-  "tool_input_preview": "{\"file_path\":\"C:\\\\temp_private\\\\EJS\\\\middleware.js\"}",
-  "error": "File does not exist. Note: your current working directory is c:\\temp_private\\EJS.",
-  "timestamp": "2026-06-22T15:58:05.727Z",
-  "retry_count": 2
-}
