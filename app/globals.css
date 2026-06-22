@@ -1223,38 +1223,46 @@ img {
   padding-top: 0.5rem;
 }
 
-/* Footer office block visual balance */
+/* Footer copy grid: adres + iletisim tek yatay satirda aksin */
+.footer-copy-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1.4rem;
+}
+
+/* Footer office block: kutu degil, satiriçi akar */
 .footer-office-block {
-  background: #ffffff;
-  padding: var(--card-padding);
-  border-radius: var(--card-radius);
-  box-shadow: var(--shadow-card);
-  border: var(--card-border);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .footer-office-block h3 {
-  margin: 0 0 1rem;
+  margin: 0;
   font-size: 1.6rem;
   line-height: 1;
   letter-spacing: -0.04em;
 }
 
-/* Footer contact block visual balance */
+/* Footer address: tek satirda kalsin */
+.footer-address p {
+  margin: 0;
+}
+
+/* Footer contact block: iletisim satirlari yan yana */
 .footer-contact-block {
-  display: grid;
-  gap: 0.9rem;
-  padding: var(--card-padding);
-  background: #ffffff;
-  border-radius: var(--card-radius);
-  box-shadow: var(--shadow-card);
-  border: var(--card-border);
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1.4rem;
 }
 
 /* Footer contact row improved alignment */
 .footer-contact-row {
-  display: grid;
-  grid-template-columns: 5.2rem minmax(0, 1fr);
-  gap: 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .footer-contact-row span {
@@ -1273,24 +1281,13 @@ img {
   border-bottom-color: var(--signal);
 }
 
-@media (max-width: 1280px) {
-  .footer-copy-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
 @media (max-width: 1040px) {
-  .footer-shell,
-  .footer-copy-grid {
+  .footer-shell {
     grid-template-columns: 1fr;
   }
 
   .footer-copy-column {
     gap: 2.2rem;
-  }
-
-  .footer-contact-block {
-    padding-top: 0;
   }
 
   .footer-nav {
@@ -1322,11 +1319,7 @@ img {
   }
 
   .footer-copy-grid {
-    gap: 1.8rem;
-  }
-
-  .footer-contact-row {
-    grid-template-columns: 4.6rem minmax(0, 1fr);
+    gap: 0.5rem 1.2rem;
   }
 }
 
