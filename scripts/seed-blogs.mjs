@@ -45,7 +45,8 @@ const supabase = createClient(url, key, {
  * @returns {{ meta: Record<string,string>, body: string }}
  */
 function parseFrontmatter(raw) {
-  const text = raw.replace(/^﻿/, "");
+  // BOM'u ve CRLF satir sonlarini normalize et (dosyalar Windows CRLF).
+  const text = raw.replace(/^﻿/, "").replace(/\r\n/g, "\n").replace(/\r/g, "\n");
   const meta = {};
   if (!text.startsWith("---")) return { meta, body: text.trim() };
 
