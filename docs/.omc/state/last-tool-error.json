@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"ls -1 ejs_blog_export/posts/ 2>&1; echo \\\"---errors?---\\\"; ls ejs_blog_export/errors.md 2>&1\",\"description\":\"List generated post files\"}",
+  "error": "Exit code 2\n01-yalin-donusumde-sizi-ne-bekliyor-pazartesi-baslayacaginiz-ve-ikinci-gunde-bozacaginiz-bir.md\n02-turkiye-kobi-lerinin-kurumsallasma-cabalari-yapilmasi-gerekenler.md\n03-turkiye-kobi-lerinin-kurumsalasma-cabalari-kimler-oncelik-etmeli.md\n04-turkiye-kobilerinin-kurumsalasma-cabalari-giris.md\n05-petek-saraciyede-yalin-donusum.md\n06-ilac-sektorunde-yalin-donusum-solid-ilac-uretimde-verimlilik-artisi.md\n07-degisim-esnasinda-direncle-basa-cikmak.md\n08-kobilerin-dijital-donusumunde-sektore...",
+  "timestamp": "2026-06-22T17:07:47.302Z",
+  "retry_count": 3
+}

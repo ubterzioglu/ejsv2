@@ -1,0 +1,7 @@
+{
+  "tool_name": "Read",
+  "tool_input_preview": "{\"file_path\":\"c:\\\\temp_private\\\\EJS\\\\README.md\"}",
+  "error": "File does not exist. Note: your current working directory is c:\\temp_private\\EJS.",
+  "timestamp": "2026-06-22T16:56:51.783Z",
+  "retry_count": 1
+}

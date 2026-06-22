@@ -22,13 +22,23 @@ export function UpdateForm({ lang, editing = null, onDone }) {
   }, [state.ok, isEdit, onDone]);
 
   return (
-    <form ref={formRef} action={formAction} className="admin-form">
+    <form
+      ref={formRef}
+      action={formAction}
+      className="admin-form"
+      encType="multipart/form-data"
+    >
       <p className="admin-section-title">
-        {isEdit ? "Yazıyı düzenle" : "Yeni yazı ekle"}
+        {isEdit ? "Makaleyi düzenle" : "Yeni makale ekle"}
       </p>
 
       {isEdit ? <input type="hidden" name="id" defaultValue={editing.id} /> : null}
       <input type="hidden" name="lang" value={lang} readOnly />
+      <input
+        type="hidden"
+        name="existing_image_url"
+        defaultValue={editing?.image_url ?? ""}
+      />
 
       <div className="admin-form__row">
         <label className="admin-label" htmlFor="title">Başlık</label>
@@ -50,6 +60,41 @@ export function UpdateForm({ lang, editing = null, onDone }) {
           required
           defaultValue={editing?.excerpt ?? ""}
         />
+      </div>
+
+      <div className="admin-form__row">
+        <label className="admin-label" htmlFor="body">İçerik (yazı)</label>
+        <textarea
+          id="body"
+          name="body"
+          className="admin-textarea"
+          style={{ minHeight: 160 }}
+          defaultValue={editing?.body ?? ""}
+        />
+      </div>
+
+      <div className="admin-form__row">
+        <label className="admin-label" htmlFor="image">Fotoğraf</label>
+        {editing?.image_url ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={editing.image_url}
+            alt=""
+            className="admin-card__thumb"
+            style={{ marginBottom: 8 }}
+          />
+        ) : null}
+        <input
+          id="image"
+          name="image"
+          type="file"
+          accept="image/png,image/jpeg,image/webp,image/gif"
+          className="admin-input"
+        />
+        <span className="admin-label" style={{ fontSize: 12 }}>
+          JPEG / PNG / WebP / GIF, en fazla 5 MB.
+          {isEdit ? " Boş bırakılırsa mevcut görsel korunur." : ""}
+        </span>
       </div>
 
       <div className="admin-form__row admin-form__row--inline">

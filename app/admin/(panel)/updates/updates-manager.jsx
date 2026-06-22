@@ -4,8 +4,6 @@ import { useState } from "react";
 import { UpdateForm } from "./update-form";
 import { deleteUpdate } from "./actions";
 
-const LANG_LABELS = { tr: "Türkçe", en: "English", de: "Deutsch" };
-
 /**
  * @param {{ lang: string, items: Array<object> }} props
  */
@@ -14,9 +12,16 @@ export function UpdatesManager({ lang, items }) {
 
   return (
     <>
+      {/* Once ekleme formu */}
+      <UpdateForm lang={lang} />
+
+      <p className="admin-section-title" style={{ marginTop: 28 }}>
+        Mevcut makaleler
+      </p>
+
       <div className="admin-list">
         {items.length === 0 ? (
-          <p className="admin-empty">Bu dilde henüz yazı yok.</p>
+          <p className="admin-empty">Henüz makale yok.</p>
         ) : (
           items.map((item) =>
             editingId === item.id ? (
@@ -29,9 +34,19 @@ export function UpdatesManager({ lang, items }) {
             ) : (
               <article key={item.id} className="admin-card">
                 <div className="admin-card__head">
-                  <div>
-                    <h3 className="admin-card__title">{item.title}</h3>
-                    <p className="admin-card__excerpt">{item.excerpt}</p>
+                  <div style={{ display: "flex", gap: 14, minWidth: 0 }}>
+                    {item.image_url ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={item.image_url}
+                        alt=""
+                        className="admin-card__thumb"
+                      />
+                    ) : null}
+                    <div style={{ minWidth: 0 }}>
+                      <h3 className="admin-card__title">{item.title}</h3>
+                      <p className="admin-card__excerpt">{item.excerpt}</p>
+                    </div>
                   </div>
                   <div style={{ display: "flex", gap: 8, flexShrink: 0 }}>
                     <button
@@ -50,16 +65,13 @@ export function UpdatesManager({ lang, items }) {
                 </div>
                 <p className="admin-card__meta">
                   Sıra: {item.sort_order} ·{" "}
-                  {item.published ? "Yayında" : "Taslak"} ·{" "}
-                  {LANG_LABELS[item.lang] ?? item.lang}
+                  {item.published ? "Yayında" : "Taslak"}
                 </p>
               </article>
             )
           )
         )}
       </div>
-
-      <UpdateForm lang={lang} />
     </>
   );
 }
