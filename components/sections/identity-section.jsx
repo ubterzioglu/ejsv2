@@ -21,9 +21,9 @@ export function IdentitySection({ identity, lang }) {
           {identity.highlight ? (
             <p className="identity-feature-highlight">{identity.highlight}</p>
           ) : null}
-          {identity.ctaLabel && identity.ctaHref ? (
-            <a className="identity-feature-cta" href={identity.ctaHref}>
-              {identity.ctaLabel}
+          {identity.cta?.label && identity.cta?.href ? (
+            <a className="identity-feature-cta" href={identity.cta.href}>
+              {identity.cta.label}
               <span aria-hidden="true"> -&gt;</span>
             </a>
           ) : null}

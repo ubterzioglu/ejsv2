@@ -35,7 +35,7 @@ export function FounderStorySection({ founder, lang }) {
 
           <div className="founder-languages">
             <span className="founder-languages-label">{founder.languagesLabel}:</span>
-            <span className="founder-languages-list">{founder.languages}</span>
+            <span className="founder-languages-list">{founder.languages.join(", ")}</span>
           </div>
         </div>
       </div>

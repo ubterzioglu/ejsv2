@@ -11,31 +11,43 @@ export default function AdminLoginPage() {
 
   return (
     <div className="admin-login">
-      <form className="admin-login__card" action={formAction}>
-        <span className="admin-login__badge">Yönetim Paneli</span>
-        <h1 className="admin-login__title">EJS Consulting</h1>
-        <p className="admin-login__hint">Devam etmek için şifrenizi girin.</p>
+      <div className="admin-login__shell">
+        <section className="admin-login__intro">
+          <div className="admin-brand__mark admin-brand__mark--large">EJS</div>
+          <span className="admin-login__badge">Yönetim Paneli</span>
+          <h1 className="admin-login__title">EJS Consulting</h1>
+          <p className="admin-login__hint">
+            İçerikleri, güncellemeleri ve revizyon taleplerini güvenli şekilde
+            yönetin.
+          </p>
+        </section>
 
-        <label className="admin-login__label" htmlFor="password">
-          Şifre
-        </label>
-        <input
-          id="password"
-          name="password"
-          type="password"
-          autoComplete="current-password"
-          required
-          className="admin-login__input"
-        />
+        <form className="admin-login__card" action={formAction}>
+          <label className="admin-login__label" htmlFor="password">
+            Şifre
+          </label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            autoComplete="current-password"
+            required
+            className="admin-login__input"
+          />
 
-        {state?.error ? (
-          <p className="admin-login__error">{state.error}</p>
-        ) : null}
+          {state?.error ? (
+            <p className="admin-login__error">{state.error}</p>
+          ) : null}
 
-        <button type="submit" className="admin-login__button" disabled={pending}>
-          {pending ? "Giriş yapılıyor..." : "Giriş yap"}
-        </button>
-      </form>
+          <button
+            type="submit"
+            className="admin-login__button"
+            disabled={pending}
+          >
+            {pending ? "Giriş yapılıyor..." : "Giriş yap"}
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

@@ -23,11 +23,20 @@ function ExpertiseCard({ area, detailsLabel }) {
       </button>
 
       {open ? (
-        <ul id={detailsId} className="expertise-details">
-          {area.details.map((item) => (
-            <li key={item}>{item}</li>
+        <div id={detailsId} className="expertise-details">
+          {area.paragraphs?.map((paragraph) => (
+            <p key={paragraph} className="expertise-detail-paragraph">
+              {paragraph}
+            </p>
           ))}
-        </ul>
+          {area.details?.length ? (
+            <ul className="expertise-detail-list">
+              {area.details.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          ) : null}
+        </div>
       ) : null}
     </article>
   );

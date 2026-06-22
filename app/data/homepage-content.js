@@ -179,9 +179,14 @@ export const homepageContent = {
       detailsLabel: "Detaylı incele",
       areas: [
         {
-          title: "Süreçlerin Yalın Dönüşümü",
+          title: "Süreçlerin Yalın Dönüşümü ve Dijitalleşmesi",
           summary:
-            "Ofis ve idari süreçlerdeki israfı görünür kılar, akışı hızlandırır ve sürdürülebilir bir ritim kurarız.",
+            "Ofis ve idari süreçlerdeki israfı görünür kılar, akışı hızlandırır ve süreçleri yalın yönetim prensipleriyle dijital sistemlere taşırız.",
+          paragraphs: [
+            "Şirketler çoğunlukla üretim süreçlerini iyileştirmeye odaklanır; çünkü üretim, yatırım büyüklüğü ve operasyonel maliyetler açısından en önemli gider kalemlerinden biridir. Ancak satış, servis, planlama, satın alma, kalite ve yönetim gibi diğer iş süreçlerinde yaşanan verimsizlikler; süreçler arasındaki zayıf bağlantılar, ortak hedeflerin bulunmaması, yetersiz performans göstergeleri ve doğru ölçülemeyen faaliyetler nedeniyle önemli maliyetlere ve performans kayıplarına yol açar.",
+            "Biz bu süreçlerin performansını ölçer; katma değerli ve katma değersiz faaliyetleri, süreçler arası etkileşimleri, tedarikçi ve müşteri odaklılığı, dijitalleşme olgunluğunu ve organizasyonel verimliliği analiz ederiz. Elde edilen sonuçlar doğrultusunda standartları, sorumlulukları, doğru iş gücü kapasitesini ve performans kriterlerini belirleyerek süreçleri daha müşteri odaklı, hızlı, şeffaf ve sürdürülebilir bir yapıya dönüştürürüz. Süreçleri yalın yönetim prensiplerine göre yeniden tasarlar, mevcut dijital sistemlerinize entegre eder veya ihtiyaçlarınıza uygun yeni dijital platformlar üzerinde kurgularız.",
+            "Amacımız, süreçlerinizi dünya standartlarına uygun, verimli, şeffaf ve sürdürülebilir bir yapıya dönüştürmektir. Tasarladığımız sistemleri yalnızca önermekle yetinmez; uygulama, takip, ölçme, iyileştirme ve standardizasyon aşamalarında da ekibinizle birlikte çalışarak kalıcı sonuçlar ve sürdürülebilir başarı elde edilmesini sağlarız.",
+          ],
           details: [
             "Değer akışı haritalama (VSM) ile uçtan uca süreç görünürlüğü.",
             "İdari ve planlama süreçlerinde israfların tespiti ve giderilmesi.",
@@ -192,6 +197,11 @@ export const homepageContent = {
           title: "Üretimin Yalın Dönüşümü",
           summary:
             "Üretim sahasını daha yalın, daha akışkan ve daha verimli hale getirir; duruşları ve israfları azaltırız.",
+          paragraphs: [
+            "Üretim; süreçlerine, çalışanlarına, makinelerine, teçhizatlarına ve alanlarına yapılan yüksek yatırımlardan dolayı şirketlerin en yüksek gideri olarak bilinir. Üretimin yalın üretim prensiplerine uygun tasarlanması; alan, malzeme, insan kaynakları ve kapasite artışında ciddi kazançlar getirir. Bu nedenle şirketlerin bu alanda iyileştirmeye öncelik vermesi mantıklıdır.",
+            "Bu kapsamda; mevcut üretim akışının incelenmesi, yeni hatların ve hücrelerin planlanması, baştan uca üretim zamanının hızlandırılması, üretimde otomasyon kararının verilmesi, darboğazların bertaraf edilmesi, yeni yatırımlara karar verilmesi ve kapasite artışının sağlanması gibi konularda yanınızda oluruz.",
+            "Ayrıca makine setup/ayar sürelerinin azaltılması, üretim hatlarının malzeme ile beslenmesi, stokların azaltılması, müşteri siparişine uygun dengeli üretimin planlanması, üretim yönetim sisteminin oluşturulup uygulanması ve yeni üretim kültürüne geçiş gibi konularda uygulamacı olarak destek veririz.",
+          ],
           details: [
             "Hat dengeleme, hücresel üretim ve akış tasarımı.",
             "SMED ile hızlı kalıp/ürün değişimi ve esneklik artışı.",
@@ -199,9 +209,13 @@ export const homepageContent = {
           ],
         },
         {
-          title: "Problem Çözme",
+          title: "Şirketlere Özel Problem Çözme Sürecinin Oluşturulması",
           summary:
-            "Kök neden odaklı, kalıcı çözümler üretir; ekiplere bu kası kazandırırız.",
+            "Hataların oluşmaması ve tekrarlanmaması için şirketinize özel bir problem çözme süreci tasarlar, uygular ve takip ederiz.",
+          paragraphs: [
+            "Bir şirketin süreçleri her zaman %100 doğru hizmet veya ürün üretmez; yani iş dünyasında hatalarla sürekli karşılaşırız. Peki bir şirkette meydana gelen hataların maddi yükü ölçülüyor mu? Bu sebeple önlem alınıyor mu? Alınan önlemler ne kadar etkili? Yoksa aynı hatalar tekrar tekrar mı yaşanıyor?",
+            "Hatalar tekrarlanıyorsa ya hatanın sebebi tespit edilememiş ya da öngörülen çözümler uygulanmamıştır. Hataların oluşmaması ve tekrarlanmaması için alışılmışın dışında ve şirketinize özel bir problem çözme süreci tasarlar, uygular ve takip mekanizmasını oluştururuz. İstendiği takdirde problem çözme süreci dijital hale getirilebilir.",
+          ],
           details: [
             "8D, A3 ve PDCA ile yapılandırılmış problem çözme.",
             "5 Neden ve Ishikawa ile kök neden analizi.",
@@ -209,9 +223,14 @@ export const homepageContent = {
           ],
         },
         {
-          title: "Tedarikçiden Müşteriye Kalite",
+          title: "Tedarikçiden Müşteriye Kalite Süreçlerinin Oluşturulması",
           summary:
             "Kaliteyi tek bir noktada değil, tedarik zincirinin tamamında güvence altına alırız.",
+          paragraphs: [
+            "Kalite süreçleri nerede başlamalı ve nerede bitmeli? Kaliteden yalnızca Kalite Bölümü mü sorumlu? Kimler kalite sürecinin içinde ne kadar yer almalı? Bugünkü endüstri şartlarında paydaşlarımıza nasıl bir kalite sorumluluğu verilmeli? Ürün veya süreç kalitesi kontrol edilerek mi sağlanır? Ürün kalitesi mi yoksa süreç kalitesi mi daha önemli?",
+            "Hata önleme mekanizmaları sürecin içinde nereye yerleştirilir? Ürün veya süreç kalitesi nasıl planlanır? Kalite maliyetleri sürekli takip ediliyor mu? Kontrol çizelgesi, histogram, Pareto analizi, Ishikawa (balık kılçığı) diyagramı, dağılım grafiği, akış şeması, FMEA, QFD, problem çözme, Deming çemberi, A3, 8D, 6 Sigma, beyin fırtınası ve diğer kalite yönetim araçları birçoğumuz tarafından bilinir.",
+            "Peki bu araçları nasıl ve nerede uygulayacağınız, şirketin çalışma sistemine nasıl dahil edeceğiniz konusunda uygulamalı eğitimle sizlere destek oluruz. Gelin birlikte düşünelim.",
+          ],
           details: [
             "Tedarikçi geliştirme, denetim ve giriş kalite kontrol.",
             "Süreç içi kalite (APQP, PPAP, FMEA) ve hata önleme (poka-yoke).",
@@ -219,9 +238,13 @@ export const homepageContent = {
           ],
         },
         {
-          title: "Satış Sonrası Şikayet Yönetimi",
+          title: "Satış Sonrası Müşteri Şikayetleri Yönetimi",
           summary:
             "Müşteri şikayetlerini hızlı, izlenebilir ve kalıcı çözümlere dönüştüren bir sistem kurarız.",
+          paragraphs: [
+            "Müşteri şikayetleri çözümlenme süreci ve takip platformu nasıl olmalı? Müşteriden arızalı olarak dönen ürünler nasıl depolanır ve incelenir? Hatalı olma durumunda tedarikçiye veya yanlış karar veren servise oluşan masraflar hangi süreçle rücu edilir? Arıza İnceleme Merkezi nasıl olmalıdır?",
+            "Kalite, Ar-Ge, Üretim, Üretim Planlama ve Satış Sonrası süreçleri gerçekten aynı hedefe mi hizmet ediyor? Aralarında kesintisiz bir akış var mı? Birlikte değerlendirelim.",
+          ],
           details: [
             "Şikayet alma, sınıflandırma ve önceliklendirme süreçleri.",
             "Hızlı müdahale ile kök neden analizinin birlikte yürütülmesi.",
@@ -446,9 +469,14 @@ export const homepageContent = {
       detailsLabel: "Read more",
       areas: [
         {
-          title: "Lean Transformation of Processes",
+          title: "Lean Transformation and Digitalization of Processes",
           summary:
-            "We make waste in office and administrative processes visible, speed up flow, and establish a sustainable rhythm.",
+            "We make waste in office and administrative processes visible, speed up flow, and move processes onto digital systems with lean management principles.",
+          paragraphs: [
+            "Companies usually focus on improving production processes, since production is one of the most significant cost items in terms of investment scale and operational expense. Yet inefficiencies in other business processes — sales, service, planning, purchasing, quality, and management — lead to substantial cost and performance losses, caused by weak links between processes, the absence of shared goals, inadequate performance indicators, and activities that are not measured correctly.",
+            "We measure the performance of these processes and analyze value-adding and non-value-adding activities, cross-process interactions, supplier and customer focus, digital maturity, and organizational efficiency. Based on the results, we define standards, responsibilities, the right workforce capacity, and performance criteria to transform processes into a more customer-focused, fast, transparent, and sustainable structure. We redesign processes according to lean management principles, integrate them into your existing digital systems, or build them on new digital platforms tailored to your needs.",
+            "Our goal is to transform your processes into a structure that is efficient, transparent, sustainable, and aligned with world-class standards. We do not merely propose the systems we design; we work alongside your team through implementation, follow-up, measurement, improvement, and standardization to achieve lasting results and sustainable success.",
+          ],
           details: [
             "End-to-end process visibility through value stream mapping (VSM).",
             "Identifying and removing waste in administrative and planning processes.",
@@ -459,6 +487,11 @@ export const homepageContent = {
           title: "Lean Transformation of Production",
           summary:
             "We make the shopfloor leaner, smoother, and more efficient while reducing downtime and waste.",
+          paragraphs: [
+            "Production is known as a company's highest cost, due to the heavy investment made in its processes, people, machines, equipment, and floor space. Designing production according to lean manufacturing principles brings significant gains in space, material, human resources, and capacity. It is therefore sensible for companies to prioritize improvement in this area.",
+            "In this scope we support you in examining the current production flow, planning new lines and cells, accelerating end-to-end production time, making automation decisions, eliminating bottlenecks, deciding on new investments, and increasing capacity.",
+            "We also help reduce machine setup/changeover times, feed production lines with material, lower inventory, plan balanced production aligned with customer orders, establish and apply a production management system, and transition to a new production culture — all as hands-on practitioners.",
+          ],
           details: [
             "Line balancing, cellular manufacturing, and flow design.",
             "SMED for fast changeovers and increased flexibility.",
@@ -466,9 +499,13 @@ export const homepageContent = {
           ],
         },
         {
-          title: "Problem Solving",
+          title: "Building a Company-Specific Problem-Solving Process",
           summary:
-            "We produce permanent, root-cause-driven solutions and build this muscle in your teams.",
+            "We design, implement, and track a problem-solving process tailored to your company so that errors do not occur and do not recur.",
+          paragraphs: [
+            "A company's processes do not always produce 100% correct services or products; in other words, we constantly encounter errors in business. But is the financial burden of the errors that occur in a company actually measured? Are countermeasures taken because of it? How effective are those countermeasures? Or do the same errors keep happening again and again?",
+            "If errors recur, either the cause of the error has not been identified or the foreseen solutions have not been applied. To prevent errors from occurring and recurring, we design and implement an unconventional, company-specific problem-solving process together with you and establish its follow-up mechanism. If desired, the problem-solving process can be digitalized.",
+          ],
           details: [
             "Structured problem solving with 8D, A3, and PDCA.",
             "Root cause analysis with 5 Whys and Ishikawa.",
@@ -476,9 +513,14 @@ export const homepageContent = {
           ],
         },
         {
-          title: "Quality from Supplier to Customer",
+          title: "Building Quality Processes from Supplier to Customer",
           summary:
             "We secure quality across the entire supply chain, not at a single point.",
+          paragraphs: [
+            "Where should quality processes begin and end? Is only the Quality Department responsible for quality? Who should take part in the quality process, and to what extent? Under today's industry conditions, what kind of quality responsibility should be given to our stakeholders? Is quality ensured by inspecting the product or the process? Which matters more — product quality or process quality?",
+            "Where in the process are error-prevention mechanisms placed? How is product or process quality planned? Are quality costs continuously tracked? Control charts, histograms, Pareto analysis, the Ishikawa (fishbone) diagram, scatter plots, flow charts, FMEA, QFD, problem solving, the Deming cycle, A3, 8D, Six Sigma, brainstorming, and other quality management tools are familiar to many of us.",
+            "We support you with hands-on training on how and where to apply these tools and how to embed them into the company's operating system. Let's think it through together.",
+          ],
           details: [
             "Supplier development, audits, and incoming quality control.",
             "In-process quality (APQP, PPAP, FMEA) and error-proofing (poka-yoke).",
@@ -486,9 +528,13 @@ export const homepageContent = {
           ],
         },
         {
-          title: "After-Sales Complaint Management",
+          title: "After-Sales Customer Complaint Management",
           summary:
             "We build a system that turns customer complaints into fast, traceable, and lasting solutions.",
+          paragraphs: [
+            "What should the customer-complaint resolution process and tracking platform look like? How are products returned from customers as faulty stored and examined? When a defect is confirmed, through which process are the resulting costs recovered from the supplier or the service that made the wrong decision? What should a Fault Investigation Center look like?",
+            "Do the Quality, R&D, Production, Production Planning, and After-Sales processes really serve the same goal? Is there a seamless flow between them? Let's evaluate it together.",
+          ],
           details: [
             "Intake, classification, and prioritization of complaints.",
             "Rapid response run together with root cause analysis.",
@@ -713,9 +759,14 @@ export const homepageContent = {
       detailsLabel: "Mehr erfahren",
       areas: [
         {
-          title: "Lean-Transformation der Prozesse",
+          title: "Lean-Transformation und Digitalisierung der Prozesse",
           summary:
-            "Wir machen Verschwendung in Büro- und Verwaltungsprozessen sichtbar, beschleunigen den Fluss und etablieren einen nachhaltigen Rhythmus.",
+            "Wir machen Verschwendung in Büro- und Verwaltungsprozessen sichtbar, beschleunigen den Fluss und überführen Prozesse mit Lean-Management-Prinzipien in digitale Systeme.",
+          paragraphs: [
+            "Unternehmen konzentrieren sich meist auf die Verbesserung der Produktionsprozesse, da die Produktion hinsichtlich Investitionsvolumen und Betriebskosten zu den wichtigsten Kostenpositionen zählt. Ineffizienzen in anderen Geschäftsprozessen — Vertrieb, Service, Planung, Einkauf, Qualität und Management — führen jedoch durch schwache Verbindungen zwischen den Prozessen, fehlende gemeinsame Ziele, unzureichende Leistungskennzahlen und nicht korrekt gemessene Aktivitäten zu erheblichen Kosten und Leistungsverlusten.",
+            "Wir messen die Leistung dieser Prozesse und analysieren wertschöpfende und nicht wertschöpfende Aktivitäten, prozessübergreifende Wechselwirkungen, Lieferanten- und Kundenorientierung, den digitalen Reifegrad und die organisatorische Effizienz. Auf Basis der Ergebnisse definieren wir Standards, Verantwortlichkeiten, die richtige Personalkapazität und Leistungskriterien, um die Prozesse kundenorientierter, schneller, transparenter und nachhaltiger zu gestalten. Wir gestalten Prozesse nach Lean-Management-Prinzipien neu, integrieren sie in Ihre bestehenden digitalen Systeme oder bauen sie auf neuen, auf Ihre Bedürfnisse zugeschnittenen digitalen Plattformen auf.",
+            "Unser Ziel ist es, Ihre Prozesse in eine effiziente, transparente, nachhaltige und weltklasse-konforme Struktur zu überführen. Wir empfehlen die von uns entworfenen Systeme nicht nur; wir arbeiten gemeinsam mit Ihrem Team durch Umsetzung, Nachverfolgung, Messung, Verbesserung und Standardisierung, um dauerhafte Ergebnisse und nachhaltigen Erfolg zu erzielen.",
+          ],
           details: [
             "Durchgängige Prozesstransparenz durch Wertstromanalyse (VSM).",
             "Erkennen und Beseitigen von Verschwendung in Verwaltungs- und Planungsprozessen.",
@@ -726,6 +777,11 @@ export const homepageContent = {
           title: "Lean-Transformation der Produktion",
           summary:
             "Wir machen den Shopfloor schlanker, flüssiger und effizienter und reduzieren Stillstände und Verschwendung.",
+          paragraphs: [
+            "Die Produktion gilt aufgrund der hohen Investitionen in ihre Prozesse, Mitarbeiter, Maschinen, Anlagen und Flächen als höchste Kostenposition eines Unternehmens. Eine an Lean-Prinzipien ausgerichtete Gestaltung der Produktion bringt erhebliche Gewinne bei Fläche, Material, Personal und Kapazität. Daher ist es sinnvoll, dass Unternehmen Verbesserungen in diesem Bereich priorisieren.",
+            "In diesem Rahmen unterstützen wir Sie bei der Analyse des bestehenden Produktionsflusses, der Planung neuer Linien und Zellen, der Beschleunigung der durchgängigen Produktionszeit, Automatisierungsentscheidungen, der Beseitigung von Engpässen, Entscheidungen über Neuinvestitionen und der Steigerung der Kapazität.",
+            "Wir helfen außerdem, Rüst- und Einstellzeiten der Maschinen zu reduzieren, Produktionslinien mit Material zu versorgen, Bestände zu senken, eine an Kundenaufträgen ausgerichtete, ausgewogene Produktion zu planen, ein Produktionsmanagementsystem aufzubauen und anzuwenden sowie den Übergang zu einer neuen Produktionskultur zu gestalten — als praxisnahe Praktiker.",
+          ],
           details: [
             "Linienausgleich, zelluläre Fertigung und Flussgestaltung.",
             "SMED für schnelle Rüstvorgänge und mehr Flexibilität.",
@@ -733,9 +789,13 @@ export const homepageContent = {
           ],
         },
         {
-          title: "Problemlösung",
+          title: "Aufbau eines unternehmensspezifischen Problemlösungsprozesses",
           summary:
-            "Wir erarbeiten dauerhafte, ursachenorientierte Lösungen und bauen diese Fähigkeit in Ihren Teams auf.",
+            "Wir gestalten, implementieren und verfolgen einen auf Ihr Unternehmen zugeschnittenen Problemlösungsprozess, damit Fehler nicht entstehen und sich nicht wiederholen.",
+          paragraphs: [
+            "Die Prozesse eines Unternehmens liefern nicht immer zu 100 % korrekte Leistungen oder Produkte; das heißt, im Geschäftsalltag begegnen uns ständig Fehler. Aber wird die finanzielle Last der in einem Unternehmen auftretenden Fehler überhaupt gemessen? Werden deshalb Gegenmaßnahmen ergriffen? Wie wirksam sind diese Maßnahmen? Oder treten dieselben Fehler immer wieder auf?",
+            "Wenn sich Fehler wiederholen, wurde entweder die Ursache nicht erkannt oder die vorgesehenen Lösungen wurden nicht umgesetzt. Damit Fehler nicht entstehen und sich nicht wiederholen, gestalten und implementieren wir gemeinsam mit Ihnen einen unkonventionellen, unternehmensspezifischen Problemlösungsprozess und richten den dazugehörigen Nachverfolgungsmechanismus ein. Auf Wunsch kann der Problemlösungsprozess digitalisiert werden.",
+          ],
           details: [
             "Strukturierte Problemlösung mit 8D, A3 und PDCA.",
             "Ursachenanalyse mit 5-Why und Ishikawa.",
@@ -743,9 +803,14 @@ export const homepageContent = {
           ],
         },
         {
-          title: "Qualität vom Lieferanten bis zum Kunden",
+          title: "Aufbau von Qualitätsprozessen vom Lieferanten bis zum Kunden",
           summary:
             "Wir sichern Qualität entlang der gesamten Lieferkette, nicht nur an einem Punkt.",
+          paragraphs: [
+            "Wo sollten Qualitätsprozesse beginnen und enden? Ist nur die Qualitätsabteilung für Qualität verantwortlich? Wer sollte in welchem Umfang am Qualitätsprozess teilnehmen? Welche Qualitätsverantwortung sollte unseren Stakeholdern unter heutigen Industriebedingungen übertragen werden? Wird Qualität durch die Prüfung des Produkts oder des Prozesses sichergestellt? Was ist wichtiger — Produktqualität oder Prozessqualität?",
+            "Wo im Prozess werden Fehlervermeidungsmechanismen platziert? Wie wird Produkt- oder Prozessqualität geplant? Werden Qualitätskosten kontinuierlich verfolgt? Regelkarten, Histogramme, Pareto-Analyse, das Ishikawa- (Fischgräten-) Diagramm, Streudiagramme, Flussdiagramme, FMEA, QFD, Problemlösung, der Deming-Kreis, A3, 8D, Six Sigma, Brainstorming und weitere Qualitätsmanagement-Werkzeuge sind vielen von uns bekannt.",
+            "Wir unterstützen Sie mit praxisnaher Schulung dabei, wie und wo Sie diese Werkzeuge anwenden und in das Arbeitssystem des Unternehmens einbinden. Lassen Sie uns gemeinsam nachdenken.",
+          ],
           details: [
             "Lieferantenentwicklung, Audits und Wareneingangsprüfung.",
             "Prozessbegleitende Qualität (APQP, PPAP, FMEA) und Fehlervermeidung (Poka-Yoke).",
@@ -753,9 +818,13 @@ export const homepageContent = {
           ],
         },
         {
-          title: "Reklamationsmanagement im After-Sales",
+          title: "After-Sales-Kundenreklamationsmanagement",
           summary:
             "Wir bauen ein System, das Kundenreklamationen in schnelle, nachvollziehbare und dauerhafte Lösungen verwandelt.",
+          paragraphs: [
+            "Wie sollten der Bearbeitungsprozess für Kundenreklamationen und die Tracking-Plattform aussehen? Wie werden vom Kunden als fehlerhaft zurückgesandte Produkte gelagert und untersucht? Über welchen Prozess werden im Fehlerfall die entstandenen Kosten vom Lieferanten oder vom Service, der die falsche Entscheidung getroffen hat, zurückgefordert? Wie sollte ein Fehler-Untersuchungszentrum aussehen?",
+            "Dienen die Prozesse Qualität, F&E, Produktion, Produktionsplanung und After-Sales wirklich demselben Ziel? Gibt es zwischen ihnen einen nahtlosen Fluss? Lassen Sie es uns gemeinsam bewerten.",
+          ],
           details: [
             "Erfassung, Klassifizierung und Priorisierung von Reklamationen.",
             "Schnelle Reaktion gemeinsam mit der Ursachenanalyse.",

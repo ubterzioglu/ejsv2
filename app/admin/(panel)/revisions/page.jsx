@@ -1,6 +1,7 @@
 import { createServerClient } from "@/lib/supabase/server";
 import { setRevisionStatus, deleteRevision } from "./actions";
 import { RevisionForm } from "./revision-form";
+import { AdminPageHeader } from "../components/admin-page-header";
 
 export const dynamic = "force-dynamic";
 
@@ -24,12 +25,20 @@ export default async function RevisionsPage() {
     .select("*")
     .order("created_at", { ascending: false });
 
+  const requests = data ?? [];
+  const counts = {
+    new: requests.filter((r) => r.status === "new").length,
+    in_progress: requests.filter((r) => r.status === "in_progress").length,
+    done: requests.filter((r) => r.status === "done").length,
+  };
+
   return (
     <div>
-      <h1 className="admin-page__title">Revizyon İstekleri</h1>
-      <p className="admin-page__subtitle">
-        Kullanıcı isteklerini buraya girin ve durumlarını takip edin.
-      </p>
+      <AdminPageHeader
+        eyebrow="Talepler"
+        title="Revizyon İstekleri"
+        description="Kullanıcı taleplerini, içerik notlarını ve yapılacak düzenlemeleri buradan takip edin."
+      />
 
       {error ? (
         <p className="admin-error">
@@ -37,63 +46,96 @@ export default async function RevisionsPage() {
         </p>
       ) : (
         <>
-          <div className="admin-list">
-            {(data ?? []).length === 0 ? (
-              <p className="admin-empty">Henüz revizyon isteği yok.</p>
-            ) : (
-              data.map((req) => (
-                <article key={req.id} className="admin-card">
-                  <div className="admin-card__head">
-                    <div>
-                      <h3 className="admin-card__title">
-                        {req.name || "İsimsiz"}
-                        {req.email ? (
-                          <span className="admin-card__muted">
-                            {" "}
-                            · {req.email}
-                          </span>
-                        ) : null}
-                      </h3>
-                      <p className="admin-card__excerpt">{req.message}</p>
-                    </div>
-                    <span className={`admin-badge admin-badge--${req.status}`}>
-                      {STATUS_LABELS[req.status] ?? req.status}
-                    </span>
-                  </div>
-
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: 8,
-                      marginTop: 12,
-                      alignItems: "center",
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    {STATUS_ORDER.filter((s) => s !== req.status).map((s) => (
-                      <form key={s} action={setRevisionStatus}>
-                        <input type="hidden" name="id" value={req.id} />
-                        <input type="hidden" name="status" value={s} />
-                        <button type="submit" className="admin-button--ghost">
-                          {STATUS_LABELS[s]} yap
-                        </button>
-                      </form>
-                    ))}
-                    <form action={deleteRevision} style={{ marginLeft: "auto" }}>
-                      <input type="hidden" name="id" value={req.id} />
-                      <button type="submit" className="admin-button--danger">
-                        Sil
-                      </button>
-                    </form>
-                  </div>
-
-                  <p className="admin-card__meta">{formatDate(req.created_at)}</p>
-                </article>
-              ))
-            )}
+          <div className="admin-stats-grid">
+            {STATUS_ORDER.map((s) => (
+              <div key={s} className="admin-stat-card">
+                <div className="admin-stat-card__label">{STATUS_LABELS[s]}</div>
+                <div className="admin-stat-card__value">{counts[s]}</div>
+                <div className="admin-stat-card__hint">talep</div>
+              </div>
+            ))}
           </div>
 
-          <RevisionForm />
+          <div className="admin-content-layout">
+            <section className="admin-content-layout__main">
+              <div className="admin-section-head">
+                <div>
+                  <p className="admin-section-title">Gelen talepler</p>
+                  <p className="admin-section-subtitle">
+                    Durumları güncelleyin veya kaydı kaldırın.
+                  </p>
+                </div>
+                <span className="admin-count-pill">{requests.length} kayıt</span>
+              </div>
+
+              <div className="admin-list">
+                {requests.length === 0 ? (
+                  <div className="admin-empty-card">
+                    <strong>Henüz revizyon isteği yok.</strong>
+                    <span>Sağdaki formla yeni bir talep ekleyebilirsiniz.</span>
+                  </div>
+                ) : (
+                  requests.map((req) => (
+                    <article key={req.id} className="admin-card">
+                      <div className="admin-card__head">
+                        <div>
+                          <h3 className="admin-card__title">
+                            {req.name || "İsimsiz"}
+                            {req.email ? (
+                              <span className="admin-card__muted">
+                                {" "}
+                                · {req.email}
+                              </span>
+                            ) : null}
+                          </h3>
+                          <p className="admin-card__excerpt">{req.message}</p>
+                        </div>
+                        <span
+                          className={`admin-badge admin-badge--${req.status}`}
+                        >
+                          {STATUS_LABELS[req.status] ?? req.status}
+                        </span>
+                      </div>
+
+                      <div className="admin-card__actions admin-card__actions--row">
+                        {STATUS_ORDER.filter((s) => s !== req.status).map(
+                          (s) => (
+                            <form key={s} action={setRevisionStatus}>
+                              <input type="hidden" name="id" value={req.id} />
+                              <input type="hidden" name="status" value={s} />
+                              <button
+                                type="submit"
+                                className="admin-button--ghost"
+                              >
+                                {STATUS_LABELS[s]} yap
+                              </button>
+                            </form>
+                          )
+                        )}
+                        <form
+                          action={deleteRevision}
+                          className="admin-card__actions-end"
+                        >
+                          <input type="hidden" name="id" value={req.id} />
+                          <button type="submit" className="admin-button--danger">
+                            Sil
+                          </button>
+                        </form>
+                      </div>
+
+                      <p className="admin-card__meta">
+                        {formatDate(req.created_at)}
+                      </p>
+                    </article>
+                  ))
+                )}
+              </div>
+            </section>
+
+            <aside className="admin-content-layout__side">
+              <RevisionForm />
+            </aside>
+          </div>
         </>
       )}
     </div>

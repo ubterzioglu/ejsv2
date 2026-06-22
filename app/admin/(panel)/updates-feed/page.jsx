@@ -29,23 +29,32 @@ const UPDATES = [
 export default function UpdatesFeedPage() {
   return (
     <div>
-      <h1 className="admin-page__title">Güncellemeler</h1>
-      <p className="admin-page__subtitle">
-        Panel ve site üzerinde yapılan çalışmaların günlük kaydı (salt-okunur).
-      </p>
+      <header className="admin-page-header">
+        <div>
+          <span className="admin-kicker">Çalışma kaydı</span>
+          <h1 className="admin-page__title">Güncellemeler</h1>
+          <p className="admin-page__subtitle">
+            Panel ve site üzerinde yapılan çalışmaların sade ve takip edilebilir
+            kayıt alanı (salt-okunur).
+          </p>
+        </div>
+      </header>
 
-      <div className="admin-list">
+      <div className="admin-timeline">
         {UPDATES.map((day) => (
-          <article key={day.date} className="admin-card">
-            <div className="admin-card__head">
-              <h3 className="admin-card__title">{day.title}</h3>
-              <span className="admin-badge">{day.date}</span>
+          <article key={day.date} className="admin-timeline-card">
+            <div className="admin-timeline-card__marker" />
+            <div className="admin-timeline-card__content">
+              <div className="admin-timeline-card__head">
+                <h3 className="admin-card__title">{day.title}</h3>
+                <span className="admin-badge">{day.date}</span>
+              </div>
+              <ul className="admin-update-list">
+                {day.items.map((line, i) => (
+                  <li key={i}>{line}</li>
+                ))}
+              </ul>
             </div>
-            <ul className="admin-update-list">
-              {day.items.map((line, i) => (
-                <li key={i}>{line}</li>
-              ))}
-            </ul>
           </article>
         ))}
       </div>
