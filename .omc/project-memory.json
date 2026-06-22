@@ -152,20 +152,32 @@
   "hotPaths": [
     {
       "path": "app\\globals.css",
-      "accessCount": 33,
-      "lastAccessed": 1782135114985,
+      "accessCount": 35,
+      "lastAccessed": 1782139727240,
       "type": "file"
     },
     {
       "path": "app\\data\\homepage-content.js",
-      "accessCount": 12,
-      "lastAccessed": 1782139382615,
+      "accessCount": 13,
+      "lastAccessed": 1782139679796,
       "type": "file"
     },
     {
       "path": ".env.local",
       "accessCount": 11,
       "lastAccessed": 1782130277999,
+      "type": "file"
+    },
+    {
+      "path": "app\\[lang]\\page.jsx",
+      "accessCount": 8,
+      "lastAccessed": 1782139785278,
+      "type": "file"
+    },
+    {
+      "path": "components\\site-footer.jsx",
+      "accessCount": 7,
+      "lastAccessed": 1782139773616,
       "type": "file"
     },
     {
@@ -199,15 +211,15 @@
       "type": "file"
     },
     {
-      "path": "app\\[lang]\\page.jsx",
-      "accessCount": 5,
-      "lastAccessed": 1782130702398,
-      "type": "file"
-    },
-    {
       "path": "package.json",
       "accessCount": 5,
       "lastAccessed": 1782131465214,
+      "type": "file"
+    },
+    {
+      "path": "components\\sections\\share-section.jsx",
+      "accessCount": 5,
+      "lastAccessed": 1782139708039,
       "type": "file"
     },
     {
@@ -229,12 +241,6 @@
       "type": "file"
     },
     {
-      "path": "components\\sections\\share-section.jsx",
-      "accessCount": 4,
-      "lastAccessed": 1782130679037,
-      "type": "file"
-    },
-    {
       "path": "app\\[lang]\\layout.jsx",
       "accessCount": 4,
       "lastAccessed": 1782130716223,
@@ -253,21 +259,15 @@
       "type": "file"
     },
     {
-      "path": "components\\site-footer.jsx",
+      "path": "components\\sections\\contact-section.jsx",
       "accessCount": 4,
-      "lastAccessed": 1782139352386,
+      "lastAccessed": 1782139679434,
       "type": "file"
     },
     {
       "path": "components\\process-highlight.jsx",
       "accessCount": 3,
       "lastAccessed": 1782129011695,
-      "type": "file"
-    },
-    {
-      "path": "components\\sections\\contact-section.jsx",
-      "accessCount": 3,
-      "lastAccessed": 1782129029685,
       "type": "file"
     },
     {

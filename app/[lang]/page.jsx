@@ -65,12 +65,11 @@ export default async function HomePage({ params }) {
         <ExpertSpotlight lang={lang} />
         <FounderStorySection founder={page.founder} lang={lang} />
         <ArticlesSection articles={page.articles} />
-        <ShareSection lang={lang} shareUrl={shareUrl} shareText={shareText} />
         <ReferencesSection references={page.references} />
         <ContactSection contact={page.contact} lang={lang} />
       </main>
 
-      <SiteFooter footer={page.footer} lang={lang} />
+      <SiteFooter footer={page.footer} lang={lang} shareUrl={shareUrl} shareText={shareText} />
     </div>
   );
 }

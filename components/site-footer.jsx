@@ -2,10 +2,11 @@
 
 import Image from "next/image";
 import { Fragment } from "react";
+import { ShareSection } from "@/components/sections/share-section";
 
 const footerLogo = "/assets/ejsmenulogo.png";
 
-export function SiteFooter({ footer, shareLinks, lang }) {
+export function SiteFooter({ footer, lang, shareUrl, shareText }) {
   return (
     <footer className="site-footer">
       <div className="footer-shell section">
@@ -62,6 +63,8 @@ export function SiteFooter({ footer, shareLinks, lang }) {
           ))}
         </nav>
       </div>
+
+      <ShareSection lang={lang} shareUrl={shareUrl} shareText={shareText} />
 
       <div className="footer-copyright">
         <p>EJS Consulting 2026 - Tüm Hakları Saklıdır</p>
