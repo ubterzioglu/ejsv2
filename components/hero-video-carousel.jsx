@@ -3,32 +3,34 @@
 import { useEffect, useRef, useState } from "react";
 
 export function HeroVideoCarousel({ videos, ctaLabel, lang = "tr" }) {
+  const safeVideos = Array.isArray(videos) ? videos : [];
   const [activeIndex, setActiveIndex] = useState(0);
   const videoRef = useRef(null);
 
-  const activeVideo = videos[activeIndex];
-  const activeCaption = activeVideo.captions?.[lang] ?? activeVideo.captions?.tr ?? "";
+  const activeVideo = safeVideos[activeIndex] ?? safeVideos[0];
+  const activeCaption =
+    activeVideo?.captions?.[lang] ?? activeVideo?.captions?.tr ?? "";
 
   useEffect(() => {
     const videoNode = videoRef.current;
 
-    if (!videoNode) {
+    if (!videoNode || !activeVideo) {
       return undefined;
     }
 
     const handleEnded = () => {
-      setActiveIndex((current) => (current + 1) % videos.length);
+      setActiveIndex((current) => (current + 1) % safeVideos.length);
     };
 
     videoNode.addEventListener("ended", handleEnded);
 
     const safetyTimer = window.setTimeout(() => {
-      setActiveIndex((current) => (current + 1) % videos.length);
+      setActiveIndex((current) => (current + 1) % safeVideos.length);
     }, 9000);
 
     videoNode.play().catch(() => {
       window.setTimeout(() => {
-        setActiveIndex((current) => (current + 1) % videos.length);
+        setActiveIndex((current) => (current + 1) % safeVideos.length);
       }, 4000);
     });
 
@@ -36,7 +38,11 @@ export function HeroVideoCarousel({ videos, ctaLabel, lang = "tr" }) {
       videoNode.removeEventListener("ended", handleEnded);
       window.clearTimeout(safetyTimer);
     };
-  }, [activeVideo, videos.length]);
+  }, [activeVideo, safeVideos.length]);
+
+  if (!activeVideo) {
+    return null;
+  }
 
   return (
     <div className="hero-video-shell" id="hemen-basla">
@@ -62,7 +68,7 @@ export function HeroVideoCarousel({ videos, ctaLabel, lang = "tr" }) {
 
         <div className="hero-lower-bar">
           <div className="hero-indicators" aria-label="Video navigation">
-            {videos.map((video, index) => (
+            {safeVideos.map((video, index) => (
               <button
                 key={video.src}
                 type="button"

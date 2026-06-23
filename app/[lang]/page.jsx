@@ -1,4 +1,5 @@
-import { heroVideos, homepageContent } from "@/app/data/homepage-content";
+import { homepageContent } from "@/app/data/homepage-content";
+import { getHeroSlides } from "@/lib/hero-slides";
 import { HeroVideoCarousel } from "@/components/hero-video-carousel";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -17,12 +18,14 @@ import { ContactSection } from "@/components/sections/contact-section";
 export default async function HomePage({ params }) {
   const { lang } = await params;
   const page = homepageContent[lang] ?? homepageContent.tr;
+  const heroSlides = await getHeroSlides();
 
   const shareUrl = encodeURIComponent("https://ejsconsulting.com");
   const shareTextMap = {
     tr: "EJS Consulting ile mühendislik çözümlerini keşfedin.",
     en: "Discover engineering solutions with EJS Consulting.",
     de: "Entdecken Sie Engineering-Loesungen mit EJS Consulting.",
+    bs: "Otkrijte inženjerska rješenja uz EJS Consulting.",
   };
   const shareText = encodeURIComponent(shareTextMap[lang] ?? shareTextMap.tr);
 
@@ -38,7 +41,7 @@ export default async function HomePage({ params }) {
       <main className="hero-page">
         <section className="hero-stage">
           <HeroVideoCarousel
-            videos={heroVideos}
+            videos={heroSlides}
             ctaLabel={page.hero.ctaLabel}
             lang={lang}
           />

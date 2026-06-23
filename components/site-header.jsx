@@ -8,7 +8,11 @@ const languageItems = [
   { label: "TR", code: "tr" },
   { label: "EN", code: "en" },
   { label: "DE", code: "de" },
+  { label: "BS", code: "bs" },
 ];
+
+// Yol basindaki dil onekini (ornek: /tr, /bs) yakalamak icin locales'tan uretilir.
+const langPrefixPattern = new RegExp(`^/(${locales.join("|")})(?=/|$)`);
 
 export function SiteHeader({ utilityLinks, mainLinks, ariaLabels, approachCta }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +22,7 @@ export function SiteHeader({ utilityLinks, mainLinks, ariaLabels, approachCta })
   const currentLang = locales.find((l) => pathname.startsWith(`/${l}`)) ?? "tr";
 
   const switchLang = (code) => {
-    const withoutLang = pathname.replace(/^\/(tr|en|de)/, "") || "/";
+    const withoutLang = pathname.replace(langPrefixPattern, "") || "/";
     router.push(`/${code}${withoutLang}`);
   };
 

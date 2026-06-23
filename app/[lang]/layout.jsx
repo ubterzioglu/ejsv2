@@ -21,6 +21,11 @@ const metadataByLocale = {
     description:
       "Kein Berater — ein praxisnaher Transformationspartner. Über 33 Jahre Praxiserfahrung in Lean-Prozessen, Lean-Produktion, Qualität und Projektmanagement, vor Ort bis Ergebnisse real sind.",
   },
+  bs: {
+    title: "EJS Consulting | Konsalting za proizvodnju i upravljanje projektima",
+    description:
+      "Nismo konsultant — partner za transformaciju koji radi na terenu. Više od 33 godine iskustva na terenu u vitkim procesima, vitkoj proizvodnji, kvalitetu i upravljanju projektima, na licu mjesta dok rezultati ne postanu stvarni.",
+  },
 };
 
 export async function generateMetadata({ params }) {

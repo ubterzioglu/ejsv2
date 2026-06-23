@@ -255,7 +255,7 @@ export const homepageContent = {
     },
     founder: {
       eyebrow: "Kurucumuzun Hikayesi",
-      subtitle: "Savaşın ortasında başlayan yolculuk, bugün sanayiye değer katan uluslararası bir tecrübeye dönüştü.",
+      subtitle: "Savaşın ortasında başlayan yolculuk, bugün sanayiye değer katan uluslararası bir tecrübeye dönüştü…..",
       name: "Envera Jahovic Saraylı",
       role: "Kurucu Danışman, EJS Consulting",
       paragraphs: [
@@ -926,5 +926,334 @@ export const homepageContent = {
       ],
       navLabel: "Fußzeilen-Navigation",
     },
+  },
+  bs: {
+    "ariaLabels": {
+      "utilityNav": "Gornja navigacija",
+      "mainNav": "Glavna navigacija",
+      "search": "Pretraga"
+    },
+    "utilityLinks": [
+      {
+        "label": "Naš identitet",
+        "href": "#kimligimiz"
+      },
+      {
+        "label": "Naš pristup",
+        "href": "#yaklasimimiz"
+      },
+      {
+        "label": "Kontakt",
+        "href": "#iletisim"
+      }
+    ],
+    "mainLinks": [
+      {
+        "label": "Počnite odmah!",
+        "href": "#hemen-basla"
+      },
+      {
+        "label": "O našoj studiji",
+        "href": "#calismamiz-hakkinda"
+      },
+      {
+        "label": "Naše oblasti stručnosti",
+        "href": "#uzmanlik-alanlarimiz"
+      },
+      {
+        "label": "Uči i raste",
+        "href": "#ogren-ve-gelis"
+      },
+      {
+        "label": "Reference",
+        "href": "#referanslar"
+      }
+    ],
+    "hero": {
+      "ctaLabel": "Naš pristup"
+    },
+    "identity": {
+      "eyebrow": "Naš identitet",
+      "title": "Više od 33 godine međunarodnog terenskog iskustva.",
+      "tag": "Pristup",
+      "intro": "Obimno praktično iskustvo koje smo stekli u proizvodnom sektoru, kako kod kuće tako i u inostranstvu, ne koristimo za stolom, već na terenu.",
+      "body": "Vaše osoblje smatramo partnerima i zajedno s njima razvijamo rješenja. Ne samo da vam govorimo šta treba raditi; ostajemo na terenu s vašim timovima dok proces ne bude dovršen. U našem radu dajemo prednost djelovanju nad riječima.",
+      "highlight": "Znanje, iskustvo i djelovanje sve u jednom.",
+      "bullets": [
+        "Duboko znanje o lean procesima, lean proizvodnji, kvalitetu i upravljanju projektima.",
+        "Iskustvo na terenu u više sektora, kako na domaćem, tako i na međunarodnom nivou.",
+        "Praktičan pristup implementaciji rješenja na terenu, radeći rame uz rame s vašim timovima."
+      ],
+      "cta": {
+        "label": "Pogledajte priču našeg osnivača.",
+        "href": "#kurucumuzun-hikayesi"
+      }
+    },
+    "approach": {
+      "eyebrow": "Naš pristup",
+      "body": [
+        "Za razliku od tradicionalnog savjetovanja, mi se ne pojavljujemo samo s izvještajem i potom odlazimo. Mi zajedno s vama na terenu osmišljavamo i provodimo transformaciju te ostajemo uz vas dok se ne postignu rezultati.",
+        "Za nas uspješna transformacija čini implementaciju prirodnim dijelom koncepta. Ne namećemo vam rješenje; umjesto toga radimo uz vaš tim kako bismo izgradili rješenje prilagođeno vašim specifičnim okolnostima."
+      ],
+      "highlight": "Ne savjetnik, već partner za transformaciju koji ostvaruje rezultate."
+    },
+    "mission": {
+      "eyebrow": "Naša misija",
+      "title": "Za jačanje profitabilnosti, organizacijskih struktura i discipline na licu mjesta istovremeno.",
+      "intro": "Radimo na tome da doprinesemo industriji svojom stručnošću, kako u zemlji, tako i u inostranstvu, i da pripremimo kompanije za digitalno doba.",
+      "bullets": [
+        "Za jačanje profitabilnosti i korporativne strukture kompanija.",
+        "Pripremiti organizacije za digitalno doba i uspješno ih pozicionirati u ovoj transformaciji.",
+        "Uspostaviti vitke, agilne, brze i efikasne radne sisteme.",
+        "Stvoriti jasne i održive procese opremajući osoblje potrebnim vještinama."
+      ],
+      "highlight": "Od znanja i iskustva do snage, od snage do rezultata."
+    },
+    "methodology": {
+      "eyebrow": "Šta apsolutno morate znati o našoj studiji",
+      "title": "Način rada strukturiramo oko osam jasnih principa.",
+      "intro": "U svakoj fazi, od početnog kontakta do završetka, primjenjujemo pristup koji je praktičan, mjerljiv i održiv na terenu.",
+      "steps": [
+        {
+          "title": "Besplatna analiza",
+          "icon": "analysis",
+          "description": "Ako ste zainteresovani za saradnju s nama, posjetit ćemo vas besplatno, provesti vas u kratku turu po objektu, predstaviti se, procijeniti možemo li dodati vrijednost vašem poslovanju i podijeliti s vama naše nalaze."
+        },
+        {
+          "title": "Optimizacija efikasnosti",
+          "icon": "growth",
+          "description": "Ako se odlučimo za saradnju, transformirat ćemo vaše procese i proizvodne prostore, korak po korak, ali što je brže moguće, u vitkije, efikasnije, profesionalnije i, posljedično, profitabilnije poslovanje."
+        },
+        {
+          "title": "Korporativna kultura",
+          "icon": "governance",
+          "description": "Tokom našeg rada, podrška višeg menadžmenta i korporativna kultura otvorena za promjene su nam od suštinske važnosti."
+        },
+        {
+          "title": "Transparentnost",
+          "icon": "balance",
+          "description": "Otvoreni smo, jasni, transparentni i iskreni u našoj komunikaciji. Nema razlike između naših misli, riječi i djela; gradimo odnose zasnovane na uzajamnom povjerenju i iskrenosti."
+        },
+        {
+          "title": "Profesionalizam",
+          "icon": "check",
+          "description": "Radimo samo u oblastima u kojima smo specijalizirani."
+        },
+        {
+          "title": "Kontinuirano poboljšanje",
+          "icon": "edit",
+          "description": "Pratimo razvoj u našem području stručnosti i uključujemo značajne inovacije u naš rad."
+        },
+        {
+          "title": "Zaključak",
+          "icon": "hourglass",
+          "description": "Tokom cijelog procesa uložit ćemo sve napore da osiguramo da postignete rezultate, a kao vaši praktičari, uvijek ćemo biti uz vas."
+        },
+        {
+          "title": "Kontrola budžeta",
+          "icon": "budget",
+          "description": "Implementiramo isplative radne metode kontinuiranim praćenjem trajanja konsultantskih radova i broja konsultanta potrebnih za svaki projekat."
+        }
+      ]
+    },
+    "expertise": {
+      "eyebrow": "Naše oblasti stručnosti",
+      "title": "Dubinsko stručno znanje u pet ključnih područja.",
+      "intro": "Svaku oblast rješavamo ne putem izvještaja, već praktičnim metodama primijenjenim na terenu. Možete kliknuti na kartice da biste vidjeli detalje.",
+      "detailsLabel": "Pregledajte detaljno",
+      "areas": [
+        {
+          "title": "Lean transformacija i digitalizacija procesa",
+          "summary": "Ističemo gubitke u kancelarijskim i administrativnim procesima, optimiziramo tokove rada i migriramo procese u digitalne sisteme u skladu s principima lean menadžmenta.",
+          "paragraphs": [
+            "Kompanije se obično fokusiraju na poboljšanje svojih proizvodnih procesa, jer je proizvodnja jedan od najznačajnijih stavki troškova u pogledu obima ulaganja i operativnih troškova. Međutim, neefikasnosti u drugim poslovnim procesima—kao što su prodaja, servis, planiranje, nabavka, kvalitet i upravljanje—dovode do značajnih troškova i gubitaka u učinkovitosti zbog slabih veza između procesa, nedostatka zajedničkih ciljeva, neadekvatnih pokazatelja učinka i aktivnosti koje se ne mogu pravilno mjeriti.",
+            "Mjerimo učinak ovih procesa; analiziramo aktivnosti koje stvaraju dodanu vrijednost i aktivnosti koje ne stvaraju dodanu vrijednost, interakcije između procesa, fokus na dobavljače i kupce, digitalnu zrelost i organizacijsku efikasnost. Na osnovu dobijenih rezultata, definiramo standarde, odgovornosti, odgovarajući kapacitet radne snage i kriterije učinka, čime transformiramo procese u strukturu koja je više usmjerena na kupca, agilnija, transparentnija i održivija. Redizajniramo procese u skladu s principima lean menadžmenta, integrišemo ih u vaše postojeće digitalne sisteme ili ih gradimo na novim digitalnim platformama prilagođenim vašim potrebama.",
+            "Naš cilj je transformirati vaše procese u strukturu koja ispunjava globalne standarde i koja je efikasna, transparentna i održiva. Ne predlažemo samo sisteme koje dizajniramo; radimo zajedno s vašim timom tokom faza implementacije, nadzora, mjerenja, poboljšanja i standardizacije kako bismo osigurali trajne rezultate i održiv uspjeh."
+          ],
+          "details": [
+            "Vidljivost procesa od početka do kraja putem mapiranja toka vrijednosti (VSM).",
+            "Identifikacija i eliminacija gubitaka u administrativnim i planskim procesima.",
+            "Uspostavljanje standardnih operativnih procedura, vizuelnog upravljanja i redovnog ciklusa upravljanja."
+          ]
+        },
+        {
+          "title": "Lean transformacija u proizvodnji",
+          "summary": "To čini proizvodnu halu vitkijom, fluidnijom i efikasnijom; smanjujemo vrijeme zastoja i otpad.",
+          "paragraphs": [
+            "Proizvodnja se prepoznaje kao najveći trošak kompanije zbog značajnih ulaganja u njene procese, radnu snagu, mašine, opremu i prostorije. Dizajniranje proizvodnje u skladu s principima vitke proizvodnje donosi značajne dobitke u pogledu prostora, materijala, ljudskih resursa i kapaciteta. Stoga je za kompanije logično da daju prioritet poboljšanjima u ovom području.",
+            "U ovom kontekstu podržaćemo vas u oblastima kao što su analiza vašeg trenutnog proizvodnog toka, planiranje novih linija i ćelija, smanjenje ukupnog vremena proizvodnje od početka do kraja, donošenje odluka o automatizaciji proizvodnje, uklanjanje uskih grla, odlučivanje o novim investicijama i povećanje kapaciteta.",
+            "Također pružamo praktičnu podršku u oblastima kao što su smanjenje vremena podešavanja mašina, osiguravanje snabdijevanja materijalom proizvodnim linijama, smanjenje nivoa zaliha, planiranje uravnotežene proizvodnje u skladu sa narudžbama kupaca, uspostavljanje i implementacija sistema upravljanja proizvodnjom i prelazak na novu proizvodnu kulturu."
+          ],
+          "details": [
+            "Balansiranje linija, ćelijska proizvodnja i dizajn protoka.",
+            "Brze promjene kalupa/proizvoda i povećana fleksibilnost uz SMED.",
+            "Disciplina na radnom mjestu i efikasnost opreme putem 5S, TPM i OEE."
+          ]
+        },
+        {
+          "title": "Razvijanje procesa rješavanja problema prilagođenog kompanijama",
+          "summary": "Kako bismo spriječili nastanak i ponovnu pojavu grešaka, osmišljavamo, implementiramo i nadgledamo proces rješavanja problema prilagođen vašoj kompaniji.",
+          "paragraphs": [
+            "Procesi kompanije ne rezultiraju uvijek uslugom ili proizvodom bez ijedne greške; drugim riječima, u poslovnom svijetu stalno nailazimo na greške. Dakle, da li se mjeri finansijski trošak grešaka koje se događaju unutar kompanije? Da li se kao rezultat toga poduzimaju mjere? Koliko su efikasne poduzete mjere? Ili se iste greške iznova i iznova ponavljaju?",
+            "Ako se greške ponavljaju, to je ili zato što uzrok greške nije utvrđen ili zato što predložena rješenja nisu implementirana. Kako bismo spriječili pojavu i ponavljanje grešaka, dizajniramo, implementiramo i uspostavljamo mehanizam nadzora za proces rješavanja problema koji je nekonvencionalan i prilagođen specifičnim potrebama vaše kompanije. Po potrebi, proces rješavanja problema može biti digitaliziran."
+          ],
+          "details": [
+            "Strukturirano rješavanje problema koristeći 8D, A3 i PDCA.",
+            "5 razloga i analiza osnovnog uzroka pomoću Ishikawa dijagrama.",
+            "Sistem nadzora za osiguranje dugoročnih mjera i sprečavanje ponovnog pojavljivanja."
+          ]
+        },
+        {
+          "title": "Uspostavljanje procesa kvaliteta od dobavljača do kupca",
+          "summary": "Osiguravamo kvalitet ne samo na jednoj tački, već kroz cijeli lanac snabdijevanja.",
+          "paragraphs": [
+            "Gdje bi procesi kvaliteta trebali početi i gdje bi trebali završiti? Da li je Odjel za kvalitetu jedini odgovoran za kvalitetu? Ko bi trebao biti uključen u proces kvaliteta i u kojoj mjeri? S obzirom na današnje industrijske uslove, koji nivo odgovornosti za kvalitet bi se trebao dodijeliti našim dionicima? Da li se kvalitet proizvoda ili procesa osigurava kontrolom kvaliteta? Da li je kvalitet proizvoda ili procesa važniji?",
+            "Gdje su mehanizmi za sprečavanje grešaka ugrađeni u proces? Kako se planira kvaliteta proizvoda ili procesa? Da li se troškovi kvaliteta kontinuirano prate? Kontrolne karte, histogrami, Pareto analiza, Ishikawa (kikot) dijagrami, dijagrami rasipanja, dijagrami toka, FMEA, QFD, rješavanje problema, Demingov ciklus, A3, 8D, Six Sigma, brainstorming i drugi alati za upravljanje kvalitetom poznati su mnogima od nas.",
+            "Podržat ćemo vas praktičnom obukom o tome kako i gdje primijeniti ove alate i kako ih integrirati u radne prakse vaše kompanije. Hajde da udružimo snage."
+          ],
+          "details": [
+            "Razvoj dobavljača, revizija i kontrola ulaznog kvaliteta.",
+            "Kvalitet u toku procesa (APQP, PPAP, FMEA) i prevencija grešaka (poka-yoke).",
+            "Provjere kvaliteta prije isporuke i povratna petlja za kupca."
+          ]
+        },
+        {
+          "title": "Upravljanje pritužbama kupaca nakon prodaje",
+          "summary": "Uspostavili smo sistem koji pretvara pritužbe kupaca u brza, praćenja i trajna rješenja.",
+          "paragraphs": [
+            "Kako bi trebali izgledati proces rješavanja pritužbi kupaca i platforma za praćenje? Kako se proizvodi koje kupci vrate kao neispravne skladište i pregledavaju? Ako se utvrdi da je proizvod neispravan, kroz koji se proces nastali troškovi naplaćuju dobavljaču ili servisnom centru koji je donio pogrešnu odluku? Kakav bi trebao biti Centar za istragu grešaka?",
+            "Da li procesi kvaliteta, istraživanja i razvoja, proizvodnje, planiranja proizvodnje i postprodaje zaista služe istom cilju? Postoji li neometan protok između njih? Hajde da ovo zajedno procijenimo."
+          ],
+          "details": [
+            "Procesi za primanje, klasifikaciju i prioritizaciju pritužbi.",
+            "Provedba analize osnovnih uzroka u kombinaciji s brzim odgovorom.",
+            "Mjerenje zadovoljstva kupaca i ciklus kontinuiranog poboljšanja."
+          ]
+        }
+      ]
+    },
+    "founder": {
+      "eyebrow": "Priča o našem osnivaču",
+      "subtitle": "Putovanje koje je započelo usred rata danas se pretvorilo u međunarodno iskustvo koje dodaje vrijednost industriji…..",
+      "name": "Envera Jahovic Saraylı",
+      "role": "Osnivački konsultant, EJS Consulting",
+      "paragraphs": [
+        "Envera Jahovic Saraylı rođena je u Minhenu i sa svojom porodicom se vratila u svoj rodni grad Sarajevo kada je imala dvije godine. Nakon završetka osnovnog i srednjeg obrazovanja u Sarajevu, 1987. godine započela je studij na Odsjeku za mašinsko inženjerstvo Univerziteta u Sarajevu.",
+        "Dok je radio na svojoj univerzitetskoj disertaciji, njegov je zahtjev za stažiranje u fabrici autobusa Mercedes-Benz AG u Mannheimu, Njemačka, prihvaćen, te je 15. marta 1992. otputovao u Njemačku. Samo 20 dana nakon ovog putovanja počeo je rat u Bosni i Hercegovini, sukob koji je trajao više od četiri godine. Ovaj događaj, koji je promijenio tok njegovog života, također je označio početak njegove međunarodne karijere.",
+        "Od jula 1992. do marta 1993. radio je u odjelima za kvalitet, razvoj i CNC u fabrici Mercedes-Benz AG u Mannheimu; zatim je nastavio studij mašinskog inženjerstva na Mannheim Hochschule für Gestaltung und Technik u Njemačkoj, gdje je diplomirao 1995. godine.",
+        "Nakon završetka rata vratio se u Sarajevo 2005. godine, gdje je nastavio obrazovanje koje je rat prekinuo i diplomirao na Odsjeku za mašinsko inženjerstvo Univerziteta u Sarajevu.",
+        "1. marta 1996. godine započeo je svoju ulogu inženjera za kvalitet u fabrici autobusa Mercedes-Benz Türk u Istanbulu, nakon preporuke Odjela za kvalitet tvornice Mercedes-Benz AG u Mannheimu. Njegova karijera, koja je započela u Turskoj, trajala je više od 25 godina, tokom kojih je obavljao različite uloge u oblastima kvaliteta, proizvodnje, razvoja procesa, lean transformacije, upravljanja projektima i organizacijskog razvoja, prije nego što je otišao u penziju 2021. godine.",
+        "Danas naš osnivač koristi stručnost koju je stekao u Evropi i Turskoj kako bi pomogao industrijskim organizacijama da povećaju svoju efikasnost, poboljšaju svoje procese i postignu održiv uspjeh.",
+        "Nadalje, 2025. godine naš osnivač je predavao kurs \"Menadžment inovacija i tehnologije\" na Univerzitetu Kadir Has u Istanbulu. On smatra da je prenošenje svog višegodišnjeg industrijskog iskustva mlađim generacijama važna odgovornost i da je dijeljenje znanja sastavni dio njegovog profesionalnog života. Inspirisanje mladih, njihova priprema za budućnost i prenošenje znanja koje je stekao jedno je od najznačajnijih postignuća u njegovom životu."
+      ],
+      "languagesLabel": "Govoreni jezici",
+      "languages": [
+        "Türkçe",
+        "Almanca",
+        "İngilizce",
+        "Boşnakça"
+      ]
+    },
+    "articles": {
+      "eyebrow": "Uči i raste",
+      "title": "U našim člancima ističemo ponavljajuće probleme na terenu.",
+      "intro": "Dijelimo svoja iskustva u lean transformaciji, planiranju i upravljanju na licu mjesta. Možemo o tome dalje razgovarati zajedno.",
+      "cta": "Detaljno ispitati",
+      "items": [
+        {
+          "title": "Šta možete očekivati od lean transformacije?",
+          "excerpt": "Mnoge kompanije tokom početnog sastanka govore o svakodnevnim problemima i traže brza rješenja. Međutim, problemi koje smo uočili su iznenađujuće slični."
+        },
+        {
+          "title": "Gdje se narušava stabilnost planiranja?",
+          "excerpt": "Ako se plan mijenja svaki dan, problem nije sam plan; to bi mogla biti vidljivost, WIP ili brzina odgovora."
+        },
+        {
+          "title": "Kako zapravo funkcioniše ploča na podu radionice?",
+          "excerpt": "Oglaska tabla sama po sebi nije rješenje; ona postaje značajna tek kroz ritam upravljanja koji ističe pravo pitanje."
+        }
+      ]
+    },
+    "references": {
+      "eyebrow": "Reference",
+      "title": "Izbor timova s kojima radimo.",
+      "intro": "Dijelimo rad koji obavljamo s timovima iz različitih sektora koristeći jednostavan mrežni raspored."
+    },
+    "contact": {
+      "eyebrow": "Kontakt",
+      "title": "Molimo ostavite kratku poruku i javit ćemo vam se što je prije moguće.",
+      "intro": "Za dodatne informacije o našim procesima, molimo kontaktirajte nas putem naših komunikacijskih kanala.",
+      "companyName": "EJS Mühendislik Danışmanlık ve Eğitim",
+      "companyNote": "Za detaljne informacije o svim našim procesima, molimo kontaktirajte nas putem naših komunikacijskih kanala.",
+      "address": "Aydıntepe Mah. Alaaddin Sk. No.7 Evora Sitesi A Parsel, A13, İç Kapı No: 19 Tuzla / İstanbul",
+      "phones": [
+        "+90 216 906 03 25",
+        "+90 532 636 72 00"
+      ],
+      "hours": "Ponedjeljak–Petak: 8.00 – 17.00 / Subota–Nedjelja: Zatvoreno",
+      "fields": {
+        "name": "İsim Soyisim",
+        "email": "E-posta adresiniz",
+        "message": "Vaša poruka",
+        "submit": "Pošalji"
+      },
+      "placeholders": {
+        "name": "Adınız ve soyadınız",
+        "email": "hello@example.com",
+        "message": "Molimo vas, napišite svoju poruku ovdje ukratko..."
+      }
+    },
+    "footer": {
+      "eyebrow": "Sjedište",
+      "title": "Sjedište",
+      "officeName": "Istanbulska kancelarija",
+      "addressLines": [
+        "EJS Mühendislik Danışmanlık ve Eğitim, Aydıntepe Mah. Alaaddin Sk. No.7, Evora Sitesi A Parsel, A13, İç Kapı No: 19, Tuzla / İstanbul, Türkiye"
+      ],
+      "contactRows": [
+        {
+          "label": "Telefon",
+          "value": "+90 216 906 03 25",
+          "href": "tel:+902169060325"
+        },
+        {
+          "label": "Mobilni",
+          "value": "+90 532 636 72 00",
+          "href": "tel:+905326367200"
+        },
+        {
+          "label": "E-pošta",
+          "value": "Mesaj gönderin",
+          "href": "#iletisim"
+        }
+      ],
+      "links": [
+        {
+          "label": "Uči i raste",
+          "href": "#ogren-ve-gelis"
+        },
+        {
+          "label": "Korporativni",
+          "href": "#kimligimiz"
+        },
+        {
+          "label": "Pomoć",
+          "href": "#iletisim"
+        },
+        {
+          "label": "Privatnost",
+          "href": "#top"
+        },
+        {
+          "label": "Kolačići",
+          "href": "#top"
+        },
+        {
+          "label": "Kontakt",
+          "href": "#iletisim"
+        }
+      ],
+      "navLabel": "Pod-navigacija"
+    }
   },
 };

@@ -2,33 +2,47 @@
 
 import { useState } from "react";
 
-function ExpertiseCard({ area, detailsLabel }) {
-  const [open, setOpen] = useState(false);
-  const detailsId = `expertise-${area.title.replace(/\s+/g, "-").toLowerCase()}`;
+function ExpertiseAccordionItem({ area, index, isOpen, onToggle }) {
+  const baseId = `expertise-${index}`;
+  const headerId = `${baseId}-header`;
+  const panelId = `${baseId}-panel`;
 
   return (
-    <article className={`expertise-card ${open ? "is-open" : ""}`}>
-      <h3 className="expertise-card-title">{area.title}</h3>
-      <p className="expertise-card-summary">{area.summary}</p>
+    <div className={`expertise-item ${isOpen ? "is-open" : ""}`}>
+      <h3 className="expertise-item-heading">
+        <button
+          type="button"
+          id={headerId}
+          className="expertise-trigger"
+          aria-expanded={isOpen}
+          aria-controls={panelId}
+          onClick={onToggle}
+        >
+          <span className="expertise-trigger-title">{area.title}</span>
+          <span className="expertise-trigger-icon" aria-hidden="true">
+            {isOpen ? "–" : "+"}
+          </span>
+        </button>
+      </h3>
 
-      <button
-        type="button"
-        className="expertise-toggle"
-        aria-expanded={open}
-        aria-controls={detailsId}
-        onClick={() => setOpen((value) => !value)}
+      <div
+        id={panelId}
+        role="region"
+        aria-labelledby={headerId}
+        className="expertise-panel"
+        hidden={!isOpen}
       >
-        {detailsLabel}
-        <span aria-hidden="true">{open ? "–" : "+"}</span>
-      </button>
+        <div className="expertise-panel-inner">
+          {area.summary ? (
+            <p className="expertise-panel-summary">{area.summary}</p>
+          ) : null}
 
-      {open ? (
-        <div id={detailsId} className="expertise-details">
           {area.paragraphs?.map((paragraph) => (
             <p key={paragraph} className="expertise-detail-paragraph">
               {paragraph}
             </p>
           ))}
+
           {area.details?.length ? (
             <ul className="expertise-detail-list">
               {area.details.map((item) => (
@@ -37,12 +51,18 @@ function ExpertiseCard({ area, detailsLabel }) {
             </ul>
           ) : null}
         </div>
-      ) : null}
-    </article>
+      </div>
+    </div>
   );
 }
 
 export function ExpertiseSection({ expertise }) {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const handleToggle = (index) => {
+    setOpenIndex((current) => (current === index ? null : index));
+  };
+
   return (
     <section id="uzmanlik-alanlarimiz" className="content-section section expertise-section">
       <div className="section-heading-block compact-heading">
@@ -51,12 +71,14 @@ export function ExpertiseSection({ expertise }) {
         <p className="section-intro">{expertise.intro}</p>
       </div>
 
-      <div className="expertise-grid">
-        {expertise.areas.map((area) => (
-          <ExpertiseCard
+      <div className="expertise-accordion">
+        {expertise.areas.map((area, index) => (
+          <ExpertiseAccordionItem
             key={area.title}
             area={area}
-            detailsLabel={expertise.detailsLabel}
+            index={index}
+            isOpen={openIndex === index}
+            onToggle={() => handleToggle(index)}
           />
         ))}
       </div>
