@@ -348,6 +348,44 @@ img {
   background: #020202;
   color: #fff;
   padding: 0 1.45rem 0 1.9rem;
+  transition: min-height 220ms ease, box-shadow 220ms ease;
+}
+
+/* Sayfa kaydirildiginda siyah ana navigasyon cubugu ekranin ustune
+   sabitlenir (referanstaki gibi). Yuksekligi biraz daralir ve tam
+   genislige yayilarak gercek bir navbar gibi davranir. */
+.site-header.is-stuck .main-nav-row {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0;
+  min-height: 4.75rem;
+  border-radius: 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+  padding-inline: clamp(1.5rem, 5vw, 5.75rem);
+  animation: nav-drop 260ms ease;
+}
+
+@keyframes nav-drop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header.is-stuck .main-nav-row {
+    animation: none;
+  }
+}
+
+/* Sabitlenmis durumda marka ve linkleri daha kompakt hale getiriyoruz. */
+.site-header.is-stuck .brand-name {
+  font-size: clamp(1.6rem, 2vw, 2.2rem);
 }
 
 .nav-toggle {
@@ -556,13 +594,18 @@ img {
 
 .hero-stage {
   position: relative;
-  min-height: 56vh;
-  padding-top: 4.25rem;
+  min-height: 64vh;
+  padding-top: 6rem;
 }
 
 .hero-video-shell {
+  /* Hero icerigini sayfanin geri kalaniyla ayni genislikte bir kapsayiciya
+     aliyoruz; saginda solunda bosluk kaliyor ama kart gibi gorunmuyor
+     (kenarlik, koselik veya golge yok). */
   position: relative;
-  min-height: 56vh;
+  min-height: 64vh;
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -588,13 +631,15 @@ img {
 .hero-video-content {
   position: relative;
   z-index: 1;
-  min-height: 56vh;
-  width: min(calc(100% - 2rem), var(--max-width));
+  min-height: 64vh;
+  /* Kapsayici (.hero-video-shell) zaten max-width ile sinirlandirildigi icin
+     ic icerigi tam genislikte tutup yatay padding ile hizaliyoruz. */
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 0 0.85rem;
+  padding: 0 1.5rem 0.85rem;
 }
 
 .hero-lower-bar {
@@ -727,7 +772,7 @@ img {
 
 .section-title {
   margin: 0 auto 0.8rem;
-  font-size: var(--text-6xl);
+  font-size: clamp(3.8rem, 5.6vw, 7rem);
   line-height: var(--leading-tight);
   letter-spacing: -0.06em;
   max-width: none;
@@ -837,7 +882,7 @@ img {
 
 .article-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(1rem, 2vw, 1.5rem);
 }
 
@@ -845,35 +890,6 @@ img {
   display: flex;
   flex-direction: column;
   padding: var(--card-padding);
-}
-
-/* RB-style insights: first tile is a wide featured banner spanning the row */
-.article-card-featured {
-  grid-column: 1 / -1;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4rem 2.5rem;
-  padding: clamp(1.75rem, 2.6vw, 2.75rem);
-}
-
-.article-card-featured .article-kicker {
-  flex-basis: 100%;
-}
-
-.article-card-featured h3 {
-  flex: 1 1 18rem;
-  margin: 0;
-  font-size: clamp(1.6rem, 2.4vw, 2.4rem);
-}
-
-.article-card-featured p {
-  flex: 1 1 22rem;
-  margin: 0;
-}
-
-.article-card-featured .article-link {
-  flex-basis: 100%;
 }
 
 /* RB-style category kicker above each insight title */
@@ -904,6 +920,34 @@ img {
 
 .article-link:hover {
   gap: 0.6rem;
+}
+
+/* Article detail page (Öğren ve Geliş > single article) */
+.article-detail {
+  padding-top: clamp(7rem, 12vw, 11rem);
+}
+
+.article-detail-inner {
+  max-width: 52rem;
+  margin-inline: auto;
+}
+
+.article-detail-title {
+  margin: 0 0 1.75rem;
+  text-align: left;
+}
+
+.article-detail-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  color: var(--muted);
+  font-size: var(--text-lg);
+  line-height: 1.8;
+}
+
+.article-detail .article-link {
+  margin-top: 2.5rem;
 }
 
 .reference-carousel {
@@ -1507,7 +1551,7 @@ img {
   }
 
   .hero-video-content {
-    min-height: 22rem;
+    min-height: 26rem;
     padding-bottom: 1rem;
   }
 
@@ -1522,7 +1566,7 @@ img {
   }
 
   .hero-video-shell {
-    min-height: 22rem;
+    min-height: 26rem;
   }
 
   .content-section {
@@ -1532,7 +1576,7 @@ img {
   /* Prevent text overflow and improve readability */
   .section-title {
     max-width: none;
-    font-size: clamp(2.4rem, 11vw, 3.6rem);
+    font-size: clamp(2.9rem, 12vw, 4.4rem);
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
@@ -2666,10 +2710,6 @@ img {
 }
 
 /* Founder story */
-.founder-title {
-  max-width: 24ch;
-}
-
 .founder-layout {
   display: grid;
   grid-template-columns: minmax(280px, 0.62fr) minmax(0, 1fr);
@@ -2745,22 +2785,15 @@ img {
   background: var(--signal);
 }
 
-.founder-languages {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+.founder-caption {
+  margin: 0;
   margin-top: 0.6rem;
   padding-top: 1rem;
   border-top: 1px solid var(--line);
-}
-
-.founder-languages-label {
-  font-weight: 700;
-  color: var(--ink);
-}
-
-.founder-languages-list {
   color: var(--muted);
+  font-size: clamp(0.92rem, 1.05vw, 1rem);
+  line-height: 1.55;
+  font-style: italic;
 }
 
 @media (max-width: 1040px) {

@@ -66,7 +66,7 @@ export default async function HomePage({ params }) {
         <ExpertiseSection expertise={page.expertise} />
         <ExpertSpotlight lang={lang} />
         <FounderStorySection founder={page.founder} lang={lang} />
-        <ArticlesSection articles={page.articles} />
+        <ArticlesSection articles={page.articles} lang={lang} />
         <ReferencesSection references={page.references} />
         <ContactSection contact={page.contact} footer={page.footer} lang={lang} />
       </main>

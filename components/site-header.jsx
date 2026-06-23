@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { locales } from "@/lib/locales";
 
@@ -16,8 +16,22 @@ const langPrefixPattern = new RegExp(`^/(${locales.join("|")})(?=/|$)`);
 
 export function SiteHeader({ utilityLinks, mainLinks, ariaLabels }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isStuck, setIsStuck] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
+
+  // Sayfa asagi kaydirildiginda siyah ana navigasyon cubugunu ekranin
+  // ustune sabitlemek icin "is-stuck" durumunu acip kapatiyoruz.
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsStuck(window.scrollY > 80);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const currentLang = locales.find((l) => pathname.startsWith(`/${l}`)) ?? "tr";
 
@@ -27,7 +41,7 @@ export function SiteHeader({ utilityLinks, mainLinks, ariaLabels }) {
   };
 
   return (
-    <header className="site-header">
+    <header className={`site-header ${isStuck ? "is-stuck" : ""}`}>
       <div className="utility-bar">
         <div className="utility-inner">
           <div className="utility-nav-wrap">

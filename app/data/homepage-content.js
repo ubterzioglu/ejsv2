@@ -272,7 +272,7 @@ export const homepageContent = {
         "Savaşın sona ermesinin ardından, 2005 yılında Saraybosna'ya dönerek savaş nedeniyle yarım kalan eğitimini tamamlamış ve Saraybosna Üniversitesi Makine Mühendisliği Bölümünden de mezun olmuştur.",
         "Mercedes-Benz AG Mannheim Fabrikası Kalite Bölümünün referansıyla 1 Mart 1996 tarihinde İstanbul'daki Mercedes-Benz Türk Otobüs Fabrikasında Kalite Mühendisi olarak göreve başlamıştır. Türkiye'de başlayan kariyeri; kalite, üretim, süreç geliştirme, yalın dönüşüm, proje yönetimi ve organizasyonel gelişim alanlarında üstlendiği farklı görevlerle 25 yılı aşkın süre devam etmiş ve 2021 yılında emeklilikle sonuçlanmıştır.",
         "Bugün kurucumuz, Avrupa ve Türkiye'de edindiği bilgi birikimi ile sanayi kuruluşlarının verimliliklerini artırmalarına, süreçlerini geliştirmelerine ve sürdürülebilir başarı elde etmelerine destek vermektedir.",
-        "Ayrıca 2025 yılında kurucumuz, İstanbul'da faaliyet gösteren Kadir Has Üniversitesinde İnovasyon ve Teknoloji Yönetimi dersini vermiştir. Uzun yıllara dayanan sanayi tecrübesini genç nesillere aktarmayı önemli bir sorumluluk olarak görmekte ve bilgi paylaşımını mesleki yaşamının ayrılmaz bir parçası olarak değerlendirmektedir. Genç insanlara ilham vermek, onları geleceğe hazırlamak ve sahip olduğu birikimi aktarmak ise hayatındaki en anlamlı kazanımlardan biridir.",
+        "Ayrıca 2025 yılında kurucumuz, İstanbul'da faaliyet gösteren Kadir Has Üniversitesinde İnovasyon ve Teknoloji Yönetimi dersini vermiştir. Uzun yıllara dayanan sanayi tecrübesini genç nesillere aktarmayı önemli bir sorumluluk olarak görmekte ve bilgi paylaşımını mesleki yaşamının ayrılmaz bir parçası olarak değerlendirmektedir. Genç insanlara ilham vermek, onları geleceğe hazırlamak ve sahip olduğu birikimi aktarmak ise hayatındaki en anlamlı kazanımlardan biridir. Türkçe, Almanca, İngilizce ve Boşnakça bilmektedir.",
       ],
       languagesLabel: "Konuştuğu diller",
       languages: ["Türkçe", "Almanca", "İngilizce", "Boşnakça"],
@@ -285,19 +285,40 @@ export const homepageContent = {
       cta: "Detaylı incele",
       items: [
         {
+          slug: "yalin-donusumde-sizi-ne-bekliyor",
           title: "Yalın dönüşümde sizi ne bekliyor?",
           excerpt:
             "Birçok firma ilk görüşmede günlük sorunlardan bahsediyor ve hızlı çözüm arıyor. Gözlemlediğimiz problemler ise şaşırtıcı biçimde birbirine benziyor.",
+          body: [
+            "Birçok firma bizimle ilk görüşmede günlük sorunlardan bahseder ve hızlı bir çözüm arar. Oysa farklı sektörlerde onlarca sahada gözlemlediğimiz problemler şaşırtıcı biçimde birbirine benziyor: belirsiz sorumluluklar, ölçülemeyen süreçler, süreçler arasında kopuk akışlar ve tekrar eden hatalar.",
+            "Yalın dönüşüm, raporla teslim edilen bir öneri değildir. Önce mevcut durumu sahada birlikte ölçer; katma değerli ve katma değersiz faaliyetleri, süreçler arası etkileşimleri ve dijitalleşme olgunluğunu birlikte görünür kılarız. Tespit, masa başında değil sürecin içinde yapılır.",
+            "Sonrasında standartları, sorumlulukları ve performans kriterlerini birlikte belirler; süreci daha hızlı, daha şeffaf ve sürdürülebilir bir yapıya dönüştürürüz. En önemlisi, çözümü sadece önermez; uygulama, takip, ölçme ve standardizasyon aşamalarında ekibinizle birlikte sahada kalırız.",
+            "Yani sizi bekleyen şey, hızlı bir reçete değil; kalıcı sonuç üreten, ekibinizin kendi başına sürdürebileceği bir çalışma sistemidir.",
+          ],
         },
         {
+          slug: "planlama-stabilitesi-nerede-kirilir",
           title: "Planlama stabilitesi nerede kırılır?",
           excerpt:
             "Plan her gün değişiyorsa sorun plan değil; görünürlük, WIP ve reaksiyon ritmi olabilir.",
+          body: [
+            "Plan her gün değişiyorsa, çoğu firma ilk olarak planlama yazılımını ya da planlamacıyı sorgular. Oysa sahada gördüğümüz tablo genellikle farklıdır: sorun planın kendisi değil, planı her gün bozan görünmez değişkenlerdir.",
+            "Bu değişkenler çoğunlukla üç başlıkta toplanır: görünürlük eksikliği (gerçek durum anlık olarak bilinmiyor), kontrolsüz WIP (hatlar ve ara stoklar dolu, akış tıkalı) ve yavaş reaksiyon ritmi (sapma fark edildiğinde müdahale çok geç kalıyor).",
+            "Plan stabilitesini, planı daha sık güncelleyerek değil; akışı dengeleyerek, WIP’i sınırlayarak ve düzenli bir yönetim ritmi kurarak sağlarız. Görsel yönetim ve net reaksiyon kuralları devreye girdiğinde, plan artık her gün yeniden yazılan bir belge olmaktan çıkar.",
+            "Hedefimiz, planın değil sürecin güvenilir hale gelmesidir; böylece müşteri siparişine uygun, dengeli ve öngörülebilir bir üretim mümkün olur.",
+          ],
         },
         {
+          slug: "shopfloor-board-gercekte-nasil-calisir",
           title: "Shopfloor board gerçekte nasıl çalışır?",
           excerpt:
             "Bir pano tek başına çözüm değildir; doğru soruyu görünür kılan yönetim ritmiyle anlam kazanır.",
+          body: [
+            "Bir shopfloor board (saha panosu) çoğu zaman bir “çözüm” olarak satın alınır: pano asılır, birkaç gösterge yazılır ve sorunların kendiliğinden çözülmesi beklenir. Gerçek hayatta bu şekilde çalışmaz.",
+            "Pano, tek başına bir araçtır; asıl değeri, etrafında kurulan yönetim ritminden gelir. Her gün aynı saatte, aynı sorularla yapılan kısa bir saha toplantısı; sapmaları görünür kılar, sorumluyu ve termini netleştirir ve aksiyonların takibini sağlar.",
+            "Doğru kurgulanmış bir panoda gösterge sayısı azdır ama anlamlıdır: hedefe karşı gerçek, sapmanın nedeni ve açık aksiyonlar. Pano, “rapor etmek” için değil, “doğru soruyu sormak” için kullanılır.",
+            "Biz panoyu kurmakla yetinmez; yönetim ritmini ekibinizle birlikte sahada uygular, alışkanlık haline gelene kadar yanınızda kalırız. Pano ancak bu ritimle birlikte gerçekten çalışır.",
+          ],
         },
       ],
     },
@@ -563,7 +584,7 @@ export const homepageContent = {
         "After the war ended, she returned to Sarajevo in 2005 to complete the education that had been interrupted by the war, and also graduated from the Mechanical Engineering Department of the University of Sarajevo.",
         "With a reference from the Quality Department of the Mercedes-Benz AG Mannheim Plant, she began work as a Quality Engineer at the Mercedes-Benz Türk Bus Plant in Istanbul on 1 March 1996. Her career in Turkey continued for more than 25 years across various roles in quality, production, process development, lean transformation, project management, and organizational development, concluding with her retirement in 2021.",
         "Today, our founder draws on the knowledge gained in Europe and Turkey to help industrial organizations increase their efficiency, improve their processes, and achieve sustainable success.",
-        "In addition, in 2025 our founder taught the Innovation and Technology Management course at Kadir Has University in Istanbul. She regards passing on her many years of industrial experience to younger generations as an important responsibility and considers the sharing of knowledge an inseparable part of her professional life. Inspiring young people, preparing them for the future, and transferring her accumulated experience are among the most meaningful achievements of her life.",
+        "In addition, in 2025 our founder taught the Innovation and Technology Management course at Kadir Has University in Istanbul. She regards passing on her many years of industrial experience to younger generations as an important responsibility and considers the sharing of knowledge an inseparable part of her professional life. Inspiring young people, preparing them for the future, and transferring her accumulated experience are among the most meaningful achievements of her life. She speaks Turkish, German, English, and Bosnian.",
       ],
       languagesLabel: "Languages spoken",
       languages: ["Turkish", "German", "English", "Bosnian"],
@@ -576,19 +597,40 @@ export const homepageContent = {
       cta: "Read more",
       items: [
         {
+          slug: "yalin-donusumde-sizi-ne-bekliyor",
           title: "What should you expect in a lean transformation?",
           excerpt:
             "Many companies begin with urgent daily problems, yet the patterns we observe are remarkably similar across operations.",
+          body: [
+            "In our first meeting, many companies describe their daily problems and look for a fast fix. Yet across dozens of shopfloors in different sectors, the patterns we observe are remarkably similar: unclear responsibilities, unmeasured processes, broken flows between departments, and recurring errors.",
+            "A lean transformation is not a recommendation delivered in a report. We first measure the current state on the floor together — making value-adding and non-value-adding activities, cross-process interactions, and digital maturity visible. The diagnosis happens inside the process, not at a desk.",
+            "We then define standards, responsibilities, and performance criteria with you, turning the process into something faster, more transparent, and sustainable. Most importantly, we do not just propose the solution; we stay on the floor with your team through implementation, follow-up, measurement, and standardization.",
+            "So what awaits you is not a quick prescription, but a working system that delivers lasting results — one your team can sustain on its own.",
+          ],
         },
         {
+          slug: "planlama-stabilitesi-nerede-kirilir",
           title: "Where does planning stability actually break?",
           excerpt:
             "If the plan changes every day, the issue is often not the plan itself but visibility, WIP, and reaction cadence.",
+          body: [
+            "When the plan changes every day, most companies first blame the planning software or the planner. What we see on the floor is usually different: the problem is not the plan itself, but the invisible variables that break it daily.",
+            "Those variables typically fall into three areas: lack of visibility (the real state is not known in real time), uncontrolled WIP (lines and buffers are full, flow is clogged), and a slow reaction cadence (by the time a deviation is noticed, it is too late to respond).",
+            "We stabilize planning not by re-planning more often, but by balancing flow, capping WIP, and establishing a regular management cadence. Once visual management and clear reaction rules are in place, the plan stops being a document rewritten every day.",
+            "Our goal is to make the process — not just the plan — reliable, enabling balanced, predictable production aligned with customer orders.",
+          ],
         },
         {
+          slug: "shopfloor-board-gercekte-nasil-calisir",
           title: "How does a shopfloor board really work?",
           excerpt:
             "A board alone is not the solution; it becomes useful only when paired with the right management rhythm.",
+          body: [
+            "A shopfloor board is often bought as a “solution”: the board goes up, a few metrics are written on it, and problems are expected to solve themselves. In real life it does not work that way.",
+            "The board is only a tool; its real value comes from the management rhythm built around it. A short, same-time, same-questions floor meeting every day makes deviations visible, clarifies who owns what and by when, and keeps actions tracked.",
+            "A well-designed board has few but meaningful metrics: actual versus target, the cause of the deviation, and open actions. The board is used not to “report,” but to ask the right question.",
+            "We do not just set up the board; we run the management rhythm with your team on the floor and stay until it becomes a habit. Only with that rhythm does a board truly work.",
+          ],
         },
       ],
     },
@@ -854,7 +896,7 @@ export const homepageContent = {
         "Nach Kriegsende kehrte sie 2005 nach Sarajevo zurück, um die kriegsbedingt unterbrochene Ausbildung abzuschließen, und schloss auch ihr Studium am Fachbereich Maschinenbau der Universität Sarajevo ab.",
         "Mit einer Referenz der Qualitätsabteilung des Mercedes-Benz AG Werks Mannheim begann sie am 1. März 1996 ihre Tätigkeit als Qualitätsingenieurin im Mercedes-Benz Türk Omnibuswerk in Istanbul. Ihre in der Türkei begonnene Laufbahn dauerte mit verschiedenen Aufgaben in den Bereichen Qualität, Produktion, Prozessentwicklung, Lean-Transformation, Projektmanagement und Organisationsentwicklung mehr als 25 Jahre und endete 2021 mit dem Eintritt in den Ruhestand.",
         "Heute unterstützt unsere Gründerin mit dem in Europa und der Türkei erworbenen Wissen Industrieunternehmen dabei, ihre Effizienz zu steigern, ihre Prozesse zu verbessern und nachhaltigen Erfolg zu erzielen.",
-        "Darüber hinaus hielt unsere Gründerin 2025 an der Kadir Has Universität in Istanbul die Vorlesung Innovations- und Technologiemanagement. Sie betrachtet es als wichtige Verantwortung, ihre langjährige Industrieerfahrung an jüngere Generationen weiterzugeben, und sieht den Wissensaustausch als untrennbaren Bestandteil ihres Berufslebens. Junge Menschen zu inspirieren, sie auf die Zukunft vorzubereiten und ihr gesammeltes Wissen weiterzugeben, gehört zu den bedeutsamsten Errungenschaften ihres Lebens.",
+        "Darüber hinaus hielt unsere Gründerin 2025 an der Kadir Has Universität in Istanbul die Vorlesung Innovations- und Technologiemanagement. Sie betrachtet es als wichtige Verantwortung, ihre langjährige Industrieerfahrung an jüngere Generationen weiterzugeben, und sieht den Wissensaustausch als untrennbaren Bestandteil ihres Berufslebens. Junge Menschen zu inspirieren, sie auf die Zukunft vorzubereiten und ihr gesammeltes Wissen weiterzugeben, gehört zu den bedeutsamsten Errungenschaften ihres Lebens. Sie spricht Türkisch, Deutsch, Englisch und Bosnisch.",
       ],
       languagesLabel: "Gesprochene Sprachen",
       languages: ["Türkisch", "Deutsch", "Englisch", "Bosnisch"],
@@ -867,19 +909,40 @@ export const homepageContent = {
       cta: "Mehr erfahren",
       items: [
         {
+          slug: "yalin-donusumde-sizi-ne-bekliyor",
           title: "Was sollten Sie bei einer Lean-Transformation erwarten?",
           excerpt:
             "Viele Unternehmen beginnen mit dringenden täglichen Problemen, doch die Muster, die wir beobachten, sind über die Abläufe hinweg bemerkenswert ähnlich.",
+          body: [
+            "Im ersten Gespräch schildern viele Unternehmen ihre täglichen Probleme und suchen nach einer schnellen Lösung. Doch über Dutzende Shopfloors in verschiedenen Branchen hinweg sind die Muster, die wir beobachten, bemerkenswert ähnlich: unklare Verantwortlichkeiten, nicht gemessene Prozesse, unterbrochene Abläufe zwischen Abteilungen und wiederkehrende Fehler.",
+            "Eine Lean-Transformation ist keine Empfehlung, die in einem Bericht abgeliefert wird. Wir messen den Ist-Zustand zuerst gemeinsam vor Ort und machen wertschöpfende und nicht wertschöpfende Tätigkeiten, prozessübergreifende Wechselwirkungen und den digitalen Reifegrad sichtbar. Die Diagnose erfolgt im Prozess, nicht am Schreibtisch.",
+            "Anschließend definieren wir mit Ihnen Standards, Verantwortlichkeiten und Leistungskriterien und gestalten den Prozess schneller, transparenter und nachhaltiger. Vor allem schlagen wir die Lösung nicht nur vor; wir bleiben mit Ihrem Team durch Umsetzung, Nachverfolgung, Messung und Standardisierung vor Ort.",
+            "Was Sie also erwartet, ist kein schnelles Rezept, sondern ein funktionierendes System mit dauerhaften Ergebnissen — eines, das Ihr Team selbstständig aufrechterhalten kann.",
+          ],
         },
         {
+          slug: "planlama-stabilitesi-nerede-kirilir",
           title: "Wo bricht die Planungsstabilität eigentlich?",
           excerpt:
             "Wenn sich der Plan jeden Tag ändert, liegt das Problem oft nicht am Plan selbst, sondern an Sichtbarkeit, WIP und Reaktionsrhythmus.",
+          body: [
+            "Wenn sich der Plan jeden Tag ändert, geben die meisten Unternehmen zuerst der Planungssoftware oder dem Planer die Schuld. Was wir vor Ort sehen, ist meist anders: Das Problem ist nicht der Plan selbst, sondern die unsichtbaren Variablen, die ihn täglich zerstören.",
+            "Diese Variablen fallen typischerweise in drei Bereiche: fehlende Sichtbarkeit (der reale Zustand ist nicht in Echtzeit bekannt), unkontrollierter WIP (Linien und Puffer sind voll, der Fluss ist verstopft) und ein langsamer Reaktionsrhythmus (wenn eine Abweichung bemerkt wird, ist es zu spät, zu reagieren).",
+            "Wir stabilisieren die Planung nicht durch häufigeres Neuplanen, sondern indem wir den Fluss ausbalancieren, den WIP begrenzen und einen regelmäßigen Management-Rhythmus etablieren. Sobald visuelles Management und klare Reaktionsregeln eingeführt sind, ist der Plan kein Dokument mehr, das jeden Tag neu geschrieben wird.",
+            "Unser Ziel ist es, den Prozess — nicht nur den Plan — zuverlässig zu machen und so eine ausgewogene, vorhersehbare Produktion im Einklang mit den Kundenaufträgen zu ermöglichen.",
+          ],
         },
         {
+          slug: "shopfloor-board-gercekte-nasil-calisir",
           title: "Wie funktioniert ein Shopfloor-Board wirklich?",
           excerpt:
             "Ein Board allein ist nicht die Lösung; es wird erst in Kombination mit dem richtigen Management-Rhythmus nützlich.",
+          body: [
+            "Ein Shopfloor-Board wird oft als „Lösung“ gekauft: Das Board wird aufgehängt, ein paar Kennzahlen werden notiert, und man erwartet, dass sich die Probleme von selbst lösen. Im echten Leben funktioniert das so nicht.",
+            "Das Board ist nur ein Werkzeug; sein wahrer Wert entsteht durch den darum herum aufgebauten Management-Rhythmus. Ein kurzes, täglich zur selben Zeit mit denselben Fragen geführtes Shopfloor-Meeting macht Abweichungen sichtbar, klärt Verantwortung und Termin und hält Maßnahmen nachverfolgt.",
+            "Ein gut gestaltetes Board hat wenige, aber aussagekräftige Kennzahlen: Ist gegen Soll, die Ursache der Abweichung und offene Maßnahmen. Das Board dient nicht zum „Berichten“, sondern dazu, die richtige Frage zu stellen.",
+            "Wir richten das Board nicht nur ein; wir leben den Management-Rhythmus mit Ihrem Team vor Ort und bleiben, bis er zur Gewohnheit wird. Erst mit diesem Rhythmus funktioniert ein Board wirklich.",
+          ],
         },
       ],
     },
@@ -1157,7 +1220,7 @@ export const homepageContent = {
         "Nakon završetka rata vratio se u Sarajevo 2005. godine, gdje je nastavio obrazovanje koje je rat prekinuo i diplomirao na Odsjeku za mašinsko inženjerstvo Univerziteta u Sarajevu.",
         "1. marta 1996. godine započeo je svoju ulogu inženjera za kvalitet u fabrici autobusa Mercedes-Benz Türk u Istanbulu, nakon preporuke Odjela za kvalitet tvornice Mercedes-Benz AG u Mannheimu. Njegova karijera, koja je započela u Turskoj, trajala je više od 25 godina, tokom kojih je obavljao različite uloge u oblastima kvaliteta, proizvodnje, razvoja procesa, lean transformacije, upravljanja projektima i organizacijskog razvoja, prije nego što je otišao u penziju 2021. godine.",
         "Danas naš osnivač koristi stručnost koju je stekao u Evropi i Turskoj kako bi pomogao industrijskim organizacijama da povećaju svoju efikasnost, poboljšaju svoje procese i postignu održiv uspjeh.",
-        "Nadalje, 2025. godine naš osnivač je predavao kurs \"Menadžment inovacija i tehnologije\" na Univerzitetu Kadir Has u Istanbulu. On smatra da je prenošenje svog višegodišnjeg industrijskog iskustva mlađim generacijama važna odgovornost i da je dijeljenje znanja sastavni dio njegovog profesionalnog života. Inspirisanje mladih, njihova priprema za budućnost i prenošenje znanja koje je stekao jedno je od najznačajnijih postignuća u njegovom životu."
+        "Nadalje, 2025. godine naš osnivač je predavao kurs \"Menadžment inovacija i tehnologije\" na Univerzitetu Kadir Has u Istanbulu. On smatra da je prenošenje svog višegodišnjeg industrijskog iskustva mlađim generacijama važna odgovornost i da je dijeljenje znanja sastavni dio njegovog profesionalnog života. Inspirisanje mladih, njihova priprema za budućnost i prenošenje znanja koje je stekao jedno je od najznačajnijih postignuća u njegovom životu. Govori turski, njemački, engleski i bosanski jezik."
       ],
       "languagesLabel": "Govoreni jezici",
       "languages": [
@@ -1174,16 +1237,37 @@ export const homepageContent = {
       "cta": "Detaljno ispitati",
       "items": [
         {
+          "slug": "yalin-donusumde-sizi-ne-bekliyor",
           "title": "Šta možete očekivati od lean transformacije?",
-          "excerpt": "Mnoge kompanije tokom početnog sastanka govore o svakodnevnim problemima i traže brza rješenja. Međutim, problemi koje smo uočili su iznenađujuće slični."
+          "excerpt": "Mnoge kompanije tokom početnog sastanka govore o svakodnevnim problemima i traže brza rješenja. Međutim, problemi koje smo uočili su iznenađujuće slični.",
+          "body": [
+            "Na našem prvom sastanku mnoge kompanije opisuju svoje svakodnevne probleme i traže brzo rješenje. Ipak, u desetinama proizvodnih pogona u različitim sektorima, obrasci koje uočavamo iznenađujuće su slični: nejasne odgovornosti, neizmjereni procesi, prekinuti tokovi između odjela i ponavljajuće greške.",
+            "Lean transformacija nije preporuka isporučena u izvještaju. Prvo zajedno mjerimo trenutno stanje na terenu, čineći vidljivim aktivnosti koje stvaraju i koje ne stvaraju dodanu vrijednost, interakcije između procesa i digitalnu zrelost. Dijagnoza se postavlja unutar procesa, a ne za stolom.",
+            "Zatim s vama definiramo standarde, odgovornosti i kriterije učinka, pretvarajući proces u nešto brže, transparentnije i održivije. Što je najvažnije, ne samo da predlažemo rješenje; ostajemo na terenu s vašim timom kroz implementaciju, praćenje, mjerenje i standardizaciju.",
+            "Dakle, ono što vas čeka nije brzi recept, već radni sistem koji donosi trajne rezultate — onaj koji vaš tim može samostalno održavati."
+          ]
         },
         {
+          "slug": "planlama-stabilitesi-nerede-kirilir",
           "title": "Gdje se narušava stabilnost planiranja?",
-          "excerpt": "Ako se plan mijenja svaki dan, problem nije sam plan; to bi mogla biti vidljivost, WIP ili brzina odgovora."
+          "excerpt": "Ako se plan mijenja svaki dan, problem nije sam plan; to bi mogla biti vidljivost, WIP ili brzina odgovora.",
+          "body": [
+            "Kada se plan mijenja svaki dan, većina kompanija prvo okrivljuje softver za planiranje ili planera. Ono što vidimo na terenu obično je drugačije: problem nije sam plan, već nevidljive varijable koje ga svakodnevno narušavaju.",
+            "Te varijable obično spadaju u tri područja: nedostatak vidljivosti (stvarno stanje nije poznato u realnom vremenu), nekontrolisani WIP (linije i međuzalihe su pune, tok je začepljen) i spor ritam reakcije (dok se odstupanje primijeti, prekasno je za reagovanje).",
+            "Stabilnost planiranja postižemo ne češćim preplaniranjem, već balansiranjem toka, ograničavanjem WIP-a i uspostavljanjem redovnog ritma upravljanja. Kada se uvedu vizuelno upravljanje i jasna pravila reakcije, plan prestaje biti dokument koji se svaki dan iznova piše.",
+            "Naš cilj je učiniti proces — a ne samo plan — pouzdanim, omogućavajući uravnoteženu i predvidljivu proizvodnju usklađenu s narudžbama kupaca."
+          ]
         },
         {
+          "slug": "shopfloor-board-gercekte-nasil-calisir",
           "title": "Kako zapravo funkcioniše ploča na podu radionice?",
-          "excerpt": "Oglaska tabla sama po sebi nije rješenje; ona postaje značajna tek kroz ritam upravljanja koji ističe pravo pitanje."
+          "excerpt": "Oglaska tabla sama po sebi nije rješenje; ona postaje značajna tek kroz ritam upravljanja koji ističe pravo pitanje.",
+          "body": [
+            "Ploča na podu radionice često se kupuje kao „rješenje“: ploča se okači, na njoj se napiše nekoliko pokazatelja i očekuje se da će se problemi sami riješiti. U stvarnom životu to ne funkcioniše tako.",
+            "Ploča je samo alat; njena prava vrijednost dolazi iz ritma upravljanja izgrađenog oko nje. Kratak sastanak na terenu svaki dan u isto vrijeme i s istim pitanjima čini odstupanja vidljivim, pojašnjava ko je za šta odgovoran i do kada, te održava praćenje akcija.",
+            "Dobro osmišljena ploča ima malo, ali smislenih pokazatelja: stvarno u odnosu na cilj, uzrok odstupanja i otvorene akcije. Ploča se koristi ne za „izvještavanje“, već za postavljanje pravog pitanja.",
+            "Mi ne samo da postavljamo ploču; provodimo ritam upravljanja s vašim timom na terenu i ostajemo dok ne postane navika. Tek uz taj ritam ploča zaista funkcioniše."
+          ]
         }
       ]
     },

@@ -1,6 +1,7 @@
 import { createServerClient } from "@/lib/supabase/server";
 import { setRevisionStatus, deleteRevision } from "./actions";
 import { RevisionForm } from "./revision-form";
+import { AdminAccordion } from "../components/admin-accordion";
 import { AdminPageHeader } from "../components/admin-page-header";
 
 export const dynamic = "force-dynamic";
@@ -58,7 +59,12 @@ export default async function RevisionsPage() {
 
           <div className="admin-content-layout">
             <aside className="admin-content-layout__side">
-              <RevisionForm />
+              <AdminAccordion
+                title="Yeni revizyon isteği ekle"
+                hint="Talebi panele kaydedin ve durumunu takip edin"
+              >
+                <RevisionForm />
+              </AdminAccordion>
             </aside>
 
             <section className="admin-content-layout__main">

@@ -15,6 +15,12 @@ export function AdminSidebar() {
           <span className="admin-brand__badge">Yönetim Paneli</span>
           <div className="admin-brand__name">EJS Consulting</div>
           <div className="admin-brand__subtitle">İçerik ve talep yönetimi</div>
+          <div className="admin-brand__actions">
+            <Link href="/" className="admin-brand__link">
+              Siteyi görüntüle
+            </Link>
+            <span className="admin-status-pill">Güvenli oturum</span>
+          </div>
         </div>
       </div>
 

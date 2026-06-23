@@ -7,7 +7,6 @@ export function FounderStorySection({ founder, lang }) {
     <section id="kurucumuzun-hikayesi" className="content-section section founder-section">
       <div className="section-heading-block compact-heading">
         <p className="structure-label">{founder.eyebrow}</p>
-        <h2 className="section-title founder-title">{founder.subtitle}</h2>
       </div>
 
       <div className="founder-layout">
@@ -25,10 +24,7 @@ export function FounderStorySection({ founder, lang }) {
             <p className="founder-role">{founder.role}</p>
           </div>
 
-          <div className="founder-languages">
-            <span className="founder-languages-label">{founder.languagesLabel}:</span>
-            <span className="founder-languages-list">{founder.languages.join(", ")}</span>
-          </div>
+          <p className="founder-caption">{founder.subtitle}</p>
         </div>
 
         <div className="founder-copy">

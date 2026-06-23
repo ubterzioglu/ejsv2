@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { HeroForm } from "./hero-form";
+import { AdminAccordion } from "../components/admin-accordion";
 import { deleteSlide } from "./actions";
 
 /**
@@ -13,7 +14,12 @@ export function HeroManager({ items }) {
   return (
     <div className="admin-content-layout">
       <aside className="admin-content-layout__side">
-        <HeroForm />
+        <AdminAccordion
+          title="Yeni slayt ekle"
+          hint="Video, metin (4 dil), sıra ve yayın durumu"
+        >
+          <HeroForm />
+        </AdminAccordion>
       </aside>
 
       <section className="admin-content-layout__main">

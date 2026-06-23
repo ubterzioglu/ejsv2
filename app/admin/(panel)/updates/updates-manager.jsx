@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { UpdateForm } from "./update-form";
+import { AdminAccordion } from "../components/admin-accordion";
 import { deleteUpdate } from "./actions";
 
 /**
@@ -13,7 +14,12 @@ export function UpdatesManager({ lang, items }) {
   return (
     <div className="admin-content-layout">
       <aside className="admin-content-layout__side">
-        <UpdateForm lang={lang} />
+        <AdminAccordion
+          title="Yeni makale ekle"
+          hint="Başlık, özet, içerik ve kapak görseli"
+        >
+          <UpdateForm lang={lang} />
+        </AdminAccordion>
       </aside>
 
       <section className="admin-content-layout__main">
