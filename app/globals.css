@@ -2421,19 +2421,21 @@ img {
 }
 
 .methodology-grid-refined {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  max-width: 60rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 1.8vw, 1.5rem);
+  align-items: stretch;
+  max-width: 72rem;
   margin-inline: auto;
 }
 
 .methodology-card-refined {
   display: grid;
-  grid-template-columns: 5.4rem minmax(0, 1fr);
-  gap: 1.6rem;
-  align-items: center;
-  padding: 1.6rem 1.9rem;
+  grid-template-columns: 4.6rem minmax(0, 1fr);
+  gap: 1.4rem;
+  align-items: start;
+  height: 100%;
+  padding: 1.6rem 1.7rem;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 247, 245, 0.94));
   border: var(--card-border);
   box-shadow: var(--shadow-card);
@@ -2487,7 +2489,7 @@ img {
 
 .methodology-card-copy {
   display: grid;
-  align-content: center;
+  align-content: start;
   gap: 0.5rem;
 }
 
@@ -2504,6 +2506,14 @@ img {
   color: #3d434c;
   font-size: 1.02rem;
   line-height: 1.6;
+}
+
+/* Below the two-column comfort threshold, collapse the outer grid */
+@media (max-width: 900px) {
+  .methodology-grid-refined {
+    grid-template-columns: 1fr;
+    max-width: 44rem;
+  }
 }
 
 @media (max-width: 760px) {
