@@ -24,6 +24,11 @@ export function FounderStorySection({ founder, lang }) {
             <p className="founder-name">{founder.name}</p>
             <p className="founder-role">{founder.role}</p>
           </div>
+
+          <div className="founder-languages">
+            <span className="founder-languages-label">{founder.languagesLabel}:</span>
+            <span className="founder-languages-list">{founder.languages.join(", ")}</span>
+          </div>
         </div>
 
         <div className="founder-copy">
@@ -32,11 +37,6 @@ export function FounderStorySection({ founder, lang }) {
               {paragraph}
             </p>
           ))}
-
-          <div className="founder-languages">
-            <span className="founder-languages-label">{founder.languagesLabel}:</span>
-            <span className="founder-languages-list">{founder.languages.join(", ")}</span>
-          </div>
         </div>
       </div>
     </section>

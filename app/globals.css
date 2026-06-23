@@ -2581,20 +2581,24 @@ img {
   display: grid;
   grid-template-columns: minmax(280px, 0.62fr) minmax(0, 1fr);
   gap: clamp(2rem, 4vw, 3.5rem);
-  align-items: start;
+  align-items: stretch;
 }
 
 .founder-image-wrap {
   display: grid;
+  align-content: start;
   gap: 1rem;
+  padding: clamp(1.25rem, 2vw, 1.75rem);
+  background: var(--surface);
+  border: var(--card-border);
+  box-shadow: var(--shadow-card);
+  border-radius: var(--card-radius);
 }
 
 .founder-image {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border: var(--card-border);
-  box-shadow: var(--shadow-card);
   border-radius: var(--card-radius);
   filter: grayscale(1);
 }
