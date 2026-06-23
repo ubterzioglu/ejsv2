@@ -64,6 +64,7 @@ export const homepageContent = {
       search: "Ara",
     },
     utilityLinks: [
+      { label: "Yaklaşımımız", href: "#yaklasimimiz" },
       { label: "Kimliğimiz", href: "#kimligimiz" },
       { label: "İletişim", href: "#iletisim" },
     ],
@@ -360,6 +361,7 @@ export const homepageContent = {
       search: "Search",
     },
     utilityLinks: [
+      { label: "Our Approach", href: "#yaklasimimiz" },
       { label: "Identity", href: "#kimligimiz" },
       { label: "Contact", href: "#iletisim" },
     ],
@@ -650,6 +652,7 @@ export const homepageContent = {
       search: "Suchen",
     },
     utilityLinks: [
+      { label: "Unser Ansatz", href: "#yaklasimimiz" },
       { label: "Identität", href: "#kimligimiz" },
       { label: "Kontakt", href: "#iletisim" },
     ],
@@ -940,6 +943,10 @@ export const homepageContent = {
       "search": "Pretraga"
     },
     "utilityLinks": [
+      {
+        "label": "Naš pristup",
+        "href": "#yaklasimimiz"
+      },
       {
         "label": "Naš identitet",
         "href": "#kimligimiz"
