@@ -420,13 +420,6 @@ img {
   outline-offset: 2px;
 }
 
-.header-actions {
-  position: relative;
-  display: inline-flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
 .search-trigger {
   position: relative;
   width: 2.9rem;
@@ -1123,6 +1116,7 @@ img {
   }
 
   .utility-nav-wrap,
+  .utility-actions,
   .language-switch {
     position: static;
     justify-content: center;
@@ -1216,12 +1210,6 @@ img {
 
   .header-link {
     font-size: 1.15rem;
-  }
-
-  .header-actions {
-    grid-column: 1 / -1;
-    justify-content: flex-end;
-    padding-top: 0.35rem;
   }
 
   .approach-cta {
