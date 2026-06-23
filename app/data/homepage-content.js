@@ -532,6 +532,7 @@ export const homepageContent = {
             "SMED for fast changeovers and increased flexibility.",
             "5S, TPM, and OEE for shopfloor discipline and equipment effectiveness.",
           ],
+          image: "/assets/expertise/2-production.jpg",
         },
         {
           title: "Building a Company-Specific Problem-Solving Process",
@@ -546,6 +547,7 @@ export const homepageContent = {
             "Root cause analysis with 5 Whys and Ishikawa.",
             "Permanent countermeasures and a follow-up system to prevent recurrence.",
           ],
+          image: "/assets/expertise/3-problem-solving.jpg",
         },
         {
           title: "Building Quality Processes from Supplier to Customer",
@@ -561,6 +563,7 @@ export const homepageContent = {
             "In-process quality (APQP, PPAP, FMEA) and error-proofing (poka-yoke).",
             "Pre-shipment quality gates and a customer feedback loop.",
           ],
+          image: "/assets/expertise/4-quality.jpg",
         },
         {
           title: "After-Sales Customer Complaint Management",
@@ -575,6 +578,7 @@ export const homepageContent = {
             "Rapid response run together with root cause analysis.",
             "Customer satisfaction measurement and a continuous improvement loop.",
           ],
+          image: "/assets/expertise/5-customer-service.jpg",
         },
       ],
     },
@@ -829,6 +833,7 @@ export const homepageContent = {
             "Erkennen und Beseitigen von Verschwendung in Verwaltungs- und Planungsprozessen.",
             "Standardarbeit, visuelles Management und ein regelmäßiger Management-Rhythmus.",
           ],
+          image: "/assets/expertise/1-lean-digital.jpg",
         },
         {
           title: "Lean-Transformation der Produktion",
@@ -844,6 +849,7 @@ export const homepageContent = {
             "SMED für schnelle Rüstvorgänge und mehr Flexibilität.",
             "5S, TPM und OEE für Shopfloor-Disziplin und Anlageneffektivität.",
           ],
+          image: "/assets/expertise/2-production.jpg",
         },
         {
           title: "Aufbau eines unternehmensspezifischen Problemlösungsprozesses",
@@ -858,6 +864,7 @@ export const homepageContent = {
             "Ursachenanalyse mit 5-Why und Ishikawa.",
             "Dauerhafte Gegenmaßnahmen und ein Nachverfolgungssystem zur Vermeidung von Wiederholungen.",
           ],
+          image: "/assets/expertise/3-problem-solving.jpg",
         },
         {
           title: "Aufbau von Qualitätsprozessen vom Lieferanten bis zum Kunden",
@@ -873,6 +880,7 @@ export const homepageContent = {
             "Prozessbegleitende Qualität (APQP, PPAP, FMEA) und Fehlervermeidung (Poka-Yoke).",
             "Qualitäts-Gates vor dem Versand und eine Kunden-Feedbackschleife.",
           ],
+          image: "/assets/expertise/4-quality.jpg",
         },
         {
           title: "After-Sales-Kundenreklamationsmanagement",
@@ -887,6 +895,7 @@ export const homepageContent = {
             "Schnelle Reaktion gemeinsam mit der Ursachenanalyse.",
             "Messung der Kundenzufriedenheit und eine kontinuierliche Verbesserungsschleife.",
           ],
+          image: "/assets/expertise/5-customer-service.jpg",
         },
       ],
     },
@@ -1156,7 +1165,8 @@ export const homepageContent = {
             "Vidljivost procesa od početka do kraja putem mapiranja toka vrijednosti (VSM).",
             "Identifikacija i eliminacija gubitaka u administrativnim i planskim procesima.",
             "Uspostavljanje standardnih operativnih procedura, vizuelnog upravljanja i redovnog ciklusa upravljanja."
-          ]
+          ],
+          "image": "/assets/expertise/1-lean-digital.jpg"
         },
         {
           "title": "Lean transformacija u proizvodnji",
@@ -1170,7 +1180,8 @@ export const homepageContent = {
             "Balansiranje linija, ćelijska proizvodnja i dizajn protoka.",
             "Brze promjene kalupa/proizvoda i povećana fleksibilnost uz SMED.",
             "Disciplina na radnom mjestu i efikasnost opreme putem 5S, TPM i OEE."
-          ]
+          ],
+          "image": "/assets/expertise/2-production.jpg"
         },
         {
           "title": "Razvijanje procesa rješavanja problema prilagođenog kompanijama",
@@ -1183,7 +1194,8 @@ export const homepageContent = {
             "Strukturirano rješavanje problema koristeći 8D, A3 i PDCA.",
             "5 razloga i analiza osnovnog uzroka pomoću Ishikawa dijagrama.",
             "Sistem nadzora za osiguranje dugoročnih mjera i sprečavanje ponovnog pojavljivanja."
-          ]
+          ],
+          "image": "/assets/expertise/3-problem-solving.jpg"
         },
         {
           "title": "Uspostavljanje procesa kvaliteta od dobavljača do kupca",
@@ -1197,7 +1209,8 @@ export const homepageContent = {
             "Razvoj dobavljača, revizija i kontrola ulaznog kvaliteta.",
             "Kvalitet u toku procesa (APQP, PPAP, FMEA) i prevencija grešaka (poka-yoke).",
             "Provjere kvaliteta prije isporuke i povratna petlja za kupca."
-          ]
+          ],
+          "image": "/assets/expertise/4-quality.jpg"
         },
         {
           "title": "Upravljanje pritužbama kupaca nakon prodaje",
@@ -1210,7 +1223,8 @@ export const homepageContent = {
             "Procesi za primanje, klasifikaciju i prioritizaciju pritužbi.",
             "Provedba analize osnovnih uzroka u kombinaciji s brzim odgovorom.",
             "Mjerenje zadovoljstva kupaca i ciklus kontinuiranog poboljšanja."
-          ]
+          ],
+          "image": "/assets/expertise/5-customer-service.jpg"
         }
       ]
     },

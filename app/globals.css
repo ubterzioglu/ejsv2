@@ -1078,7 +1078,7 @@ img {
 }
 
 .reference-card {
-  flex: 0 0 200px;
+  flex: 0 0 240px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -1089,8 +1089,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 120px;
-  padding: 1.25rem 1.5rem;
+  height: 160px;
+  padding: 0.5rem 0.75rem;
 }
 
 .reference-name {

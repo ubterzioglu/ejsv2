@@ -1,14 +1,14 @@
 const referenceBrands = [
-  { src: "/assets/references/1.jpg", name: "GENBA Group" },
-  { src: "/assets/references/2.jpg", name: "World Medicine" },
-  { src: "/assets/references/3.jpg", name: "Trakya Verimlilik Platformu" },
-  { src: "/assets/references/4.jpg", name: "Yurtbay Seramik" },
-  { src: "/assets/references/5.jpg", name: "ALP Havacılık" },
-  { src: "/assets/references/6.jpg", name: "P3 Group GmbH" },
-  { src: "/assets/references/7.jpg", name: "Dalgakıran Kompresör" },
-  { src: "/assets/references/8.jpg", name: "TES Elektrik" },
-  { src: "/assets/references/9.jpg", name: "Petek Saraciye" },
-  { src: "/assets/references/10.jpg", name: "Avrasya Kırtasiye" },
+  { src: "/assets/references/1.jpg", name: "P3 Group GmbH" },
+  { src: "/assets/references/2.jpg", name: "Dalgakıran Kompresör" },
+  { src: "/assets/references/3.jpg", name: "TES Elektrik" },
+  { src: "/assets/references/4.jpg", name: "Petek Saraciye" },
+  { src: "/assets/references/5.jpg", name: "Avrasya Kırtasiye & Oyuncak" },
+  { src: "/assets/references/6.jpg", name: "GENBA Group" },
+  { src: "/assets/references/7.jpg", name: "World Medicine" },
+  { src: "/assets/references/8.jpg", name: "Trakya Verimlilik Platformu" },
+  { src: "/assets/references/9.jpg", name: "Yurtbay Seramik" },
+  { src: "/assets/references/10.jpg", name: "ALP Havacılık" },
 ];
 
 export function ReferencesSection({ references }) {
