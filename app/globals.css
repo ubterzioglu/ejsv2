@@ -794,12 +794,18 @@ img {
 }
 
 .content-section {
-  padding: 5rem 0 0;
+  /* Her bolumun icerigini ortada, sag-sol bosluklu bir kutuya aliyoruz.
+     .section sinifi zaten genisligi var(--max-width) ile sinirlandirip
+     ortaliyor; burada hafif bir yuzey ve ic padding ekleyerek "kart icinde"
+     hissi veriyoruz ama kenarlik / kose yuvarlama / golge yok -> kart gibi
+     gorunmuyor. */
+  padding: clamp(2.75rem, 4.5vw, 4.25rem) clamp(1.25rem, 3.5vw, 3.25rem);
+  margin-top: 2.5rem;
+  background: var(--surface);
 }
 
-/* Distinct transition between sections: a single thin divider line */
-.content-section + .content-section {
-  border-top: 1px solid var(--line);
+.content-section:first-of-type {
+  margin-top: 0;
 }
 
 .section-grid {
@@ -1703,10 +1709,10 @@ img {
   z-index: -1;
   pointer-events: none;
   background:
-    linear-gradient(180deg, rgba(10, 14, 20, 0.45) 0%, rgba(10, 14, 20, 0.62) 100%),
-    radial-gradient(ellipse at 20% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 50%);
-  backdrop-filter: blur(14px) saturate(120%);
-  -webkit-backdrop-filter: blur(14px) saturate(120%);
+    linear-gradient(180deg, rgba(8, 11, 16, 0.78) 0%, rgba(8, 11, 16, 0.88) 100%),
+    radial-gradient(ellipse at 20% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 50%);
+  backdrop-filter: blur(20px) saturate(115%);
+  -webkit-backdrop-filter: blur(20px) saturate(115%);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
@@ -1937,7 +1943,8 @@ img {
 
 .expert-spotlight-section {
   min-height: 0;
-  padding: 3.25rem 0 0;
+  padding: 0;
+  margin-top: 2.5rem;
 }
 
 .expert-spotlight-shell {
@@ -2186,7 +2193,8 @@ img {
 }
 
 .process-highlight-section {
-  padding: 5rem 0 0;
+  padding: 0;
+  margin-top: 2.5rem;
 }
 
 .process-highlight-shell {
@@ -2194,6 +2202,9 @@ img {
   grid-template-columns: minmax(220px, 0.36fr) minmax(0, 1fr);
   gap: clamp(1.5rem, 3vw, 2.5rem);
   align-items: stretch;
+  /* Kart gibi gorunmeden, ortali ve sag-sol bosluklu bir kutu yuzeyi. */
+  background: var(--surface);
+  padding: clamp(2.75rem, 4.5vw, 4.25rem) clamp(1.25rem, 3.5vw, 3.25rem);
 }
 
 .process-highlight-image-card {
@@ -2258,7 +2269,9 @@ img {
 }
 
 .methodology-section {
-  padding-top: 5rem;
+  /* Ust bosluk .content-section kutu padding'inden gelir; burada ekstra
+     padding-top vermiyoruz ki kutu ic hizalamasi tutarli kalsin. */
+  text-align: center;
 }
 
 .methodology-heading {
