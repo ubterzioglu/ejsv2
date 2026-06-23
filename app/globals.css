@@ -390,8 +390,8 @@ img {
   justify-content: flex-start;
   flex-wrap: nowrap;
   min-width: 0;
-  gap: clamp(0.5rem, 0.9vw, 1.1rem);
-  padding: 0 1.5rem 0 2rem;
+  gap: clamp(0.4rem, 0.7vw, 0.85rem);
+  padding: 0 4.5rem 0 2rem;
 }
 
 .header-link-separator {
@@ -450,7 +450,7 @@ img {
 .approach-cta {
   position: absolute;
   right: calc((100% - min(calc(100% - 11.5rem), 1510px)) / 2);
-  bottom: -1.45rem;
+  bottom: -2.6rem;
   z-index: 11;
   display: inline-flex;
   align-items: center;

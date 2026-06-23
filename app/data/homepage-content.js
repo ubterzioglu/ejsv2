@@ -70,6 +70,7 @@ export const homepageContent = {
     ],
     mainLinks: [
       { label: "Hemen Başla!", href: "#hemen-basla" },
+      { label: "Misyonumuz", href: "#misyonumuz" },
       { label: "Çalışmamız Hakkında", href: "#calismamiz-hakkinda" },
       { label: "Uzmanlık Alanlarımız", href: "#uzmanlik-alanlarimiz" },
       { label: "Öğren ve Geliş", href: "#ogren-ve-gelis" },
@@ -366,6 +367,7 @@ export const homepageContent = {
     ],
     mainLinks: [
       { label: "Start Now", href: "#hemen-basla" },
+      { label: "Mission", href: "#misyonumuz" },
       { label: "About Our Work", href: "#calismamiz-hakkinda" },
       { label: "Expertise", href: "#uzmanlik-alanlarimiz" },
       { label: "Learn & Grow", href: "#ogren-ve-gelis" },
@@ -656,6 +658,7 @@ export const homepageContent = {
     ],
     mainLinks: [
       { label: "Jetzt starten", href: "#hemen-basla" },
+      { label: "Mission", href: "#misyonumuz" },
       { label: "Über unsere Arbeit", href: "#calismamiz-hakkinda" },
       { label: "Fachgebiete", href: "#uzmanlik-alanlarimiz" },
       { label: "Lernen & Wachsen", href: "#ogren-ve-gelis" },
@@ -957,6 +960,10 @@ export const homepageContent = {
       {
         "label": "Počnite odmah!",
         "href": "#hemen-basla"
+      },
+      {
+        "label": "Naša misija",
+        "href": "#misyonumuz"
       },
       {
         "label": "O našoj studiji",
