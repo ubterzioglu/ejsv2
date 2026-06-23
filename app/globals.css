@@ -2519,10 +2519,6 @@ img {
 }
 
 @media (max-width: 760px) {
-  .identity-feature-section {
-    padding-top: 3rem;
-  }
-
   .identity-feature-heading {
     padding-bottom: 1.2rem;
   }

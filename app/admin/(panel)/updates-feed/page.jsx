@@ -10,6 +10,19 @@ export const dynamic = "force-static";
  */
 const UPDATES = [
   {
+    date: "24 Haziran 2026",
+    title: "Site içi arama, yenilenen referanslar ve videolu alt bilgi",
+    items: [
+      "Siteye arama özelliği eklendi: üst menüdeki arama (büyüteç) simgesine tıklayıp ayrı bir arama sayfasında site içeriğinde arama yapabilirsiniz.",
+      "Arama sonuçları doğrudan ilgili bölüme götürür (örneğin kimlik, yaklaşımımız, uzmanlık alanları, kurucu hikayesi, referanslar, iletişim).",
+      "Arama tamamen site içinde çalışır; ek bir altyapı veya veritabanı gerektirmez ve dört dilde (Türkçe, İngilizce, Almanca, Boşnakça) içerikte arar.",
+      '"Referanslar" bölümü yeni, daha şık premium kart tasarımıyla yenilendi.',
+      "Sayfanın en altına (alt bilgi) hareketli arka plan videosu eklenerek daha canlı bir görünüm sağlandı.",
+      "Üst menü iyileştirildi: arama simgesi artık net görünüyor ve üst araç çubuğu biraz daha derli toplu hale getirildi.",
+      "Kurucu bölümünde \"Savaşın ortasında başlayan yolculuk…\" cümlesi fotoğrafın altına alındı; konuştuğu diller ise ayrı bir etiket yerine yazının sonuna doğal bir cümle olarak işlendi.",
+    ],
+  },
+  {
     date: "23 Haziran 2026",
     title: "Hero video yönetimi, Boşnakça dil ve premium tasarım yenilemesi",
     items: [
