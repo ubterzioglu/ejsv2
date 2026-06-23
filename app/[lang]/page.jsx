@@ -69,7 +69,7 @@ export default async function HomePage({ params }) {
         <FounderStorySection founder={page.founder} lang={lang} />
         <ArticlesSection articles={page.articles} />
         <ReferencesSection references={page.references} />
-        <ContactSection contact={page.contact} lang={lang} />
+        <ContactSection contact={page.contact} footer={page.footer} lang={lang} />
       </main>
 
       <SiteFooter footer={page.footer} lang={lang} shareUrl={shareUrl} shareText={shareText} />

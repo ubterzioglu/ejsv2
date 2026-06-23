@@ -1,8 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
-export function ContactSection({ contact, lang }) {
+const contactLogo = "/assets/ejsmenulogo.png";
+
+export function ContactSection({ contact, footer, lang }) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -31,23 +34,68 @@ export function ContactSection({ contact, lang }) {
         <p className="section-intro">{contact.intro}</p>
       </div>
 
-      <div className="contact-grid">
-        <article className="contact-card contact-details">
-          <h3>{contact.companyName}</h3>
-          <p>{contact.companyNote}</p>
-          <p>{contact.address}</p>
-          <div className="contact-lines">
-            {contact.phones.map((phone) => (
-              <a key={phone} href={`tel:${phone.replace(/\s+/g, "")}`}>
-                {phone}
-              </a>
-            ))}
+      <div className="contact-merge-shell">
+        <article className="contact-card contact-details contact-details-premium">
+          <div className="contact-brand-block">
+            <div className="contact-logo-wrap" aria-hidden="true">
+              <Image
+                src={contactLogo}
+                alt=""
+                className="contact-logo-mark"
+                width={240}
+                height={240}
+                sizes="(max-width: 760px) 160px, 240px"
+                loading="eager"
+              />
+            </div>
+
+            <div className="contact-brand-copy">
+              <p className="contact-kicker">{footer?.eyebrow ?? contact.eyebrow}</p>
+              <h3>{contact.companyName}</h3>
+              <p className="contact-company-note">{contact.companyNote}</p>
+            </div>
           </div>
-          <p>{contact.hours}</p>
+
+          <div className="contact-office-panel">
+            <div className="contact-office-heading">
+              <p className="contact-office-label">{footer?.title ?? "Office"}</p>
+              <p className="contact-office-name">{footer?.officeName ?? contact.companyName}</p>
+            </div>
+
+            <div className="contact-office-details">
+              <p className="contact-address-line">
+                {footer?.addressLines?.[0] ?? contact.address}
+              </p>
+
+              <div className="contact-lines contact-lines-premium">
+                {contact.phones.map((phone) => (
+                  <a key={phone} href={`tel:${phone.replace(/\s+/g, "")}`}>
+                    {phone}
+                  </a>
+                ))}
+              </div>
+
+              <div className="contact-inline-links">
+                {footer?.contactRows?.map((row) => (
+                  <a
+                    key={row.label}
+                    href={row.href === "#iletisim" ? "#iletisim-form" : row.href}
+                    className="contact-inline-link"
+                  >
+                    <span>{row.label}</span>
+                    {row.value}
+                  </a>
+                ))}
+              </div>
+
+              <p className="contact-hours">{contact.hours}</p>
+            </div>
+          </div>
         </article>
 
         <form
-          className="contact-card contact-form"
+          id="iletisim-form"
+          className="contact-card contact-form contact-form-premium"
           onSubmit={handleSubmit}
         >
           {submitted ? (
