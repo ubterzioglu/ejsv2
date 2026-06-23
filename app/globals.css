@@ -972,19 +972,50 @@ img {
 .article-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(1rem, 2vw, 1.5rem);
+  gap: clamp(1.25rem, 2.4vw, 2rem);
 }
 
+/* Premium editorial article cards (two-column) */
 .article-card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  padding: var(--card-padding);
+  padding: clamp(1.75rem, 2.6vw, 2.5rem);
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--surface-strong);
+}
+
+/* Top accent rule that grows on hover */
+.article-card::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 3px;
+  background: var(--signal);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.article-card:hover::before,
+.article-card:focus-within::before {
+  transform: scaleX(1);
+}
+
+.article-card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.1rem;
 }
 
 /* RB-style category kicker above each insight title */
 .article-kicker {
   display: inline-block;
-  margin-bottom: 0.75rem;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -992,23 +1023,93 @@ img {
   color: var(--signal);
 }
 
-.article-card p {
-  flex: 1 1 auto;
+/* Oversized index numeral — editorial magazine feel */
+.article-index {
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+  color: var(--line);
+  transition: color 240ms ease;
 }
 
+.article-card:hover .article-index,
+.article-card:focus-within .article-index {
+  color: var(--signal);
+}
+
+.article-card h3 {
+  font-size: clamp(1.35rem, 1.9vw, 1.6rem);
+}
+
+.article-card p {
+  flex: 1 1 auto;
+  margin-bottom: 1.5rem;
+}
+
+/* Divider + animated read-more footer */
 .article-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  margin-top: 1.25rem;
+  gap: 0.6rem;
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
   font-size: 0.92rem;
   font-weight: 700;
+  letter-spacing: 0.01em;
   color: var(--ink);
-  transition: gap 180ms ease;
 }
 
-.article-link:hover {
-  gap: 0.6rem;
+.article-link-label {
+  position: relative;
+}
+
+.article-link-label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.article-card:hover .article-link-label::after,
+.article-card:focus-within .article-link-label::after {
+  transform: scaleX(1);
+}
+
+.article-link-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 1.75rem;
+  block-size: 1.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 200ms ease, color 200ms ease, border-color 200ms ease;
+}
+
+.article-card:hover .article-link-arrow,
+.article-card:focus-within .article-link-arrow {
+  background: var(--signal);
+  border-color: var(--signal);
+  color: var(--surface-strong);
+  transform: translateX(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .article-card::before,
+  .article-link-label::after,
+  .article-link-arrow {
+    transition: none;
+  }
 }
 
 /* Article detail page (Öğren ve Geliş > single article) */

@@ -9,18 +9,25 @@ export function ArticlesSection({ articles, lang }) {
         <p className="section-intro">{articles.intro}</p>
       </div>
       <div className="article-grid">
-        {articles.items.map((article) => {
+        {articles.items.map((article, index) => {
           const href = article.slug
             ? `/${lang}/ogren-ve-gelis/${article.slug}`
             : "#iletisim";
           return (
             <article key={article.title} className="article-card">
-              <span className="article-kicker">{articles.eyebrow}</span>
+              <div className="article-card-head">
+                <span className="article-kicker">{articles.eyebrow}</span>
+                <span className="article-index" aria-hidden="true">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+              </div>
               <h3>{article.title}</h3>
               <p>{article.excerpt}</p>
               <Link href={href} className="article-link">
-                {articles.cta}
-                <span aria-hidden="true"> →</span>
+                <span className="article-link-label">{articles.cta}</span>
+                <span className="article-link-arrow" aria-hidden="true">
+                  →
+                </span>
               </Link>
             </article>
           );
