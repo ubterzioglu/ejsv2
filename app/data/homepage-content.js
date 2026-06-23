@@ -199,6 +199,7 @@ export const homepageContent = {
             "İdari ve planlama süreçlerinde israfların tespiti ve giderilmesi.",
             "Standart iş, görsel yönetim ve düzenli yönetim ritmi kurulumu.",
           ],
+          image: "/assets/expertise/1-lean-digital.jpg",
         },
         {
           title: "Üretimin Yalın Dönüşümü",
@@ -214,6 +215,7 @@ export const homepageContent = {
             "SMED ile hızlı kalıp/ürün değişimi ve esneklik artışı.",
             "5S, TPM ve OEE ile saha disiplini ve ekipman etkinliği.",
           ],
+          image: "/assets/expertise/2-production.jpg",
         },
         {
           title: "Şirketlere Özel Problem Çözme Sürecinin Oluşturulması",
@@ -228,6 +230,7 @@ export const homepageContent = {
             "5 Neden ve Ishikawa ile kök neden analizi.",
             "Kalıcı önlemler ve tekrarın önlenmesi için takip sistemi.",
           ],
+          image: "/assets/expertise/3-problem-solving.jpg",
         },
         {
           title: "Tedarikçiden Müşteriye Kalite Süreçlerinin Oluşturulması",
@@ -243,6 +246,7 @@ export const homepageContent = {
             "Süreç içi kalite (APQP, PPAP, FMEA) ve hata önleme (poka-yoke).",
             "Müşteriye sevkiyat öncesi kalite kapıları ve geri bildirim döngüsü.",
           ],
+          image: "/assets/expertise/4-quality.jpg",
         },
         {
           title: "Satış Sonrası Müşteri Şikayetleri Yönetimi",
@@ -257,6 +261,7 @@ export const homepageContent = {
             "Hızlı müdahale ile kök neden analizinin birlikte yürütülmesi.",
             "Müşteri memnuniyeti ölçümü ve sürekli iyileştirme döngüsü.",
           ],
+          image: "/assets/expertise/5-customer-service.jpg",
         },
       ],
     },
@@ -511,6 +516,7 @@ export const homepageContent = {
             "Identifying and removing waste in administrative and planning processes.",
             "Standard work, visual management, and a regular management cadence.",
           ],
+          image: "/assets/expertise/1-lean-digital.jpg",
         },
         {
           title: "Lean Transformation of Production",

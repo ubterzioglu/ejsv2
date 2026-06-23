@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 function ExpertiseAccordionItem({ area, index, isOpen, onToggle }) {
   const baseId = `expertise-${index}`;
@@ -32,23 +33,42 @@ function ExpertiseAccordionItem({ area, index, isOpen, onToggle }) {
         className="expertise-panel"
         hidden={!isOpen}
       >
-        <div className="expertise-panel-inner">
-          {area.summary ? (
-            <p className="expertise-panel-summary">{area.summary}</p>
-          ) : null}
+        <div
+          className={`expertise-panel-inner ${
+            area.image ? "has-media" : ""
+          }`}
+        >
+          <div className="expertise-panel-content">
+            {area.summary ? (
+              <p className="expertise-panel-summary">{area.summary}</p>
+            ) : null}
 
-          {area.paragraphs?.map((paragraph) => (
-            <p key={paragraph} className="expertise-detail-paragraph">
-              {paragraph}
-            </p>
-          ))}
+            {area.paragraphs?.map((paragraph) => (
+              <p key={paragraph} className="expertise-detail-paragraph">
+                {paragraph}
+              </p>
+            ))}
 
-          {area.details?.length ? (
-            <ul className="expertise-detail-list">
-              {area.details.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+            {area.details?.length ? (
+              <ul className="expertise-detail-list">
+                {area.details.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            ) : null}
+          </div>
+
+          {area.image ? (
+            <div className="expertise-panel-media">
+              <Image
+                src={area.image}
+                alt={area.title}
+                className="expertise-panel-image"
+                width={640}
+                height={520}
+                sizes="(max-width: 880px) 100vw, 38vw"
+              />
+            </div>
           ) : null}
         </div>
       </div>
