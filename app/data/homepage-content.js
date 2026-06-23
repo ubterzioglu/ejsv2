@@ -1,9 +1,9 @@
 export const heroVideos = [
   {
-    title: "Smart factory automation",
-    src: "https://videos.pexels.com/video-files/32386599/13814607_3840_2160_100fps.mp4",
+    title: "Aerial view of a large factory complex",
+    src: "/assets/videos/hero-1-factory-aerial.mp4",
     creditUrl:
-      "https://www.pexels.com/video/high-tech-automated-manufacturing-process-32386581/",
+      "https://www.pexels.com/video/aerial-footage-of-a-industrial-plant-6993428/",
     captions: {
       tr: "Danışman Değil, Uygulamacı Dönüşüm Ortağı.",
       en: "Not a Consultant — a Hands-On Transformation Partner.",
@@ -11,10 +11,10 @@ export const heroVideos = [
     },
   },
   {
-    title: "Industrial control systems",
-    src: "https://videos.pexels.com/video-files/34508889/14621114_3840_2160_25fps.mp4",
+    title: "Large industrial plant overview",
+    src: "/assets/videos/hero-2-industrial-plant.mp4",
     creditUrl:
-      "https://www.pexels.com/video/operator-uses-industrial-control-panel-for-machinery-31751360/",
+      "https://www.pexels.com/video/aerial-footage-of-an-industrial-complex-6060194/",
     captions: {
       tr: "Sahada birlikte üretir, sonuca kadar kalırız.",
       en: "We build on the floor and stay until the result is real.",
@@ -22,10 +22,10 @@ export const heroVideos = [
     },
   },
   {
-    title: "Production teamwork on site",
-    src: "https://videos.pexels.com/video-files/7192922/7192922-uhd_3840_2160_30fps.mp4",
+    title: "Factory with industrial smokestacks",
+    src: "/assets/videos/hero-3-factory-smoke.mp4",
     creditUrl:
-      "https://www.pexels.com/video/two-men-are-working-on-a-machine-in-a-factory-20687170/",
+      "https://www.pexels.com/video/industrial-factory-with-smoke-emissions-28827685/",
     captions: {
       tr: "Bilgi, tecrübe ve eylem bir arada.",
       en: "Knowledge, experience, and action — together.",
@@ -33,10 +33,10 @@ export const heroVideos = [
     },
   },
   {
-    title: "Industrial footprint overview",
-    src: "https://videos.pexels.com/video-files/30900257/13212332_3840_2160_60fps.mp4",
+    title: "Aerial view of an industrial power plant",
+    src: "/assets/videos/hero-4-power-plant.mp4",
     creditUrl:
-      "https://www.pexels.com/video/aerial-view-of-industrial-factory-complex-30900254/",
+      "https://www.pexels.com/video/drone-footage-of-a-power-plant-6216793/",
     captions: {
       tr: "Süreçlerinizi yalın, hızlı ve karlı hale getiririz.",
       en: "We make your processes lean, fast, and profitable.",
@@ -44,10 +44,10 @@ export const heroVideos = [
     },
   },
   {
-    title: "Control room decision making",
-    src: "https://videos.pexels.com/video-files/4038983/4038983-hd_1920_1080_24fps.mp4",
+    title: "Cargo ship carrying containers at sea",
+    src: "/assets/videos/hero-5-cargo-ship.mp4",
     creditUrl:
-      "https://www.pexels.com/video/a-director-in-a-production-control-room-5028976/",
+      "https://www.pexels.com/video/aerial-view-of-a-cargo-ship-2942803/",
     captions: {
       tr: "33 yılı aşkın uluslararası saha tecrübesi.",
       en: "Over 33 years of international field experience.",
