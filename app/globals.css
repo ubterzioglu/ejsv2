@@ -1603,10 +1603,45 @@ img {
 }
 
 .site-footer {
+  position: relative;
   padding: 5rem 0 4rem;
+  overflow: hidden;
+  isolation: isolate;
+  background: #0a0e14;
+}
+
+/* Footer background video */
+.footer-bg-video {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Glassmorphic overlay over the footer video */
+.footer-bg-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
   background:
-    radial-gradient(circle at left top, rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0) 34%),
-    #ecece8;
+    linear-gradient(180deg, rgba(10, 14, 20, 0.45) 0%, rgba(10, 14, 20, 0.62) 100%),
+    radial-gradient(ellipse at 20% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 50%);
+  backdrop-filter: blur(14px) saturate(120%);
+  -webkit-backdrop-filter: blur(14px) saturate(120%);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* Lift footer content above the video + glass layers */
+.site-footer > .footer-shell,
+.site-footer > .contact-section,
+.site-footer > .footer-copyright {
+  position: relative;
+  z-index: 1;
 }
 
 /* Footer visual balance improvements */
@@ -1623,13 +1658,13 @@ img {
   gap: 1rem;
   margin-top: 0;
   padding-top: 1.8rem;
-  border-top: 1px solid rgba(16, 16, 16, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
   flex-wrap: wrap;
 }
 
 /* Footer nav link hover state for better visual feedback */
 .footer-nav-link {
-  color: #8c95a0;
+  color: rgba(235, 240, 246, 0.78);
   font-size: 0.88rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -1639,7 +1674,7 @@ img {
 }
 
 .footer-nav-link:hover {
-  color: var(--ink);
+  color: #ffffff;
   transform: translateY(-1px);
 }
 
@@ -1654,8 +1689,8 @@ img {
   text-align: center;
   padding: 1.5rem 2rem 0;
   font-size: 0.85rem;
-  color: #666;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(225, 231, 238, 0.62);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   margin: 2.5rem 2rem 0;
 }
 

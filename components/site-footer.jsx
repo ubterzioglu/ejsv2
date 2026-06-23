@@ -6,6 +6,19 @@ import { ShareSection } from "@/components/sections/share-section";
 export function SiteFooter({ footer, lang, shareUrl, shareText }) {
   return (
     <footer className="site-footer">
+      <video
+        className="footer-bg-video"
+        src="/assets/videos/footerbg.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        aria-hidden="true"
+        tabIndex={-1}
+      />
+      <div className="footer-bg-overlay" aria-hidden="true" />
+
       <div className="footer-shell section">
         <nav className="footer-nav" aria-label={footer.navLabel}>
           {footer.links.map((link, index) => (
