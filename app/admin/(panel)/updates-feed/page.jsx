@@ -10,6 +10,20 @@ export const dynamic = "force-static";
  */
 const UPDATES = [
   {
+    date: "23 Haziran 2026",
+    title: "Hero video yönetimi, Boşnakça dil ve premium tasarım yenilemesi",
+    items: [
+      'Yeni "Hero Slaytları" bölümü eklendi: ana sayfadaki büyük video şovunu artık panelden yönetebilirsiniz — video yükleyin (200 MB\'a kadar), sırasını belirleyin ve yayına alın/kaldırın.',
+      "Her hero videosunun altyazısını dört dilde (Türkçe, İngilizce, Almanca, Boşnakça) ayrı ayrı girebilirsiniz.",
+      "Otomatik çeviri eklendi: Türkçe altyazıyı yazıp tek tuşla İngilizce, Almanca ve Boşnakça'ya çevirtebilirsiniz (DeepL); çeviriyi isterseniz elle düzeltebilirsiniz.",
+      "Siteye dördüncü dil olarak Boşnakça (BS) eklendi; üst menüdeki dil seçeneklerinde artık BS de var.",
+      'Sol menüye yeni "Hero Slaytları" bölümü eklendi; menü ve panel düzeni buna göre güncellendi.',
+      "Yönetim paneli baştan aşağı yenilendi: aydınlık, sade ve premium bir görünüm; giriş ekranı, sol menü, başlıklar ve kartlar elden geçirildi; ana sayfa artık yönlendirme yerine gerçek bir özet panosu (dashboard) açıyor.",
+      "Ana sayfanın görünümü iyileştirildi: iletişim bölümü daha şık hale getirildi, uzmanlık alanları, yaklaşımımız, kimlik ve üst başlık bölümlerinin tasarımı tazelendi.",
+      "Çalışma akışını anlatan yeni görseller eklendi (sektör, fabrika ve süreç tasarımı görselleri).",
+    ],
+  },
+  {
     date: "22 Haziran 2026",
     title: "Yönetim paneli ve site içeriği hayata geçti",
     items: [
