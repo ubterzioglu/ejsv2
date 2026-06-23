@@ -1,6 +1,6 @@
-"use client";
-
-import { use, useState } from "react";
+import { homepageContent } from "@/app/data/homepage-content";
+import { buildSearchIndex } from "@/lib/search-index";
+import { SearchView } from "@/components/search-view";
 import { defaultLocale } from "@/lib/locales";
 
 // Aramaya ozel, dile gore yerellestirilmis metinler.
@@ -13,7 +13,19 @@ const searchStrings = {
     submit: "Ara",
     empty: "Aramaya başlamak için bir kelime yazın.",
     noResults: "“{q}” için sonuç bulunamadı.",
+    resultsCount: "“{q}” için {n} sonuç bulundu.",
     back: "← Ana sayfaya dön",
+    sections: {
+      identity: "Kimliğimiz",
+      approach: "Yaklaşımımız",
+      mission: "Misyonumuz",
+      methodology: "Çalışmamız Hakkında",
+      expertise: "Uzmanlık Alanlarımız",
+      founder: "Kurucumuzun Hikayesi",
+      articles: "Öğren ve Geliş",
+      references: "Referanslar",
+      contact: "İletişim",
+    },
   },
   en: {
     eyebrow: "Search",
@@ -23,7 +35,19 @@ const searchStrings = {
     submit: "Search",
     empty: "Type a keyword to start searching.",
     noResults: "No results found for “{q}”.",
+    resultsCount: "{n} results for “{q}”.",
     back: "← Back to home",
+    sections: {
+      identity: "Identity",
+      approach: "Our Approach",
+      mission: "Our Mission",
+      methodology: "About Our Work",
+      expertise: "Areas of Expertise",
+      founder: "Founder's Story",
+      articles: "Learn & Grow",
+      references: "References",
+      contact: "Contact",
+    },
   },
   de: {
     eyebrow: "Suche",
@@ -33,7 +57,19 @@ const searchStrings = {
     submit: "Suchen",
     empty: "Geben Sie ein Stichwort ein, um die Suche zu starten.",
     noResults: "Keine Ergebnisse für „{q}“ gefunden.",
+    resultsCount: "{n} Ergebnisse für „{q}“.",
     back: "← Zurück zur Startseite",
+    sections: {
+      identity: "Identität",
+      approach: "Unser Ansatz",
+      mission: "Unsere Mission",
+      methodology: "Über unsere Arbeit",
+      expertise: "Fachgebiete",
+      founder: "Gründergeschichte",
+      articles: "Lernen & Wachsen",
+      references: "Referenzen",
+      contact: "Kontakt",
+    },
   },
   bs: {
     eyebrow: "Pretraga",
@@ -43,21 +79,27 @@ const searchStrings = {
     submit: "Pretraži",
     empty: "Upišite ključnu riječ da započnete pretragu.",
     noResults: "Nema rezultata za „{q}“.",
+    resultsCount: "{n} rezultata za „{q}“.",
     back: "← Nazad na početnu",
+    sections: {
+      identity: "Naš identitet",
+      approach: "Naš pristup",
+      mission: "Naša misija",
+      methodology: "O našem radu",
+      expertise: "Područja stručnosti",
+      founder: "Priča osnivača",
+      articles: "Uči i razvijaj se",
+      references: "Reference",
+      contact: "Kontakt",
+    },
   },
 };
 
-export default function SearchPage({ params }) {
-  const { lang } = use(params);
+export default async function SearchPage({ params }) {
+  const { lang } = await params;
   const t = searchStrings[lang] ?? searchStrings[defaultLocale];
-
-  const [query, setQuery] = useState("");
-  const [submitted, setSubmitted] = useState("");
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setSubmitted(query.trim());
-  };
+  const content = homepageContent[lang] ?? homepageContent[defaultLocale];
+  const index = buildSearchIndex(content);
 
   return (
     <main className="search-page">
@@ -70,26 +112,7 @@ export default function SearchPage({ params }) {
         <h1 className="search-page-title">{t.title}</h1>
         <p className="search-page-intro">{t.intro}</p>
 
-        <form className="search-form" role="search" onSubmit={handleSubmit}>
-          <input
-            type="search"
-            className="search-input"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            placeholder={t.placeholder}
-            aria-label={t.submit}
-            autoFocus
-          />
-          <button type="submit" className="search-submit">
-            {t.submit}
-          </button>
-        </form>
-
-        <div className="search-results" aria-live="polite">
-          {submitted
-            ? t.noResults.replace("{q}", submitted)
-            : t.empty}
-        </div>
+        <SearchView lang={lang} index={index} strings={t} />
       </div>
     </main>
   );
