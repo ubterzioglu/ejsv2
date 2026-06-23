@@ -67,13 +67,7 @@ export function ContactSection({ contact, footer, lang }) {
                 {footer?.addressLines?.[0] ?? contact.address}
               </p>
 
-              <div className="contact-lines contact-lines-premium">
-                {contact.phones.map((phone) => (
-                  <a key={phone} href={`tel:${phone.replace(/\s+/g, "")}`}>
-                    {phone}
-                  </a>
-                ))}
-              </div>
+              <p className="contact-hours">{contact.hours}</p>
 
               <div className="contact-inline-links">
                 {footer?.contactRows?.map((row) => (
@@ -87,8 +81,6 @@ export function ContactSection({ contact, footer, lang }) {
                   </a>
                 ))}
               </div>
-
-              <p className="contact-hours">{contact.hours}</p>
             </div>
           </div>
         </article>
@@ -133,12 +125,16 @@ export function ContactSection({ contact, footer, lang }) {
                 <span>{contact.fields.message}</span>
                 <textarea
                   placeholder={contact.placeholders.message}
-                  rows={5}
+                  rows={8}
                   disabled={loading}
                   required
                 />
               </label>
-              <button type="submit" className="submit-button" disabled={loading}>
+              <button
+                type="submit"
+                className="submit-button submit-button--wide full-span"
+                disabled={loading}
+              >
                 {loading ? (
                   <span className="button-loading">
                     <span className="spinner" aria-hidden="true"></span>
