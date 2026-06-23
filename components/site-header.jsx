@@ -45,21 +45,50 @@ export function SiteHeader({ utilityLinks, mainLinks, ariaLabels, approachCta })
             </nav>
           </div>
 
-          <div className="language-switch" aria-label={ariaLabels?.langSwitch}>
-            {languageItems.map((item, index) => (
-              <Fragment key={item.code}>
-                {index > 0 ? (
-                  <span className="utility-separator" aria-hidden="true" />
-                ) : null}
-                <button
-                  type="button"
-                  className={`utility-link ${currentLang === item.code ? "is-active" : "is-muted"}`}
-                  onClick={() => switchLang(item.code)}
-                >
-                  {item.label}
-                </button>
-              </Fragment>
-            ))}
+          <div className="utility-actions">
+            <button
+              type="button"
+              className="search-trigger search-trigger--utility"
+              aria-label={ariaLabels?.search}
+            >
+              <svg
+                className="search-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <circle cx="10.5" cy="10.5" r="7" stroke="currentColor" strokeWidth="2" />
+                <line
+                  x1="15.6"
+                  y1="15.6"
+                  x2="21"
+                  y2="21"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </button>
+
+            <span className="utility-separator" aria-hidden="true" />
+
+            <div className="language-switch" aria-label={ariaLabels?.langSwitch}>
+              {languageItems.map((item, index) => (
+                <Fragment key={item.code}>
+                  {index > 0 ? (
+                    <span className="utility-separator" aria-hidden="true" />
+                  ) : null}
+                  <button
+                    type="button"
+                    className={`utility-link ${currentLang === item.code ? "is-active" : "is-muted"}`}
+                    onClick={() => switchLang(item.code)}
+                  >
+                    {item.label}
+                  </button>
+                </Fragment>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -88,44 +117,21 @@ export function SiteHeader({ utilityLinks, mainLinks, ariaLabels, approachCta })
           id="main-navigation"
           aria-label={ariaLabels?.mainNav}
         >
-          {mainLinks.map((link) => (
-            <a
-              key={link.label}
-              className="header-link"
-              href={link.href}
-              onClick={() => setIsOpen(false)}
-            >
-              {link.label}
-            </a>
+          {mainLinks.map((link, index) => (
+            <Fragment key={link.label}>
+              {index > 0 ? (
+                <span className="header-link-separator" aria-hidden="true" />
+              ) : null}
+              <a
+                className="header-link"
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+              >
+                {link.label}
+              </a>
+            </Fragment>
           ))}
         </nav>
-
-        <div className="header-actions">
-          <button
-            type="button"
-            className="search-trigger"
-            aria-label={ariaLabels?.search}
-          >
-            <svg
-              className="search-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <circle cx="10.5" cy="10.5" r="7" stroke="currentColor" strokeWidth="2" />
-              <line
-                x1="15.6"
-                y1="15.6"
-                x2="21"
-                y2="21"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-            </svg>
-          </button>
-        </div>
       </div>
 
       {approachCta ? (

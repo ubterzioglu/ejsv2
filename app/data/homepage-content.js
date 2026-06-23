@@ -103,8 +103,8 @@ export const homepageContent = {
     approach: {
       eyebrow: "Yaklaşımımız",
       body: [
-        "Klasik danışmanlığın aksine biz raporla gelip raporla gitmeyiz. Dönüşümü sizinle birlikte sahada tasarlar, uygular ve sonuç alınana kadar yanınızda kalırız.",
-        "Bizim için başarılı bir dönüşüm, uygulamayı konseptin doğal bir parçası haline getirir. Çözümü size dayatmaz; ekibinizle birlikte, sizin gerçeğinize uygun şekilde inşa ederiz.",
+        "Farklı sektörlerde edindiğimiz saha tecrübesiyle ekiplerinizle birlikte çalışır, çözümleri birlikte üretiriz ve ekibinizi bağımsız çalışması için yetiştiririz.",
+        "Sadece ne yapılacağını söylemekle yetinmeyiz; süreç tamamlanana kadar uygulamacı kimliğimizle ekiplerinizle birlikte sahada/süreçte yer alırız.",
       ],
       highlight: "Danışman Değil, Uygulamacı Dönüşüm Ortağı.",
     },

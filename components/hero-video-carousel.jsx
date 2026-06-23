@@ -80,14 +80,6 @@ export function HeroVideoCarousel({ videos, ctaLabel, lang = "tr" }) {
               />
             ))}
           </div>
-
-          <a
-            className="hero-approach-link"
-            href="#yaklasimimiz"
-          >
-            {ctaLabel}
-            <span aria-hidden="true">-&gt;</span>
-          </a>
         </div>
       </div>
     </div>
