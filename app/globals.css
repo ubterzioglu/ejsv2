@@ -1651,7 +1651,9 @@ img {
   }
 
   .content-section {
-    padding-top: 2.4rem;
+    /* Mobilde kutular arasi dikey boslugu daraltiyoruz; ic padding clamp
+       ile zaten kuculuyor. */
+    margin-top: 1.25rem;
   }
 
   /* Prevent text overflow and improve readability */
@@ -2082,7 +2084,7 @@ img {
 
 @media (max-width: 760px) {
   .expert-spotlight-section {
-    padding-top: 2.4rem;
+    margin-top: 1.25rem;
   }
 
   .expert-spotlight-shell {
@@ -2250,7 +2252,7 @@ img {
 
 @media (max-width: 760px) {
   .process-highlight-section {
-    padding-top: 2.4rem;
+    margin-top: 1.25rem;
   }
 
   .process-highlight-image-card {
@@ -2268,11 +2270,8 @@ img {
   }
 }
 
-.methodology-section {
-  /* Ust bosluk .content-section kutu padding'inden gelir; burada ekstra
-     padding-top vermiyoruz ki kutu ic hizalamasi tutarli kalsin. */
-  text-align: center;
-}
+/* .methodology-section ust boslugu .content-section kutu padding'inden gelir;
+   ayri bir padding-top override'ina gerek yok. */
 
 .methodology-heading {
   max-width: 58rem;
@@ -2377,10 +2376,6 @@ img {
 }
 
 @media (max-width: 760px) {
-  .methodology-section {
-    padding-top: 3rem;
-  }
-
   .methodology-card-refined {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -2399,9 +2394,8 @@ img {
   }
 }
 
-.identity-feature-section {
-  padding-top: 5rem;
-}
+/* .identity-feature-section ust boslugu .content-section kutu padding'inden
+   gelir; ayri bir padding-top override'ina gerek yok. */
 
 .identity-feature-top {
   display: grid;
