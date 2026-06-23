@@ -124,7 +124,7 @@ export const homepageContent = {
     },
     methodology: {
       eyebrow: "Çalışmamız Hakkında Mutlaka Bilmeniz Gerekenler",
-      title: "Çalışma biçimimizi sekiz net prensip etrafında kurguluyoruz.",
+      title: "Çalışmamız hakkında Mutlaka Bilmeniz Gerekenler",
       intro:
         "İlk temastan sonuçlandırmaya kadar her adımda sahada uygulanabilir, ölçülebilir ve sürdürülebilir bir yaklaşım izliyoruz.",
       steps: [
@@ -132,49 +132,49 @@ export const homepageContent = {
           title: "Ücretsiz Analiz",
           icon: "analysis",
           description:
-            "Bizimle çalışmaya ilgileniyorsanız sizleri ücretsiz olarak ziyaret eder, kısa bir saha turu yapar, kendimizi tanıtır, firmanıza katkı sağlayıp sağlayamayacağımızı analiz eder ve tespitlerimizi sizlerle paylaşırız.",
+            "Bizimle çalışmaya ilgileniyorsanız sizleri ücretsiz olarak ziyaret eder, kendimizi tanıtır, saha (süreç alanı/alanları) turu yapar, firmanıza katkı sağlayıp sağlayamayacağımızı analiz eder, ardından tespitlerimizi ve düşüncemizi sizlerle paylaşır ve karşılıklı değerlendirmelerde bulunuruz.",
         },
         {
-          title: "Verimlilik Optimizasyonu",
+          title: "Süreçlerde Verimlilik Optimizasyonu",
           icon: "growth",
           description:
-            "Birlikte çalışmaya karar verirsek süreçlerinizi ve üretim alanlarınızı aşamalı ama mümkün olduğunca hızlı bir şekilde daha yalın, daha verimli, daha kurumsal ve dolayısıyla daha karlı bir hale dönüştürürüz.",
+            "Firmanızı aşamalı olarak ama aynı zamanda mümkün olduğu kadar hızlı bir şekilde; süreçlerinizi veya üretim alanlarınızı daha yalın, daha verimli, daha kurumsal ve dolayısıyla daha karlı bir hale dönüştürüyoruz.",
         },
         {
           title: "Kurumsallık",
           icon: "governance",
           description:
-            "Çalışmalarımız sırasında üst yönetimin desteği ve değişime hazır bir kurumsal çalışma kültürü bizler için esastır.",
+            "Çalışmalarımız sırasında üst yönetimin desteği ve değişime hazır kurumsal çalışma kültürü bizler için esastır.",
         },
         {
           title: "Şeffaflık",
           icon: "balance",
           description:
-            "İletişimimizde açık, net, şeffaf ve dürüstüz. Düşüncemiz, söylemimiz ve eylemimiz arasında bir fark yoktur; karşılıklı güven ve dürüstlük üzerine ilişkiler kurarız.",
+            "İletişimimizde açık, net, şeffaf ve dürüstüz. Düşünmemiz, söylemimiz ve eylemimiz arasında bir fark yoktur. Çok önem verdiğimiz karşılıklı güvene ve dürüstlüğe dayalı iş ilişkileri kurarız.",
         },
         {
           title: "Profesyonellik",
           icon: "check",
           description:
-            "Yalnızca uzmanlığımız olan konularda çalışma yaparız.",
+            "Uzmanlığımız olan konularda çalışma yaparız.",
         },
         {
           title: "Sürekli Gelişim",
           icon: "edit",
           description:
-            "Uzmanlığımızla ilgili gelişmeleri takip eder, anlamlı yenilikleri işlerimize katarız.",
+            "Uzmanlığımızla ilgili olan gelişmeleri takip edip yenilikleri işlerimize katarız.",
         },
         {
           title: "Sonuçlandırma",
           icon: "hourglass",
           description:
-            "Uygulama esnasında sonuç alana kadar ciddi çabayı gösterir ve uygulamacı olarak sürekli yanınızda kalırız.",
+            "Uygulama esnasında sonuç alana kadar çabayı gösteririz ve uygulamacı olarak sürekli yanınızdayız.",
         },
         {
           title: "Bütçe Kontrolü",
           icon: "budget",
           description:
-            "İşin gerektirdiği danışmanlık sürelerini ve danışman sayısını sürekli izleyerek ekonomik çalışma yöntemleri uygularız.",
+            "İşlerin gerektirdiği çalışma sürelerini ve insan kaynağı ihtiyacını sürekli izleyerek, şirketinizin lehine en verimli ve ekonomik çalışma yöntemlerini hayata geçiririz.",
         },
       ],
     },
@@ -415,7 +415,7 @@ export const homepageContent = {
     },
     methodology: {
       eyebrow: "What You Should Know About How We Work",
-      title: "We structure our way of working around eight clear principles.",
+      title: "What You Should Absolutely Know About Our Work",
       intro:
         "From the first visit to execution, every step is designed to stay practical, measurable, and sustainable on the ground.",
       steps: [
@@ -423,13 +423,13 @@ export const homepageContent = {
           title: "Free Assessment",
           icon: "analysis",
           description:
-            "If you are interested in working with us, we visit you free of charge, take a short walkthrough of your process areas, introduce ourselves, assess whether we can create value, and share our observations with you.",
+            "If you are interested in working with us, we visit you free of charge, introduce ourselves, take a walkthrough of your process area(s), assess whether we can create value for your company, and then share our findings and views with you and evaluate them together.",
         },
         {
-          title: "Efficiency Optimization",
+          title: "Efficiency Optimization in Processes",
           icon: "growth",
           description:
-            "If we decide to work together, we transform your processes and production areas step by step — yet as fast as possible — into a leaner, more efficient, more institutional, and more profitable operating model.",
+            "We transform your company step by step — yet as fast as possible — turning your processes or production areas into a leaner, more efficient, more institutional, and therefore more profitable operation.",
         },
         {
           title: "Institutional Capability",
@@ -441,31 +441,31 @@ export const homepageContent = {
           title: "Transparency",
           icon: "balance",
           description:
-            "We are open, clear, transparent, and honest in our communication. There is no gap between what we think, say, and do; we build relationships on trust and integrity.",
+            "We are open, clear, transparent, and honest in our communication. There is no gap between what we think, say, and do. We build business relationships founded on the mutual trust and integrity we value so highly.",
         },
         {
           title: "Professionalism",
           icon: "check",
           description:
-            "We only take on work in the areas where we have proven expertise.",
+            "We only take on work in the areas where we have expertise.",
         },
         {
           title: "Continuous Improvement",
           icon: "edit",
           description:
-            "We follow developments in our field and integrate meaningful innovations into our work.",
+            "We follow developments in our field of expertise and integrate innovations into our work.",
         },
         {
           title: "Execution to Results",
           icon: "hourglass",
           description:
-            "During implementation, we put in the effort required until results are achieved and stay by your side as hands-on practitioners.",
+            "During implementation, we put in the effort until results are achieved and stay by your side as hands-on practitioners.",
         },
         {
           title: "Budget Control",
           icon: "budget",
           description:
-            "We continuously monitor the consulting time and staffing the work requires and apply economical delivery methods throughout.",
+            "By continuously monitoring the working time and human resources each task requires, we implement the most efficient and economical working methods in your company's favor.",
         },
       ],
     },
@@ -706,7 +706,7 @@ export const homepageContent = {
     },
     methodology: {
       eyebrow: "Was Sie über unsere Arbeitsweise wissen sollten",
-      title: "Unsere Arbeitsweise basiert auf acht klaren Prinzipien.",
+      title: "Was Sie unbedingt über unsere Arbeit wissen sollten",
       intro:
         "Vom ersten Besuch bis zur Umsetzung ist jeder Schritt so gestaltet, dass er vor Ort praktisch, messbar und nachhaltig bleibt.",
       steps: [
@@ -714,13 +714,13 @@ export const homepageContent = {
           title: "Kostenlose Analyse",
           icon: "analysis",
           description:
-            "Wenn Sie an einer Zusammenarbeit interessiert sind, besuchen wir Sie kostenlos, führen einen kurzen Rundgang durch Ihre Prozessbereiche durch, stellen uns vor, bewerten, ob wir einen Mehrwert schaffen können, und teilen unsere Beobachtungen mit Ihnen.",
+            "Wenn Sie an einer Zusammenarbeit interessiert sind, besuchen wir Sie kostenlos, stellen uns vor, führen einen Rundgang durch Ihre(n) Prozessbereich(e) durch, bewerten, ob wir einen Mehrwert für Ihr Unternehmen schaffen können, teilen anschließend unsere Feststellungen und Einschätzungen mit Ihnen und bewerten diese gemeinsam.",
         },
         {
-          title: "Effizienzoptimierung",
+          title: "Effizienzoptimierung in den Prozessen",
           icon: "growth",
           description:
-            "Wenn wir uns für eine Zusammenarbeit entscheiden, verwandeln wir Ihre Prozesse und Produktionsbereiche schrittweise — aber so schnell wie möglich — in ein schlankeres, effizienteres, institutionelleres und profitableres Betriebsmodell.",
+            "Wir transformieren Ihr Unternehmen schrittweise — aber zugleich so schnell wie möglich — und verwandeln Ihre Prozesse oder Produktionsbereiche in einen schlankeren, effizienteren, institutionelleren und damit profitableren Betrieb.",
         },
         {
           title: "Institutionelle Kompetenz",
@@ -732,31 +732,31 @@ export const homepageContent = {
           title: "Transparenz",
           icon: "balance",
           description:
-            "Wir sind offen, klar, transparent und ehrlich in unserer Kommunikation. Es gibt keine Lücke zwischen Denken, Sagen und Tun; wir bauen Beziehungen auf Vertrauen und Integrität auf.",
+            "Wir sind offen, klar, transparent und ehrlich in unserer Kommunikation. Es gibt keine Lücke zwischen Denken, Sagen und Tun. Wir bauen Geschäftsbeziehungen auf, die auf dem für uns sehr wichtigen gegenseitigen Vertrauen und auf Ehrlichkeit beruhen.",
         },
         {
           title: "Professionalität",
           icon: "check",
           description:
-            "Wir übernehmen nur Arbeiten in den Bereichen, in denen wir nachgewiesene Expertise haben.",
+            "Wir übernehmen nur Arbeiten in den Bereichen, in denen wir Expertise haben.",
         },
         {
           title: "Kontinuierliche Verbesserung",
           icon: "edit",
           description:
-            "Wir verfolgen Entwicklungen in unserem Fachgebiet und integrieren sinnvolle Innovationen in unsere Arbeit.",
+            "Wir verfolgen die Entwicklungen in unserem Fachgebiet und integrieren Innovationen in unsere Arbeit.",
         },
         {
           title: "Umsetzung bis zum Ergebnis",
           icon: "hourglass",
           description:
-            "Während der Umsetzung investieren wir die erforderliche Arbeit, bis Ergebnisse erzielt werden, und bleiben als praxisnahe Praktiker an Ihrer Seite.",
+            "Während der Umsetzung geben wir alles, bis Ergebnisse erzielt werden, und bleiben als praxisnahe Praktiker stets an Ihrer Seite.",
         },
         {
           title: "Budgetkontrolle",
           icon: "budget",
           description:
-            "Wir überwachen kontinuierlich die benötigte Beratungszeit und -besetzung und wenden durchgehend wirtschaftliche Liefermethoden an.",
+            "Indem wir die für die Arbeiten erforderliche Arbeitszeit und den Personalbedarf kontinuierlich überwachen, setzen wir die effizientesten und wirtschaftlichsten Arbeitsmethoden zugunsten Ihres Unternehmens um.",
         },
       ],
     },
@@ -1024,18 +1024,18 @@ export const homepageContent = {
     },
     "methodology": {
       "eyebrow": "Šta apsolutno morate znati o našoj studiji",
-      "title": "Način rada strukturiramo oko osam jasnih principa.",
+      "title": "Šta apsolutno morate znati o našem radu",
       "intro": "U svakoj fazi, od početnog kontakta do završetka, primjenjujemo pristup koji je praktičan, mjerljiv i održiv na terenu.",
       "steps": [
         {
           "title": "Besplatna analiza",
           "icon": "analysis",
-          "description": "Ako ste zainteresovani za saradnju s nama, posjetit ćemo vas besplatno, provesti vas u kratku turu po objektu, predstaviti se, procijeniti možemo li dodati vrijednost vašem poslovanju i podijeliti s vama naše nalaze."
+          "description": "Ako ste zainteresovani za saradnju s nama, posjetit ćemo vas besplatno, predstaviti se, provesti turu po vašem procesnom području (područjima), procijeniti možemo li dodati vrijednost vašoj kompaniji, a zatim s vama podijeliti naše nalaze i mišljenja te ih zajednički ocijeniti."
         },
         {
-          "title": "Optimizacija efikasnosti",
+          "title": "Optimizacija efikasnosti u procesima",
           "icon": "growth",
-          "description": "Ako se odlučimo za saradnju, transformirat ćemo vaše procese i proizvodne prostore, korak po korak, ali što je brže moguće, u vitkije, efikasnije, profesionalnije i, posljedično, profitabilnije poslovanje."
+          "description": "Vašu kompaniju transformiramo korak po korak, ali istovremeno što je brže moguće, pretvarajući vaše procese ili proizvodne prostore u vitkije, efikasnije, profesionalnije i, posljedično, profitabilnije poslovanje."
         },
         {
           "title": "Korporativna kultura",
@@ -1045,7 +1045,7 @@ export const homepageContent = {
         {
           "title": "Transparentnost",
           "icon": "balance",
-          "description": "Otvoreni smo, jasni, transparentni i iskreni u našoj komunikaciji. Nema razlike između naših misli, riječi i djela; gradimo odnose zasnovane na uzajamnom povjerenju i iskrenosti."
+          "description": "Otvoreni smo, jasni, transparentni i iskreni u našoj komunikaciji. Nema razlike između naših misli, riječi i djela. Gradimo poslovne odnose zasnovane na uzajamnom povjerenju i iskrenosti, kojima pridajemo veliku važnost."
         },
         {
           "title": "Profesionalizam",
@@ -1055,17 +1055,17 @@ export const homepageContent = {
         {
           "title": "Kontinuirano poboljšanje",
           "icon": "edit",
-          "description": "Pratimo razvoj u našem području stručnosti i uključujemo značajne inovacije u naš rad."
+          "description": "Pratimo razvoj u našem području stručnosti i uključujemo inovacije u naš rad."
         },
         {
           "title": "Zaključak",
           "icon": "hourglass",
-          "description": "Tokom cijelog procesa uložit ćemo sve napore da osiguramo da postignete rezultate, a kao vaši praktičari, uvijek ćemo biti uz vas."
+          "description": "Tokom implementacije ulažemo trud sve dok se ne postignu rezultati i kao vaši praktičari uvijek smo uz vas."
         },
         {
           "title": "Kontrola budžeta",
           "icon": "budget",
-          "description": "Implementiramo isplative radne metode kontinuiranim praćenjem trajanja konsultantskih radova i broja konsultanta potrebnih za svaki projekat."
+          "description": "Kontinuiranim praćenjem radnog vremena i potreba za ljudskim resursima koje svaki zadatak zahtijeva, implementiramo najefikasnije i najekonomičnije radne metode u korist vaše kompanije."
         }
       ]
     },
