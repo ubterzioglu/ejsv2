@@ -19,6 +19,16 @@ export function AdminSidebar() {
       </div>
 
       <nav className="admin-sidebar__nav" aria-label="Admin bölümleri">
+        <Link
+          href="/admin"
+          className={
+            "admin-sidebar__link" +
+            (pathname === "/admin" ? " admin-sidebar__link--active" : "")
+          }
+        >
+          <span className="admin-sidebar__link-main">Ana sayfa</span>
+          <span className="admin-sidebar__link-sub">Panel genel görünümü</span>
+        </Link>
         {adminSections.map((section) => {
           const active =
             pathname === section.href ||

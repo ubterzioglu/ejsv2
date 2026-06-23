@@ -35,7 +35,6 @@ export default async function HomePage({ params }) {
         utilityLinks={page.utilityLinks}
         mainLinks={page.mainLinks}
         ariaLabels={page.ariaLabels}
-        approachCta={{ label: page.hero.ctaLabel, href: "#yaklasimimiz" }}
       />
 
       <main className="hero-page">

@@ -14,7 +14,7 @@ const languageItems = [
 // Yol basindaki dil onekini (ornek: /tr, /bs) yakalamak icin locales'tan uretilir.
 const langPrefixPattern = new RegExp(`^/(${locales.join("|")})(?=/|$)`);
 
-export function SiteHeader({ utilityLinks, mainLinks, ariaLabels, approachCta }) {
+export function SiteHeader({ utilityLinks, mainLinks, ariaLabels }) {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
@@ -46,9 +46,9 @@ export function SiteHeader({ utilityLinks, mainLinks, ariaLabels, approachCta })
           </div>
 
           <div className="utility-actions">
-            <button
-              type="button"
+            <a
               className="search-trigger search-trigger--utility"
+              href={`/${currentLang}/search`}
               aria-label={ariaLabels?.search}
             >
               <svg
@@ -69,7 +69,7 @@ export function SiteHeader({ utilityLinks, mainLinks, ariaLabels, approachCta })
                   strokeLinecap="round"
                 />
               </svg>
-            </button>
+            </a>
 
             <span className="utility-separator" aria-hidden="true" />
 
@@ -133,28 +133,6 @@ export function SiteHeader({ utilityLinks, mainLinks, ariaLabels, approachCta })
           ))}
         </nav>
       </div>
-
-      {approachCta ? (
-        <a className="approach-cta" href={approachCta.href}>
-          <span className="approach-cta-label">{approachCta.label}</span>
-          <svg
-            className="approach-cta-arrow"
-            viewBox="0 0 24 24"
-            fill="none"
-            aria-hidden="true"
-            focusable="false"
-          >
-            <circle cx="12" cy="12" r="11" stroke="currentColor" strokeWidth="1.5" />
-            <path
-              d="M9 12h6m0 0-2.5-2.5M15 12l-2.5 2.5"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </a>
-      ) : null}
     </header>
   );
 }
