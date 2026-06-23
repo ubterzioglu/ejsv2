@@ -64,7 +64,7 @@ export function HeroForm({ editing = null, onDone }) {
     <form
       ref={formRef}
       action={formAction}
-      className={"admin-form" + (isEdit ? "" : " admin-form--sticky")}
+      className="admin-form"
       encType="multipart/form-data"
     >
       <div className="admin-form__header">

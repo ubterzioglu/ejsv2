@@ -12,6 +12,10 @@ export function HeroManager({ items }) {
 
   return (
     <div className="admin-content-layout">
+      <aside className="admin-content-layout__side">
+        <HeroForm />
+      </aside>
+
       <section className="admin-content-layout__main">
         <div className="admin-section-head">
           <div>
@@ -28,8 +32,8 @@ export function HeroManager({ items }) {
             <div className="admin-empty-card">
               <strong>Henüz slayt yok.</strong>
               <span>
-                Sağdaki formla ilk slaytı ekleyin. Tablo boşken site varsayılan
-                videoları gösterir.
+                Yukarıdaki formla ilk slaytı ekleyin. Tablo boşken site
+                varsayılan videoları gösterir.
               </span>
             </div>
           ) : (
@@ -101,10 +105,6 @@ export function HeroManager({ items }) {
           )}
         </div>
       </section>
-
-      <aside className="admin-content-layout__side">
-        <HeroForm />
-      </aside>
     </div>
   );
 }

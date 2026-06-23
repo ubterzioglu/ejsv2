@@ -57,6 +57,10 @@ export default async function RevisionsPage() {
           </div>
 
           <div className="admin-content-layout">
+            <aside className="admin-content-layout__side">
+              <RevisionForm />
+            </aside>
+
             <section className="admin-content-layout__main">
               <div className="admin-section-head">
                 <div>
@@ -72,7 +76,7 @@ export default async function RevisionsPage() {
                 {requests.length === 0 ? (
                   <div className="admin-empty-card">
                     <strong>Henüz revizyon isteği yok.</strong>
-                    <span>Sağdaki formla yeni bir talep ekleyebilirsiniz.</span>
+                    <span>Yukarıdaki formla yeni bir talep ekleyebilirsiniz.</span>
                   </div>
                 ) : (
                   requests.map((req) => (
@@ -131,10 +135,6 @@ export default async function RevisionsPage() {
                 )}
               </div>
             </section>
-
-            <aside className="admin-content-layout__side">
-              <RevisionForm />
-            </aside>
           </div>
         </>
       )}

@@ -20,7 +20,7 @@ export function RevisionForm() {
     <form
       ref={formRef}
       action={formAction}
-      className="admin-form admin-form--sticky"
+      className="admin-form"
     >
       <div className="admin-form__header">
         <p className="admin-form__title">Yeni revizyon isteği</p>

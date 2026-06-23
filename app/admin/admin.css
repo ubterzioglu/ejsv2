@@ -365,12 +365,11 @@
   font-weight: 700;
 }
 
-/* ---- Two-column content ---- */
+/* ---- Single-column content (form on top, full width) ---- */
 .admin-content-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 380px;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
-  align-items: start;
 }
 .admin-content-layout__main { min-width: 0; }
 .admin-content-layout__side { min-width: 0; }
@@ -609,7 +608,6 @@
   gap: 16px;
   box-shadow: var(--admin-shadow-sm);
 }
-.admin-form--sticky { position: sticky; top: 24px; }
 .admin-form__header { display: flex; flex-direction: column; gap: 4px; }
 .admin-form__title { font-size: 15px; font-weight: 700; margin: 0; }
 .admin-form__hint { font-size: 13px; color: var(--admin-muted); margin: 0; line-height: 1.5; }
@@ -893,11 +891,6 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .admin-content-layout {
-    grid-template-columns: 1fr;
-  }
-  .admin-content-layout__side { order: -1; }
-  .admin-form--sticky { position: static; }
   .admin-dashboard-grid { grid-template-columns: 1fr; }
   .admin-panel-grid { grid-template-columns: 1fr; }
   .admin-stats-grid { grid-template-columns: 1fr; }

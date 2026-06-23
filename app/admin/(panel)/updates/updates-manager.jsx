@@ -12,6 +12,10 @@ export function UpdatesManager({ lang, items }) {
 
   return (
     <div className="admin-content-layout">
+      <aside className="admin-content-layout__side">
+        <UpdateForm lang={lang} />
+      </aside>
+
       <section className="admin-content-layout__main">
         <div className="admin-section-head">
           <div>
@@ -27,7 +31,7 @@ export function UpdatesManager({ lang, items }) {
           {items.length === 0 ? (
             <div className="admin-empty-card">
               <strong>Henüz makale yok.</strong>
-              <span>Sağdaki formla ilk yazınızı ekleyin.</span>
+              <span>Yukarıdaki formla ilk yazınızı ekleyin.</span>
             </div>
           ) : (
             items.map((item) =>
@@ -98,10 +102,6 @@ export function UpdatesManager({ lang, items }) {
           )}
         </div>
       </section>
-
-      <aside className="admin-content-layout__side">
-        <UpdateForm lang={lang} />
-      </aside>
     </div>
   );
 }
