@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const identityImage = "/assets/workflow/step-6-teamwork.jpg";
+const identityImage = "/assets/workflow/identity-industry.jpg";
 
 export function IdentitySection({ identity, lang }) {
   return (

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const missionImage = "/assets/workflow/step-2-factory.jpg";
+const missionImage = "/assets/workflow/mission-factory.jpg";
 
 export function MissionSection({ mission, lang }) {
   return (

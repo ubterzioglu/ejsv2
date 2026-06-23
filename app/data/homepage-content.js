@@ -65,7 +65,6 @@ export const homepageContent = {
     },
     utilityLinks: [
       { label: "Kimliğimiz", href: "#kimligimiz" },
-      { label: "Yaklaşımımız", href: "#yaklasimimiz" },
       { label: "İletişim", href: "#iletisim" },
     ],
     mainLinks: [
@@ -362,7 +361,6 @@ export const homepageContent = {
     },
     utilityLinks: [
       { label: "Identity", href: "#kimligimiz" },
-      { label: "Our Approach", href: "#yaklasimimiz" },
       { label: "Contact", href: "#iletisim" },
     ],
     mainLinks: [
@@ -653,7 +651,6 @@ export const homepageContent = {
     },
     utilityLinks: [
       { label: "Identität", href: "#kimligimiz" },
-      { label: "Unser Ansatz", href: "#yaklasimimiz" },
       { label: "Kontakt", href: "#iletisim" },
     ],
     mainLinks: [
@@ -946,10 +943,6 @@ export const homepageContent = {
       {
         "label": "Naš identitet",
         "href": "#kimligimiz"
-      },
-      {
-        "label": "Naš pristup",
-        "href": "#yaklasimimiz"
       },
       {
         "label": "Kontakt",

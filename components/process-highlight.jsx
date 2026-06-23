@@ -1,6 +1,6 @@
 ﻿import Image from "next/image";
 
-const highlightImage = "/assets/workflow/step-6-teamwork.jpg";
+const highlightImage = "/assets/workflow/process-design.jpg";
 
 const highlightCopy = {
   tr: {
