@@ -82,17 +82,23 @@ export const homepageContent = {
       eyebrow: "Kimliğimiz",
       title: "33 yılı aşkın uluslararası saha tecrübesi.",
       tag: "Yaklaşım",
-      intro:
-        "Üretim sektöründe yurt içinde ve yurt dışında edindiğimiz geniş saha tecrübesini, masada değil sahada kullanıyoruz.",
-      body:
-        "Şirketinizin çalışanlarını iş ortağı olarak görür, çözümleri onlarla birlikte üretiriz. Sadece ne yapılacağını söylemekle kalmaz; süreç sonuçlanana kadar ekiplerle birlikte sahada kalırız. Çalışırken kelimeler yerine eylemi tercih ederiz.",
-      highlight: "Bilgi, tecrübe ve eylem bir arada.",
+      intro: "33 yılı aşkın uluslararası saha tecrübesine sahip:",
       bullets: [
-        "Yalın süreçler, yalın üretim, kalite ve proje yönetiminde derin uzmanlık.",
-        "Yurt içi ve yurt dışında, çok sektörlü saha deneyimi.",
-        "Çözümleri ekiplerinizle birlikte, sahada kuran uygulamacı yaklaşım.",
+        "Süreçlerin Yalın Dönüşümü ve Dijitalleşmesi",
+        "Üretimin Yalın Dönüşümü",
+        "Tedarikçiden Müşteriye Kalite Süreçleri",
+        "Müşteri Şikayetleri Yönetimi",
+        "Arızalı Parçaların İncelenmesi",
+        "Hata Masraflarının Rücü Edilmesi",
+        "Müşteri Şikayetleri Çözüm Platformunun Oluşturulması",
+        "Şirketlere Özel Problem Çözme Süreci",
+        "Proje yönetimi",
       ],
-      cta: { label: "Kurucumuzun hikayesine bir göz atın", href: "#kurucumuzun-hikayesi" },
+      body:
+        "alanlarında şirketlerin dönüşümüne rehberlik eden, sahada uygulayan mühendis, eğitmen ve eğitimci.",
+      highlight:
+        "Bilgi, tecrübe ve eylem bir arada. Bu hikâye bir şirketin değil, yeniden başlamanın hikâyesidir…..",
+      cta: { label: "KURUCUMUZUN HİKAYESİNE BİR GÖZ ATIN", href: "#kurucumuzun-hikayesi" },
     },
     approach: {
       eyebrow: "Yaklaşımımız",

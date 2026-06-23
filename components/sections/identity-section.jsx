@@ -17,7 +17,19 @@ export function IdentitySection({ identity, lang }) {
           {identity.tag ? (
             <span className="identity-feature-tag">{identity.tag}</span>
           ) : null}
-          <p className="identity-feature-body">{identity.body}</p>
+          {identity.intro ? (
+            <p className="identity-feature-intro-line">{identity.intro}</p>
+          ) : null}
+          {identity.bullets?.length ? (
+            <ul className="identity-feature-list">
+              {identity.bullets.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          ) : null}
+          {identity.body ? (
+            <p className="identity-feature-body">{identity.body}</p>
+          ) : null}
           {identity.highlight ? (
             <p className="identity-feature-highlight">{identity.highlight}</p>
           ) : null}

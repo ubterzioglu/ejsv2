@@ -25,27 +25,40 @@ export function HeroForm({ editing = null, onDone }) {
   const [captionDe, setCaptionDe] = useState(editing?.caption_de ?? "");
   const [captionBs, setCaptionBs] = useState(editing?.caption_bs ?? "");
 
+  // DeepL sonucu degistiginde render sirasinda state'i guncelle
+  // (React'in onerdigi "render sirasinda onceki degeri izle" deseni; effect kullanmaz).
+  const [seenTranslations, setSeenTranslations] = useState(null);
+  if (
+    translateState.ok &&
+    translateState.translations &&
+    translateState.translations !== seenTranslations
+  ) {
+    setSeenTranslations(translateState.translations);
+    const { en, de, bs } = translateState.translations;
+    if (typeof en === "string") setCaptionEn(en);
+    if (typeof de === "string") setCaptionDe(de);
+    if (typeof bs === "string") setCaptionBs(bs);
+  }
+
+  // Kaydetme basarili oldugunda yeni kayit formunu temizle (render sirasinda).
+  const [handledOk, setHandledOk] = useState(false);
+  if (state.ok && !handledOk) {
+    setHandledOk(true);
+    if (!isEdit) {
+      setCaptionTr("");
+      setCaptionEn("");
+      setCaptionDe("");
+      setCaptionBs("");
+    }
+  }
+
+  // onDone dis sistem (parent) guncellemesi oldugu icin effect'te kalir.
   useEffect(() => {
     if (state.ok) {
-      if (!isEdit) {
-        formRef.current?.reset();
-        setCaptionTr("");
-        setCaptionEn("");
-        setCaptionDe("");
-        setCaptionBs("");
-      }
+      if (!isEdit) formRef.current?.reset();
       onDone?.();
     }
   }, [state.ok, isEdit, onDone]);
-
-  useEffect(() => {
-    if (translateState.ok && translateState.translations) {
-      const { en, de, bs } = translateState.translations;
-      if (typeof en === "string") setCaptionEn(en);
-      if (typeof de === "string") setCaptionDe(de);
-      if (typeof bs === "string") setCaptionBs(bs);
-    }
-  }, [translateState.ok, translateState.translations]);
 
   return (
     <form
