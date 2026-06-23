@@ -796,12 +796,15 @@ img {
 .content-section {
   /* Her bolumun icerigini ortada, sag-sol bosluklu bir kutuya aliyoruz.
      .section sinifi zaten genisligi var(--max-width) ile sinirlandirip
-     ortaliyor; burada hafif bir yuzey ve ic padding ekleyerek "kart icinde"
-     hissi veriyoruz ama kenarlik / kose yuvarlama / golge yok -> kart gibi
-     gorunmuyor. */
+     ortaliyor. Artik her bolum kenarlik + kose yuvarlama + golge ile
+     belirgin bir KART olarak gorunuyor, boylece her sectionun ayri bir
+     bolum oldugu net belli oluyor. */
   padding: clamp(2.75rem, 4.5vw, 4.25rem) clamp(1.25rem, 3.5vw, 3.25rem);
   margin-top: 2.5rem;
   background: var(--surface);
+  border: var(--card-border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-card);
 }
 
 .content-section:first-of-type {
@@ -848,10 +851,11 @@ img {
 
 .section-title {
   margin: 0 auto 0.8rem;
-  font-size: clamp(3.8rem, 5.6vw, 7rem);
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
   line-height: var(--leading-tight);
-  letter-spacing: -0.06em;
+  letter-spacing: -0.03em;
   max-width: none;
+  white-space: nowrap;
 }
 
 .section-intro {
@@ -1659,7 +1663,10 @@ img {
   /* Prevent text overflow and improve readability */
   .section-title {
     max-width: none;
-    font-size: clamp(2.9rem, 12vw, 4.4rem);
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+    /* Dar ekranda tek satira zorlamak tasmaya yol acar; mobilde sarmaya
+       izin veriyoruz, masaustunde tek satir korunuyor. */
+    white-space: normal;
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
@@ -2281,7 +2288,7 @@ img {
 
 .methodology-title {
   max-width: none;
-  font-size: clamp(2.9rem, 4vw, 5rem);
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
 }
 
 .methodology-intro {
