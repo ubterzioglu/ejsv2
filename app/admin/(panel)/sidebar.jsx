@@ -57,6 +57,22 @@ export function AdminSidebar() {
             </Link>
           );
         })}
+
+        <Link
+          href="/admin/rehber"
+          className={
+            "admin-sidebar__link" +
+            (pathname === "/admin/rehber" ||
+            pathname.startsWith("/admin/rehber/")
+              ? " admin-sidebar__link--active"
+              : "")
+          }
+        >
+          <span className="admin-sidebar__link-main">Yardım / Rehber</span>
+          <span className="admin-sidebar__link-sub">
+            Her bölüm nasıl kullanılır
+          </span>
+        </Link>
       </nav>
 
       <div className="admin-session">

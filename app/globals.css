@@ -2799,17 +2799,14 @@ img {
   color: var(--ink);
 }
 
+/* Premium siyah buton .expert-cta base'inden gelir; burada sadece
+   genisligi icerige gore sinirliyoruz. */
 .identity-feature-cta {
   width: fit-content;
-  display: inline-flex;
-  align-items: center;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--signal);
-}
-
-.identity-feature-cta:hover {
-  text-decoration: underline;
+  min-width: 0;
+  gap: 0.5rem;
+  white-space: normal;
+  text-align: center;
 }
 
 /* Mission additions */

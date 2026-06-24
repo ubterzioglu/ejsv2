@@ -17,9 +17,6 @@ export function IdentitySection({ identity, lang }) {
 
       <div className="identity-feature-card">
         <div className="identity-feature-copy">
-          {identity.tag ? (
-            <span className="identity-feature-tag">{identity.tag}</span>
-          ) : null}
           {identity.bullets?.length ? (
             <ul className="identity-feature-list">
               {identity.bullets.map((item) => (
@@ -34,9 +31,9 @@ export function IdentitySection({ identity, lang }) {
             <p className="identity-feature-highlight">{identity.highlight}</p>
           ) : null}
           {identity.cta?.label && identity.cta?.href ? (
-            <a className="identity-feature-cta" href={identity.cta.href}>
+            <a className="expert-cta identity-feature-cta" href={identity.cta.href}>
               {identity.cta.label}
-              <span aria-hidden="true"> -&gt;</span>
+              <span aria-hidden="true"> →</span>
             </a>
           ) : null}
         </div>
