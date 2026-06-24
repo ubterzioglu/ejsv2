@@ -17,7 +17,23 @@ export default function AdminHomePage() {
         </p>
       </section>
 
-      <section className="admin-dashboard-grid">
+      <section className="admin-readme-card">
+        <span className="admin-kicker">Beni oku</span>
+        <h2 className="admin-readme-card__title">Panele hoş geldiniz</h2>
+        <p className="admin-card__excerpt">
+          Bu panel, EJS Consulting web sitesinin içeriğini kod bilgisi
+          gerektirmeden yönetmeniz için hazırlandı. Sol menüdeki her bölüm,
+          sitenin belirli bir alanını (hero slaytları, makaleler, güncellemeler
+          ve revizyon talepleri) düzenlemenizi sağlar. Yaptığınız değişiklikler
+          kaydedildiği anda canlı siteye yansır; ayrı bir yayınlama adımına
+          gerek yoktur. Tüm içerik ve görseller güvenli şekilde saklanır, bu
+          yüzden gönül rahatlığıyla deneyebilir ve düzenleyebilirsiniz. Nereden
+          başlayacağınızdan emin değilseniz sol menüdeki “Yardım / Rehber”
+          bölümünü açın; her alanın nasıl kullanıldığını adım adım anlatır.
+        </p>
+      </section>
+
+      <section className="admin-dashboard-grid admin-dashboard-grid--2x2">
         {adminSections.map((section) => (
           <Link
             key={section.href}
@@ -31,25 +47,6 @@ export default function AdminHomePage() {
             <span className="admin-dashboard-card__action">Aç →</span>
           </Link>
         ))}
-      </section>
-
-      <section className="admin-panel-grid">
-        <div className="admin-panel-card">
-          <h3>Bugünkü odak</h3>
-          <ul className="admin-update-list">
-            <li>Yeni makaleleri yayına alın ve sıralamayı güncel tutun.</li>
-            <li>Bekleyen revizyon taleplerini gözden geçirin.</li>
-            <li>Güncellemeler kaydını sade ve takip edilebilir tutun.</li>
-          </ul>
-        </div>
-        <div className="admin-panel-card">
-          <h3>Panel notları</h3>
-          <p className="admin-card__excerpt">
-            İçerikler ve görseller güvenli şekilde Supabase üzerinde saklanır.
-            Değişiklikler kaydedildiği anda ana sayfaya yansır. Sol menüden
-            ilgili bölüme geçerek düzenlemelerinizi yapabilirsiniz.
-          </p>
-        </div>
       </section>
     </div>
   );
