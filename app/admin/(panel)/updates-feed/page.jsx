@@ -11,6 +11,17 @@ export const dynamic = "force-static";
 const UPDATES = [
   {
     date: "24 Haziran 2026",
+    title: "Bölüm geçişlerine anlamlı sözler, üst menüye Anasayfa bağlantısı ve görsel tutarlılık",
+    items: [
+      "Ana sayfadaki bölüm geçişlerine artık birer özlü söz eklendi: her geçişte verimlilik, kalite ve sürekli iyileştirmeyle ilgili kısa bir üst ve alt cümle görünüyor; ortadaki buton ise ilgili bölüme (Haberler, Bülten, Öğren ve Geliş) yönlendiriyor.",
+      'Üst menüye dört dilde de "Anasayfa" bağlantısı eklendi; ziyaretçiler tek tıkla ana sayfanın başına dönebiliyor.',
+      'Panelden "Çıkış" yapma daha güvenilir hale getirildi; çıkışta giriş ekranına dönüş sorunsuz çalışıyor.',
+      'Uzman vitrini ve süreç vurgusu bölümleri, diğer bölümlerle aynı genişlik ve hizaya getirilerek sayfanın bütünlüğü güçlendirildi.',
+      "Ana sayfa genelinde renk, boşluk ve hizalama ince ayarları yapılarak daha derli toplu ve premium bir görünüm sağlandı.",
+    ],
+  },
+  {
+    date: "24 Haziran 2026",
     title: "Haberler ve Bülten bölümleri, yenilenen bölüm geçişleri ve panel rehberi",
     items: [
       'Yeni "Haberler" bölümü eklendi: üst menüden ulaşılan ayrı bir haberler sayfası oluşturuldu; panelden başlık, etiket, özet, metin ve kapak fotoğrafıyla haber ekleyip düzenleyebilirsiniz.',
