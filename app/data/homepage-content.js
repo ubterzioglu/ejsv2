@@ -64,6 +64,7 @@ export const homepageContent = {
       search: "Ara",
     },
     utilityLinks: [
+      { label: "Anasayfa", href: "/tr" },
       { label: "Yaklaşımımız", href: "#yaklasimimiz" },
       { label: "Kimliğimiz", href: "#kimligimiz" },
       { label: "Haberler", href: "/tr/haberler" },
@@ -395,6 +396,7 @@ export const homepageContent = {
       search: "Search",
     },
     utilityLinks: [
+      { label: "Home", href: "/en" },
       { label: "Our Approach", href: "#yaklasimimiz" },
       { label: "Identity", href: "#kimligimiz" },
       { label: "News", href: "/en/haberler" },
@@ -720,6 +722,7 @@ export const homepageContent = {
       search: "Suchen",
     },
     utilityLinks: [
+      { label: "Startseite", href: "/de" },
       { label: "Unser Ansatz", href: "#yaklasimimiz" },
       { label: "Identität", href: "#kimligimiz" },
       { label: "Neuigkeiten", href: "/de/haberler" },
@@ -1045,6 +1048,10 @@ export const homepageContent = {
       "search": "Pretraga"
     },
     "utilityLinks": [
+      {
+        "label": "Početna",
+        "href": "/bs"
+      },
       {
         "label": "Naš pristup",
         "href": "#yaklasimimiz"
