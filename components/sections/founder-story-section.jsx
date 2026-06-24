@@ -7,6 +7,12 @@ export function FounderStorySection({ founder, lang }) {
     <section id="kurucumuzun-hikayesi" className="content-section section founder-section">
       <div className="section-heading-block compact-heading">
         <p className="structure-label">{founder.eyebrow}</p>
+        {founder.title ? (
+          <h2 className="section-title">{founder.title}</h2>
+        ) : null}
+        {founder.intro ? (
+          <p className="section-intro">{founder.intro}</p>
+        ) : null}
       </div>
 
       <div className="founder-layout">

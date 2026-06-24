@@ -5,20 +5,20 @@ const identityImage = "/assets/workflow/identity-industry.jpg";
 export function IdentitySection({ identity, lang }) {
   return (
     <section id="kimligimiz" className="content-section section identity-feature-section">
-      <div className="identity-feature-top">
-        <div className="identity-feature-heading">
-          <p className="structure-label">{identity.eyebrow}</p>
-          <h1 className="identity-feature-title">{identity.title}</h1>
-        </div>
+      <div className="section-heading-block compact-heading">
+        <p className="structure-label">{identity.eyebrow}</p>
+        {identity.title ? (
+          <h2 className="section-title">{identity.title}</h2>
+        ) : null}
+        {identity.intro ? (
+          <p className="section-intro">{identity.intro}</p>
+        ) : null}
       </div>
 
       <div className="identity-feature-card">
         <div className="identity-feature-copy">
           {identity.tag ? (
             <span className="identity-feature-tag">{identity.tag}</span>
-          ) : null}
-          {identity.intro ? (
-            <p className="identity-feature-intro-line">{identity.intro}</p>
           ) : null}
           {identity.bullets?.length ? (
             <ul className="identity-feature-list">

@@ -443,7 +443,8 @@ img {
   flex-wrap: nowrap;
   min-width: 0;
   gap: clamp(0.18rem, 0.5vw, 0.6rem);
-  padding: 0 3.4rem 0 1.1rem;
+  /* Menü öğelerini biraz daha sağa kaydırmak için sol padding artırıldı. */
+  padding: 0 2rem 0 3.5rem;
 }
 
 .header-link-separator {
@@ -505,7 +506,8 @@ img {
   color: var(--ink);
   display: flex;
   align-items: flex-start;
-  padding: clamp(4rem, 12vh, 9rem) 1.5rem 4rem;
+  /* Ust padding'i sabit/absolute navigasyon cubugunu gececek kadar artirdik. */
+  padding: clamp(13rem, 19vw, 16rem) 1.5rem 4rem;
 }
 
 .search-page-inner {
@@ -808,8 +810,9 @@ img {
      ortaliyor. Artik her bolum kenarlik + kose yuvarlama + golge ile
      belirgin bir KART olarak gorunuyor, boylece her sectionun ayri bir
      bolum oldugu net belli oluyor. */
+  position: relative;
   padding: clamp(2.75rem, 4.5vw, 4.25rem) clamp(1.25rem, 3.5vw, 3.25rem);
-  margin-top: 2.5rem;
+  margin-top: 4rem;
   background: var(--surface);
   border: var(--card-border);
   border-radius: var(--card-radius);
@@ -818,6 +821,20 @@ img {
 
 .content-section:first-of-type {
   margin-top: 0;
+}
+
+/* Bolumler arasi yatay ayrac cizgisi: her kartin ustundeki boslukta
+   ortalanmis ince bir cizgi cizilir (ilk bolum haric). */
+.content-section:not(:first-of-type)::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(100%, var(--max-width));
+  height: 1px;
+  background: rgba(16, 16, 16, 0.14);
+  pointer-events: none;
 }
 
 .section-grid {
@@ -1128,7 +1145,10 @@ img {
 
 /* Article detail page (Öğren ve Geliş > single article) */
 .article-detail {
-  padding-top: clamp(7rem, 12vw, 11rem);
+  /* Ust kismi sabit/absolute navigasyon cubugunu net sekilde gececek kadar
+     bosluk birakiyoruz; aksi halde baslik navbarin altinda kaliyordu.
+     .content-section padding-top'unu eziyoruz (kart icin yine de yeterli). */
+  padding-top: clamp(13rem, 19vw, 16rem);
 }
 
 .article-detail-inner {
@@ -1781,7 +1801,11 @@ img {
   .content-section {
     /* Mobilde kutular arasi dikey boslugu daraltiyoruz; ic padding clamp
        ile zaten kuculuyor. */
-    margin-top: 1.25rem;
+    margin-top: 2.5rem;
+  }
+
+  .content-section:not(:first-of-type)::before {
+    top: -1.25rem;
   }
 
   /* Prevent text overflow and improve readability */
@@ -2075,9 +2099,23 @@ img {
 }
 
 .expert-spotlight-section {
+  position: relative;
   min-height: 0;
   padding: 0;
-  margin-top: 2.5rem;
+  margin-top: 4rem;
+}
+
+.expert-spotlight-section::before,
+.process-highlight-section::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(100% - 2rem, var(--max-width));
+  height: 1px;
+  background: rgba(16, 16, 16, 0.14);
+  pointer-events: none;
 }
 
 .expert-spotlight-shell {
@@ -2127,22 +2165,26 @@ img {
 
 .expert-quote {
   margin: 0;
-  max-width: 24ch;
+  /* Metni saga dogru uzatiyoruz; erken satir kirilmasini onlemek icin
+     genisligi belirgin sekilde artirdik. */
+  max-width: 42ch;
   font-size: clamp(2.6rem, 3.6vw, 4rem);
   line-height: 1.04;
   letter-spacing: -0.075em;
   font-weight: 700;
-  text-wrap: balance;
+  text-wrap: pretty;
 }
 
 .expert-meta {
   display: grid;
-  gap: 0.22rem;
+  gap: 0.4rem;
+  /* İsim/ünvan bloğunu quote'tan daha aşağıya itiyoruz. */
+  margin-top: clamp(1.5rem, 3vw, 2.75rem);
 }
 
 .expert-name {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: clamp(1.6rem, 2.1vw, 2.1rem);
   font-weight: 700;
   letter-spacing: -0.03em;
 }
@@ -2150,8 +2192,8 @@ img {
 .expert-role {
   margin: 0;
   color: var(--muted);
-  font-size: 1rem;
-  line-height: 1.4;
+  font-size: clamp(1.1rem, 1.3vw, 1.3rem);
+  line-height: 1.45;
 }
 
 .expert-cta-row {
@@ -2255,13 +2297,6 @@ img {
   padding-right: 1rem;
 }
 
-.mission-showcase-title {
-  margin: 0 0 1.8rem;
-  font-size: var(--text-4xl);
-  line-height: var(--leading-tight);
-  letter-spacing: -0.05em;
-}
-
 .mission-bullets {
   margin: 0;
   padding: 0;
@@ -2312,9 +2347,6 @@ img {
 }
 
 @media (max-width: 760px) {
-  .mission-showcase-title {
-    margin-bottom: 1.2rem;
-  }
 
   .mission-bullets li {
     padding-left: 1.5rem;
@@ -2326,8 +2358,9 @@ img {
 }
 
 .process-highlight-section {
+  position: relative;
   padding: 0;
-  margin-top: 2.5rem;
+  margin-top: 4rem;
 }
 
 .process-highlight-shell {
@@ -2551,10 +2584,17 @@ img {
   border-left: 1px solid rgba(16, 16, 16, 0.12);
 }
 
+/* Identity eyebrow ("KIMLIGIMIZ") belirgin sekilde buyutuldu. */
+.identity-feature-heading .structure-label {
+  margin-bottom: 1.4rem;
+  font-size: clamp(0.95rem, 1.1vw, 1.2rem);
+  letter-spacing: 0.22em;
+}
+
 .identity-feature-title {
   margin: 0;
-  max-width: 10.5ch;
-  font-size: var(--text-6xl);
+  max-width: 11ch;
+  font-size: clamp(3.6rem, 6.2vw, 7rem);
   line-height: var(--leading-tight);
   letter-spacing: -0.075em;
 }
@@ -2713,6 +2753,9 @@ img {
   display: grid;
   gap: 1.4rem;
   max-width: 56rem;
+  margin-inline: auto;
+  justify-items: center;
+  text-align: center;
 }
 
 .approach-paragraph {

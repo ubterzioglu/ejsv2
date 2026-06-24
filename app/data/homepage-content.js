@@ -103,6 +103,9 @@ export const homepageContent = {
     },
     approach: {
       eyebrow: "Yaklaşımımız",
+      title: "Çözümü masada değil, sizinle birlikte sahada kuruyoruz.",
+      intro:
+        "Klasik danışmanlığın aksine raporla gelip raporla gitmeyiz; dönüşümü ekiplerinizle birlikte tasarlar, uygular ve sonuç gerçek olana kadar sahada kalırız.",
       body: [
         "Farklı sektörlerde edindiğimiz saha tecrübesiyle ekiplerinizle birlikte çalışır, çözümleri birlikte üretiriz ve ekibinizi bağımsız çalışması için yetiştiririz.",
         "Sadece ne yapılacağını söylemekle yetinmeyiz; süreç tamamlanana kadar uygulamacı kimliğimizle ekiplerinizle birlikte sahada/süreçte yer alırız.",
@@ -267,6 +270,9 @@ export const homepageContent = {
     },
     founder: {
       eyebrow: "Kurucumuzun Hikayesi",
+      title: "Savaşın ortasında başlayan bir mühendislik yolculuğu.",
+      intro:
+        "Münih'ten Saraybosna'ya, Mannheim'dan İstanbul'a uzanan 33 yılı aşkın saha tecrübesi; bugün sanayiye değer katan uluslararası bir birikime dönüştü.",
       subtitle: "Savaşın ortasında başlayan yolculuk, bugün sanayiye değer katan uluslararası bir tecrübeye dönüştü…..",
       name: "Envera Jahovic Saraylı",
       role: "Kurucu Danışman, EJS Consulting",
@@ -420,6 +426,9 @@ export const homepageContent = {
     },
     approach: {
       eyebrow: "Our Approach",
+      title: "We build the solution with you on the floor, not at the desk.",
+      intro:
+        "Unlike classic consulting, we do not arrive with a report and leave with one; we design the transformation with your teams, implement it, and stay on the ground until results are real.",
       body: [
         "Unlike classic consulting, we do not arrive with a report and leave with one. We design the transformation with you on the floor, implement it, and stay until results are real.",
         "For us, a successful transformation makes execution part of the concept itself. We do not impose a solution; we build it with your team, shaped around your reality.",
@@ -584,6 +593,9 @@ export const homepageContent = {
     },
     founder: {
       eyebrow: "Our Founder's Story",
+      title: "An engineering journey that began in the middle of a war.",
+      intro:
+        "More than 33 years of field experience — from Munich to Sarajevo, from Mannheim to Istanbul — has today become international know-how that adds value to industry.",
       subtitle: "A journey that began in the middle of a war has today become international experience that adds value to industry.",
       name: "Envera Jahovic Saraylı",
       role: "Founder Consultant, EJS Consulting",
@@ -737,6 +749,9 @@ export const homepageContent = {
     },
     approach: {
       eyebrow: "Unser Ansatz",
+      title: "Wir bauen die Lösung mit Ihnen vor Ort — nicht am Schreibtisch.",
+      intro:
+        "Anders als die klassische Beratung kommen und gehen wir nicht mit einem Bericht; wir gestalten die Transformation gemeinsam mit Ihren Teams, setzen sie um und bleiben vor Ort, bis Ergebnisse real sind.",
       body: [
         "Anders als die klassische Beratung kommen und gehen wir nicht mit einem Bericht. Wir gestalten die Transformation gemeinsam mit Ihnen vor Ort, setzen sie um und bleiben, bis Ergebnisse real sind.",
         "Für uns macht eine erfolgreiche Transformation die Umsetzung zum natürlichen Teil des Konzepts. Wir drängen Ihnen keine Lösung auf; wir bauen sie mit Ihrem Team, passend zu Ihrer Realität.",
@@ -901,6 +916,9 @@ export const homepageContent = {
     },
     founder: {
       eyebrow: "Die Geschichte unseres Gründers",
+      title: "Eine Ingenieursreise, die mitten im Krieg begann.",
+      intro:
+        "Mehr als 33 Jahre Praxiserfahrung — von München über Sarajevo bis nach Mannheim und Istanbul — sind heute zu internationalem Know-how geworden, das der Industrie einen Mehrwert bietet.",
       subtitle: "Eine Reise, die mitten im Krieg begann, ist heute zu internationaler Erfahrung geworden, die der Industrie einen Mehrwert bietet.",
       name: "Envera Jahovic Saraylı",
       role: "Gründungsberaterin, EJS Consulting",

@@ -1,7 +1,19 @@
 import { homepageContent } from "@/app/data/homepage-content";
 import { buildSearchIndex } from "@/lib/search-index";
 import { SearchView } from "@/components/search-view";
+import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
 import { defaultLocale } from "@/lib/locales";
+
+// Header/footer links use in-page anchors (#section). On a sub-page those must
+// resolve against the homepage, so we rewrite "#anchor" -> "/{lang}#anchor".
+function withLangBase(links, lang) {
+  return (links ?? []).map((link) =>
+    link.href?.startsWith("#")
+      ? { ...link, href: `/${lang}${link.href}` }
+      : link,
+  );
+}
 
 // Aramaya ozel, dile gore yerellestirilmis metinler.
 const searchStrings = {
@@ -101,19 +113,37 @@ export default async function SearchPage({ params }) {
   const content = homepageContent[lang] ?? homepageContent[defaultLocale];
   const index = buildSearchIndex(content);
 
+  const shareUrl = encodeURIComponent("https://ejsconsulting.com");
+  const shareText = encodeURIComponent(t.title);
+
   return (
-    <main className="search-page">
-      <div className="search-page-inner">
-        <a className="search-back" href={`/${lang}`}>
-          {t.back}
-        </a>
+    <div className="page-shell" id="top">
+      <SiteHeader
+        utilityLinks={withLangBase(content.utilityLinks, lang)}
+        mainLinks={withLangBase(content.mainLinks, lang)}
+        ariaLabels={content.ariaLabels}
+      />
 
-        <p className="structure-label">{t.eyebrow}</p>
-        <h1 className="search-page-title">{t.title}</h1>
-        <p className="search-page-intro">{t.intro}</p>
+      <main className="search-page">
+        <div className="search-page-inner">
+          <a className="search-back" href={`/${lang}`}>
+            {t.back}
+          </a>
 
-        <SearchView lang={lang} index={index} strings={t} />
-      </div>
-    </main>
+          <p className="structure-label">{t.eyebrow}</p>
+          <h1 className="search-page-title">{t.title}</h1>
+          <p className="search-page-intro">{t.intro}</p>
+
+          <SearchView lang={lang} index={index} strings={t} />
+        </div>
+      </main>
+
+      <SiteFooter
+        footer={{ ...content.footer, links: withLangBase(content.footer.links, lang) }}
+        lang={lang}
+        shareUrl={shareUrl}
+        shareText={shareText}
+      />
+    </div>
   );
 }
