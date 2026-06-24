@@ -102,6 +102,54 @@
   box-shadow: 0 0 0 3px rgba(36, 87, 166, 0.16);
 }
 
+/* ---- Mobil drawer kontrolleri (masaustunde gizli) ---- */
+.admin-drawer-toggle {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--admin-text);
+  background: var(--admin-surface-solid);
+  border: 1px solid var(--admin-border-strong);
+  border-radius: 999px;
+  box-shadow: var(--admin-shadow-sm);
+  cursor: pointer;
+}
+.admin-drawer-toggle__icon {
+  font-size: 18px;
+  line-height: 1;
+}
+.admin-drawer-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: rgba(13, 18, 16, 0.5);
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+.admin-drawer-overlay.is-visible {
+  opacity: 1;
+}
+.admin-drawer-close {
+  display: none;
+  flex-shrink: 0;
+  /* Marka blogunun en saginda konumlanir (drawer ic kapatma). */
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--admin-muted);
+  background: var(--admin-surface-muted);
+  border: 1px solid var(--admin-border);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
 /* ---- Sidebar ---- */
 .admin-sidebar {
   display: flex;
@@ -996,15 +1044,58 @@
     padding: 16px;
     gap: 16px;
   }
-  .admin-sidebar {
-    position: relative;
-    top: auto;
-    min-height: 0;
-    width: 100%;
+
+  /* Mobilde sidebar artik akistan cikip soldan acilan bir drawer olur.
+     Tetikleyici buton, overlay ve ic kapatma butonu gorunur hale gelir. */
+  .admin-drawer-toggle {
+    display: inline-flex;
+    /* Icerigin ustunde, kaydirmada takip eden bir tetikleyici. */
+    position: sticky;
+    top: 16px;
+    z-index: 30;
+    align-self: flex-start;
   }
+  .admin-drawer-overlay {
+    display: block;
+    pointer-events: none;
+  }
+  .admin-drawer-overlay.is-visible {
+    pointer-events: auto;
+  }
+  .admin-drawer-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .admin-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 50;
+    width: min(310px, 86vw);
+    min-height: 0;
+    max-height: 100vh;
+    overflow-y: auto;
+    border-radius: 0 var(--admin-radius-lg) var(--admin-radius-lg) 0;
+    transform: translateX(-100%);
+    transition: transform 260ms ease;
+  }
+  .admin-sidebar.is-open {
+    transform: translateX(0);
+  }
+  /* Drawer kapaliyken klavye/odak ile erisilemesin. */
+  .admin-sidebar:not(.is-open) {
+    visibility: hidden;
+  }
+  .admin-sidebar.is-open {
+    visibility: visible;
+  }
+
   .admin-sidebar__nav {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
   .admin-dashboard-grid,
   .admin-dashboard-grid--2x2 { grid-template-columns: 1fr; }
@@ -1014,9 +1105,15 @@
   .admin-login__intro { border-right: none; border-bottom: 1px solid var(--admin-border); }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .admin-sidebar,
+  .admin-drawer-overlay {
+    transition: none;
+  }
+}
+
 @media (max-width: 680px) {
   .admin-sidebar__nav { grid-template-columns: 1fr; }
-  .admin-brand { flex-direction: row; }
   .admin-card--article { grid-template-columns: 1fr; }
   .admin-card__actions { width: 100%; }
   .admin-card__actions > * { flex: 1; }
@@ -1024,4 +1121,13 @@
   .admin-card__actions form button { width: 100%; }
   .admin-login__intro,
   .admin-login__card { padding: 30px 24px; }
+
+  /* Dar mobilde sabit 110px input ve yan yana form satirlari tasiyor;
+     satiri dikey istifleyip input'u tam genislige yayiyoruz. */
+  .admin-input--small { width: 100%; }
+  .admin-form__row--inline {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
 }

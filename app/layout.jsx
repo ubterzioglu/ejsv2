@@ -14,6 +14,13 @@ const ogImage = {
   alt: "EJS Consulting",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  // Kullanici zoom'u erisilebilirlik icin korunur (maximum-scale/user-scalable yok).
+  themeColor: "#0a0e14",
+};
+
 export const metadata = {
   metadataBase: new URL("https://ejsconsulting.com"),
   title: "EJS Consulting | Üretim ve Proje Yönetimi Danışmanlığı",
