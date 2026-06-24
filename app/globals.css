@@ -1205,6 +1205,198 @@ img {
   }
 }
 
+/* Bulten / Subscription Center sayfasi (/{lang}/bulten) */
+.bulten-page {
+  /* Sabit navbar'in altinda kalmamasi icin ust bosluk (search/haberler gibi). */
+  padding-top: clamp(11rem, 17vw, 14rem);
+}
+
+.subscription-form {
+  display: grid;
+  gap: clamp(1.75rem, 3vw, 2.5rem);
+  max-width: 60rem;
+  margin: 2rem auto 0;
+}
+
+.subscription-topics {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.subscription-topics__legend {
+  padding: 0;
+  margin-bottom: 1.1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--signal);
+}
+
+.subscription-topics__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.subscription-topic {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--surface-strong);
+  border: 1px solid rgba(16, 16, 16, 0.12);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  transition: box-shadow 180ms ease, transform 180ms ease, border-color 180ms ease;
+}
+
+.subscription-topic:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+  border-color: rgba(16, 16, 16, 0.18);
+}
+
+/* Secili tema kartini vurgula */
+.subscription-topic:has(input:checked) {
+  border-color: var(--signal);
+  box-shadow: 0 0 0 2px rgba(255, 58, 47, 0.18), var(--shadow-card-hover);
+}
+
+.subscription-topic__media {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #d9d9d9;
+}
+
+.subscription-topic__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.subscription-topic__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.25rem 1.25rem 1.4rem;
+}
+
+.subscription-topic__title {
+  font-size: 1.12rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.subscription-topic__text {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.subscription-topic__check {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 0.4rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.subscription-topic__check input {
+  width: 1.05rem;
+  height: 1.05rem;
+  accent-color: var(--signal);
+}
+
+.subscription-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+.subscription-field {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.subscription-field > span {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.subscription-field input,
+.subscription-field select {
+  width: 100%;
+  padding: 0.95rem 1.05rem;
+  border: 1px solid rgba(16, 16, 16, 0.14);
+  background: var(--surface-strong);
+  border-radius: var(--card-radius);
+  color: var(--ink);
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.subscription-field input:focus,
+.subscription-field select:focus {
+  outline: none;
+  border-color: var(--signal);
+  box-shadow: 0 0 0 3px rgba(255, 58, 47, 0.15);
+}
+
+.subscription-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.subscription-consent input {
+  margin-top: 0.2rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  flex-shrink: 0;
+  accent-color: var(--signal);
+}
+
+.subscription-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.subscription-back {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--muted);
+  transition: color 180ms ease;
+}
+
+.subscription-back:hover {
+  color: var(--ink);
+}
+
+@media (max-width: 760px) {
+  .subscription-topics__grid {
+    grid-template-columns: 1fr;
+  }
+  .subscription-fields {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Haberler sayfasi (/{lang}/haberler) */
 .news-page {
   /* Sabit navbar'in altinda kalmamasi icin ust bosluk (search/article gibi). */

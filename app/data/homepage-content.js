@@ -67,6 +67,7 @@ export const homepageContent = {
       { label: "Yaklaşımımız", href: "#yaklasimimiz" },
       { label: "Kimliğimiz", href: "#kimligimiz" },
       { label: "Haberler", href: "/tr/haberler" },
+      { label: "Bülten", href: "/tr/bulten" },
       { label: "İletişim", href: "#iletisim" },
     ],
     mainLinks: [
@@ -397,6 +398,7 @@ export const homepageContent = {
       { label: "Our Approach", href: "#yaklasimimiz" },
       { label: "Identity", href: "#kimligimiz" },
       { label: "News", href: "/en/haberler" },
+      { label: "Newsletter", href: "/en/bulten" },
       { label: "Contact", href: "#iletisim" },
     ],
     mainLinks: [
@@ -721,6 +723,7 @@ export const homepageContent = {
       { label: "Unser Ansatz", href: "#yaklasimimiz" },
       { label: "Identität", href: "#kimligimiz" },
       { label: "Neuigkeiten", href: "/de/haberler" },
+      { label: "Newsletter", href: "/de/bulten" },
       { label: "Kontakt", href: "#iletisim" },
     ],
     mainLinks: [
