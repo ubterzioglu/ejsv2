@@ -29,6 +29,19 @@ const guideCards = [
     ],
   },
   {
+    title: "Haberler",
+    intro:
+      "Haberler sayfasında görünen duyuru, etkinlik ve gelişme kartlarını buradan yönetirsiniz.",
+    steps: [
+      "Yeni haber eklemek için başlık, etiket (tag), kısa özet ve metni girin.",
+      "İsterseniz bir kapak fotoğrafı yükleyin (JPEG/PNG/WebP, en fazla 5 MB).",
+      "Etiket alanına haberin türünü yazın (örneğin Duyuru, Etkinlik, Basın).",
+      "Sıra numarasıyla haberlerin görünme önceliğini belirleyin.",
+      "“Yayında” kapalıyken haber sitede görünmez; taslak olarak saklanır.",
+      "Kaydettiğiniz anda haber, sitedeki Haberler sayfasında listelenir.",
+    ],
+  },
+  {
     title: "Güncellemeler",
     intro:
       "Panelde ve sitede yapılan çalışmaların kaydını burada tutarsınız.",
@@ -48,6 +61,18 @@ const guideCards = [
       "Bir talebi ele aldığınızda durumunu güncelleyin (örneğin tamamlandı olarak işaretleyin).",
       "İlgili değişikliği yaptıktan sonra talebi kapatın.",
       "Artık geçerli olmayan talepleri silerek listeyi temiz tutun.",
+    ],
+  },
+  {
+    title: "Bülten Aboneleri",
+    intro:
+      "Bülten sayfasındaki formdan gelen abonelikleri buradan görüntüler ve yönetirsiniz.",
+    steps: [
+      "Yeni abonelikler en üstte olacak şekilde listelenir.",
+      "Her kayıtta abonenin adı, e-postası, şirketi ve seçtiği bülten konuları görünür.",
+      "Sağdaki dil rozeti, abonenin hangi dilde kaydolduğunu gösterir.",
+      "Artık geçerli olmayan bir aboneyi silerek listeyi güncel tutabilirsiniz.",
+      "Bu kayıtlar yalnızca panelden görünür; ziyaretçiler erişemez.",
     ],
   },
 ];

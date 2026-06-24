@@ -263,6 +263,7 @@ img {
 
 .utility-nav-wrap {
   flex: 1;
+  min-width: 0;
   display: flex;
   justify-content: center;
 }
@@ -272,11 +273,13 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
+/* Eskiden absolute idi; ortadaki nav ile cakisip ust uste biniyordu.
+   Artik normal akista saga yaslanir, cakisma olmaz. */
 .utility-actions {
-  position: absolute;
-  right: 0;
+  flex-shrink: 0;
   display: inline-flex;
   align-items: center;
   gap: 1rem;
@@ -942,8 +945,11 @@ img {
   font-size: clamp(1.9rem, 3vw, 2.6rem);
   line-height: var(--leading-tight);
   letter-spacing: -0.03em;
-  max-width: none;
-  white-space: nowrap;
+  /* Uzun basliklar tasmasin: tek satira zorlamak yerine sarsin ve ortali kalsin. */
+  max-width: 28ch;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-wrap: balance;
 }
 
 .section-intro {

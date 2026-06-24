@@ -61,28 +61,11 @@ export function SiteHeader({ utilityLinks, mainLinks, ariaLabels }) {
 
           <div className="utility-actions">
             <a
-              className="search-trigger search-trigger--utility"
+              className="utility-link utility-search-link"
               href={`/${currentLang}/search`}
               aria-label={ariaLabels?.search}
             >
-              <svg
-                className="search-icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <circle cx="10.5" cy="10.5" r="7" stroke="currentColor" strokeWidth="2" />
-                <line
-                  x1="15.6"
-                  y1="15.6"
-                  x2="21"
-                  y2="21"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-              </svg>
+              {ariaLabels?.search ?? "Ara"}
             </a>
 
             <span className="utility-separator" aria-hidden="true" />
