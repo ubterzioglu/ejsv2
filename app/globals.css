@@ -881,34 +881,65 @@ img {
   );
 }
 
-.section-divider__label {
+/* Geçişin ust ve alt kucuk italik yazilari (referans gorseldeki gibi). */
+.section-divider__text {
+  margin: 0;
+  max-width: 32ch;
+  color: var(--ink);
+  font-size: clamp(0.92rem, 1.1vw, 1.05rem);
+  font-style: italic;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Ortadaki kirmizi CTA buton. Sag tarafta ok ile; genis ve belirgin. */
+.section-divider__cta {
   display: inline-flex;
   align-items: center;
-  padding: 0.55rem 1.25rem;
-  background: var(--surface-strong);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  color: var(--ink);
-  font-size: 0.72rem;
+  justify-content: space-between;
+  gap: 2.5rem;
+  min-width: min(28rem, 86vw);
+  padding: 1.05rem 1.6rem;
+  background: var(--signal);
+  color: #ffffff;
+  font-size: clamp(1.1rem, 1.5vw, 1.35rem);
   font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  box-shadow: var(--shadow-card);
-  transition: color 180ms ease, border-color 180ms ease,
-    box-shadow 180ms ease, transform 180ms ease, background-color 180ms ease;
+  letter-spacing: -0.01em;
+  box-shadow: 0 14px 30px rgba(255, 58, 47, 0.28);
+  transition: background-color 180ms ease, transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
-.section-divider__label:hover {
-  color: var(--signal);
-  border-color: color-mix(in srgb, var(--signal) 40%, var(--line));
-  box-shadow: var(--shadow-card-hover);
+.section-divider__cta:hover {
+  background: #e5322a;
   transform: translateY(-1px);
+  box-shadow: 0 18px 38px rgba(255, 58, 47, 0.34);
 }
 
-.section-divider__label:focus-visible {
-  outline: 2px solid var(--signal);
+.section-divider__cta:active {
+  transform: translateY(1px) scale(0.99);
+}
+
+.section-divider__cta:focus-visible {
+  outline: 2px solid var(--ink);
   outline-offset: 3px;
+}
+
+.section-divider__cta-arrow {
+  flex-shrink: 0;
+  font-size: 1.4em;
+  line-height: 1;
+  transition: transform 200ms ease;
+}
+
+.section-divider__cta:hover .section-divider__cta-arrow {
+  transform: translateX(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-divider__cta-arrow {
+    transition: none;
+  }
 }
 
 @media (max-width: 760px) {

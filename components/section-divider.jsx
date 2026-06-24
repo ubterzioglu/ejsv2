@@ -1,15 +1,35 @@
-// Bolumler arasi gecis: dikey cizgi + ortada tiklanabilir dekoratif etiket.
-// Etikete basildiginda bir sonraki bolume yumusakca kaydirir (CSS smooth scroll
-// + section scroll-margin-top bunu halleder).
-export function SectionDivider({ label, href }) {
+// Bolumler arasi gecis: dikey cizgilerle bagli, ustte ve altta kucuk italik
+// yazi, ortada kirmizi bir CTA buton (sag ok ile). Ikinci referans gorseldeki
+// yapiya gore. Icerikler simdilik placeholder; buton href="#" placeholder.
+export function SectionDivider({
+  topText = "Placeholder üst yazı",
+  bottomText = "Placeholder alt yazı",
+  buttonLabel = "Buton metni",
+  href = "#",
+}) {
   return (
-    <div className="section-divider" aria-hidden={label ? undefined : "true"}>
+    <div className="section-divider">
       <span className="section-divider__line" />
-      {label && href ? (
-        <a className="section-divider__label" href={href}>
-          {label}
-        </a>
+
+      {topText ? (
+        <p className="section-divider__text">{topText}</p>
       ) : null}
+
+      <span className="section-divider__line" />
+
+      <a className="section-divider__cta" href={href}>
+        <span className="section-divider__cta-label">{buttonLabel}</span>
+        <span className="section-divider__cta-arrow" aria-hidden="true">
+          →
+        </span>
+      </a>
+
+      <span className="section-divider__line" />
+
+      {bottomText ? (
+        <p className="section-divider__text">{bottomText}</p>
+      ) : null}
+
       <span className="section-divider__line" />
     </div>
   );

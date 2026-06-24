@@ -48,13 +48,13 @@ export default async function HomePage({ params }) {
         </section>
 
         <IdentitySection identity={page.identity} lang={lang} />
-        <SectionDivider label={page.approach.eyebrow} href="#yaklasimimiz" />
+        <SectionDivider />
         <ApproachSection approach={page.approach} />
-        <SectionDivider label={page.mission.eyebrow} href="#misyonumuz" />
+        <SectionDivider />
         <MissionSection mission={page.mission} lang={lang} />
         <SectionDivider />
         <ProcessHighlight lang={lang} />
-        <SectionDivider label={page.methodology.eyebrow} href="#calismamiz-hakkinda" />
+        <SectionDivider />
 
         <section
           id="calismamiz-hakkinda"
@@ -68,17 +68,17 @@ export default async function HomePage({ params }) {
           <MethodologyCards steps={page.methodology.steps} />
         </section>
 
-        <SectionDivider label={page.expertise.eyebrow} href="#uzmanlik-alanlarimiz" />
+        <SectionDivider />
         <ExpertiseSection expertise={page.expertise} />
         <SectionDivider />
         <ExpertSpotlight lang={lang} />
-        <SectionDivider label={page.founder.eyebrow} href="#kurucumuzun-hikayesi" />
+        <SectionDivider />
         <FounderStorySection founder={page.founder} lang={lang} />
-        <SectionDivider label={page.articles.eyebrow} href="#ogren-ve-gelis" />
+        <SectionDivider />
         <ArticlesSection articles={page.articles} lang={lang} />
-        <SectionDivider label={page.references.eyebrow} href="#referanslar" />
+        <SectionDivider />
         <ReferencesSection references={page.references} />
-        <SectionDivider label={page.contact.eyebrow} href="#iletisim" />
+        <SectionDivider />
         <ContactSection contact={page.contact} footer={page.footer} lang={lang} />
       </main>
 
