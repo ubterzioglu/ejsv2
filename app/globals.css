@@ -823,6 +823,18 @@ img {
   margin-top: 0;
 }
 
+/* Menü linkiyle bir bölüme atlandığında, sabit (fixed) siyah navbarin
+   altinda kalmamasi icin anchorli bolumlere ust kaydirma boslugu birakiyoruz.
+   Aksi halde bolumun en ustteki baslik/eyebrow kismi navbarin altinda kesik
+   goruluyordu. */
+.content-section,
+.expert-spotlight-section,
+.process-highlight-section,
+.hero-stage,
+.hero-video-shell {
+  scroll-margin-top: 7rem;
+}
+
 /* Bolumler arasi yatay ayrac cizgisi: her kartin ustundeki boslukta
    ortalanmis ince bir cizgi cizilir (ilk bolum haric). */
 .content-section:not(:first-of-type)::before {
