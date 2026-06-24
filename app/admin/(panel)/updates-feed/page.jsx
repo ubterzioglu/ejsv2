@@ -11,6 +11,21 @@ export const dynamic = "force-static";
 const UPDATES = [
   {
     date: "24 Haziran 2026",
+    title: "Haberler ve Bülten bölümleri, yenilenen bölüm geçişleri ve panel rehberi",
+    items: [
+      'Yeni "Haberler" bölümü eklendi: üst menüden ulaşılan ayrı bir haberler sayfası oluşturuldu; panelden başlık, etiket, özet, metin ve kapak fotoğrafıyla haber ekleyip düzenleyebilirsiniz.',
+      'Yeni "Bülten" (abonelik) bölümü eklendi: ziyaretçiler dört dilde abonelik formuyla şirket güncellemeleri, içgörü bülteni ve sektörel güncellemelere kaydolabilir; gelen abonelikler panelde "Bülten Aboneleri" bölümünden görüntülenir.',
+      "Ana sayfada bölümler arası geçişler yenilendi: bölümler ince bir dikey çizgiyle birbirine bağlanıyor ve ortadaki tıklanabilir etikete basınca ilgili bölüme yumuşakça kayıyor.",
+      'Üst menüdeki arama artık büyüteç yerine "Ara" yazısıyla görünüyor; menü öğeleri yeniden hizalandı ve üst üste binme sorunu giderildi.',
+      "Menüden bir bölüme atlandığında başlıkların üst menünün altında kesilmesi sorunu düzeltildi.",
+      '"Kimliğimiz" bölümündeki "Kurucumuzun hikayesine bir göz atın" bağlantısı, sitedeki diğer butonlarla aynı premium siyah buton haline getirildi.',
+      'Her bölüm başlığı aynı düzene getirildi (ortalanmış başlık ve açıklama); "Çalışmamız Hakkında" bölümündeki kartlar daha belirgin hale getirildi.',
+      'Yönetim paneline "Beni oku" karşılama kartı ve bölümlerin günlük dille nasıl kullanıldığını anlatan "Yardım / Rehber" sayfası eklendi; ana sayfadaki kısayol kartları yeniden düzenlendi.',
+      "Arama, Haberler ve Bülten sayfalarına da üst menü ve alt bilgi (footer) eklenerek tüm sayfalar bütünleştirildi.",
+    ],
+  },
+  {
+    date: "24 Haziran 2026",
     title: "Site içi arama, yenilenen referanslar ve videolu alt bilgi",
     items: [
       "Siteye arama özelliği eklendi: üst menüdeki arama (büyüteç) simgesine tıklayıp ayrı bir arama sayfasında site içeriğinde arama yapabilirsiniz.",
