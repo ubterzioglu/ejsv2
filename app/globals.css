@@ -829,10 +829,10 @@ img {
      belirgin bir KART olarak gorunuyor, boylece her sectionun ayri bir
      bolum oldugu net belli oluyor. */
   position: relative;
-  padding: clamp(2.75rem, 4.5vw, 4.25rem) clamp(1.25rem, 3.5vw, 3.25rem);
+  padding: clamp(2.75rem, 4.5vw, 4.25rem) clamp(1.5rem, 3.5vw, 3.25rem);
   margin-top: 0;
-  background: var(--surface);
-  border: var(--card-border);
+  background: var(--surface-strong);
+  border: 1px solid rgba(16, 16, 16, 0.14);
   border-radius: var(--card-radius);
   box-shadow: var(--shadow-card);
 }
@@ -892,7 +892,10 @@ img {
   text-align: center;
 }
 
-/* Ortadaki kirmizi CTA buton. Sag tarafta ok ile; genis ve belirgin. */
+/* Ortadaki kirmizi CTA buton. Sag tarafta ok ile; genis ve belirgin.
+   Arka plan ve yazi rengini sabit deger + degisken fallback ile veriyoruz ki
+   degisken bir nedenle uygulanmasa bile buton her zaman dolu kirmizi gorunur
+   (bos beyaz kutu hatasi olmaz). */
 .section-divider__cta {
   display: inline-flex;
   align-items: center;
@@ -900,8 +903,10 @@ img {
   gap: 2.5rem;
   min-width: min(28rem, 86vw);
   padding: 1.05rem 1.6rem;
-  background: var(--signal);
-  color: #ffffff;
+  background-color: #ff3a2f;
+  background-color: var(--signal, #ff3a2f);
+  color: #ffffff !important;
+  border-radius: var(--card-radius);
   font-size: clamp(1.1rem, 1.5vw, 1.35rem);
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -911,7 +916,7 @@ img {
 }
 
 .section-divider__cta:hover {
-  background: #e5322a;
+  background-color: #c81d14;
   transform: translateY(-1px);
   box-shadow: 0 18px 38px rgba(255, 58, 47, 0.34);
 }
@@ -2250,7 +2255,7 @@ img {
 
 .site-footer {
   position: relative;
-  padding: 5rem 0 4rem;
+  padding: 2.5rem 0 2rem;
   overflow: hidden;
   isolation: isolate;
   background: #0a0e14;
@@ -2294,7 +2299,7 @@ img {
 /* Footer visual balance improvements */
 .footer-shell {
   display: block;
-  padding-top: 0.8rem;
+  padding-top: 0.4rem;
 }
 
 /* Improved footer navigation visual balance */
@@ -2304,7 +2309,7 @@ img {
   justify-content: center;
   gap: 1rem;
   margin-top: 0;
-  padding-top: 1.8rem;
+  padding-top: 0.9rem;
   border-top: 1px solid rgba(255, 255, 255, 0.16);
   flex-wrap: wrap;
 }
@@ -2517,8 +2522,10 @@ img {
 .expert-spotlight-section {
   position: relative;
   min-height: 0;
-  padding: 0;
   margin-top: 0;
+  /* Kart cercevesi artik .content-section'dan geliyor; alt bosluk fazla
+     olmasin diye dikey padding'i biraz daraltiyoruz. */
+  padding-bottom: clamp(3.5rem, 5vw, 5rem);
 }
 
 .expert-spotlight-shell {
@@ -2528,11 +2535,6 @@ img {
   grid-template-columns: var(--expert-portrait-size) minmax(0, 1fr);
   gap: clamp(2rem, 4vw, 4rem);
   align-items: stretch;
-  padding: clamp(2rem, 3.5vw, 3.5rem);
-  padding-bottom: clamp(6.5rem, 7vw, 7.5rem);
-  border-radius: 1.5rem;
-  background: #efefef;
-  box-shadow: 0 30px 80px rgba(16, 16, 16, 0.1), 0 8px 24px rgba(16, 16, 16, 0.06);
 }
 
 .expert-portrait-wrap {
@@ -2762,7 +2764,6 @@ img {
 
 .process-highlight-section {
   position: relative;
-  padding: 0;
   margin-top: 0;
 }
 
@@ -2771,9 +2772,7 @@ img {
   grid-template-columns: minmax(220px, 0.36fr) minmax(0, 1fr);
   gap: clamp(1.5rem, 3vw, 2.5rem);
   align-items: stretch;
-  /* Kart gibi gorunmeden, ortali ve sag-sol bosluklu bir kutu yuzeyi. */
-  background: var(--surface);
-  padding: clamp(2.75rem, 4.5vw, 4.25rem) clamp(1.25rem, 3.5vw, 3.25rem);
+  /* Kart cercevesi .content-section'dan geliyor; ic shell sadece grid duzeni. */
 }
 
 .process-highlight-image-card {

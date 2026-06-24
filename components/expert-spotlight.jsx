@@ -38,8 +38,8 @@ export function ExpertSpotlight({ lang }) {
   const copy = spotlightCopy[lang] ?? spotlightCopy.tr;
 
   return (
-    <section className="expert-spotlight-section">
-      <div className="expert-spotlight-shell section">
+    <section className="content-section section expert-spotlight-section">
+      <div className="expert-spotlight-shell">
         <div className="expert-portrait-wrap">
           <div className="expert-portrait-ring">
             <Image

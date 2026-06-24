@@ -19,8 +19,8 @@ export function ProcessHighlight({ lang }) {
   const copy = highlightCopy[lang] ?? highlightCopy.tr;
 
   return (
-    <section className="process-highlight-section">
-      <div className="process-highlight-shell section">
+    <section className="content-section section process-highlight-section">
+      <div className="process-highlight-shell">
         <div className="process-highlight-image-card">
           <Image
             src={highlightImage}
