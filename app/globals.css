@@ -1,5 +1,10 @@
 ﻿:root {
-  --paper: #efefed;
+  /* Sayfa zemini beyaz; her bolum (section) acik gri bir KART olarak
+     beyaz zeminin uzerinde ayri ayri durur (referans gorseldeki gibi). */
+  --paper: #ffffff;
+  /* Bolum kartlarinin gri yuzeyi. Beyaz zeminden net ayrilacak kadar koyu,
+     ama goz yormayacak kadar yumusak bir gri. */
+  --card-surface: #ececea;
   --ink: #101010;
   --muted: #555555;
   --signal: #ff3a2f;
@@ -831,8 +836,9 @@ img {
   position: relative;
   padding: clamp(2.75rem, 4.5vw, 4.25rem) clamp(1.5rem, 3.5vw, 3.25rem);
   margin-top: 0;
-  background: var(--surface-strong);
-  border: 1px solid rgba(16, 16, 16, 0.14);
+  /* Kart yuzeyi acik gri (beyaz sayfa zemininden ayrilir). */
+  background: var(--card-surface);
+  border: 1px solid rgba(16, 16, 16, 0.08);
   border-radius: var(--card-radius);
   box-shadow: var(--shadow-card);
 }
