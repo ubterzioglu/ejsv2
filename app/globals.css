@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   /* Sayfa zemini beyaz; her bolum (section) acik gri bir KART olarak
      beyaz zeminin uzerinde ayri ayri durur (referans gorseldeki gibi). */
   --paper: #ffffff;
