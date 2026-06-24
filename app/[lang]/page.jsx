@@ -48,13 +48,33 @@ export default async function HomePage({ params }) {
         </section>
 
         <IdentitySection identity={page.identity} lang={lang} />
-        <SectionDivider />
+        <SectionDivider
+          topText="Verimlilik bir tesadüf değil, iyi tasarlanmış bir sürecin sonucudur."
+          bottomText="Ölçemediğiniz süreci iyileştiremezsiniz."
+          buttonLabel="Haberler"
+          href="#ogren-ve-gelis"
+        />
         <ApproachSection approach={page.approach} />
-        <SectionDivider />
+        <SectionDivider
+          topText="Kalite, denetlenen değil; üretim sürecine işlenen bir alışkanlıktır."
+          bottomText="İsraf görünür kılındığında ortadan kalkar."
+          buttonLabel="Bülten"
+          href="#ogren-ve-gelis"
+        />
         <MissionSection mission={page.mission} lang={lang} />
-        <SectionDivider />
+        <SectionDivider
+          topText="Her duruş bir maliyet, her darboğaz gizli bir fırsattır."
+          bottomText="Sürekli iyileştirme küçük adımların disiplinidir."
+          buttonLabel="Öğren ve Geliş"
+          href="#ogren-ve-gelis"
+        />
         <ProcessHighlight lang={lang} />
-        <SectionDivider />
+        <SectionDivider
+          topText="Tasarım masada biter, gerçek sınav sahada başlar."
+          bottomText="Kapasiteyi artıran, makine değil; doğru kurgulanmış akıştır."
+          buttonLabel="Haberler"
+          href="#ogren-ve-gelis"
+        />
 
         <section
           id="calismamiz-hakkinda"
@@ -68,17 +88,47 @@ export default async function HomePage({ params }) {
           <MethodologyCards steps={page.methodology.steps} />
         </section>
 
-        <SectionDivider />
+        <SectionDivider
+          topText="Doğru metot, en pahalı makineden daha değerlidir."
+          bottomText="Standart olmayan iş, tekrar edilemeyen başarıdır."
+          buttonLabel="Bülten"
+          href="#ogren-ve-gelis"
+        />
         <ExpertiseSection expertise={page.expertise} />
-        <SectionDivider />
+        <SectionDivider
+          topText="Uzmanlık, doğru soruyu sahada sormakla başlar."
+          bottomText="Bilgi paylaşıldıkça çoğalan tek sermayedir."
+          buttonLabel="Öğren ve Geliş"
+          href="#ogren-ve-gelis"
+        />
         <ExpertSpotlight lang={lang} />
-        <SectionDivider />
+        <SectionDivider
+          topText="İyi mühendislik, karmaşığı sade kılma sanatıdır."
+          bottomText="Tecrübe, yapılan hatalardan çıkarılan derslerin toplamıdır."
+          buttonLabel="Haberler"
+          href="#ogren-ve-gelis"
+        />
         <FounderStorySection founder={page.founder} lang={lang} />
-        <SectionDivider />
+        <SectionDivider
+          topText="Bir işi yapmanın daima daha iyi bir yolu vardır."
+          bottomText="Gelişim, konfor alanının bittiği yerde başlar."
+          buttonLabel="Bülten"
+          href="#ogren-ve-gelis"
+        />
         <ArticlesSection articles={page.articles} lang={lang} />
-        <SectionDivider />
+        <SectionDivider
+          topText="Güven, zamanında teslim edilen sözlerle inşa edilir."
+          bottomText="Referans, tamamlanmış işin en sade dilidir."
+          buttonLabel="Öğren ve Geliş"
+          href="#ogren-ve-gelis"
+        />
         <ReferencesSection references={page.references} />
-        <SectionDivider />
+        <SectionDivider
+          topText="Her büyük dönüşüm, tek bir doğru karar ile başlar."
+          bottomText="Birlikte üretmek, birlikte büyümektir."
+          buttonLabel="Haberler"
+          href="#ogren-ve-gelis"
+        />
         <ContactSection contact={page.contact} footer={page.footer} lang={lang} />
       </main>
 

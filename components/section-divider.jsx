@@ -2,10 +2,10 @@
 // yazi, ortada kirmizi bir CTA buton (sag ok ile). Ikinci referans gorseldeki
 // yapiya gore. Icerikler simdilik placeholder; buton href="#" placeholder.
 export function SectionDivider({
-  topText = "Placeholder üst yazı",
-  bottomText = "Placeholder alt yazı",
-  buttonLabel = "Buton metni",
-  href = "#",
+  topText = "",
+  bottomText = "",
+  buttonLabel = "Haberler",
+  href = "#ogren-ve-gelis",
 }) {
   return (
     <div className="section-divider">
