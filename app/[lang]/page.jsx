@@ -14,6 +14,7 @@ import { FounderStorySection } from "@/components/sections/founder-story-section
 import { ArticlesSection } from "@/components/sections/articles-section";
 import { ReferencesSection } from "@/components/sections/references-section";
 import { ContactSection } from "@/components/sections/contact-section";
+import { SectionDivider } from "@/components/section-divider";
 
 export default async function HomePage({ params }) {
   const { lang } = await params;
@@ -47,9 +48,13 @@ export default async function HomePage({ params }) {
         </section>
 
         <IdentitySection identity={page.identity} lang={lang} />
+        <SectionDivider label={page.approach.eyebrow} href="#yaklasimimiz" />
         <ApproachSection approach={page.approach} />
+        <SectionDivider label={page.mission.eyebrow} href="#misyonumuz" />
         <MissionSection mission={page.mission} lang={lang} />
+        <SectionDivider />
         <ProcessHighlight lang={lang} />
+        <SectionDivider label={page.methodology.eyebrow} href="#calismamiz-hakkinda" />
 
         <section
           id="calismamiz-hakkinda"
@@ -63,11 +68,17 @@ export default async function HomePage({ params }) {
           <MethodologyCards steps={page.methodology.steps} />
         </section>
 
+        <SectionDivider label={page.expertise.eyebrow} href="#uzmanlik-alanlarimiz" />
         <ExpertiseSection expertise={page.expertise} />
+        <SectionDivider />
         <ExpertSpotlight lang={lang} />
+        <SectionDivider label={page.founder.eyebrow} href="#kurucumuzun-hikayesi" />
         <FounderStorySection founder={page.founder} lang={lang} />
+        <SectionDivider label={page.articles.eyebrow} href="#ogren-ve-gelis" />
         <ArticlesSection articles={page.articles} lang={lang} />
+        <SectionDivider label={page.references.eyebrow} href="#referanslar" />
         <ReferencesSection references={page.references} />
+        <SectionDivider label={page.contact.eyebrow} href="#iletisim" />
         <ContactSection contact={page.contact} footer={page.footer} lang={lang} />
       </main>
 

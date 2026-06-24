@@ -11,6 +11,11 @@ export const adminSections = [
     description: "Yazılarımız alanını yönetin",
   },
   {
+    href: "/admin/news",
+    label: "Haberler",
+    description: "Haberler sayfasını yönetin",
+  },
+  {
     href: "/admin/updates-feed",
     label: "Güncellemeler",
     description: "Panel ve site çalışma kaydı",
