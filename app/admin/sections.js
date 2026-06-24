@@ -25,4 +25,9 @@ export const adminSections = [
     label: "Revizyon İstekleri",
     description: "Kullanıcı taleplerini takip edin",
   },
+  {
+    href: "/admin/subscribers",
+    label: "Bülten Aboneleri",
+    description: "Bülten abonelerini görüntüleyin",
+  },
 ];
