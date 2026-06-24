@@ -1,3 +1,5 @@
+import { AdminAccordion } from "../components/admin-accordion";
+
 export const dynamic = "force-dynamic";
 
 // Her admin bolumunun gunluk dilde, madde madde kullanim rehberi.
@@ -62,17 +64,19 @@ export default function AdminGuidePage() {
         </p>
       </section>
 
-      <section className="admin-guide-grid">
+      <section className="admin-guide-list">
         {guideCards.map((card) => (
-          <article key={card.title} className="admin-panel-card admin-guide-card">
-            <h3>{card.title}</h3>
-            <p className="admin-card__excerpt">{card.intro}</p>
+          <AdminAccordion
+            key={card.title}
+            title={`${card.title} Nasıl Kullanılır?`}
+            hint={card.intro}
+          >
             <ul className="admin-update-list">
               {card.steps.map((step) => (
                 <li key={step}>{step}</li>
               ))}
             </ul>
-          </article>
+          </AdminAccordion>
         ))}
       </section>
     </div>

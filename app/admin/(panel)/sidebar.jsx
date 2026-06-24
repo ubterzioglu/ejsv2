@@ -10,7 +10,6 @@ export function AdminSidebar() {
   return (
     <aside className="admin-sidebar">
       <div className="admin-brand">
-        <div className="admin-brand__mark">EJS</div>
         <div className="admin-brand__copy">
           <span className="admin-brand__badge">Yönetim Paneli</span>
           <div className="admin-brand__name">EJS Consulting</div>
