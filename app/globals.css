@@ -3554,16 +3554,21 @@ img {
 /* Founder story */
 .founder-layout {
   display: grid;
-  grid-template-columns: minmax(280px, 0.62fr) minmax(0, 1fr);
+  /* Tek sutun: sol kart (gorsel) USTTE, sag kart (metin) ALTTA. */
+  grid-template-columns: 1fr;
   gap: clamp(2rem, 4vw, 3.5rem);
   align-items: stretch;
 }
 
 .founder-image-wrap {
   display: grid;
+  /* Gorsel karti iki sutunlu duzene gore ~2 KAT genis: tek sutunda
+     genis bir blok olarak ortada durur, gorsel belirgin sekilde buyur. */
+  justify-items: center;
+  text-align: center;
   align-content: start;
   gap: 1rem;
-  padding: clamp(1.25rem, 2vw, 1.75rem);
+  padding: clamp(1.5rem, 2.5vw, 2.25rem);
   background: var(--surface);
   border: var(--card-border);
   box-shadow: var(--shadow-card);
@@ -3571,11 +3576,22 @@ img {
 }
 
 .founder-image {
+  /* Gorsel ~2 KATINA cikarildi: tek sutunlu duzende genis, ortali bir
+     blok olarak gosterilir (onceki dar sutundaki halinin yaklasik 2 kati). */
   width: 100%;
+  max-width: 56rem;
   height: auto;
   object-fit: cover;
   border-radius: var(--card-radius);
   filter: grayscale(1);
+}
+
+/* Gorsel buyurken isim/unvan ve caption metni asiri genis/okunmaz olmasin;
+   makul bir okuma genisliginde ortali kalsinlar. */
+.founder-image-wrap .founder-meta,
+.founder-image-wrap .founder-caption {
+  width: 100%;
+  max-width: 56rem;
 }
 
 .founder-meta {
@@ -3638,18 +3654,6 @@ img {
   font-style: italic;
 }
 
-@media (max-width: 1040px) {
-  .founder-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .founder-image-wrap {
-    max-width: 24rem;
-  }
-}
-
-@media (max-width: 760px) {
-  .founder-image-wrap {
-    max-width: 100%;
-  }
-}
+/* .founder-layout zaten tek sutun; gorsel karti tam genislikte kalir
+   (gorsel kendi max-width'i ile ortali sinirlanir). Ayri responsive
+   override'a gerek yok. */
