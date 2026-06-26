@@ -3576,10 +3576,9 @@ img {
 }
 
 .founder-image {
-  /* Gorsel ~2 KATINA cikarildi: tek sutunlu duzende genis, ortali bir
-     blok olarak gosterilir (onceki dar sutundaki halinin yaklasik 2 kati). */
+  /* Gorsel ALTINDAKI metin kartiyla AYNI genislikte: kart icerigini
+     (padding haric) tam kaplar, max-width siniri yok. */
   width: 100%;
-  max-width: 56rem;
   height: auto;
   object-fit: cover;
   border-radius: var(--card-radius);
