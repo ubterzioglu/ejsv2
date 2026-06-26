@@ -89,7 +89,7 @@ export default async function ArticlePage({ params }) {
                 <p key={index}>{paragraph}</p>
               ))}
             </div>
-            <Link href={`/${lang}#ogren-ve-gelis`} className="article-link">
+            <Link href={`/${lang}/ogren-ve-gelis`} className="article-link">
               <span aria-hidden="true">← </span>
               {backLabel}
             </Link>
