@@ -47,6 +47,12 @@ export default async function HomePage({ params }) {
           />
         </section>
 
+        <SectionDivider
+          topText="Her dönüşüm, sahada atılan ilk adımla gerçeğe dönüşür."
+          bottomText="Doğru başlangıç, doğru sorularla kurulur."
+          buttonLabel="Kimliğimiz"
+          href="#kimligimiz"
+        />
         <IdentitySection identity={page.identity} lang={lang} />
         <SectionDivider
           topText="Verimlilik bir tesadüf değil, iyi tasarlanmış bir sürecin sonucudur."
