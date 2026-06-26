@@ -35,7 +35,13 @@ export function SiteFooter({ footer, lang, shareUrl, shareText }) {
       <ShareSection lang={lang} shareUrl={shareUrl} shareText={shareText} />
 
       <div className="footer-copyright">
-        <p>EJS Consulting 2026 - Tüm Hakları Saklıdır</p>
+        <p>
+          EJS Consulting 2026 - Tüm Hakları Saklıdır
+          {" · "}
+          <a href="https://chatio.com.tr/" rel="dofollow">Canlı Destek</a> Yazılımı Chatio
+          {" · "}
+          <a href="https://www.spindorai.com/seo/saglik-seo" rel="dofollow">Sağlık Turizmi SEO</a> Spindora Tarafından Seosu Yapılmıştır.
+        </p>
       </div>
     </footer>
   );
