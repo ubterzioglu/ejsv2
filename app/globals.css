@@ -706,10 +706,10 @@ img {
      (kenarlik, koselik veya golge yok). */
   position: relative;
   min-height: 64vh;
-  /* Bolum kartlariyla AYNI genislik formulu: hero da onlarla birebir hizali
-     ve iki yanda ayni boslukta kalir. */
-  width: min(calc(100% - clamp(2rem, 8vw, 9rem)), var(--max-width));
-  margin: 0 auto;
+  /* Hero TAM BOY: kenardan kenara, max-width siniri ve yan bosluk yok.
+     (Diger bolum kartlari dar/ortali kalmaya devam eder.) */
+  width: 100%;
+  margin: 0;
   overflow: hidden;
 }
 
