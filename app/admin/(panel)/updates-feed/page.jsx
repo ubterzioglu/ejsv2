@@ -10,6 +10,19 @@ export const dynamic = "force-static";
  */
 const UPDATES = [
   {
+    date: "26 Haziran 2026",
+    title: "Bölümler gri kartlara alındı, tam ekran hero, yenilenen kurucu bölümü ve tüm yazılar sayfası",
+    items: [
+      "Ana sayfadaki tüm bölümler artık beyaz zemin üzerinde, ayrı ayrı duran açık gri kartlar halinde görünüyor; böylece her bölümün nerede başlayıp bittiği çok daha net.",
+      "En üstteki büyük video (hero) artık ekranı kenardan kenara, tam genişlikte kaplıyor; diğer bölümler ise iki yanı boşluklu kart düzeninde kalmaya devam ediyor.",
+      'Uzman vitrini bölümünde "Tüm Uzmanlıklar" ve "Tam Profili İnceleyin" butonları, isim ve unvan yazısının üzerine biniyordu; butonlar yazının altına alınarak bu çakışma giderildi.',
+      "Sayfanın en altındaki paylaşım bölümü, koyu alt bilginin içinde yamalı bir gri kutu gibi görünüyordu; arka planı şeffaf yapılarak yazılar yeniden okunur hale getirildi.",
+      "Büyük video ile ilk bölüm arasına da diğer bölümlerdeki gibi bir geçiş eklendi: ince dikey çizgi, iki kısa söz ve ilgili bölüme götüren bir buton.",
+      'Kurucu bölümü yeniden düzenlendi: fotoğraf kartı üstte, hikâye metni altta olacak şekilde alt alta dizildi ve kurucunun büyük tanıtım görseli, altındaki metin kartıyla aynı genişliğe getirilerek belirgin şekilde büyütüldü.',
+      'Yazıların (Öğren ve Geliş) detay sayfasındaki "Tüm yazılara dön" bağlantısı artık ana sayfaya değil, tüm yazıların listelendiği yeni bir ara sayfaya götürüyor.',
+    ],
+  },
+  {
     date: "24 Haziran 2026",
     title: "Bölüm geçişlerine anlamlı sözler, üst menüye Anasayfa bağlantısı ve görsel tutarlılık",
     items: [

@@ -378,6 +378,17 @@
   /* Metin soldan saga tam genislikte uzasin; erken kirilmasin. */
   max-width: none;
 }
+/* "Beni oku" karti icindeki ara basliklar (Son on gun... / Nasil kullanilir...) */
+.admin-readme-card__subtitle {
+  margin: 22px 0 10px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--admin-text);
+}
+.admin-readme-card .admin-update-list {
+  margin: 0 0 4px;
+}
 .admin-dashboard-card {
   display: flex;
   flex-direction: column;
