@@ -1,6 +1,11 @@
 import { createServerClient } from "@/lib/supabase/server";
-import { setRevisionStatus, deleteRevision } from "./actions";
+import {
+  setRevisionStatus,
+  deleteRevision,
+  deleteRevisionComment,
+} from "./actions";
 import { RevisionForm } from "./revision-form";
+import { CommentForm } from "./comment-form";
 import { AdminAccordion } from "../components/admin-accordion";
 import { AdminPageHeader } from "../components/admin-page-header";
 
@@ -32,6 +37,17 @@ export default async function RevisionsPage() {
     in_progress: requests.filter((r) => r.status === "in_progress").length,
     done: requests.filter((r) => r.status === "done").length,
   };
+
+  // Yorumlari cek ve talep id'sine gore grupla.
+  const { data: commentRows } = await supabase
+    .from("revision_comments")
+    .select("*")
+    .order("created_at", { ascending: true });
+
+  const commentsByRevision = {};
+  for (const c of commentRows ?? []) {
+    (commentsByRevision[c.revision_id] ??= []).push(c);
+  }
 
   return (
     <div>
@@ -131,6 +147,56 @@ export default async function RevisionsPage() {
                             Sil
                           </button>
                         </form>
+                      </div>
+
+                      {req.attachment_url ? (
+                        <p className="admin-card__attachment">
+                          <a
+                            href={req.attachment_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="admin-attachment-link"
+                          >
+                            📎 {req.attachment_name || "Ekli dosya"}
+                          </a>
+                        </p>
+                      ) : null}
+
+                      <div className="admin-comments">
+                        <p className="admin-comments__title">Notlar / Yorumlar</p>
+                        {(commentsByRevision[req.id] ?? []).length === 0 ? (
+                          <p className="admin-comments__empty">
+                            Henüz yorum yok.
+                          </p>
+                        ) : (
+                          <ul className="admin-comments__list">
+                            {(commentsByRevision[req.id] ?? []).map((c) => (
+                              <li key={c.id} className="admin-comment">
+                                <div className="admin-comment__body">{c.body}</div>
+                                <div className="admin-comment__foot">
+                                  <span className="admin-comment__meta">
+                                    {c.author ? `${c.author} · ` : ""}
+                                    {formatDate(c.created_at)}
+                                  </span>
+                                  <form action={deleteRevisionComment}>
+                                    <input
+                                      type="hidden"
+                                      name="id"
+                                      value={c.id}
+                                    />
+                                    <button
+                                      type="submit"
+                                      className="admin-comment__delete"
+                                    >
+                                      Sil
+                                    </button>
+                                  </form>
+                                </div>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                        <CommentForm revisionId={req.id} />
                       </div>
 
                       <p className="admin-card__meta">

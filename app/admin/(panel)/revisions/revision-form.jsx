@@ -21,6 +21,7 @@ export function RevisionForm() {
       ref={formRef}
       action={formAction}
       className="admin-form"
+      encType="multipart/form-data"
     >
       <div className="admin-form__header">
         <p className="admin-form__title">Yeni revizyon isteği</p>
@@ -54,6 +55,22 @@ export function RevisionForm() {
             className="admin-textarea"
             required
           />
+        </div>
+
+        <div className="admin-form__row">
+          <label className="admin-label" htmlFor="attachment">
+            Dosya ekle (opsiyonel)
+          </label>
+          <input
+            id="attachment"
+            name="attachment"
+            type="file"
+            accept="image/png,image/jpeg,image/webp,image/gif,application/pdf,.doc,.docx,.xls,.xlsx,.txt,.zip"
+            className="admin-input"
+          />
+          <span className="admin-field-help">
+            PDF / Word / Excel / resim / txt / zip, en fazla 15 MB.
+          </span>
         </div>
       </div>
 

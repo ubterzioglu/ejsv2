@@ -828,6 +828,7 @@
 .admin-input--small { width: 110px; min-height: 40px; }
 .admin-textarea { min-height: 120px; resize: vertical; }
 .admin-textarea--large { min-height: 170px; }
+.admin-textarea--small { min-height: 70px; }
 .admin-input:focus,
 .admin-textarea:focus,
 .admin-select:focus {
@@ -1142,3 +1143,74 @@
     gap: 12px;
   }
 }
+
+/* Revizyon: ekli dosya linki */
+.admin-card__attachment { margin: 8px 0 0; }
+.admin-attachment-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--admin-text);
+  text-decoration: none;
+  padding: 6px 10px;
+  border: 1px solid var(--admin-border);
+  border-radius: 10px;
+  background: var(--admin-bg-soft);
+  transition: border-color 0.16s, background 0.16s;
+}
+.admin-attachment-link:hover {
+  border-color: rgba(15, 81, 50, 0.5);
+  background: #fff;
+}
+
+/* Revizyon: notlar / yorumlar */
+.admin-comments {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--admin-border);
+}
+.admin-comments__title {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--admin-muted);
+}
+.admin-comments__empty { margin: 0 0 10px; font-size: 13px; color: var(--admin-muted); }
+.admin-comments__list {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.admin-comment {
+  background: var(--admin-bg-soft);
+  border: 1px solid var(--admin-border);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+.admin-comment__body { font-size: 14px; color: var(--admin-text); white-space: pre-wrap; }
+.admin-comment__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 6px;
+}
+.admin-comment__meta { font-size: 12px; color: var(--admin-muted); }
+.admin-comment__delete {
+  border: none;
+  background: none;
+  color: var(--admin-danger, #b42318);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+.admin-comment__delete:hover { text-decoration: underline; }
+.admin-comment-form { display: flex; flex-direction: column; gap: 8px; }
