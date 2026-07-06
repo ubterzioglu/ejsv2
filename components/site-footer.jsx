@@ -41,6 +41,8 @@ export function SiteFooter({ footer, lang, shareUrl, shareText }) {
           <a href="https://chatio.com.tr/" rel="dofollow">Canlı Destek</a> Yazılımı Chatio
           {" · "}
           <a href="https://www.spindorai.com/seo/saglik-seo" rel="dofollow">Sağlık Turizmi SEO</a> Spindora Tarafından Seosu Yapılmıştır.
+          {" · "}
+          <a href="https://ufuksoynakliyat.com.tr/kartal-evden-eve-nakliyat" rel="dofollow">Kartal Evden Eve Nakliyat</a> Firması Ufuksoy Nakliyat A.Ş
         </p>
       </div>
     </footer>
