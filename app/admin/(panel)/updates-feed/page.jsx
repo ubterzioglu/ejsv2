@@ -11,6 +11,16 @@ export const dynamic = "force-static";
 const UPDATES = [
   {
     date: "7 Temmuz 2026",
+    title: "Revizyon İstekleri paneli geliştirildi: yorum yazarı, görsel eki ve tamamlananlar grubu",
+    items: [
+      'Revizyon taleplerine yazılan notlara/yorumlara artık "Kim yazdı?" alanı eklendi; hangi yorumu kimin yazdığı görünüyor.',
+      "Yorumlara artık görsel (resim) eklenebiliyor; eklenen görsel yorumun altında küçük bir önizleme olarak gösteriliyor.",
+      '"Tamamlandı" durumuna alınan revizyon talepleri artık ana listeden ayrılıp, sayfanın altında ayrı bir "Tamamlananlar" bölümünde toplanıyor; aktif talepler daha net görünüyor.',
+      '"Yeni yap", "Devam ediyor yap" ve "Tamamlandı yap" durum butonları renkli, gölgeli ve daha premium bir görünüme kavuşturuldu.',
+    ],
+  },
+  {
+    date: "7 Temmuz 2026",
     title: "İletişim bilgileri sadeleştirildi ve referanslar bölümü yeniden adlandırıldı",
     items: [
       "İletişim bölümü ve alt bilgideki (footer) sabit hat numarası (+90 216 906 03 25) kaldırıldı; artık sadece cep telefonu numarası (+90 532 636 72 00) görünüyor. Bu değişiklik dört dilde de (Türkçe, İngilizce, Almanca, Boşnakça) yapıldı.",
