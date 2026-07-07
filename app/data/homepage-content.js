@@ -77,7 +77,7 @@ export const homepageContent = {
       { label: "Çalışmamız Hakkında", href: "#calismamiz-hakkinda" },
       { label: "Uzmanlık Alanlarımız", href: "#uzmanlik-alanlarimiz" },
       { label: "Öğren ve Geliş", href: "#ogren-ve-gelis" },
-      { label: "Referanslar", href: "#referanslar" },
+      { label: "Birlikte Çalıştığımız İş Ortaklarımız", href: "#referanslar" },
     ],
     hero: {
       ctaLabel: "Yaklaşımımız",
@@ -337,7 +337,7 @@ export const homepageContent = {
       ],
     },
     references: {
-      eyebrow: "Referanslar",
+      eyebrow: "Birlikte Çalıştığımız İş Ortaklarımız",
       title: "Birlikte çalıştığımız ekiplerden seçili bir görünüm.",
       intro:
         "Farklı sektörlerden ekiplerle yürüttüğümüz çalışmaları sakin bir grid düzeniyle paylaşıyoruz.",
@@ -352,7 +352,7 @@ export const homepageContent = {
         "Tüm süreçlerimiz hakkında detaylı bilgi için iletişim kanallarımızdan bize ulaşabilirsiniz.",
       address:
         "Aydıntepe Mah. Alaaddin Sk. No.7 Evora Sitesi A Parsel, A13, İç Kapı No: 19 Tuzla / İstanbul",
-      phones: ["+90 216 906 03 25", "+90 532 636 72 00"],
+      phones: ["+90 532 636 72 00"],
       hours: "Pazartesi-Cuma: 8:00 - 17:00 / Cumartesi-Pazar: Kapalı",
       fields: {
         name: "İsim Soyisim",
@@ -374,7 +374,6 @@ export const homepageContent = {
         "EJS Mühendislik Danışmanlık ve Eğitim, Aydıntepe Mah. Alaaddin Sk. No.7, Evora Sitesi A Parsel, A13, İç Kapı No: 19, Tuzla / İstanbul, Türkiye",
       ],
       contactRows: [
-        { label: "Telefon", value: "+90 216 906 03 25", href: "tel:+902169060325" },
         { label: "Mobil", value: "+90 532 636 72 00", href: "tel:+905326367200" },
         { label: "Mail", value: "Mesaj gönderin", href: "#iletisim" },
       ],
@@ -409,7 +408,7 @@ export const homepageContent = {
       { label: "About Our Work", href: "#calismamiz-hakkinda" },
       { label: "Expertise", href: "#uzmanlik-alanlarimiz" },
       { label: "Learn & Grow", href: "#ogren-ve-gelis" },
-      { label: "References", href: "#referanslar" },
+      { label: "Our Business Partners", href: "#referanslar" },
     ],
     hero: {
       ctaLabel: "Our Approach",
@@ -663,7 +662,7 @@ export const homepageContent = {
       ],
     },
     references: {
-      eyebrow: "References",
+      eyebrow: "Our Business Partners",
       title: "A selection of teams and environments we have worked with.",
       intro:
         "We share work delivered with teams from different sectors in a calmer grid format.",
@@ -678,7 +677,7 @@ export const homepageContent = {
         "For detailed information about our services, reach us through the channels below.",
       address:
         "Aydintepe Mah. Alaaddin Sk. No.7 Evora Sitesi A Parsel, A13, Tuzla / Istanbul",
-      phones: ["+90 216 906 03 25", "+90 532 636 72 00"],
+      phones: ["+90 532 636 72 00"],
       hours: "Mon-Fri: 8:00 - 17:00 / Sat-Sun: Closed",
       fields: {
         name: "Full name",
@@ -700,7 +699,6 @@ export const homepageContent = {
         "EJS Engineering Consulting & Training, Aydintepe Mah. Alaaddin Sk. No.7, Evora Sitesi A Parsel, A13, Unit 19, Tuzla / Istanbul, Turkey",
       ],
       contactRows: [
-        { label: "Phone", value: "+90 216 906 03 25", href: "tel:+902169060325" },
         { label: "Mobile", value: "+90 532 636 72 00", href: "tel:+905326367200" },
         { label: "Mail", value: "Send a message", href: "#iletisim" },
       ],
@@ -735,7 +733,7 @@ export const homepageContent = {
       { label: "Über unsere Arbeit", href: "#calismamiz-hakkinda" },
       { label: "Fachgebiete", href: "#uzmanlik-alanlarimiz" },
       { label: "Lernen & Wachsen", href: "#ogren-ve-gelis" },
-      { label: "Referenzen", href: "#referanslar" },
+      { label: "Unsere Geschäftspartner", href: "#referanslar" },
     ],
     hero: {
       ctaLabel: "Unser Ansatz",
@@ -989,7 +987,7 @@ export const homepageContent = {
       ],
     },
     references: {
-      eyebrow: "Referenzen",
+      eyebrow: "Unsere Geschäftspartner",
       title: "Eine Auswahl der Teams und Umgebungen, mit denen wir gearbeitet haben.",
       intro:
         "Wir teilen Arbeiten mit Teams aus verschiedenen Branchen in einem ruhigeren Grid-Format.",
@@ -1004,7 +1002,7 @@ export const homepageContent = {
         "Für detaillierte Informationen zu unseren Leistungen erreichen Sie uns über unsere Kontaktkanäle.",
       address:
         "Aydintepe Mah. Alaaddin Sk. No.7 Evora Sitesi A Parsel, A13, Tuzla / Istanbul",
-      phones: ["+90 216 906 03 25", "+90 532 636 72 00"],
+      phones: ["+90 532 636 72 00"],
       hours: "Mo-Fr: 8:00 - 17:00 / Sa-So: Geschlossen",
       fields: {
         name: "Vollständiger Name",
@@ -1026,7 +1024,6 @@ export const homepageContent = {
         "EJS Engineering Beratung & Schulung, Aydintepe Mah. Alaaddin Sk. No.7, Evora Sitesi A Parsel, A13, Einheit 19, Tuzla / Istanbul, Türkei",
       ],
       contactRows: [
-        { label: "Telefon", value: "+90 216 906 03 25", href: "tel:+902169060325" },
         { label: "Mobil", value: "+90 532 636 72 00", href: "tel:+905326367200" },
         { label: "Mail", value: "Nachricht senden", href: "#iletisim" },
       ],
@@ -1087,7 +1084,7 @@ export const homepageContent = {
         "href": "#ogren-ve-gelis"
       },
       {
-        "label": "Reference",
+        "label": "Naši poslovni partneri",
         "href": "#referanslar"
       }
     ],
@@ -1323,7 +1320,7 @@ export const homepageContent = {
       ]
     },
     "references": {
-      "eyebrow": "Reference",
+      "eyebrow": "Naši poslovni partneri",
       "title": "Izbor timova s kojima radimo.",
       "intro": "Dijelimo rad koji obavljamo s timovima iz različitih sektora koristeći jednostavan mrežni raspored."
     },
@@ -1335,7 +1332,6 @@ export const homepageContent = {
       "companyNote": "Za detaljne informacije o svim našim procesima, molimo kontaktirajte nas putem naših komunikacijskih kanala.",
       "address": "Aydıntepe Mah. Alaaddin Sk. No.7 Evora Sitesi A Parsel, A13, İç Kapı No: 19 Tuzla / İstanbul",
       "phones": [
-        "+90 216 906 03 25",
         "+90 532 636 72 00"
       ],
       "hours": "Ponedjeljak–Petak: 8.00 – 17.00 / Subota–Nedjelja: Zatvoreno",
@@ -1359,11 +1355,6 @@ export const homepageContent = {
         "EJS Mühendislik Danışmanlık ve Eğitim, Aydıntepe Mah. Alaaddin Sk. No.7, Evora Sitesi A Parsel, A13, İç Kapı No: 19, Tuzla / İstanbul, Türkiye"
       ],
       "contactRows": [
-        {
-          "label": "Telefon",
-          "value": "+90 216 906 03 25",
-          "href": "tel:+902169060325"
-        },
         {
           "label": "Mobilni",
           "value": "+90 532 636 72 00",

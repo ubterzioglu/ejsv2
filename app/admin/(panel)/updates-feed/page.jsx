@@ -10,6 +10,15 @@ export const dynamic = "force-static";
  */
 const UPDATES = [
   {
+    date: "7 Temmuz 2026",
+    title: "İletişim bilgileri sadeleştirildi ve referanslar bölümü yeniden adlandırıldı",
+    items: [
+      "İletişim bölümü ve alt bilgideki (footer) sabit hat numarası (+90 216 906 03 25) kaldırıldı; artık sadece cep telefonu numarası (+90 532 636 72 00) görünüyor. Bu değişiklik dört dilde de (Türkçe, İngilizce, Almanca, Boşnakça) yapıldı.",
+      '"Referanslar" başlığı, üst menüde ve ilgili bölümün üst etiketinde "Birlikte Çalıştığımız İş Ortaklarımız" olarak güncellendi (İngilizce, Almanca ve Boşnakça karşılıkları da güncellendi).',
+      '"Kimliğimiz" bölümündeki "Kurucumuzun hikayesine bir göz atın" bağlantısı kontrol edildi; buton zaten kurucu hikayesi bölümüne doğru şekilde yönlendiriyor.',
+    ],
+  },
+  {
     date: "26 Haziran 2026",
     title: "Bölümler gri kartlara alındı, tam ekran hero, yenilenen kurucu bölümü ve tüm yazılar sayfası",
     items: [
