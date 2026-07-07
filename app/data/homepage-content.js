@@ -84,7 +84,7 @@ export const homepageContent = {
     },
     identity: {
       eyebrow: "Kimliğimiz",
-      title: "33 yılı aşkın uluslararası saha tecrübesi.",
+      title: "Kimliğimiz",
       tag: "Yaklaşım",
       intro: "33 yılı aşkın uluslararası saha tecrübesine sahip:",
       bullets: [
@@ -99,7 +99,7 @@ export const homepageContent = {
         "Proje yönetimi",
       ],
       body:
-        "alanlarında şirketlerin dönüşümüne rehberlik eden, sahada uygulayan mühendis, eğitmen ve eğitimci.",
+        "33 yılı aşkın uluslararası saha tecrübesine sahip; yalın üretim ve üretim planlama, yalın süreçler, kalite ve proje yönetimi alanlarında şirketlerin dönüşümüne rehberlik eden, sahada uygulayan mühendis, eğitmen ve eğitimci.",
       highlight:
         "Bilgi, tecrübe ve eylem bir arada. Bu hikâye bir şirketin değil, yeniden başlamanın hikâyesidir…..",
       cta: { label: "KURUCUMUZUN HİKAYESİNE BİR GÖZ ATIN", href: "#kurucumuzun-hikayesi" },
@@ -413,12 +413,12 @@ export const homepageContent = {
     },
     identity: {
       eyebrow: "Identity",
-      title: "Over 33 years of international field experience.",
+      title: "Identity",
       tag: "Approach",
       intro:
         "We use the broad field experience gained in manufacturing — at home and abroad — on the shopfloor, not at the desk.",
       body:
-        "We treat your people as partners and build solutions together with them. We do not stop at telling you what to do; we stay on the floor with the teams until the process lands. We prefer action over words.",
+        "With more than 33 years of international field experience, we guide companies' transformation in lean manufacturing and production planning, lean processes, quality, and project management — as hands-on engineers, trainers, and educators.",
       highlight: "Knowledge, experience, and action — together.",
       bullets: [
         "Deep expertise in lean processes, lean manufacturing, quality, and project management.",
@@ -738,12 +738,12 @@ export const homepageContent = {
     },
     identity: {
       eyebrow: "Identität",
-      title: "Über 33 Jahre internationale Praxiserfahrung.",
+      title: "Identität",
       tag: "Ansatz",
       intro:
         "Die in der Produktion im In- und Ausland gewonnene umfassende Praxiserfahrung setzen wir vor Ort ein — nicht am Schreibtisch.",
       body:
-        "Wir betrachten Ihre Mitarbeiter als Partner und entwickeln Lösungen gemeinsam mit ihnen. Wir sagen Ihnen nicht nur, was zu tun ist; wir bleiben mit den Teams vor Ort, bis der Prozess in der Praxis ankommt. Wir bevorzugen Handeln statt Worte.",
+        "Mit über 33 Jahren internationaler Praxiserfahrung begleiten wir als praxisnahe Ingenieure, Trainer und Ausbilder die Transformation von Unternehmen in den Bereichen Lean Production und Produktionsplanung, Lean-Prozesse, Qualität und Projektmanagement.",
       highlight: "Wissen, Erfahrung und Handeln — vereint.",
       bullets: [
         "Tiefe Expertise in Lean-Prozessen, Lean-Produktion, Qualität und Projektmanagement.",
