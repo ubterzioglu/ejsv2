@@ -21,13 +21,30 @@ export function CommentForm({ revisionId }) {
   }, [state.ok]);
 
   return (
-    <form ref={formRef} action={formAction} className="admin-comment-form">
+    <form
+      ref={formRef}
+      action={formAction}
+      className="admin-comment-form"
+      encType="multipart/form-data"
+    >
       <input type="hidden" name="revision_id" value={revisionId} />
+      <input
+        type="text"
+        name="author"
+        className="admin-input"
+        placeholder="Kim yazdı? (opsiyonel)"
+      />
       <textarea
         name="body"
         className="admin-textarea admin-textarea--small"
         placeholder="Not / yorum ekleyin..."
         required
+      />
+      <input
+        type="file"
+        name="image"
+        accept="image/png,image/jpeg,image/webp,image/gif"
+        className="admin-input"
       />
       {state.error ? <p className="admin-alert">{state.error}</p> : null}
       <div className="admin-form__actions">

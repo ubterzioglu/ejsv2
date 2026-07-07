@@ -123,9 +123,16 @@ export async function addRevisionComment(_prevState, formData) {
   if (!body) return { error: "Yorum boş olamaz." };
 
   const supabase = createServerClient();
-  const { error } = await supabase
-    .from("revision_comments")
-    .insert({ revision_id: revisionId, body, author });
+
+  const uploaded = await uploadAttachment(supabase, formData.get("image"));
+  if (uploaded.error) return { error: uploaded.error };
+
+  const { error } = await supabase.from("revision_comments").insert({
+    revision_id: revisionId,
+    body,
+    author,
+    image_url: uploaded.url,
+  });
   if (error) return { error: error.message };
 
   revalidatePath("/admin/revisions");

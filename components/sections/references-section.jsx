@@ -17,7 +17,6 @@ export function ReferencesSection({ references }) {
       <div className="section-heading-block compact-heading">
         <p className="structure-label">{references.eyebrow}</p>
         <h2 className="section-title">{references.title}</h2>
-        <p className="section-intro">{references.intro}</p>
       </div>
       <div className="reference-carousel">
         <div className="reference-track">

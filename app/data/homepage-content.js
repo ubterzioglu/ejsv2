@@ -338,9 +338,7 @@ export const homepageContent = {
     },
     references: {
       eyebrow: "Birlikte Çalıştığımız İş Ortaklarımız",
-      title: "Birlikte çalıştığımız ekiplerden seçili bir görünüm.",
-      intro:
-        "Farklı sektörlerden ekiplerle yürüttüğümüz çalışmaları sakin bir grid düzeniyle paylaşıyoruz.",
+      title: "Birlikte çalıştığımız iş ortaklarımızdan bir seçki.",
     },
     contact: {
       eyebrow: "İletişim",
