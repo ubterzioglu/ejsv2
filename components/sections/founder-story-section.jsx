@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const founderPhoto = "/assets/enveramain.jpeg";
+const founderPhoto = "/assets/yenikurucu.png";
 
 export function FounderStorySection({ founder, lang }) {
   return (
@@ -21,8 +21,8 @@ export function FounderStorySection({ founder, lang }) {
             src={founderPhoto}
             alt={founder.name}
             className="founder-image"
-            width={460}
-            height={560}
+            width={1260}
+            height={848}
             sizes="(max-width: 1040px) 100vw, 38vw"
           />
           <div className="founder-meta">
