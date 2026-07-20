@@ -61,9 +61,11 @@ hale getirmek — mevcut siteyi bozmadan, yanına eklemek.
 - [x] Yerelde (`npm run dev`) `/tr/newera`, `/en/newera`, `/de/newera`,
       `/bs/newera` test edildi — hepsi 200 dönüyor, ana sayfa regresyonu yok.
       `npm run build` ile de `/newera` tüm dillerde statik (SSG) üretildi.
-- [ ] `askanai.online` üzerindeki mevcut deployment'a bu değişiklik yayınlanacak
-      (mevcut deploy sürecine göre — Docker image güncellemesi / redeploy).
-- [ ] `askanai.online/tr/newera` gibi bir adresten canlıda doğrulanacak.
+- [x] `askanai.online` üzerindeki mevcut deployment'a bu değişiklik yayınlandı
+      (main branch'e push edildi, commit `454bc90`, git push ile otomatik
+      CI/CD deploy tetiklendi).
+- [ ] `askanai.online/tr/newera` gibi bir adresten canlıda doğrulanacak
+      (deploy tamamlandıktan birkaç dakika sonra kontrol edilmeli).
 
 ---
 
