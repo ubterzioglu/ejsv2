@@ -14,3 +14,6 @@ old/
 __pycache__/
 *.pyc
 docs/rolandberger_homepage/
+
+# Secrets
+credentials.md
