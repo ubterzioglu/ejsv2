@@ -5,6 +5,24 @@
 export const dynamic = "force-static";
 
 /**
+ * Yapilacaklar listesi. Siradaki isler bitip UPDATES'e tasindikca buradan silinir.
+ * @type {Array<{ title: string, items: string[] }>}
+ */
+const NEXT_STEPS = [
+  {
+    title: "ejsconsulting.org → NewEra geçişi",
+    items: [
+      "WordPress sitesinin (ejsconsulting.org) tam yedeği alınacak — dosyalar ve veritabanı.",
+      'WordPress\'te "Yenileniyoruz" bakım modu mesajı yayınlanacak.',
+      "askanai.online üzerinde yayınlanan /newera sayfası canlıda doğrulanacak.",
+      "domainhizmetleri.com panelinden ejsconsulting.org için DNS kayıtları bu siteye yönlendirilecek (domain exchange).",
+      "DNS yayılması sonrası ejsconsulting.org üzerinde yeni sitenin göründüğü ve SSL sertifikasının geçerli olduğu doğrulanacak.",
+      '/newera route\'unun ana sayfaya taşınması veya kaldırılması kararlaştırılacak.',
+    ],
+  },
+];
+
+/**
  * Her giris bir "gun" karti. items = o gun yapilan isler (gunluk dille, madde madde).
  * @type {Array<{ date: string, title: string, items: string[] }>}
  */
@@ -124,6 +142,28 @@ export default function UpdatesFeedPage() {
           </p>
         </div>
       </header>
+
+      {NEXT_STEPS.length > 0 ? (
+        <section className="admin-timeline admin-next-steps">
+          <h2 className="admin-section-title">Sıradaki Adımlar</h2>
+          {NEXT_STEPS.map((group) => (
+            <article key={group.title} className="admin-timeline-card admin-timeline-card--pending">
+              <div className="admin-timeline-card__marker" />
+              <div className="admin-timeline-card__content">
+                <div className="admin-timeline-card__head">
+                  <h3 className="admin-card__title">{group.title}</h3>
+                  <span className="admin-badge admin-badge--pending">Bekliyor</span>
+                </div>
+                <ul className="admin-update-list">
+                  {group.items.map((line, i) => (
+                    <li key={i}>{line}</li>
+                  ))}
+                </ul>
+              </div>
+            </article>
+          ))}
+        </section>
+      ) : null}
 
       <div className="admin-timeline">
         {UPDATES.map((day) => (

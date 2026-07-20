@@ -731,6 +731,7 @@
 .admin-badge--new { background: var(--admin-accent-soft); color: var(--admin-accent-strong); border-color: rgba(15, 81, 50, 0.16); }
 .admin-badge--in_progress { background: var(--admin-warning-soft); color: var(--admin-warning); border-color: rgba(183, 107, 0, 0.18); }
 .admin-badge--done { background: var(--admin-info-soft); color: var(--admin-info); border-color: rgba(36, 87, 166, 0.16); }
+.admin-badge--pending { background: var(--admin-warning-soft); color: var(--admin-warning); border-color: rgba(183, 107, 0, 0.18); }
 
 /* ---- Timeline ---- */
 .admin-timeline {
@@ -765,6 +766,18 @@
   background: var(--admin-border);
 }
 .admin-timeline-card:last-child .admin-timeline-card__marker::after { display: none; }
+.admin-timeline-card--pending .admin-timeline-card__marker {
+  background: var(--admin-warning);
+  box-shadow: 0 0 0 4px var(--admin-warning-soft);
+}
+.admin-next-steps {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px dashed var(--admin-border-strong);
+}
+.admin-next-steps .admin-section-title {
+  margin-bottom: 16px;
+}
 .admin-timeline-card__content {
   background: var(--admin-surface);
   border: 1px solid var(--admin-border);
