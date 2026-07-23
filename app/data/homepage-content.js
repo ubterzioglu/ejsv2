@@ -72,7 +72,7 @@ export const homepageContent = {
       { label: "İletişim", href: "#iletisim" },
     ],
     mainLinks: [
-      { label: "Hemen Başla!", href: "#hemen-basla" },
+      { label: "Hemen Başla!", href: "#iletisim" },
       { label: "Misyonumuz", href: "#misyonumuz" },
       { label: "Çalışmamız Hakkında", href: "#calismamiz-hakkinda" },
       { label: "Uzmanlık Alanlarımız", href: "#uzmanlik-alanlarimiz" },
@@ -401,7 +401,7 @@ export const homepageContent = {
       { label: "Contact", href: "#iletisim" },
     ],
     mainLinks: [
-      { label: "Start Now", href: "#hemen-basla" },
+      { label: "Start Now", href: "#iletisim" },
       { label: "Mission", href: "#misyonumuz" },
       { label: "About Our Work", href: "#calismamiz-hakkinda" },
       { label: "Expertise", href: "#uzmanlik-alanlarimiz" },
@@ -726,7 +726,7 @@ export const homepageContent = {
       { label: "Kontakt", href: "#iletisim" },
     ],
     mainLinks: [
-      { label: "Jetzt starten", href: "#hemen-basla" },
+      { label: "Jetzt starten", href: "#iletisim" },
       { label: "Mission", href: "#misyonumuz" },
       { label: "Über unsere Arbeit", href: "#calismamiz-hakkinda" },
       { label: "Fachgebiete", href: "#uzmanlik-alanlarimiz" },
@@ -1063,7 +1063,7 @@ export const homepageContent = {
     "mainLinks": [
       {
         "label": "Počnite odmah!",
-        "href": "#hemen-basla"
+        "href": "#iletisim"
       },
       {
         "label": "Naša misija",
