@@ -1856,6 +1856,14 @@ img {
   gap: 1rem;
 }
 
+.contact-company-line {
+  margin: 0;
+  color: #1f2a24;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
 .contact-address-line {
   margin: 0;
   color: #3f444b;

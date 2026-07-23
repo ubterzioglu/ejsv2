@@ -63,9 +63,16 @@ export function ContactSection({ contact, footer, lang }) {
             </div>
 
             <div className="contact-office-details">
-              <p className="contact-address-line">
-                {footer?.addressLines?.[0] ?? contact.address}
-              </p>
+              <p className="contact-company-line">{contact.companyName}</p>
+
+              {(footer?.addressLines?.length
+                ? footer.addressLines
+                : [contact.address]
+              ).map((line) => (
+                <p key={line} className="contact-address-line">
+                  {line}
+                </p>
+              ))}
 
               <p className="contact-hours">{contact.hours}</p>
 

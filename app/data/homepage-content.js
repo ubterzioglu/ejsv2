@@ -64,9 +64,6 @@ export const homepageContent = {
       search: "Ara",
     },
     utilityLinks: [
-      { label: "Anasayfa", href: "/tr" },
-      { label: "Yaklaşımımız", href: "#yaklasimimiz" },
-      { label: "Kimliğimiz", href: "#kimligimiz" },
       { label: "Haberler", href: "/tr/haberler" },
       { label: "Bülten", href: "/tr/bulten" },
       { label: "İletişim", href: "#iletisim" },
@@ -106,9 +103,7 @@ export const homepageContent = {
     },
     approach: {
       eyebrow: "Yaklaşımımız",
-      title: "Çözümü masada değil, sizinle birlikte sahada kuruyoruz.",
-      intro:
-        "Klasik danışmanlığın aksine raporla gelip raporla gitmeyiz; dönüşümü ekiplerinizle birlikte tasarlar, uygular ve sonuç gerçek olana kadar sahada kalırız.",
+      title: "Çözümü masada değil, sizinle birlikte sahada kuruyoruz",
       body: [
         "Farklı sektörlerde edindiğimiz saha tecrübesiyle ekiplerinizle birlikte çalışır, çözümleri birlikte üretiriz ve ekibinizi bağımsız çalışması için yetiştiririz.",
         "Sadece ne yapılacağını söylemekle yetinmeyiz; süreç tamamlanana kadar uygulamacı kimliğimizle ekiplerinizle birlikte sahada/süreçte yer alırız.",
@@ -126,7 +121,7 @@ export const homepageContent = {
         "Yalın, çevik, hızlı ve verimli çalışma sistemleri kurmak.",
         "Çalışanlara nitelik kazandırarak anlaşılır ve sürdürülebilir süreçler oluşturmak.",
       ],
-      highlight: "Bilgi ve Tecrübeden Güce, Güçten Sonuca.",
+      highlight: "Bilgi ve Tecrübeden Güce, Güçten Sonuca",
     },
     methodology: {
       eyebrow: "Çalışmamız Hakkında Mutlaka Bilmeniz Gerekenler",
@@ -186,50 +181,56 @@ export const homepageContent = {
     },
     expertise: {
       eyebrow: "Uzmanlık Alanlarımız",
-      title: "Beş ana alanda derin saha uzmanlığı.",
       intro:
-        "Her alanı, raporla değil sahada uygulanan somut yöntemlerle ele alıyoruz. Detayları görmek için kartları açabilirsiniz.",
+        "Her alanı, raporla değil sahada uygulanan somut yöntemlerle ele alıyoruz. Detayları görmek için alanları açabilirsiniz.",
       detailsLabel: "Detaylı incele",
       areas: [
         {
           title: "Süreçlerin Yalın Dönüşümü ve Dijitalleşmesi",
           summary:
-            "Ofis ve idari süreçlerdeki israfı görünür kılar, akışı hızlandırır ve süreçleri yalın yönetim prensipleriyle dijital sistemlere taşırız.",
+            "Süreçlerdeki israfları görünür kılar, iş akışını hızlandırır ve süreçlerinizi yalın yönetim prensipleriyle dijital sistemlere taşırız.",
           paragraphs: [
-            "Şirketler çoğunlukla üretim süreçlerini iyileştirmeye odaklanır; çünkü üretim, yatırım büyüklüğü ve operasyonel maliyetler açısından en önemli gider kalemlerinden biridir. Ancak satış, servis, planlama, satın alma, kalite ve yönetim gibi diğer iş süreçlerinde yaşanan verimsizlikler; süreçler arasındaki zayıf bağlantılar, ortak hedeflerin bulunmaması, yetersiz performans göstergeleri ve doğru ölçülemeyen faaliyetler nedeniyle önemli maliyetlere ve performans kayıplarına yol açar.",
-            "Biz bu süreçlerin performansını ölçer; katma değerli ve katma değersiz faaliyetleri, süreçler arası etkileşimleri, tedarikçi ve müşteri odaklılığı, dijitalleşme olgunluğunu ve organizasyonel verimliliği analiz ederiz. Elde edilen sonuçlar doğrultusunda standartları, sorumlulukları, doğru iş gücü kapasitesini ve performans kriterlerini belirleyerek süreçleri daha müşteri odaklı, hızlı, şeffaf ve sürdürülebilir bir yapıya dönüştürürüz. Süreçleri yalın yönetim prensiplerine göre yeniden tasarlar, mevcut dijital sistemlerinize entegre eder veya ihtiyaçlarınıza uygun yeni dijital platformlar üzerinde kurgularız.",
-            "Amacımız, süreçlerinizi dünya standartlarına uygun, verimli, şeffaf ve sürdürülebilir bir yapıya dönüştürmektir. Tasarladığımız sistemleri yalnızca önermekle yetinmez; uygulama, takip, ölçme, iyileştirme ve standardizasyon aşamalarında da ekibinizle birlikte çalışarak kalıcı sonuçlar ve sürdürülebilir başarı elde edilmesini sağlarız.",
+            "Yönetim, ana ve destek süreçlerini analiz ederek darboğazları, katma değersiz faaliyetleri, süreçler arası etkileşimleri ve performans kayıplarını belirleriz. Bu doğrultuda standartları, sorumlulukları, performans göstergelerini ve doğru iş gücü kapasitesini oluşturur; süreçleri daha hızlı, şeffaf ve müşteri odaklı hale getiririz.",
+            "Tasarladığımız çözümleri mevcut dijital sistemlerinize entegre eder veya ihtiyaçlarınıza uygun yeni dijital yapılar geliştiririz. Sadece öneri sunmaz; uygulama, ölçme, iyileştirme ve standardizasyon aşamalarında da ekibinizle birlikte çalışarak kalıcı sonuçlar elde edilmesini sağlarız.",
           ],
           details: [
-            "Değer akışı haritalama (VSM) ile uçtan uca süreç görünürlüğü.",
-            "İdari ve planlama süreçlerinde israfların tespiti ve giderilmesi.",
-            "Standart iş, görsel yönetim ve düzenli yönetim ritmi kurulumu.",
+            "Süreç olgunluk seviyesinin belirlenmesi (katma değer analizi dahil).",
+            "Değer akışı haritalama (VSM).",
+            "Standart işin ve çalışma sürelerinin belirlenmesi.",
+            "Beyaz/mavi yaka iş gücü ihtiyacının belirlenmesi.",
+            "KPI ve performans yönetim sistemi oluşturulması ve uygulanması.",
+            "Dijital süreç tasarımı ve entegrasyonu.",
           ],
           image: "/assets/expertise/1-lean-digital.jpg",
         },
         {
           title: "Üretimin Yalın Dönüşümü",
           summary:
-            "Üretim sahasını daha yalın, daha akışkan ve daha verimli hale getirir; duruşları ve israfları azaltırız.",
+            "Üretim sahasını daha yalın, daha akan ve daha verimli hale getirir; duruşları azaltır, kapasiteyi artırır ve israfları ortadan kaldırırız.",
           paragraphs: [
-            "Üretim; süreçlerine, çalışanlarına, makinelerine, teçhizatlarına ve alanlarına yapılan yüksek yatırımlardan dolayı şirketlerin en yüksek gideri olarak bilinir. Üretimin yalın üretim prensiplerine uygun tasarlanması; alan, malzeme, insan kaynakları ve kapasite artışında ciddi kazançlar getirir. Bu nedenle şirketlerin bu alanda iyileştirmeye öncelik vermesi mantıklıdır.",
-            "Bu kapsamda; mevcut üretim akışının incelenmesi, yeni hatların ve hücrelerin planlanması, baştan uca üretim zamanının hızlandırılması, üretimde otomasyon kararının verilmesi, darboğazların bertaraf edilmesi, yeni yatırımlara karar verilmesi ve kapasite artışının sağlanması gibi konularda yanınızda oluruz.",
-            "Ayrıca makine setup/ayar sürelerinin azaltılması, üretim hatlarının malzeme ile beslenmesi, stokların azaltılması, müşteri siparişine uygun dengeli üretimin planlanması, üretim yönetim sisteminin oluşturulup uygulanması ve yeni üretim kültürüne geçiş gibi konularda uygulamacı olarak destek veririz.",
+            "Mevcut üretim akışını analiz eder; hat ve hücre tasarımı, darboğazların giderilmesi, otomasyon kararları, kapasite planlaması ve yeni yatırımlar konusunda işletmenize rehberlik ederiz. Ayrıca setup sürelerinin azaltılması, malzeme akışının iyileştirilmesi, stokların düşürülmesi, dengeli üretim planlaması ve üretim yönetim sistemlerinin kurulması konularında uygulamacı olarak destek veririz.",
           ],
           details: [
-            "Hat dengeleme, hücresel üretim ve akış tasarımı.",
-            "SMED ile hızlı kalıp/ürün değişimi ve esneklik artışı.",
-            "5S, TPM ve OEE ile saha disiplini ve ekipman etkinliği.",
+            "Yalın prensiplere uygun üretim/fabrika organizasyonu.",
+            "Üretim hatlarının oluşturulması.",
+            "Yalın prensiplere göre yeni yerleşimin planlanması ve devreye alınması.",
+            "Çalışan ve makine faaliyetlerinin katma değer analizinin yapılması.",
+            "Çalışan ve makine için yeni standart çalışma faaliyetlerinin belirlenmesi.",
+            "Hat dengeleme (Takt Time'a uygun çalışan ve makine çalışmasının dengelenmesi), hücresel üretim ve akış tasarımı.",
+            "SMED ile hızlı ürün/kalıp değişimi.",
+            "5S, Shopfloor Management (Üretim Yönetim Sistemi) devreye alınması.",
+            "TPM ve OEE uygulamaları.",
+            "Malzeme akışı ve stok optimizasyonu (Kanban dahil).",
           ],
           image: "/assets/expertise/2-production.jpg",
         },
         {
           title: "Şirketlere Özel Problem Çözme Sürecinin Oluşturulması",
           summary:
-            "Hataların oluşmaması ve tekrarlanmaması için şirketinize özel bir problem çözme süreci tasarlar, uygular ve takip ederiz.",
+            "Hataların oluşmasını ve tekrarlanmasını önlemek için şirketinize özel bir problem çözme sistemi tasarlar, uygular ve sürdürülebilir hale getiririz.",
           paragraphs: [
-            "Bir şirketin süreçleri her zaman %100 doğru hizmet veya ürün üretmez; yani iş dünyasında hatalarla sürekli karşılaşırız. Peki bir şirkette meydana gelen hataların maddi yükü ölçülüyor mu? Bu sebeple önlem alınıyor mu? Alınan önlemler ne kadar etkili? Yoksa aynı hatalar tekrar tekrar mı yaşanıyor?",
-            "Hatalar tekrarlanıyorsa ya hatanın sebebi tespit edilememiş ya da öngörülen çözümler uygulanmamıştır. Hataların oluşmaması ve tekrarlanmaması için alışılmışın dışında ve şirketinize özel bir problem çözme süreci tasarlar, uygular ve takip mekanizmasını oluştururuz. İstendiği takdirde problem çözme süreci dijital hale getirilebilir.",
+            "Mevcut problem çözme yaklaşımınızı analiz eder, kök nedenleri ortaya çıkarır ve kalıcı çözümler geliştiririz. Süreci standartlaştırır, takip mekanizmasını kurar ve istenildiğinde dijital platformlara entegre ederiz.",
+            "Bir şirketin süreçleri her zaman %100 doğru hizmet veya ürün üretmez; yani iş dünyasında hatalarla sürekli karşılaşırız. Hatalar tekrarlanıyorsa ya hatanın sebebi tespit edilememiş ya da öngörülen çözümler uygulanmamıştır.",
           ],
           details: [
             "8D, A3 ve PDCA ile yapılandırılmış problem çözme.",
@@ -241,31 +242,36 @@ export const homepageContent = {
         {
           title: "Tedarikçiden Müşteriye Kalite Süreçlerinin Oluşturulması",
           summary:
-            "Kaliteyi tek bir noktada değil, tedarik zincirinin tamamında güvence altına alırız.",
+            "Kaliteyi yalnızca son kontrolde değil, tedarik zincirinin tamamında güvence altına alırız.",
           paragraphs: [
-            "Kalite süreçleri nerede başlamalı ve nerede bitmeli? Kaliteden yalnızca Kalite Bölümü mü sorumlu? Kimler kalite sürecinin içinde ne kadar yer almalı? Bugünkü endüstri şartlarında paydaşlarımıza nasıl bir kalite sorumluluğu verilmeli? Ürün veya süreç kalitesi kontrol edilerek mi sağlanır? Ürün kalitesi mi yoksa süreç kalitesi mi daha önemli?",
-            "Hata önleme mekanizmaları sürecin içinde nereye yerleştirilir? Ürün veya süreç kalitesi nasıl planlanır? Kalite maliyetleri sürekli takip ediliyor mu? Kontrol çizelgesi, histogram, Pareto analizi, Ishikawa (balık kılçığı) diyagramı, dağılım grafiği, akış şeması, FMEA, QFD, problem çözme, Deming çemberi, A3, 8D, 6 Sigma, beyin fırtınası ve diğer kalite yönetim araçları birçoğumuz tarafından bilinir.",
-            "Peki bu araçları nasıl ve nerede uygulayacağınız, şirketin çalışma sistemine nasıl dahil edeceğiniz konusunda uygulamalı eğitimle sizlere destek oluruz. Gelin birlikte düşünelim.",
+            "Kalite süreçlerinizi analiz ederek hata önleme mekanizmalarını, kalite standartlarını ve süreç kontrollerini işletmenize entegre ederiz. Tedarikçiden müşteriye kadar tüm kalite süreçlerini yapılandırır; ekiplerinize kalite yönetim araçlarının etkin kullanımı konusunda uygulamalı destek veririz.",
+            "Kontrol çizelgesi, histogram, Pareto analizi, Ishikawa (balık kılçığı) diyagramı, dağılım grafiği, akış şeması, FMEA, QFD, problem çözme, Deming çemberi, A3, 8D, 6 Sigma, beyin fırtınası ve diğer kalite yönetim araçları birçoğumuz tarafından bilinir. Peki bu araçları nasıl ve nerede uygulayacağınız, şirketin çalışma sistemine nasıl dahil edeceğiniz konusunda uygulamalı eğitimle sizlere destek oluruz.",
           ],
           details: [
-            "Tedarikçi geliştirme, denetim ve giriş kalite kontrol.",
-            "Süreç içi kalite (APQP, PPAP, FMEA) ve hata önleme (poka-yoke).",
-            "Müşteriye sevkiyat öncesi kalite kapıları ve geri bildirim döngüsü.",
+            "Tedarikçi geliştirme.",
+            "APQP, PPAP ve FMEA ile süreç kalite planlaması.",
+            "Poka-Yoke ile hata önleme sistemleri.",
+            "Sevkiyat öncesi kalite kapıları ve müşteri geri bildirim yönetimi.",
+            "Kalite araçları ve problem çözme eğitimleri.",
           ],
           image: "/assets/expertise/4-quality.jpg",
         },
         {
           title: "Satış Sonrası Müşteri Şikayetleri Yönetimi",
           summary:
-            "Müşteri şikayetlerini hızlı, izlenebilir ve kalıcı çözümlere dönüştüren bir sistem kurarız.",
+            "Müşteri şikayetlerini hızlı, izlenebilir ve kalıcı çözümlere dönüştüren etkin bir yönetim sistemi kurarız.",
           paragraphs: [
-            "Müşteri şikayetleri çözümlenme süreci ve takip platformu nasıl olmalı? Müşteriden arızalı olarak dönen ürünler nasıl depolanır ve incelenir? Hatalı olma durumunda tedarikçiye veya yanlış karar veren servise oluşan masraflar hangi süreçle rücu edilir? Arıza İnceleme Merkezi nasıl olmalıdır?",
+            "Şikayet yönetimi, garanti süreçleri, arıza inceleme ve rücu mekanizmalarını analiz ederek süreçler arasındaki koordinasyonu güçlendiririz. Hızlı müdahale, kök neden analizi ve sürekli iyileştirme yaklaşımıyla müşteri memnuniyetini artırır, süreçlerinizi standartlaştırırız.",
             "Kalite, Ar-Ge, Üretim, Üretim Planlama ve Satış Sonrası süreçleri gerçekten aynı hedefe mi hizmet ediyor? Aralarında kesintisiz bir akış var mı? Birlikte değerlendirelim.",
           ],
           details: [
-            "Şikayet alma, sınıflandırma ve önceliklendirme süreçleri.",
-            "Hızlı müdahale ile kök neden analizinin birlikte yürütülmesi.",
-            "Müşteri memnuniyeti ölçümü ve sürekli iyileştirme döngüsü.",
+            "Arızalı parça ambarının kurulması.",
+            "Arızalı parça / müşteri şikayeti inceleme laboratuvarının kurulması.",
+            "Müşteri şikayeti / arızalı parça inceleme, sınıflandırma ve önceliklendirme.",
+            "Arıza inceleme süreçlerinin geliştirilmesi.",
+            "Tedarikçiye veya servise garanti rücu süreçlerinin oluşturulması.",
+            "Müşteri şikayetlerinin çözümlenmesi ve sürekli iyileştirme sürecinin oluşturulması.",
+            "Satış sonrası servislerin yalın prensiplere göre düzenlenmesi ve ihtiyaç iş gücünün hesaplanması.",
           ],
           image: "/assets/expertise/5-customer-service.jpg",
         },
@@ -273,20 +279,18 @@ export const homepageContent = {
     },
     founder: {
       eyebrow: "Kurucumuzun Hikayesi",
-      title: "Savaşın ortasında başlayan bir mühendislik yolculuğu.",
+      title: "Savaşın ortasında başlayan bir mühendislik yolculuğu",
       intro:
-        "Münih'ten Saraybosna'ya, Mannheim'dan İstanbul'a uzanan 33 yılı aşkın saha tecrübesi; bugün sanayiye değer katan uluslararası bir birikime dönüştü.",
+        "Münih'ten Saraybosna'ya, Saraybosna'dan Mannheim'a, Mannheim'dan İstanbul'a uzanan 33 yılı aşkın uluslararası sanayi deneyimi, bugün işletmelere değer katan güçlü bir bilgi ve tecrübeye dönüşmüştür",
       subtitle: "Başarılı bir dönüşüm yalnızca tasarlanmaz; müşteriyle birlikte sahada kurulur, uygulanır ve sürdürülebilir bir çalışma kültürüne dönüşür",
       name: "Envera Jahovic Saraylı",
       role: "Kurucu Danışman, EJS Consulting",
       paragraphs: [
-        "Envera Jahovic Saraylı, Münih'te doğmuş ve iki yaşındayken ailesiyle birlikte memleketi Saraybosna'ya dönmüştür. İlk ve orta öğrenimini Saraybosna'da tamamladıktan sonra 1987 yılında Saraybosna Üniversitesi Makine Mühendisliği Bölümüne başlamıştır.",
-        "Üniversite bitirme tezini hazırladığı dönemde, Mercedes-Benz AG'nin Almanya Mannheim Otobüs Fabrikasında staj yapma başvurusu kabul edilmiş ve 15 Mart 1992 tarihinde Almanya'ya gitmiştir. Bu yolculuktan yalnızca 20 gün sonra Bosna Hersek'te dört yıldan uzun sürecek olan savaş başlamıştır. Hayatının yönünü değiştiren bu gelişme, aynı zamanda uluslararası kariyerinin de başlangıcı olmuştur.",
-        "Temmuz 1992 ile Mart 1993 tarihleri arasında Mercedes-Benz AG Mannheim Fabrikasının Kalite, Geliştirme ve CNC bölümlerinde görev almış; ardından Almanya'da Mannheim Hochschule für Gestaltung und Technik'te Makine Mühendisliği eğitimine devam ederek 1995 yılında mezun olmuştur.",
-        "Savaşın sona ermesinin ardından, 2005 yılında Saraybosna'ya dönerek savaş nedeniyle yarım kalan eğitimini tamamlamış ve Saraybosna Üniversitesi Makine Mühendisliği Bölümünden de mezun olmuştur.",
-        "Mercedes-Benz AG Mannheim Fabrikası Kalite Bölümünün referansıyla 1 Mart 1996 tarihinde İstanbul'daki Mercedes-Benz Türk Otobüs Fabrikasında Kalite Mühendisi olarak göreve başlamıştır. Türkiye'de başlayan kariyeri; kalite, üretim, süreç geliştirme, yalın dönüşüm, proje yönetimi ve organizasyonel gelişim alanlarında üstlendiği farklı görevlerle 25 yılı aşkın süre devam etmiş ve 2021 yılında emeklilikle sonuçlanmıştır.",
-        "Bugün kurucumuz, Avrupa ve Türkiye'de edindiği bilgi birikimi ile sanayi kuruluşlarının verimliliklerini artırmalarına, süreçlerini geliştirmelerine ve sürdürülebilir başarı elde etmelerine destek vermektedir.",
-        "Ayrıca 2025 yılında kurucumuz, İstanbul'da faaliyet gösteren Kadir Has Üniversitesinde İnovasyon ve Teknoloji Yönetimi dersini vermiştir. Uzun yıllara dayanan sanayi tecrübesini genç nesillere aktarmayı önemli bir sorumluluk olarak görmekte ve bilgi paylaşımını mesleki yaşamının ayrılmaz bir parçası olarak değerlendirmektedir. Genç insanlara ilham vermek, onları geleceğe hazırlamak ve sahip olduğu birikimi aktarmak ise hayatındaki en anlamlı kazanımlardan biridir. Türkçe, Almanca, İngilizce ve Boşnakça bilmektedir.",
+        "Envera Jahovic Saraylı, Münih'te doğmuş, iki yaşındayken ailesiyle birlikte Saraybosna'ya dönmüştür. İlk ve orta öğrenimini burada tamamladıktan sonra Saraybosna Üniversitesi Makine Mühendisliği Bölümünde eğitimine başlamıştır.",
+        "1992 yılında Mercedes-Benz AG Mannheim Otobüs Fabrikasında staj yapmak üzere Almanya'ya gitmiş, Bosna Hersek'te başlayan savaş nedeniyle kariyerine Almanya'da devam etmiştir. Mercedes-Benz AG Mannheim Fabrikasında Kalite, Geliştirme ve CNC bölümlerinde görev aldıktan sonra Mannheim Hochschule für Gestaltung und Technik'te Makine Mühendisliği eğitimini tamamlamıştır. Savaş sonrasında Saraybosna Üniversitesi'ndeki eğitimini de tamamlayarak ikinci mühendislik diplomasını almıştır.",
+        "1996 yılında Mercedes-Benz Türk Otobüs Fabrikasında Kalite Mühendisi olarak göreve başlamış; kalite, yalın dönüşüm, süreç geliştirme, proje yönetimi ve organizasyonel gelişim alanlarında 25 yılı aşkın süre görev yaptıktan sonra 2021 yılında emekli olmuştur. Bugün, Avrupa ve Türkiye'de edindiği deneyimle sanayi kuruluşlarına süreç iyileştirme, verimlilik artırma ve sürdürülebilir dönüşüm konularında danışmanlık vermektedir.",
+        "Ayrıca 2025 yılında Kadir Has Üniversitesinde İnovasyon ve Teknoloji Yönetimi dersini vermiş; sanayi deneyimini genç nesillere aktarmayı mesleki yaşamının önemli bir sorumluluğu olarak benimsemiştir.",
+        "Türkçe, Almanca, İngilizce ve Boşnakça bilmektedir.",
       ],
       languagesLabel: "Konuştuğu diller",
       languages: ["Türkçe", "Almanca", "İngilizce", "Boşnakça"],
@@ -337,8 +341,8 @@ export const homepageContent = {
       ],
     },
     references: {
-      eyebrow: "Birlikte Çalıştığımız İş Ortaklarımız",
-      title: "Birlikte çalıştığımız iş ortaklarımızdan bir seçki.",
+      eyebrow: "Referanslar",
+      title: "İş Ortaklarımız",
     },
     contact: {
       eyebrow: "İletişim",
@@ -369,7 +373,7 @@ export const homepageContent = {
       title: "Merkez Ofis",
       officeName: "İstanbul Ofisi",
       addressLines: [
-        "EJS Mühendislik Danışmanlık ve Eğitim, Aydıntepe Mah. Alaaddin Sk. No.7, Evora Sitesi A Parsel, A13, İç Kapı No: 19, Tuzla / İstanbul, Türkiye",
+        "Aydıntepe Mah. Alaaddin Sk. No.7, Evora Sitesi A Parsel, A13, İç Kapı No: 19, Tuzla / İstanbul, Türkiye",
       ],
       contactRows: [
         { label: "Mobil", value: "+90 532 636 72 00", href: "tel:+905326367200" },
@@ -393,9 +397,6 @@ export const homepageContent = {
       search: "Search",
     },
     utilityLinks: [
-      { label: "Home", href: "/en" },
-      { label: "Our Approach", href: "#yaklasimimiz" },
-      { label: "Identity", href: "#kimligimiz" },
       { label: "News", href: "/en/haberler" },
       { label: "Newsletter", href: "/en/bulten" },
       { label: "Contact", href: "#iletisim" },
@@ -429,9 +430,7 @@ export const homepageContent = {
     },
     approach: {
       eyebrow: "Our Approach",
-      title: "We build the solution with you on the floor, not at the desk.",
-      intro:
-        "Unlike classic consulting, we do not arrive with a report and leave with one; we design the transformation with your teams, implement it, and stay on the ground until results are real.",
+      title: "We build the solution with you on the floor, not at the desk",
       body: [
         "Unlike classic consulting, we do not arrive with a report and leave with one. We design the transformation with you on the floor, implement it, and stay until results are real.",
         "For us, a successful transformation makes execution part of the concept itself. We do not impose a solution; we build it with your team, shaped around your reality.",
@@ -449,7 +448,7 @@ export const homepageContent = {
         "Build lean, agile, fast, and efficient operating systems.",
         "Develop people capabilities to create clear and sustainable processes.",
       ],
-      highlight: "From Knowledge and Experience to Strength, from Strength to Results.",
+      highlight: "From Knowledge and Experience to Strength, from Strength to Results",
     },
     methodology: {
       eyebrow: "What You Should Know About How We Work",
@@ -509,9 +508,8 @@ export const homepageContent = {
     },
     expertise: {
       eyebrow: "Expertise",
-      title: "Deep field expertise across five core areas.",
       intro:
-        "We address each area with concrete methods applied on the floor — not in a report. Open a card to see the details.",
+        "We address each area with concrete methods applied on the floor — not in a report. Open an area to see the details.",
       detailsLabel: "Read more",
       areas: [
         {
@@ -596,20 +594,18 @@ export const homepageContent = {
     },
     founder: {
       eyebrow: "Our Founder's Story",
-      title: "An engineering journey that began in the middle of a war.",
+      title: "An engineering journey that began in the middle of a war",
       intro:
-        "More than 33 years of field experience — from Munich to Sarajevo, from Mannheim to Istanbul — has today become international know-how that adds value to industry.",
+        "From Munich to Sarajevo, from Sarajevo to Mannheim, from Mannheim to Istanbul — more than 33 years of international industry experience has today become powerful knowledge and expertise that adds value to businesses",
       subtitle: "A successful transformation isn't just designed; it's built and applied together with the client in the field, becoming a sustainable way of working",
       name: "Envera Jahovic Saraylı",
       role: "Founder Consultant, EJS Consulting",
       paragraphs: [
-        "Envera Jahovic Saraylı was born in Munich and returned with her family to her hometown of Sarajevo at the age of two. After completing primary and secondary education in Sarajevo, she began studying in the Mechanical Engineering Department of the University of Sarajevo in 1987.",
-        "While preparing her university graduation thesis, her application for an internship at Mercedes-Benz AG's Mannheim Bus Plant in Germany was accepted, and she travelled to Germany on 15 March 1992. Just 20 days after this journey, the war that would last more than four years broke out in Bosnia and Herzegovina. This event, which changed the course of her life, also marked the beginning of her international career.",
-        "Between July 1992 and March 1993 she worked in the Quality, Development, and CNC departments of the Mercedes-Benz AG Mannheim Plant; she then continued her Mechanical Engineering studies at the Mannheim Hochschule für Gestaltung und Technik in Germany, graduating in 1995.",
-        "After the war ended, she returned to Sarajevo in 2005 to complete the education that had been interrupted by the war, and also graduated from the Mechanical Engineering Department of the University of Sarajevo.",
-        "With a reference from the Quality Department of the Mercedes-Benz AG Mannheim Plant, she began work as a Quality Engineer at the Mercedes-Benz Türk Bus Plant in Istanbul on 1 March 1996. Her career in Turkey continued for more than 25 years across various roles in quality, production, process development, lean transformation, project management, and organizational development, concluding with her retirement in 2021.",
-        "Today, our founder draws on the knowledge gained in Europe and Turkey to help industrial organizations increase their efficiency, improve their processes, and achieve sustainable success.",
-        "In addition, in 2025 our founder taught the Innovation and Technology Management course at Kadir Has University in Istanbul. She regards passing on her many years of industrial experience to younger generations as an important responsibility and considers the sharing of knowledge an inseparable part of her professional life. Inspiring young people, preparing them for the future, and transferring her accumulated experience are among the most meaningful achievements of her life. She speaks Turkish, German, English, and Bosnian.",
+        "Envera Jahovic Saraylı was born in Munich and returned with her family to Sarajevo at the age of two. After completing primary and secondary education there, she began studying in the Mechanical Engineering Department of the University of Sarajevo.",
+        "In 1992 she travelled to Germany for an internship at the Mercedes-Benz AG Mannheim Bus Plant, and continued her career in Germany after war broke out in Bosnia and Herzegovina. After working in the Quality, Development, and CNC departments of the Mercedes-Benz AG Mannheim Plant, she completed her Mechanical Engineering studies at the Mannheim Hochschule für Gestaltung und Technik. After the war, she also completed her studies at the University of Sarajevo, earning a second engineering degree.",
+        "In 1996 she began work as a Quality Engineer at the Mercedes-Benz Türk Bus Plant in Istanbul; after more than 25 years across roles in quality, lean transformation, process development, project management, and organizational development, she retired in 2021. Today, she draws on her experience in Europe and Turkey to advise industrial organizations on process improvement, efficiency, and sustainable transformation.",
+        "In 2025, she also taught the Innovation and Technology Management course at Kadir Has University, embracing the transfer of her industrial experience to younger generations as an important professional responsibility.",
+        "She speaks Turkish, German, English, and Bosnian.",
       ],
       languagesLabel: "Languages spoken",
       languages: ["Turkish", "German", "English", "Bosnian"],
@@ -660,10 +656,8 @@ export const homepageContent = {
       ],
     },
     references: {
-      eyebrow: "Our Business Partners",
-      title: "A selection of teams and environments we have worked with.",
-      intro:
-        "We share work delivered with teams from different sectors in a calmer grid format.",
+      eyebrow: "References",
+      title: "Our Business Partners",
     },
     contact: {
       eyebrow: "Contact",
@@ -694,7 +688,7 @@ export const homepageContent = {
       title: "Head Office",
       officeName: "Istanbul Office",
       addressLines: [
-        "EJS Engineering Consulting & Training, Aydintepe Mah. Alaaddin Sk. No.7, Evora Sitesi A Parsel, A13, Unit 19, Tuzla / Istanbul, Turkey",
+        "Aydintepe Mah. Alaaddin Sk. No.7, Evora Sitesi A Parsel, A13, Unit 19, Tuzla / Istanbul, Turkey",
       ],
       contactRows: [
         { label: "Mobile", value: "+90 532 636 72 00", href: "tel:+905326367200" },
@@ -718,9 +712,6 @@ export const homepageContent = {
       search: "Suchen",
     },
     utilityLinks: [
-      { label: "Startseite", href: "/de" },
-      { label: "Unser Ansatz", href: "#yaklasimimiz" },
-      { label: "Identität", href: "#kimligimiz" },
       { label: "Neuigkeiten", href: "/de/haberler" },
       { label: "Newsletter", href: "/de/bulten" },
       { label: "Kontakt", href: "#iletisim" },
@@ -754,9 +745,7 @@ export const homepageContent = {
     },
     approach: {
       eyebrow: "Unser Ansatz",
-      title: "Wir bauen die Lösung mit Ihnen vor Ort — nicht am Schreibtisch.",
-      intro:
-        "Anders als die klassische Beratung kommen und gehen wir nicht mit einem Bericht; wir gestalten die Transformation gemeinsam mit Ihren Teams, setzen sie um und bleiben vor Ort, bis Ergebnisse real sind.",
+      title: "Wir bauen die Lösung mit Ihnen vor Ort — nicht am Schreibtisch",
       body: [
         "Anders als die klassische Beratung kommen und gehen wir nicht mit einem Bericht. Wir gestalten die Transformation gemeinsam mit Ihnen vor Ort, setzen sie um und bleiben, bis Ergebnisse real sind.",
         "Für uns macht eine erfolgreiche Transformation die Umsetzung zum natürlichen Teil des Konzepts. Wir drängen Ihnen keine Lösung auf; wir bauen sie mit Ihrem Team, passend zu Ihrer Realität.",
@@ -774,7 +763,7 @@ export const homepageContent = {
         "Schlanke, agile, schnelle und effiziente Betriebssysteme aufbauen.",
         "Mitarbeiterfähigkeiten entwickeln, um klare und nachhaltige Prozesse zu schaffen.",
       ],
-      highlight: "Von Wissen und Erfahrung zur Stärke, von der Stärke zum Ergebnis.",
+      highlight: "Von Wissen und Erfahrung zur Stärke, von der Stärke zum Ergebnis",
     },
     methodology: {
       eyebrow: "Was Sie über unsere Arbeitsweise wissen sollten",
@@ -834,9 +823,8 @@ export const homepageContent = {
     },
     expertise: {
       eyebrow: "Fachgebiete",
-      title: "Tiefe Praxisexpertise in fünf Kernbereichen.",
       intro:
-        "Wir bearbeiten jeden Bereich mit konkreten, vor Ort angewandten Methoden — nicht im Bericht. Öffnen Sie eine Karte, um die Details zu sehen.",
+        "Wir bearbeiten jeden Bereich mit konkreten, vor Ort angewandten Methoden — nicht im Bericht. Öffnen Sie einen Bereich, um die Details zu sehen.",
       detailsLabel: "Mehr erfahren",
       areas: [
         {
@@ -921,20 +909,18 @@ export const homepageContent = {
     },
     founder: {
       eyebrow: "Die Geschichte unseres Gründers",
-      title: "Eine Ingenieursreise, die mitten im Krieg begann.",
+      title: "Eine Ingenieursreise, die mitten im Krieg begann",
       intro:
-        "Mehr als 33 Jahre Praxiserfahrung — von München über Sarajevo bis nach Mannheim und Istanbul — sind heute zu internationalem Know-how geworden, das der Industrie einen Mehrwert bietet.",
+        "Von München nach Sarajevo, von Sarajevo nach Mannheim, von Mannheim nach Istanbul — mehr als 33 Jahre internationale Industrieerfahrung sind heute zu wertvollem Wissen und Können geworden, das Unternehmen einen Mehrwert bietet",
       subtitle: "Ein erfolgreicher Wandel wird nicht nur geplant, sondern gemeinsam mit dem Kunden vor Ort aufgebaut und umgesetzt und so zu einer nachhaltigen Arbeitskultur",
       name: "Envera Jahovic Saraylı",
       role: "Gründungsberaterin, EJS Consulting",
       paragraphs: [
-        "Envera Jahovic Saraylı wurde in München geboren und kehrte im Alter von zwei Jahren mit ihrer Familie in ihre Heimatstadt Sarajevo zurück. Nach Abschluss der Grund- und Sekundarschule in Sarajevo begann sie 1987 ihr Studium am Fachbereich Maschinenbau der Universität Sarajevo.",
-        "Während der Vorbereitung ihrer Diplomarbeit wurde ihre Bewerbung für ein Praktikum im Mannheimer Omnibuswerk der Mercedes-Benz AG in Deutschland angenommen, und am 15. März 1992 reiste sie nach Deutschland. Nur 20 Tage nach dieser Reise brach in Bosnien und Herzegowina der Krieg aus, der mehr als vier Jahre dauern sollte. Dieses Ereignis, das den Lauf ihres Lebens veränderte, markierte zugleich den Beginn ihrer internationalen Laufbahn.",
-        "Zwischen Juli 1992 und März 1993 arbeitete sie in den Abteilungen Qualität, Entwicklung und CNC des Mercedes-Benz AG Werks Mannheim; anschließend setzte sie ihr Maschinenbaustudium an der Mannheimer Hochschule für Gestaltung und Technik in Deutschland fort und schloss es 1995 ab.",
-        "Nach Kriegsende kehrte sie 2005 nach Sarajevo zurück, um die kriegsbedingt unterbrochene Ausbildung abzuschließen, und schloss auch ihr Studium am Fachbereich Maschinenbau der Universität Sarajevo ab.",
-        "Mit einer Referenz der Qualitätsabteilung des Mercedes-Benz AG Werks Mannheim begann sie am 1. März 1996 ihre Tätigkeit als Qualitätsingenieurin im Mercedes-Benz Türk Omnibuswerk in Istanbul. Ihre in der Türkei begonnene Laufbahn dauerte mit verschiedenen Aufgaben in den Bereichen Qualität, Produktion, Prozessentwicklung, Lean-Transformation, Projektmanagement und Organisationsentwicklung mehr als 25 Jahre und endete 2021 mit dem Eintritt in den Ruhestand.",
-        "Heute unterstützt unsere Gründerin mit dem in Europa und der Türkei erworbenen Wissen Industrieunternehmen dabei, ihre Effizienz zu steigern, ihre Prozesse zu verbessern und nachhaltigen Erfolg zu erzielen.",
-        "Darüber hinaus hielt unsere Gründerin 2025 an der Kadir Has Universität in Istanbul die Vorlesung Innovations- und Technologiemanagement. Sie betrachtet es als wichtige Verantwortung, ihre langjährige Industrieerfahrung an jüngere Generationen weiterzugeben, und sieht den Wissensaustausch als untrennbaren Bestandteil ihres Berufslebens. Junge Menschen zu inspirieren, sie auf die Zukunft vorzubereiten und ihr gesammeltes Wissen weiterzugeben, gehört zu den bedeutsamsten Errungenschaften ihres Lebens. Sie spricht Türkisch, Deutsch, Englisch und Bosnisch.",
+        "Envera Jahovic Saraylı wurde in München geboren und kehrte im Alter von zwei Jahren mit ihrer Familie nach Sarajevo zurück. Nach Abschluss der Grund- und Sekundarschule dort begann sie ihr Studium am Fachbereich Maschinenbau der Universität Sarajevo.",
+        "1992 reiste sie für ein Praktikum im Mannheimer Omnibuswerk der Mercedes-Benz AG nach Deutschland und setzte ihre Karriere dort fort, nachdem in Bosnien und Herzegowina der Krieg ausgebrochen war. Nach Stationen in den Abteilungen Qualität, Entwicklung und CNC des Mercedes-Benz AG Werks Mannheim schloss sie ihr Maschinenbaustudium an der Mannheimer Hochschule für Gestaltung und Technik ab. Nach dem Krieg absolvierte sie zudem ihr Studium an der Universität Sarajevo und erhielt so einen zweiten Ingenieursabschluss.",
+        "1996 begann sie als Qualitätsingenieurin im Mercedes-Benz Türk Omnibuswerk in Istanbul; nach mehr als 25 Jahren in verschiedenen Rollen in Qualität, Lean-Transformation, Prozessentwicklung, Projektmanagement und Organisationsentwicklung ging sie 2021 in den Ruhestand. Heute berät sie mit ihrer in Europa und der Türkei gesammelten Erfahrung Industrieunternehmen in den Bereichen Prozessverbesserung, Effizienz und nachhaltige Transformation.",
+        "2025 hielt sie zudem die Vorlesung Innovations- und Technologiemanagement an der Kadir Has Universität und sieht die Weitergabe ihrer Industrieerfahrung an jüngere Generationen als wichtige berufliche Verantwortung.",
+        "Sie spricht Türkisch, Deutsch, Englisch und Bosnisch.",
       ],
       languagesLabel: "Gesprochene Sprachen",
       languages: ["Türkisch", "Deutsch", "Englisch", "Bosnisch"],
@@ -985,10 +971,8 @@ export const homepageContent = {
       ],
     },
     references: {
-      eyebrow: "Unsere Geschäftspartner",
-      title: "Eine Auswahl der Teams und Umgebungen, mit denen wir gearbeitet haben.",
-      intro:
-        "Wir teilen Arbeiten mit Teams aus verschiedenen Branchen in einem ruhigeren Grid-Format.",
+      eyebrow: "Referenzen",
+      title: "Unsere Geschäftspartner",
     },
     contact: {
       eyebrow: "Kontakt",
@@ -1019,7 +1003,7 @@ export const homepageContent = {
       title: "Hauptbüro",
       officeName: "Istanbul Office",
       addressLines: [
-        "EJS Engineering Beratung & Schulung, Aydintepe Mah. Alaaddin Sk. No.7, Evora Sitesi A Parsel, A13, Einheit 19, Tuzla / Istanbul, Türkei",
+        "Aydintepe Mah. Alaaddin Sk. No.7, Evora Sitesi A Parsel, A13, Einheit 19, Tuzla / Istanbul, Türkei",
       ],
       contactRows: [
         { label: "Mobil", value: "+90 532 636 72 00", href: "tel:+905326367200" },
@@ -1044,16 +1028,12 @@ export const homepageContent = {
     },
     "utilityLinks": [
       {
-        "label": "Početna",
-        "href": "/bs"
+        "label": "Vijesti",
+        "href": "/bs/haberler"
       },
       {
-        "label": "Naš pristup",
-        "href": "#yaklasimimiz"
-      },
-      {
-        "label": "Naš identitet",
-        "href": "#kimligimiz"
+        "label": "Bilten",
+        "href": "/bs/bulten"
       },
       {
         "label": "Kontakt",
@@ -1124,7 +1104,7 @@ export const homepageContent = {
         "Uspostaviti vitke, agilne, brze i efikasne radne sisteme.",
         "Stvoriti jasne i održive procese opremajući osoblje potrebnim vještinama."
       ],
-      "highlight": "Od znanja i iskustva do snage, od snage do rezultata."
+      "highlight": "Od znanja i iskustva do snage, od snage do rezultata"
     },
     "methodology": {
       "eyebrow": "Šta apsolutno morate znati o našoj studiji",
@@ -1175,8 +1155,7 @@ export const homepageContent = {
     },
     "expertise": {
       "eyebrow": "Naše oblasti stručnosti",
-      "title": "Dubinsko stručno znanje u pet ključnih područja.",
-      "intro": "Svaku oblast rješavamo ne putem izvještaja, već praktičnim metodama primijenjenim na terenu. Možete kliknuti na kartice da biste vidjeli detalje.",
+      "intro": "Svaku oblast rješavamo ne putem izvještaja, već praktičnim metodama primijenjenim na terenu. Možete kliknuti na oblasti da biste vidjeli detalje.",
       "detailsLabel": "Pregledajte detaljno",
       "areas": [
         {
@@ -1256,17 +1235,17 @@ export const homepageContent = {
     },
     "founder": {
       "eyebrow": "Priča o našem osnivaču",
+      "title": "Inženjerski put koji je počeo usred rata",
+      "intro": "Od Minhena do Sarajeva, od Sarajeva do Mannheima, od Mannheima do Istanbula — više od 33 godine međunarodnog industrijskog iskustva danas su postale snažno znanje i stručnost koja dodaje vrijednost preduzećima",
       "subtitle": "Uspješna transformacija se ne samo planira, već se gradi i primjenjuje zajedno s klijentom na terenu, postajući održiva radna kultura",
       "name": "Envera Jahovic Saraylı",
       "role": "Osnivački konsultant, EJS Consulting",
       "paragraphs": [
-        "Envera Jahovic Saraylı rođena je u Minhenu i sa svojom porodicom se vratila u svoj rodni grad Sarajevo kada je imala dvije godine. Nakon završetka osnovnog i srednjeg obrazovanja u Sarajevu, 1987. godine započela je studij na Odsjeku za mašinsko inženjerstvo Univerziteta u Sarajevu.",
-        "Dok je radio na svojoj univerzitetskoj disertaciji, njegov je zahtjev za stažiranje u fabrici autobusa Mercedes-Benz AG u Mannheimu, Njemačka, prihvaćen, te je 15. marta 1992. otputovao u Njemačku. Samo 20 dana nakon ovog putovanja počeo je rat u Bosni i Hercegovini, sukob koji je trajao više od četiri godine. Ovaj događaj, koji je promijenio tok njegovog života, također je označio početak njegove međunarodne karijere.",
-        "Od jula 1992. do marta 1993. radio je u odjelima za kvalitet, razvoj i CNC u fabrici Mercedes-Benz AG u Mannheimu; zatim je nastavio studij mašinskog inženjerstva na Mannheim Hochschule für Gestaltung und Technik u Njemačkoj, gdje je diplomirao 1995. godine.",
-        "Nakon završetka rata vratio se u Sarajevo 2005. godine, gdje je nastavio obrazovanje koje je rat prekinuo i diplomirao na Odsjeku za mašinsko inženjerstvo Univerziteta u Sarajevu.",
-        "1. marta 1996. godine započeo je svoju ulogu inženjera za kvalitet u fabrici autobusa Mercedes-Benz Türk u Istanbulu, nakon preporuke Odjela za kvalitet tvornice Mercedes-Benz AG u Mannheimu. Njegova karijera, koja je započela u Turskoj, trajala je više od 25 godina, tokom kojih je obavljao različite uloge u oblastima kvaliteta, proizvodnje, razvoja procesa, lean transformacije, upravljanja projektima i organizacijskog razvoja, prije nego što je otišao u penziju 2021. godine.",
-        "Danas naš osnivač koristi stručnost koju je stekao u Evropi i Turskoj kako bi pomogao industrijskim organizacijama da povećaju svoju efikasnost, poboljšaju svoje procese i postignu održiv uspjeh.",
-        "Nadalje, 2025. godine naš osnivač je predavao kurs \"Menadžment inovacija i tehnologije\" na Univerzitetu Kadir Has u Istanbulu. On smatra da je prenošenje svog višegodišnjeg industrijskog iskustva mlađim generacijama važna odgovornost i da je dijeljenje znanja sastavni dio njegovog profesionalnog života. Inspirisanje mladih, njihova priprema za budućnost i prenošenje znanja koje je stekao jedno je od najznačajnijih postignuća u njegovom životu. Govori turski, njemački, engleski i bosanski jezik."
+        "Envera Jahovic Saraylı rođena je u Minhenu i sa svojom porodicom se vratila u Sarajevo kada je imala dvije godine. Nakon završetka osnovnog i srednjeg obrazovanja tamo, započela je studij na Odsjeku za mašinsko inženjerstvo Univerziteta u Sarajevu.",
+        "Godine 1992. otputovala je u Njemačku na stažiranje u fabrici autobusa Mercedes-Benz AG u Mannheimu i nastavila karijeru tamo nakon što je počeo rat u Bosni i Hercegovini. Nakon rada u odjelima za kvalitet, razvoj i CNC u fabrici Mercedes-Benz AG u Mannheimu, završila je studij mašinskog inženjerstva na Mannheim Hochschule für Gestaltung und Technik. Nakon rata, završila je i studij na Univerzitetu u Sarajevu, čime je stekla i drugu inženjersku diplomu.",
+        "Godine 1996. započela je rad kao inženjer za kvalitet u fabrici autobusa Mercedes-Benz Türk u Istanbulu; nakon više od 25 godina u različitim ulogama u oblastima kvaliteta, lean transformacije, razvoja procesa, upravljanja projektima i organizacijskog razvoja, otišla je u penziju 2021. godine. Danas, koristeći iskustvo stečeno u Evropi i Turskoj, savjetuje industrijske organizacije u oblasti poboljšanja procesa, efikasnosti i održive transformacije.",
+        "Osim toga, 2025. godine predavala je kurs \"Menadžment inovacija i tehnologije\" na Univerzitetu Kadir Has, smatrajući prenošenje svog industrijskog iskustva mlađim generacijama važnom profesionalnom odgovornošću.",
+        "Govori turski, njemački, engleski i bosanski jezik."
       ],
       "languagesLabel": "Govoreni jezici",
       "languages": [
@@ -1318,9 +1297,8 @@ export const homepageContent = {
       ]
     },
     "references": {
-      "eyebrow": "Naši poslovni partneri",
-      "title": "Izbor timova s kojima radimo.",
-      "intro": "Dijelimo rad koji obavljamo s timovima iz različitih sektora koristeći jednostavan mrežni raspored."
+      "eyebrow": "Reference",
+      "title": "Naši poslovni partneri"
     },
     "contact": {
       "eyebrow": "Kontakt",
@@ -1350,7 +1328,7 @@ export const homepageContent = {
       "title": "Sjedište",
       "officeName": "Istanbulska kancelarija",
       "addressLines": [
-        "EJS Mühendislik Danışmanlık ve Eğitim, Aydıntepe Mah. Alaaddin Sk. No.7, Evora Sitesi A Parsel, A13, İç Kapı No: 19, Tuzla / İstanbul, Türkiye"
+        "Aydıntepe Mah. Alaaddin Sk. No.7, Evora Sitesi A Parsel, A13, İç Kapı No: 19, Tuzla / İstanbul, Türkiye"
       ],
       "contactRows": [
         {

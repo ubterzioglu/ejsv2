@@ -28,6 +28,20 @@ const NEXT_STEPS = [
  */
 const UPDATES = [
   {
+    date: "20 Temmuz 2026",
+    title: "Admin panelinde biriken revizyon istekleri toplu olarak uygulandı",
+    items: [
+      '"Referanslar" bölümünde ana başlık "Referanslar" olarak sadeleştirildi, alt başlık sadece "İş Ortaklarımız" oldu; parantez içindeki fazladan açıklama kaldırıldı.',
+      "İletişim bölümünde şirket adı, adres, çalışma saatleri ve mobil numara artık ayrı ayrı satırlarda görünüyor; önceden şirket adıyla adres aynı satırda karışık görünüyordu.",
+      '"Bilgi ve Tecrübeden Güce, Güçten Sonuca" sloganının sonundaki nokta kaldırıldı (slogan olduğu için noktasız kullanılıyor).',
+      "Uzmanlık Alanlarımız bölümündeki beş kartın metinleri (Süreçlerin Yalın Dönüşümü ve Dijitalleşmesi, Üretimin Yalın Dönüşümü, Problem Çözme, Tedarikçiden Müşteriye Kalite Süreçleri, Satış Sonrası Müşteri Şikayetleri Yönetimi) ve hizmet listeleri yeni metinlerle güncellendi.",
+      '"Beş ana alanda derin saha uzmanlığı" başlığı bölümden tamamen kaldırıldı; giriş yazısı da "kartları açabilirsiniz" yerine "alanları açabilirsiniz" olarak güncellendi.',
+      '"Yaklaşımımız" bölümünün sloganından nokta kaldırıldı, altındaki fazladan açıklama metni kaldırıldı.',
+      '"Kurucumuzun Hikayesi" bölümünün başlığı ve giriş cümlesi noktasız hale getirildi, giriş cümlesi ve hikaye özeti yeni bir metinle güncellendi (dört dilde de).',
+      'Üst menüden "Anasayfa", "Yaklaşımımız" ve "Kimliğimiz" başlıkları kaldırıldı; sadece "Haberler", "Bülten" ve "İletişim" kaldı (dört dilde de).',
+    ],
+  },
+  {
     date: "7 Temmuz 2026",
     title: "Kurucu fotoğrafı ve sloganı yenilendi, üst menüdeki \"Hemen Başla!\" bağlantısı düzeltildi",
     items: [

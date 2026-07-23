@@ -87,7 +87,9 @@ export function ExpertiseSection({ expertise }) {
     <section id="uzmanlik-alanlarimiz" className="content-section section expertise-section">
       <div className="section-heading-block compact-heading">
         <p className="structure-label">{expertise.eyebrow}</p>
-        <h2 className="section-title">{expertise.title}</h2>
+        {expertise.title ? (
+          <h2 className="section-title">{expertise.title}</h2>
+        ) : null}
         <p className="section-intro">{expertise.intro}</p>
       </div>
 
