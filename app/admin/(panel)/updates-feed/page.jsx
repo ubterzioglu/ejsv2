@@ -29,6 +29,15 @@ const NEXT_STEPS = [
 const UPDATES = [
   {
     date: "7 Temmuz 2026",
+    title: "Kurucu fotoğrafı ve sloganı yenilendi, üst menüdeki \"Hemen Başla!\" bağlantısı düzeltildi",
+    items: [
+      "Kurucumuzun Hikayesi bölümündeki fotoğraf, yeni ve daha kapsamlı bir kolaj görseliyle değiştirildi (kariyer yolculuğunu özetleyen görsel).",
+      'Fotoğrafın altındaki söz güncellendi: "Başarılı bir dönüşüm yalnızca tasarlanmaz; müşteriyle birlikte sahada kurulur, uygulanır ve sürdürülebilir bir çalışma kültürüne dönüşür" (dört dilde de güncellendi).',
+      'Üst menüdeki "Hemen Başla!" bağlantısı hiçbir yere gitmiyordu; artık tıklanınca doğrudan İletişim bölümüne götürüyor (dört dilde de düzeltildi).',
+    ],
+  },
+  {
+    date: "7 Temmuz 2026",
     title: "Revizyon İstekleri paneli geliştirildi: yorum yazarı, görsel eki ve tamamlananlar grubu",
     items: [
       'Revizyon taleplerine yazılan notlara/yorumlara artık "Kim yazdı?" alanı eklendi; hangi yorumu kimin yazdığı görünüyor.',

@@ -276,7 +276,7 @@ export const homepageContent = {
       title: "Savaşın ortasında başlayan bir mühendislik yolculuğu.",
       intro:
         "Münih'ten Saraybosna'ya, Mannheim'dan İstanbul'a uzanan 33 yılı aşkın saha tecrübesi; bugün sanayiye değer katan uluslararası bir birikime dönüştü.",
-      subtitle: "Savaşın ortasında başlayan yolculuk, bugün sanayiye değer katan uluslararası bir tecrübeye dönüştü…..",
+      subtitle: "Başarılı bir dönüşüm yalnızca tasarlanmaz; müşteriyle birlikte sahada kurulur, uygulanır ve sürdürülebilir bir çalışma kültürüne dönüşür",
       name: "Envera Jahovic Saraylı",
       role: "Kurucu Danışman, EJS Consulting",
       paragraphs: [
@@ -599,7 +599,7 @@ export const homepageContent = {
       title: "An engineering journey that began in the middle of a war.",
       intro:
         "More than 33 years of field experience — from Munich to Sarajevo, from Mannheim to Istanbul — has today become international know-how that adds value to industry.",
-      subtitle: "A journey that began in the middle of a war has today become international experience that adds value to industry.",
+      subtitle: "A successful transformation isn't just designed; it's built and applied together with the client in the field, becoming a sustainable way of working",
       name: "Envera Jahovic Saraylı",
       role: "Founder Consultant, EJS Consulting",
       paragraphs: [
@@ -924,7 +924,7 @@ export const homepageContent = {
       title: "Eine Ingenieursreise, die mitten im Krieg begann.",
       intro:
         "Mehr als 33 Jahre Praxiserfahrung — von München über Sarajevo bis nach Mannheim und Istanbul — sind heute zu internationalem Know-how geworden, das der Industrie einen Mehrwert bietet.",
-      subtitle: "Eine Reise, die mitten im Krieg begann, ist heute zu internationaler Erfahrung geworden, die der Industrie einen Mehrwert bietet.",
+      subtitle: "Ein erfolgreicher Wandel wird nicht nur geplant, sondern gemeinsam mit dem Kunden vor Ort aufgebaut und umgesetzt und so zu einer nachhaltigen Arbeitskultur",
       name: "Envera Jahovic Saraylı",
       role: "Gründungsberaterin, EJS Consulting",
       paragraphs: [
@@ -1256,7 +1256,7 @@ export const homepageContent = {
     },
     "founder": {
       "eyebrow": "Priča o našem osnivaču",
-      "subtitle": "Putovanje koje je započelo usred rata danas se pretvorilo u međunarodno iskustvo koje dodaje vrijednost industriji…..",
+      "subtitle": "Uspješna transformacija se ne samo planira, već se gradi i primjenjuje zajedno s klijentom na terenu, postajući održiva radna kultura",
       "name": "Envera Jahovic Saraylı",
       "role": "Osnivački konsultant, EJS Consulting",
       "paragraphs": [
