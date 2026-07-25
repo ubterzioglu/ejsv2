@@ -43,6 +43,20 @@ export function SiteFooter({ footer, lang, shareUrl, shareText }) {
           <a href="https://www.spindorai.com/seo/saglik-seo" rel="dofollow">Sağlık Turizmi SEO</a> Spindora Tarafından Seosu Yapılmıştır.
           {" · "}
           <a href="https://ufuksoynakliyat.com.tr/kartal-evden-eve-nakliyat" rel="dofollow">Kartal Evden Eve Nakliyat</a> Firması Ufuksoy Nakliyat A.Ş
+          {" · "}
+          <a href="https://tekhurdametal.com/istanbul-hurdaci/" rel="dofollow">İstanbul Hurdacı</a> Firması Tek Hurda Metal A.Ş
+          {" · "}
+          <a href="https://tekhurdametal.com/hurda-fiyatlari/" rel="dofollow">Hurda Fiyatları</a> Tek Hurda Metal
+          {" · "}
+          <a href="https://tekhurdametal.com/hurda-demir-fiyatlari/" rel="dofollow">Demir Hurda Fiyatları</a> Tek Hurda Metal
+          {" · "}
+          <a href="https://tekhurdametal.com/beylikduzu-hurdaci/" rel="dofollow">Beylikdüzü Hurdacı</a> Firması Tek Hurda Metal A.Ş
+          {" · "}
+          <a href="https://lionerotik.com/urunler/fetis-urunleri" rel="dofollow">Antalya Sex Shop</a> Lion Erotik
+          {" · "}
+          <a href="https://lionerotik.com/urunler/fetis-urunleri" rel="dofollow">Antalya Erotik Shop</a> Lion Erotik
+          {" · "}
+          <a href="https://lionerotik.com/urunler/fetis-urunleri" rel="dofollow">Antalya Seks Shop</a> Lion Erotik
         </p>
       </div>
     </footer>
