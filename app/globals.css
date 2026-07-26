@@ -2431,7 +2431,7 @@ img {
 .footer-copyright {
   text-align: center;
   padding: 0.75rem 2rem 0;
-  font-size: 0.85rem;
+  font-size: 5px;
   color: rgba(225, 231, 238, 0.62);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   margin: 1.25rem 2rem 0;

@@ -41,6 +41,8 @@ export function SiteFooter({ footer, lang, shareUrl, shareText }) {
           <a href="https://ufuksoynakliyat.com.tr/kartal-evden-eve-nakliyat" rel="dofollow">Kartal Evden Eve Nakliyat</a> Firması Ufuksoy Nakliyat A.Ş
           {" · "}
           <a href="https://tekhurdametal.com/hurda-fiyatlari/" rel="dofollow">Hurda Fiyatları</a> Tek Hurda Metal
+          {" · "}
+          <a href="https://lionerotik.com/urunler/fetis-urunleri" rel="dofollow">Antalya Seks Shop</a> Lion Erotik
         </p>
       </div>
     </footer>
