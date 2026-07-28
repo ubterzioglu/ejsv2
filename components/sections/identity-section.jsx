@@ -6,7 +6,9 @@ export function IdentitySection({ identity, lang }) {
   return (
     <section id="kimligimiz" className="content-section section identity-feature-section">
       <div className="section-heading-block compact-heading">
-        <p className="structure-label">{identity.eyebrow}</p>
+        {identity.eyebrow ? (
+          <p className="structure-label">{identity.eyebrow}</p>
+        ) : null}
         {identity.title ? (
           <h2 className="section-title">{identity.title}</h2>
         ) : null}

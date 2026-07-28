@@ -39,6 +39,9 @@ const UPDATES = [
       '"Yaklaşımımız" bölümünün sloganından nokta kaldırıldı, altındaki fazladan açıklama metni kaldırıldı.',
       '"Kurucumuzun Hikayesi" bölümünün başlığı ve giriş cümlesi noktasız hale getirildi, giriş cümlesi ve hikaye özeti yeni bir metinle güncellendi (dört dilde de).',
       'Üst menüden "Anasayfa", "Yaklaşımımız" ve "Kimliğimiz" başlıkları kaldırıldı; sadece "Haberler", "Bülten" ve "İletişim" kaldı (dört dilde de).',
+      '"Kimliğimiz" bölümündeki "Kurucumuzun hikayesine göz atın" butonunun metni büyük harfli ve fazladan kelimeli haliyle görünüyordu; talep edildiği gibi sade "Kurucumuzun hikayesine göz atın" haline getirildi.',
+      '"Kimliğimiz" bölümündeki madde listesi (Süreçlerin Yalın Dönüşümü, Üretimin Yalın Dönüşümü, Kalite Süreçleri, Şikayet Yönetimi vb. 9 madde) ve altındaki "Bilgi, tecrübe ve eylem bir arada…" sözü kaldırıldı.',
+      '"Kimliğimiz" başlığının üstündeki kırmızı küçük etiket ("KİMLİĞİMİZ") ve altındaki "33 yılı aşkın uluslararası saha tecrübesine sahip:" giriş cümlesi kaldırıldı; sadece ana başlık ve açıklama metni kaldı.',
     ],
   },
   {

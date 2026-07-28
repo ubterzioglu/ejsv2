@@ -80,25 +80,10 @@ export const homepageContent = {
       ctaLabel: "Yaklaşımımız",
     },
     identity: {
-      eyebrow: "Kimliğimiz",
       title: "Kimliğimiz",
       tag: "Yaklaşım",
-      intro: "33 yılı aşkın uluslararası saha tecrübesine sahip:",
-      bullets: [
-        "Süreçlerin Yalın Dönüşümü ve Dijitalleşmesi",
-        "Üretimin Yalın Dönüşümü",
-        "Tedarikçiden Müşteriye Kalite Süreçleri",
-        "Müşteri Şikayetleri Yönetimi",
-        "Arızalı Parçaların İncelenmesi",
-        "Hata Masraflarının Rücü Edilmesi",
-        "Müşteri Şikayetleri Çözüm Platformunun Oluşturulması",
-        "Şirketlere Özel Problem Çözme Süreci",
-        "Proje yönetimi",
-      ],
       body:
         "33 yılı aşkın uluslararası saha tecrübesine sahip; yalın üretim ve üretim planlama, yalın süreçler, kalite ve proje yönetimi alanlarında şirketlerin dönüşümüne rehberlik eden, sahada uygulayan mühendis, eğitmen ve eğitimci.",
-      highlight:
-        "Bilgi, tecrübe ve eylem bir arada. Bu hikâye bir şirketin değil, yeniden başlamanın hikâyesidir…..",
       cta: { label: "Kurucumuzun hikayesine göz atın", href: "#kurucumuzun-hikayesi" },
     },
     approach: {
@@ -413,19 +398,10 @@ export const homepageContent = {
       ctaLabel: "Our Approach",
     },
     identity: {
-      eyebrow: "Identity",
       title: "Identity",
       tag: "Approach",
-      intro:
-        "We use the broad field experience gained in manufacturing — at home and abroad — on the shopfloor, not at the desk.",
       body:
         "With more than 33 years of international field experience, we guide companies' transformation in lean manufacturing and production planning, lean processes, quality, and project management — as hands-on engineers, trainers, and educators.",
-      highlight: "Knowledge, experience, and action — together.",
-      bullets: [
-        "Deep expertise in lean processes, lean manufacturing, quality, and project management.",
-        "Multi-sector field experience across domestic and international environments.",
-        "A hands-on approach that builds solutions with your teams, on the ground.",
-      ],
       cta: { label: "Take a look at our founder's story", href: "#kurucumuzun-hikayesi" },
     },
     approach: {
@@ -728,19 +704,10 @@ export const homepageContent = {
       ctaLabel: "Unser Ansatz",
     },
     identity: {
-      eyebrow: "Identität",
       title: "Identität",
       tag: "Ansatz",
-      intro:
-        "Die in der Produktion im In- und Ausland gewonnene umfassende Praxiserfahrung setzen wir vor Ort ein — nicht am Schreibtisch.",
       body:
         "Mit über 33 Jahren internationaler Praxiserfahrung begleiten wir als praxisnahe Ingenieure, Trainer und Ausbilder die Transformation von Unternehmen in den Bereichen Lean Production und Produktionsplanung, Lean-Prozesse, Qualität und Projektmanagement.",
-      highlight: "Wissen, Erfahrung und Handeln — vereint.",
-      bullets: [
-        "Tiefe Expertise in Lean-Prozessen, Lean-Produktion, Qualität und Projektmanagement.",
-        "Branchenübergreifende Praxiserfahrung im In- und Ausland.",
-        "Ein praxisnaher Ansatz, der Lösungen mit Ihren Teams vor Ort aufbaut.",
-      ],
       cta: { label: "Werfen Sie einen Blick auf die Geschichte unseres Gründers", href: "#kurucumuzun-hikayesi" },
     },
     approach: {
@@ -1070,17 +1037,9 @@ export const homepageContent = {
       "ctaLabel": "Naš pristup"
     },
     "identity": {
-      "eyebrow": "Naš identitet",
-      "title": "Više od 33 godine međunarodnog terenskog iskustva.",
+      "title": "Naš identitet",
       "tag": "Pristup",
-      "intro": "Obimno praktično iskustvo koje smo stekli u proizvodnom sektoru, kako kod kuće tako i u inostranstvu, ne koristimo za stolom, već na terenu.",
       "body": "Vaše osoblje smatramo partnerima i zajedno s njima razvijamo rješenja. Ne samo da vam govorimo šta treba raditi; ostajemo na terenu s vašim timovima dok proces ne bude dovršen. U našem radu dajemo prednost djelovanju nad riječima.",
-      "highlight": "Znanje, iskustvo i djelovanje sve u jednom.",
-      "bullets": [
-        "Duboko znanje o lean procesima, lean proizvodnji, kvalitetu i upravljanju projektima.",
-        "Iskustvo na terenu u više sektora, kako na domaćem, tako i na međunarodnom nivou.",
-        "Praktičan pristup implementaciji rješenja na terenu, radeći rame uz rame s vašim timovima."
-      ],
       "cta": {
         "label": "Pogledajte priču našeg osnivača.",
         "href": "#kurucumuzun-hikayesi"
