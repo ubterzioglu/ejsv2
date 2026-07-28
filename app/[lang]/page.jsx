@@ -50,21 +50,21 @@ export default async function HomePage({ params }) {
         <SectionDivider
           topText="Her dönüşüm, sahada atılan ilk adımla gerçeğe dönüşür."
           bottomText="Doğru başlangıç, doğru sorularla kurulur."
-          buttonLabel="Kimliğimiz"
-          href="#kimligimiz"
+          buttonLabel="Öğren ve Geliş"
+          href="#ogren-ve-gelis"
         />
         <IdentitySection identity={page.identity} lang={lang} />
         <SectionDivider
           topText="Verimlilik bir tesadüf değil, iyi tasarlanmış bir sürecin sonucudur."
           bottomText="Ölçemediğiniz süreci iyileştiremezsiniz."
-          buttonLabel="Haberler"
+          buttonLabel="Öğren ve Geliş"
           href="#ogren-ve-gelis"
         />
         <ApproachSection approach={page.approach} />
         <SectionDivider
           topText="Kalite, denetlenen değil; üretim sürecine işlenen bir alışkanlıktır."
           bottomText="İsraf görünür kılındığında ortadan kalkar."
-          buttonLabel="Bülten"
+          buttonLabel="Öğren ve Geliş"
           href="#ogren-ve-gelis"
         />
         <MissionSection mission={page.mission} lang={lang} />
@@ -78,7 +78,7 @@ export default async function HomePage({ params }) {
         <SectionDivider
           topText="Tasarım masada biter, gerçek sınav sahada başlar."
           bottomText="Kapasiteyi artıran, makine değil; doğru kurgulanmış akıştır."
-          buttonLabel="Haberler"
+          buttonLabel="Öğren ve Geliş"
           href="#ogren-ve-gelis"
         />
 
@@ -97,7 +97,7 @@ export default async function HomePage({ params }) {
         <SectionDivider
           topText="Doğru metot, en pahalı makineden daha değerlidir."
           bottomText="Standart olmayan iş, tekrar edilemeyen başarıdır."
-          buttonLabel="Bülten"
+          buttonLabel="Öğren ve Geliş"
           href="#ogren-ve-gelis"
         />
         <ExpertiseSection expertise={page.expertise} />
@@ -111,14 +111,14 @@ export default async function HomePage({ params }) {
         <SectionDivider
           topText="İyi mühendislik, karmaşığı sade kılma sanatıdır."
           bottomText="Tecrübe, yapılan hatalardan çıkarılan derslerin toplamıdır."
-          buttonLabel="Haberler"
+          buttonLabel="Öğren ve Geliş"
           href="#ogren-ve-gelis"
         />
         <FounderStorySection founder={page.founder} lang={lang} />
         <SectionDivider
           topText="Bir işi yapmanın daima daha iyi bir yolu vardır."
           bottomText="Gelişim, konfor alanının bittiği yerde başlar."
-          buttonLabel="Bülten"
+          buttonLabel="Öğren ve Geliş"
           href="#ogren-ve-gelis"
         />
         <ArticlesSection articles={page.articles} lang={lang} />
@@ -132,7 +132,7 @@ export default async function HomePage({ params }) {
         <SectionDivider
           topText="Her büyük dönüşüm, tek bir doğru karar ile başlar."
           bottomText="Birlikte üretmek, birlikte büyümektir."
-          buttonLabel="Haberler"
+          buttonLabel="Öğren ve Geliş"
           href="#ogren-ve-gelis"
         />
         <ContactSection contact={page.contact} footer={page.footer} lang={lang} />

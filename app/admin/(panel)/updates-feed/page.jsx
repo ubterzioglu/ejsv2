@@ -42,6 +42,7 @@ const UPDATES = [
       '"Kimliğimiz" bölümündeki "Kurucumuzun hikayesine göz atın" butonunun metni büyük harfli ve fazladan kelimeli haliyle görünüyordu; talep edildiği gibi sade "Kurucumuzun hikayesine göz atın" haline getirildi.',
       '"Kimliğimiz" bölümündeki madde listesi (Süreçlerin Yalın Dönüşümü, Üretimin Yalın Dönüşümü, Kalite Süreçleri, Şikayet Yönetimi vb. 9 madde) ve altındaki "Bilgi, tecrübe ve eylem bir arada…" sözü kaldırıldı.',
       '"Kimliğimiz" başlığının üstündeki kırmızı küçük etiket ("KİMLİĞİMİZ") ve altındaki "33 yılı aşkın uluslararası saha tecrübesine sahip:" giriş cümlesi kaldırıldı; sadece ana başlık ve açıklama metni kaldı.',
+      'Ana sayfadaki bölüm geçişlerinde ("Kimliğimiz", "Haberler", "Bülten" gibi farklı yazan ama hepsi aynı yere gitmeyen) 11 kırmızı buton artık tek tip: hepsinin yazısı "Öğren ve Geliş" ve hepsi doğrudan o bölüme götürüyor.',
     ],
   },
   {
