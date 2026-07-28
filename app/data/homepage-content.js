@@ -99,7 +99,7 @@ export const homepageContent = {
         "33 yılı aşkın uluslararası saha tecrübesine sahip; yalın üretim ve üretim planlama, yalın süreçler, kalite ve proje yönetimi alanlarında şirketlerin dönüşümüne rehberlik eden, sahada uygulayan mühendis, eğitmen ve eğitimci.",
       highlight:
         "Bilgi, tecrübe ve eylem bir arada. Bu hikâye bir şirketin değil, yeniden başlamanın hikâyesidir…..",
-      cta: { label: "KURUCUMUZUN HİKAYESİNE BİR GÖZ ATIN", href: "#kurucumuzun-hikayesi" },
+      cta: { label: "Kurucumuzun hikayesine göz atın", href: "#kurucumuzun-hikayesi" },
     },
     approach: {
       eyebrow: "Yaklaşımımız",
