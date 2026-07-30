@@ -527,10 +527,10 @@ export const homepageContent = {
         {
           title: "Building a Company-Specific Problem-Solving Process",
           summary:
-            "We design, implement, and track a problem-solving process tailored to your company so that errors do not occur and do not recur.",
+            "To prevent errors from occurring and recurring, we design, implement, and make sustainable a problem-solving system tailored to your company.",
           paragraphs: [
-            "A company's processes do not always produce 100% correct services or products; in other words, we constantly encounter errors in business. But is the financial burden of the errors that occur in a company actually measured? Are countermeasures taken because of it? How effective are those countermeasures? Or do the same errors keep happening again and again?",
-            "If errors recur, either the cause of the error has not been identified or the foreseen solutions have not been applied. To prevent errors from occurring and recurring, we design and implement an unconventional, company-specific problem-solving process together with you and establish its follow-up mechanism. If desired, the problem-solving process can be digitalized.",
+            "We analyze your current problem-solving approach, surface root causes, and develop lasting solutions. We standardize the process, establish the follow-up mechanism, and integrate it into digital platforms when desired.",
+            "A company's processes do not always produce 100% correct services or products; in other words, we constantly encounter errors in business. If errors recur, either the cause of the error has not been identified or the foreseen solutions have not been applied.",
           ],
           details: [
             "Structured problem solving with 8D, A3, and PDCA.",
@@ -542,16 +542,17 @@ export const homepageContent = {
         {
           title: "Building Quality Processes from Supplier to Customer",
           summary:
-            "We secure quality across the entire supply chain, not at a single point.",
+            "We secure quality not only at final inspection, but across the entire supply chain.",
           paragraphs: [
-            "Where should quality processes begin and end? Is only the Quality Department responsible for quality? Who should take part in the quality process, and to what extent? Under today's industry conditions, what kind of quality responsibility should be given to our stakeholders? Is quality ensured by inspecting the product or the process? Which matters more — product quality or process quality?",
-            "Where in the process are error-prevention mechanisms placed? How is product or process quality planned? Are quality costs continuously tracked? Control charts, histograms, Pareto analysis, the Ishikawa (fishbone) diagram, scatter plots, flow charts, FMEA, QFD, problem solving, the Deming cycle, A3, 8D, Six Sigma, brainstorming, and other quality management tools are familiar to many of us.",
-            "We support you with hands-on training on how and where to apply these tools and how to embed them into the company's operating system. Let's think it through together.",
+            "By analyzing your quality processes, we integrate error-prevention mechanisms, quality standards, and process controls into your operation. We structure all quality processes from supplier to customer and give your teams hands-on support on the effective use of quality management tools.",
+            "Control charts, histograms, Pareto analysis, the Ishikawa (fishbone) diagram, scatter plots, flow charts, FMEA, QFD, problem solving, the Deming cycle, A3, 8D, Six Sigma, brainstorming, and other quality management tools are familiar to many of us. What we support you with, through hands-on training, is how and where to apply these tools and how to embed them into the company's operating system.",
           ],
           details: [
-            "Supplier development, audits, and incoming quality control.",
-            "In-process quality (APQP, PPAP, FMEA) and error-proofing (poka-yoke).",
-            "Pre-shipment quality gates and a customer feedback loop.",
+            "Supplier development.",
+            "Process quality planning with APQP, PPAP, and FMEA.",
+            "Error-prevention systems with Poka-Yoke.",
+            "Pre-shipment quality gates and customer feedback management.",
+            "Quality tools and problem-solving training.",
           ],
           image: "/assets/expertise/4-quality.jpg",
         },
@@ -839,10 +840,10 @@ export const homepageContent = {
         {
           title: "Aufbau eines unternehmensspezifischen Problemlösungsprozesses",
           summary:
-            "Wir gestalten, implementieren und verfolgen einen auf Ihr Unternehmen zugeschnittenen Problemlösungsprozess, damit Fehler nicht entstehen und sich nicht wiederholen.",
+            "Damit Fehler nicht entstehen und sich nicht wiederholen, gestalten und implementieren wir ein auf Ihr Unternehmen zugeschnittenes Problemlösungssystem und machen es nachhaltig.",
           paragraphs: [
-            "Die Prozesse eines Unternehmens liefern nicht immer zu 100 % korrekte Leistungen oder Produkte; das heißt, im Geschäftsalltag begegnen uns ständig Fehler. Aber wird die finanzielle Last der in einem Unternehmen auftretenden Fehler überhaupt gemessen? Werden deshalb Gegenmaßnahmen ergriffen? Wie wirksam sind diese Maßnahmen? Oder treten dieselben Fehler immer wieder auf?",
-            "Wenn sich Fehler wiederholen, wurde entweder die Ursache nicht erkannt oder die vorgesehenen Lösungen wurden nicht umgesetzt. Damit Fehler nicht entstehen und sich nicht wiederholen, gestalten und implementieren wir gemeinsam mit Ihnen einen unkonventionellen, unternehmensspezifischen Problemlösungsprozess und richten den dazugehörigen Nachverfolgungsmechanismus ein. Auf Wunsch kann der Problemlösungsprozess digitalisiert werden.",
+            "Wir analysieren Ihren bestehenden Problemlösungsansatz, decken die Ursachen auf und entwickeln dauerhafte Lösungen. Wir standardisieren den Prozess, richten den Nachverfolgungsmechanismus ein und integrieren ihn auf Wunsch in digitale Plattformen.",
+            "Die Prozesse eines Unternehmens liefern nicht immer zu 100 % korrekte Leistungen oder Produkte; das heißt, im Geschäftsalltag begegnen uns ständig Fehler. Wenn sich Fehler wiederholen, wurde entweder die Ursache nicht erkannt oder die vorgesehenen Lösungen wurden nicht umgesetzt.",
           ],
           details: [
             "Strukturierte Problemlösung mit 8D, A3 und PDCA.",
@@ -854,16 +855,17 @@ export const homepageContent = {
         {
           title: "Aufbau von Qualitätsprozessen vom Lieferanten bis zum Kunden",
           summary:
-            "Wir sichern Qualität entlang der gesamten Lieferkette, nicht nur an einem Punkt.",
+            "Wir sichern Qualität nicht erst in der Endkontrolle, sondern entlang der gesamten Lieferkette.",
           paragraphs: [
-            "Wo sollten Qualitätsprozesse beginnen und enden? Ist nur die Qualitätsabteilung für Qualität verantwortlich? Wer sollte in welchem Umfang am Qualitätsprozess teilnehmen? Welche Qualitätsverantwortung sollte unseren Stakeholdern unter heutigen Industriebedingungen übertragen werden? Wird Qualität durch die Prüfung des Produkts oder des Prozesses sichergestellt? Was ist wichtiger — Produktqualität oder Prozessqualität?",
-            "Wo im Prozess werden Fehlervermeidungsmechanismen platziert? Wie wird Produkt- oder Prozessqualität geplant? Werden Qualitätskosten kontinuierlich verfolgt? Regelkarten, Histogramme, Pareto-Analyse, das Ishikawa- (Fischgräten-) Diagramm, Streudiagramme, Flussdiagramme, FMEA, QFD, Problemlösung, der Deming-Kreis, A3, 8D, Six Sigma, Brainstorming und weitere Qualitätsmanagement-Werkzeuge sind vielen von uns bekannt.",
-            "Wir unterstützen Sie mit praxisnaher Schulung dabei, wie und wo Sie diese Werkzeuge anwenden und in das Arbeitssystem des Unternehmens einbinden. Lassen Sie uns gemeinsam nachdenken.",
+            "Durch die Analyse Ihrer Qualitätsprozesse integrieren wir Fehlervermeidungsmechanismen, Qualitätsstandards und Prozesskontrollen in Ihren Betrieb. Wir strukturieren alle Qualitätsprozesse vom Lieferanten bis zum Kunden und unterstützen Ihre Teams praxisnah beim wirksamen Einsatz von Qualitätsmanagement-Werkzeugen.",
+            "Regelkarten, Histogramme, Pareto-Analyse, das Ishikawa- (Fischgräten-) Diagramm, Streudiagramme, Flussdiagramme, FMEA, QFD, Problemlösung, der Deming-Kreis, A3, 8D, Six Sigma, Brainstorming und weitere Qualitätsmanagement-Werkzeuge sind vielen von uns bekannt. Wir unterstützen Sie mit praxisnaher Schulung dabei, wie und wo Sie diese Werkzeuge anwenden und in das Arbeitssystem des Unternehmens einbinden.",
           ],
           details: [
-            "Lieferantenentwicklung, Audits und Wareneingangsprüfung.",
-            "Prozessbegleitende Qualität (APQP, PPAP, FMEA) und Fehlervermeidung (Poka-Yoke).",
-            "Qualitäts-Gates vor dem Versand und eine Kunden-Feedbackschleife.",
+            "Lieferantenentwicklung.",
+            "Prozessqualitätsplanung mit APQP, PPAP und FMEA.",
+            "Fehlervermeidungssysteme mit Poka-Yoke.",
+            "Qualitäts-Gates vor dem Versand und Management des Kundenfeedbacks.",
+            "Schulungen zu Qualitätswerkzeugen und Problemlösung.",
           ],
           image: "/assets/expertise/4-quality.jpg",
         },
@@ -1171,10 +1173,10 @@ export const homepageContent = {
         },
         {
           "title": "Razvijanje procesa rješavanja problema prilagođenog kompanijama",
-          "summary": "Kako bismo spriječili nastanak i ponovnu pojavu grešaka, osmišljavamo, implementiramo i nadgledamo proces rješavanja problema prilagođen vašoj kompaniji.",
+          "summary": "Kako bismo spriječili nastanak i ponovnu pojavu grešaka, osmišljavamo i implementiramo sistem rješavanja problema prilagođen vašoj kompaniji i činimo ga održivim.",
           "paragraphs": [
-            "Procesi kompanije ne rezultiraju uvijek uslugom ili proizvodom bez ijedne greške; drugim riječima, u poslovnom svijetu stalno nailazimo na greške. Dakle, da li se mjeri finansijski trošak grešaka koje se događaju unutar kompanije? Da li se kao rezultat toga poduzimaju mjere? Koliko su efikasne poduzete mjere? Ili se iste greške iznova i iznova ponavljaju?",
-            "Ako se greške ponavljaju, to je ili zato što uzrok greške nije utvrđen ili zato što predložena rješenja nisu implementirana. Kako bismo spriječili pojavu i ponavljanje grešaka, dizajniramo, implementiramo i uspostavljamo mehanizam nadzora za proces rješavanja problema koji je nekonvencionalan i prilagođen specifičnim potrebama vaše kompanije. Po potrebi, proces rješavanja problema može biti digitaliziran."
+            "Analiziramo vaš postojeći pristup rješavanju problema, otkrivamo osnovne uzroke i razvijamo trajna rješenja. Standardiziramo proces, uspostavljamo mehanizam nadzora i po potrebi ga integriramo u digitalne platforme.",
+            "Procesi kompanije ne rezultiraju uvijek uslugom ili proizvodom bez ijedne greške; drugim riječima, u poslovnom svijetu stalno nailazimo na greške. Ako se greške ponavljaju, to je ili zato što uzrok greške nije utvrđen ili zato što predložena rješenja nisu implementirana."
           ],
           "details": [
             "Strukturirano rješavanje problema koristeći 8D, A3 i PDCA.",
@@ -1185,16 +1187,17 @@ export const homepageContent = {
         },
         {
           "title": "Uspostavljanje procesa kvaliteta od dobavljača do kupca",
-          "summary": "Osiguravamo kvalitet ne samo na jednoj tački, već kroz cijeli lanac snabdijevanja.",
+          "summary": "Osiguravamo kvalitet ne samo u završnoj kontroli, već kroz cijeli lanac snabdijevanja.",
           "paragraphs": [
-            "Gdje bi procesi kvaliteta trebali početi i gdje bi trebali završiti? Da li je Odjel za kvalitetu jedini odgovoran za kvalitetu? Ko bi trebao biti uključen u proces kvaliteta i u kojoj mjeri? S obzirom na današnje industrijske uslove, koji nivo odgovornosti za kvalitet bi se trebao dodijeliti našim dionicima? Da li se kvalitet proizvoda ili procesa osigurava kontrolom kvaliteta? Da li je kvalitet proizvoda ili procesa važniji?",
-            "Gdje su mehanizmi za sprečavanje grešaka ugrađeni u proces? Kako se planira kvaliteta proizvoda ili procesa? Da li se troškovi kvaliteta kontinuirano prate? Kontrolne karte, histogrami, Pareto analiza, Ishikawa (kikot) dijagrami, dijagrami rasipanja, dijagrami toka, FMEA, QFD, rješavanje problema, Demingov ciklus, A3, 8D, Six Sigma, brainstorming i drugi alati za upravljanje kvalitetom poznati su mnogima od nas.",
-            "Podržat ćemo vas praktičnom obukom o tome kako i gdje primijeniti ove alate i kako ih integrirati u radne prakse vaše kompanije. Hajde da udružimo snage."
+            "Analizom vaših procesa kvaliteta integriramo mehanizme za sprečavanje grešaka, standarde kvaliteta i procesne kontrole u vaše poslovanje. Strukturiramo sve procese kvaliteta od dobavljača do kupca i pružamo vašim timovima praktičnu podršku u efikasnoj primjeni alata za upravljanje kvalitetom.",
+            "Kontrolne karte, histogrami, Pareto analiza, Ishikawa (riblja kost) dijagrami, dijagrami rasipanja, dijagrami toka, FMEA, QFD, rješavanje problema, Demingov ciklus, A3, 8D, Six Sigma, brainstorming i drugi alati za upravljanje kvalitetom poznati su mnogima od nas. Podržavamo vas praktičnom obukom o tome kako i gdje primijeniti ove alate i kako ih integrirati u radne prakse vaše kompanije."
           ],
           "details": [
-            "Razvoj dobavljača, revizija i kontrola ulaznog kvaliteta.",
-            "Kvalitet u toku procesa (APQP, PPAP, FMEA) i prevencija grešaka (poka-yoke).",
-            "Provjere kvaliteta prije isporuke i povratna petlja za kupca."
+            "Razvoj dobavljača.",
+            "Planiranje kvaliteta procesa uz APQP, PPAP i FMEA.",
+            "Sistemi za sprečavanje grešaka uz Poka-Yoke.",
+            "Provjere kvaliteta prije isporuke i upravljanje povratnim informacijama kupaca.",
+            "Obuke o alatima kvaliteta i rješavanju problema."
           ],
           "image": "/assets/expertise/4-quality.jpg"
         },
