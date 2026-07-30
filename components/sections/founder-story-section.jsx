@@ -17,17 +17,19 @@ export function FounderStorySection({ founder, lang }) {
 
       <div className="founder-layout">
         <div className="founder-image-wrap">
-          <Image
-            src={founderPhoto}
-            alt={founder.name}
-            className="founder-image"
-            width={1260}
-            height={848}
-            sizes="(max-width: 1040px) 100vw, 38vw"
-          />
-          <div className="founder-meta">
-            <p className="founder-name">{founder.name}</p>
-            <p className="founder-role">{founder.role}</p>
+          <div className="founder-portrait">
+            <Image
+              src={founderPhoto}
+              alt={founder.name}
+              className="founder-image"
+              width={1260}
+              height={848}
+              sizes="(max-width: 1040px) 100vw, 42vw"
+            />
+            <div className="founder-meta">
+              <p className="founder-name">{founder.name}</p>
+              <p className="founder-role">{founder.role}</p>
+            </div>
           </div>
 
           <p className="founder-caption">{founder.subtitle}</p>

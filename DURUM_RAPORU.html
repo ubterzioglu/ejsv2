@@ -1,0 +1,829 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EJS — Durum ve Revizyon Kontrol Raporu</title>
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --panel: #ffffff;
+    --ink: #14181d;
+    --ink-soft: #4a545f;
+    --ink-faint: #7b8794;
+    --line: #e2e6eb;
+    --line-strong: #cbd2da;
+    --signal: #c8102e;
+    --ok: #1a7f4b;
+    --ok-bg: #e8f5ee;
+    --warn: #9a6100;
+    --warn-bg: #fdf3e0;
+    --bad: #b3261e;
+    --bad-bg: #fdecea;
+    --info: #1d4ed8;
+    --info-bg: #e9eefc;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1216;
+      --panel: #171b21;
+      --ink: #e8ecf1;
+      --ink-soft: #a8b3bf;
+      --ink-faint: #79848f;
+      --line: #262c34;
+      --line-strong: #343c46;
+      --signal: #ff5a70;
+      --ok: #5ed49b;
+      --ok-bg: #12291f;
+      --warn: #f0b45e;
+      --warn-bg: #2b2113;
+      --bad: #ff8a80;
+      --bad-bg: #2c1817;
+      --info: #8fb0ff;
+      --info-bg: #161d2e;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1216; --panel: #171b21; --ink: #e8ecf1; --ink-soft: #a8b3bf;
+    --ink-faint: #79848f; --line: #262c34; --line-strong: #343c46;
+    --signal: #ff5a70; --ok: #5ed49b; --ok-bg: #12291f; --warn: #f0b45e;
+    --warn-bg: #2b2113; --bad: #ff8a80; --bad-bg: #2c1817; --info: #8fb0ff; --info-bg: #161d2e;
+  }
+  :root[data-theme="light"] {
+    --bg: #f7f8fa; --panel: #ffffff; --ink: #14181d; --ink-soft: #4a545f;
+    --ink-faint: #7b8794; --line: #e2e6eb; --line-strong: #cbd2da;
+    --signal: #c8102e; --ok: #1a7f4b; --ok-bg: #e8f5ee; --warn: #9a6100;
+    --warn-bg: #fdf3e0; --bad: #b3261e; --bad-bg: #fdecea; --info: #1d4ed8; --info-bg: #e9eefc;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+
+  /* ---------- header ---------- */
+  .masthead { border-bottom: 3px solid var(--signal); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+  .kicker {
+    font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--signal); font-weight: 700; margin: 0 0 0.5rem;
+  }
+  h1 { margin: 0 0 0.6rem; font-size: clamp(1.6rem, 3.6vw, 2.5rem); line-height: 1.12; letter-spacing: -0.025em; }
+  .lede { margin: 0; color: var(--ink-soft); max-width: 62ch; font-size: 1.02rem; }
+  .meta-row {
+    display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-top: 1.1rem;
+    font-size: 0.82rem; color: var(--ink-faint);
+  }
+  .meta-row b { color: var(--ink-soft); font-weight: 600; }
+
+  /* ---------- kpi ---------- */
+  .kpis {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.75rem; margin: 0 0 2.75rem;
+  }
+  .kpi {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+    padding: 1rem 1.1rem; display: grid; gap: 0.15rem;
+  }
+  .kpi__v { font-size: 1.85rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1; }
+  .kpi__l { font-size: 0.76rem; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.07em; }
+  .kpi--ok .kpi__v { color: var(--ok); }
+  .kpi--warn .kpi__v { color: var(--warn); }
+  .kpi--bad .kpi__v { color: var(--bad); }
+  .kpi--info .kpi__v { color: var(--info); }
+
+  /* ---------- sections ---------- */
+  section { margin: 0 0 3rem; }
+  h2 {
+    font-size: 1.22rem; letter-spacing: -0.015em; margin: 0 0 0.35rem;
+    display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap;
+  }
+  h2 .num {
+    font-family: var(--mono); font-size: 0.78rem; color: var(--signal);
+    font-weight: 700; letter-spacing: 0;
+  }
+  .sub { margin: 0 0 1.1rem; color: var(--ink-faint); font-size: 0.9rem; max-width: 70ch; }
+
+  /* ---------- table ---------- */
+  .tbl-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+  table { border-collapse: collapse; width: 100%; min-width: 780px; font-size: 0.875rem; }
+  thead th {
+    text-align: left; padding: 0.7rem 0.85rem; background: var(--bg);
+    border-bottom: 1px solid var(--line-strong); font-size: 0.72rem;
+    text-transform: uppercase; letter-spacing: 0.07em; color: var(--ink-faint); font-weight: 700;
+    white-space: nowrap;
+  }
+  tbody td { padding: 0.8rem 0.85rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: 0; }
+  tbody tr:hover { background: color-mix(in srgb, var(--bg) 55%, transparent); }
+  td.id { font-family: var(--mono); color: var(--ink-faint); font-size: 0.8rem; white-space: nowrap; }
+  td.what { min-width: 200px; }
+  td.what b { display: block; font-weight: 650; margin-bottom: 0.15rem; }
+  td.what span { color: var(--ink-faint); font-size: 0.82rem; }
+  td.note { color: var(--ink-soft); font-size: 0.84rem; min-width: 240px; }
+
+  .chip {
+    display: inline-block; padding: 0.16rem 0.5rem; border-radius: 5px;
+    font-size: 0.72rem; font-weight: 700; white-space: nowrap; letter-spacing: 0.01em;
+  }
+  .chip--ok { background: var(--ok-bg); color: var(--ok); }
+  .chip--warn { background: var(--warn-bg); color: var(--warn); }
+  .chip--bad { background: var(--bad-bg); color: var(--bad); }
+  .chip--info { background: var(--info-bg); color: var(--info); }
+  .chip--mute { background: var(--bg); color: var(--ink-faint); border: 1px solid var(--line); }
+
+  code {
+    font-family: var(--mono); font-size: 0.85em; background: var(--bg);
+    border: 1px solid var(--line); border-radius: 4px; padding: 0.05em 0.32em;
+    color: var(--ink-soft); word-break: break-word;
+  }
+
+  /* ---------- finding cards ---------- */
+  .cards { display: grid; gap: 0.85rem; }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--line-strong);
+    border-radius: 8px; padding: 1.05rem 1.2rem;
+  }
+  .card--bad { border-left-color: var(--bad); }
+  .card--warn { border-left-color: var(--warn); }
+  .card--info { border-left-color: var(--info); }
+  .card--ok { border-left-color: var(--ok); }
+  .card__head {
+    display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.45rem;
+  }
+  .card__title { font-size: 1rem; font-weight: 650; margin: 0; letter-spacing: -0.01em; }
+  .card p { margin: 0 0 0.5rem; color: var(--ink-soft); font-size: 0.9rem; }
+  .card p:last-child { margin-bottom: 0; }
+  .card ul { margin: 0.35rem 0 0.6rem; padding-left: 1.15rem; color: var(--ink-soft); font-size: 0.88rem; }
+  .card li { margin-bottom: 0.28rem; }
+  .kv {
+    margin: 0.6rem 0 0; padding-top: 0.6rem; border-top: 1px dashed var(--line);
+    font-size: 0.8rem; color: var(--ink-faint);
+  }
+  .kv b { color: var(--ink-soft); font-weight: 600; }
+  .quote {
+    margin: 0.5rem 0; padding: 0.55rem 0.8rem; background: var(--bg);
+    border-left: 2px solid var(--signal); border-radius: 0 5px 5px 0;
+    font-size: 0.85rem; color: var(--ink-soft); font-style: italic;
+  }
+  .cmp { display: grid; gap: 0.5rem; margin: 0.6rem 0; }
+  @media (min-width: 720px) { .cmp { grid-template-columns: 1fr 1fr; } }
+  .cmp > div { background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 0.6rem 0.75rem; }
+  .cmp h4 {
+    margin: 0 0 0.3rem; font-size: 0.7rem; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--ink-faint);
+  }
+  .cmp p { margin: 0; font-size: 0.84rem; }
+  .cmp .want { color: var(--ok); }
+  .cmp .have { color: var(--bad); }
+
+  /* ---------- action list ---------- */
+  ol.actions { counter-reset: a; list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; }
+  ol.actions li {
+    counter-increment: a; background: var(--panel); border: 1px solid var(--line);
+    border-radius: 8px; padding: 0.85rem 1rem 0.85rem 3rem; position: relative; font-size: 0.9rem;
+  }
+  ol.actions li::before {
+    content: counter(a); position: absolute; left: 0.85rem; top: 0.8rem;
+    width: 1.5rem; height: 1.5rem; border-radius: 50%; background: var(--signal);
+    color: #fff; font-size: 0.78rem; font-weight: 700;
+    display: grid; place-items: center; font-family: var(--mono);
+  }
+  ol.actions b { display: block; margin-bottom: 0.15rem; }
+  ol.actions span { color: var(--ink-soft); }
+
+  footer.foot {
+    margin-top: 3.5rem; padding-top: 1.2rem; border-top: 1px solid var(--line);
+    font-size: 0.78rem; color: var(--ink-faint);
+  }
+  .legend { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; margin: 0 0 1.1rem; font-size: 0.78rem; color: var(--ink-faint); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="kicker">EJS Consulting · Site &amp; Panel</p>
+    <h1>Durum ve Revizyon Kontrol Raporu</h1>
+    <p class="lede">
+      Admin panelindeki 14 revizyon talebinin tamamı tek tek koddaki güncel içerikle
+      karşılaştırıldı. Aşağıdaki her satır, panelin söylediği değil kodun gösterdiği
+      gerçek durumu yansıtır.
+    </p>
+    <div class="meta-row">
+      <span><b>Rapor tarihi:</b> 30 Temmuz 2026</span>
+      <span><b>Branch:</b> main · <b>HEAD:</b> <code>4b339a3</code></span>
+      <span><b>Build:</b> <span class="chip chip--ok">npm run build · başarılı</span></span>
+      <span><b>Kaynak:</b> Supabase <code>revision_requests</code> (14) + <code>revision_comments</code> (8)</span>
+    </div>
+  </header>
+
+  <div class="kpis">
+    <div class="kpi kpi--ok"><div class="kpi__v">10</div><div class="kpi__l">Yapıldı</div></div>
+    <div class="kpi kpi--warn"><div class="kpi__v">2</div><div class="kpi__l">Kısmen yapıldı</div></div>
+    <div class="kpi kpi--bad"><div class="kpi__v">1</div><div class="kpi__l">Yapılmadı</div></div>
+    <div class="kpi kpi--info"><div class="kpi__v">1</div><div class="kpi__l">Commit bekliyor</div></div>
+    <div class="kpi"><div class="kpi__v">8</div><div class="kpi__l">Panelde kapatılmalı</div></div>
+    <div class="kpi kpi--bad"><div class="kpi__v">5</div><div class="kpi__l">Talep dışı bulgu</div></div>
+  </div>
+
+  <!-- ============ 1. REVIZYON TABLOSU ============ -->
+  <section>
+    <h2><span class="num">01</span> Revizyon talepleri — tek tek kontrol</h2>
+    <p class="sub">
+      “Panel” kolonu Supabase’deki durum etiketi, “Gerçek” kolonu ise kodda doğrulanmış
+      sonuçtur. İkisi 9 kayıtta birbirinden farklı.
+    </p>
+    <div class="legend">
+      <span><span class="chip chip--ok">Yapıldı</span> kodda doğrulandı</span>
+      <span><span class="chip chip--warn">Kısmen</span> bir parçası eksik</span>
+      <span><span class="chip chip--bad">Yapılmadı</span> uygulanmamış</span>
+      <span><span class="chip chip--info">Commit'siz</span> yapıldı ama yayında değil</span>
+    </div>
+
+    <div class="tbl-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Talep</th>
+            <th>Panel</th>
+            <th>Gerçek</th>
+            <th>Kontrol notu / kanıt</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="id">R1</td>
+            <td class="what"><b>KİMLİĞİMİZ</b><span>05.07 · yeni metin + “Kurucumuzun hikayesine göz atın” kalsın</span></td>
+            <td><span class="chip chip--mute">Devam ediyor</span></td>
+            <td><span class="chip chip--warn">Kısmen</span></td>
+            <td class="note">
+              TR/EN/DE metni birebir uygulandı, CTA kurucu bölümüne gidiyor
+              (<code>homepage-content.js:84-90</code>). <b>Boşnakça hâlâ eski paragrafı taşıyor.</b>
+              Müşteri 20.07 yorumunda “işlenmedi” demişti — TR tarafı o tarihten sonra düzeltilmiş.
+            </td>
+          </tr>
+          <tr>
+            <td class="id">R2</td>
+            <td class="what"><b>MİSYONUMUZ</b><span>05.07 · yeni başlık + 3 madde + noktasız slogan</span></td>
+            <td><span class="chip chip--mute">Devam ediyor</span></td>
+            <td><span class="chip chip--bad">Yapılmadı</span></td>
+            <td class="note">
+              Sadece slogandaki nokta kaldırılmış. <b>Başlık ve maddeler dört dilde de eski hâlde</b>
+              (<code>homepage-content.js:99-111</code>). Detay için bkz. Bölüm 02.
+            </td>
+          </tr>
+          <tr>
+            <td class="id">R3</td>
+            <td class="what"><b>İLETİŞİM</b><span>05.07 · sabit hattı sil, bilgileri ayrı satırlara al</span></td>
+            <td><span class="chip chip--ok">Tamamlandı</span></td>
+            <td><span class="chip chip--ok">Yapıldı</span></td>
+            <td class="note">
+              <code>+90 216 906 03 25</code> kod tabanında hiç geçmiyor; sadece mobil kaldı.
+              Şirket adı / adres / saatler / mobil ayrı alanlar
+              (<code>homepage-content.js:333-344</code>, <code>357-367</code>).
+            </td>
+          </tr>
+          <tr>
+            <td class="id">R4</td>
+            <td class="what"><b>REFERANSLAR</b><span>05.07 + 20.07 yorum · ana başlık “Referanslar” kalsın</span></td>
+            <td><span class="chip chip--mute">Devam ediyor</span></td>
+            <td><span class="chip chip--warn">Kısmen</span></td>
+            <td class="note">
+              Bölüm içi doğru: üst etiket “Referanslar”, alt başlık “İş Ortaklarımız”
+              (<code>:329-332</code>). <b>Ama üst menüdeki başlık dört dilde de hâlâ uzun hâli.</b>
+              Detay için bkz. Bölüm 02.
+            </td>
+          </tr>
+          <tr>
+            <td class="id">R5</td>
+            <td class="what"><b>Üst menüden başlık silme</b><span>20.07 · Ana Sayfa, Yaklaşımımız, Kimliğimiz silinsin</span></td>
+            <td><span class="chip chip--ok">Tamamlandı</span></td>
+            <td><span class="chip chip--ok">Yapıldı</span></td>
+            <td class="note">
+              “Ana Sayfa” kaldırıldı. Kimliğimiz ve Yaklaşımımız <b>R14 talebiyle bilinçli olarak geri getirildi</b>
+              (<code>e926a41</code>) — yani bu talep sonraki talep tarafından geçersiz kılındı, çelişki değil.
+            </td>
+          </tr>
+          <tr>
+            <td class="id">R6</td>
+            <td class="what"><b>Kurucumuzun Hikayesi-1</b><span>20.07 · 4 maddelik talep (slogan sağda, noktasız başlıklar, hikaye özeti)</span></td>
+            <td><span class="chip chip--bad">Yeni</span></td>
+            <td><span class="chip chip--info">Commit'siz</span></td>
+            <td class="note">
+              4 maddenin <b>tamamı yapılmış</b>: başlık ve giriş noktasız (<code>:268-270</code>),
+              hikaye özeti birebir ve dört dilde (<code>:274-280</code>), slogan noktasız (<code>:271</code>).
+              <b>Sloganı fotoğrafın sağına alan düzen çalışması commit edilmedi</b> — bkz. Bölüm 03.
+            </td>
+          </tr>
+          <tr>
+            <td class="id">R7</td>
+            <td class="what"><b>YAKLAŞIMIMIZ</b><span>20.07 + 29.07 yorum · noktasız slogan + tamamen yeni metin</span></td>
+            <td><span class="chip chip--bad">Yeni</span></td>
+            <td><span class="chip chip--ok">Yapıldı</span></td>
+            <td class="note">
+              Slogan noktasız; 29.07 yorumundaki yeni metin birebir yazılmış, istenmeyen
+              “Klasik danışmanlığın aksine…” cümlesi silinmiş. Dört dilde de senkron
+              (<code>:91-98</code>, <code>:410-417</code>, <code>:729-736</code>, <code>:1083-1090</code>).
+            </td>
+          </tr>
+          <tr>
+            <td class="id">R8</td>
+            <td class="what"><b>Uzmanlık Alanlarımız-1</b><span>20.07 · “Beş ana alanda…” silinsin, “ALANLARI açabilirsiniz”</span></td>
+            <td><span class="chip chip--ok">Tamamlandı</span></td>
+            <td><span class="chip chip--ok">Yapıldı</span></td>
+            <td class="note">
+              “Beş ana alanda derin saha uzmanlığı” ifadesi kod tabanında kalmadı;
+              giriş metni istenen hâliyle (<code>:170-171</code>).
+            </td>
+          </tr>
+          <tr>
+            <td class="id">R9</td>
+            <td class="what"><b>Kart 1 — Süreçlerin Yalın Dönüşümü ve Dijitalleşmesi</b><span>20.07 · yeni metin + 6 hizmet</span></td>
+            <td><span class="chip chip--mute">Devam ediyor</span></td>
+            <td><span class="chip chip--ok">Yapıldı</span></td>
+            <td class="note">
+              Özet, 2 paragraf ve 6 hizmet maddesi birebir (<code>:174-191</code>).
+              Dört dilde senkron (VSM/KPI terimleri her dilde birer kez).
+            </td>
+          </tr>
+          <tr>
+            <td class="id">R10</td>
+            <td class="what"><b>Kart 2 — Üretimin Yalın Dönüşümü</b><span>20.07 · yeni metin + 9 alt hizmet</span></td>
+            <td><span class="chip chip--mute">Devam ediyor</span></td>
+            <td><span class="chip chip--ok">Yapıldı</span></td>
+            <td class="note">
+              Metin ve 9 hizmetin tamamı var (<code>:192-212</code>).
+              <b>Küçük fark:</b> talepteki “ana madde + 1–9 alt numaralandırma” hiyerarşisi
+              10 maddelik düz listeye çevrilmiş. İçerik kaybı yok, sadece görsel kurgu farklı.
+            </td>
+          </tr>
+          <tr>
+            <td class="id">R11</td>
+            <td class="what"><b>Kart 3 — Problem Çözme</b><span>20.07 · yeni metin</span></td>
+            <td><span class="chip chip--mute">Devam ediyor</span></td>
+            <td><span class="chip chip--ok">Yapıldı</span></td>
+            <td class="note">
+              Özet ve paragraf birebir (<code>:213-227</code>).
+              <b>Teyit gerek:</b> altında eski bir paragraf daha duruyor (<code>:219</code>).
+            </td>
+          </tr>
+          <tr>
+            <td class="id">R12</td>
+            <td class="what"><b>Kart 4 — Tedarikçiden Müşteriye Kalite</b><span>20.07 · yeni metin + 5 hizmet</span></td>
+            <td><span class="chip chip--mute">Devam ediyor</span></td>
+            <td><span class="chip chip--ok">Yapıldı</span></td>
+            <td class="note">
+              Özet, paragraf ve 5 hizmet birebir (<code>:228-244</code>).
+              <b>Teyit gerek:</b> eski kalite araçları paragrafı korunmuş (<code>:234</code>).
+            </td>
+          </tr>
+          <tr>
+            <td class="id">R13</td>
+            <td class="what"><b>Kart 5 — Satış Sonrası Şikayet Yönetimi</b><span>20.07 · yeni metin + 7 hizmet</span></td>
+            <td><span class="chip chip--mute">Devam ediyor</span></td>
+            <td><span class="chip chip--ok">Yapıldı</span></td>
+            <td class="note">
+              Özet, paragraf ve 7 hizmet birebir; talepteki “qmbarın” yazım hatası
+              “ambarının” olarak düzeltilmiş (<code>:245-263</code>).
+              <b>Teyit gerek:</b> eski bir paragraf korunmuş (<code>:251</code>).
+            </td>
+          </tr>
+          <tr>
+            <td class="id">R14</td>
+            <td class="what"><b>ANA BAŞLIKTA İLAVELER</b><span>29.07 · Kimliğimiz, Misyonumuz, Yaklaşımımız eklensin</span></td>
+            <td><span class="chip chip--bad">Yeni</span></td>
+            <td><span class="chip chip--ok">Yapıldı</span></td>
+            <td class="note">
+              Üçü de istenen sırayla üst menüde, dört dilde
+              (<code>:71-80</code>, <code>:390-398</code>, <code>:709-717</code>, <code>:1037-1070</code>).
+              Commit <code>e926a41</code>.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ 2. YAPILMAYANLAR ============ -->
+  <section>
+    <h2><span class="num">02</span> Yapılmayan ve eksik kalan işler</h2>
+    <p class="sub">Müşterinin açıkça istediği ama koda girmemiş maddeler. Sıralama önem derecesine göre.</p>
+
+    <div class="cards">
+
+      <div class="card card--bad">
+        <div class="card__head">
+          <h3 class="card__title">MİSYONUMUZ bölümü hiç güncellenmedi</h3>
+          <span class="chip chip--bad">R2 · Yüksek</span>
+        </div>
+        <p>
+          Müşteri 5 Temmuz’da misyon bölümü için yeni bir başlık ve 3 maddelik yeni bir liste
+          gönderdi. Uygulanan tek şey slogandaki noktanın kaldırılması oldu; başlık ve maddeler
+          hâlâ eski metin — <b>dört dilde de</b>.
+        </p>
+        <div class="cmp">
+          <div>
+            <h4>İstenen başlık</h4>
+            <p class="want">Sanayiye Değer Katan Sürdürülebilir Dönüşüm</p>
+          </div>
+          <div>
+            <h4>Sitedeki başlık</h4>
+            <p class="have">Karlılığı, kurumsal yapıları ve saha disiplinini birlikte güçlendirmek.</p>
+          </div>
+        </div>
+        <p>Maddelerde de fark var — istenen 3 madde, sitede 4 madde duruyor ve içerikleri farklı:</p>
+        <ul>
+          <li><b>Eksik:</b> “…ve <b>rekabet gücünü artırmak</b>” ifadesi hiç yok.</li>
+          <li><b>Eksik:</b> “Yalın, çevik ve <b>sürdürülebilir</b> çalışma sistemleri kurarak organizasyonları <b>dijital dönüşüme hazırlamak</b>” — istenen tek madde, sitede iki ayrı ve farklı maddeye bölünmüş.</li>
+          <li><b>Doğru:</b> “Çalışanlara nitelik kazandırarak anlaşılır ve sürdürülebilir süreçler oluşturmak.”</li>
+          <li><b>Doğru:</b> Slogan noktasız — “Bilgi ve Tecrübeden Güce, Güçten Sonuca”</li>
+        </ul>
+        <p class="kv">
+          <b>Dosya:</b> <code>app/data/homepage-content.js</code> · TR <code>99-111</code> ·
+          EN <code>418-430</code> · DE <code>737-749</code> · BS <code>1091-1102</code>
+        </p>
+      </div>
+
+      <div class="card card--bad">
+        <div class="card__head">
+          <h3 class="card__title">Üst menüdeki “Referanslar” başlığı geri alınmadı</h3>
+          <span class="chip chip--bad">R4 · Yüksek</span>
+        </div>
+        <p>
+          Müşteri 20 Temmuz yorumunda bunu net biçimde düzeltti — kendi hatası olduğunu da söyledi:
+        </p>
+        <div class="quote">
+          “Ana başlıkta &lsquo;Referanslar&rsquo; ifadesi kalsın; &lsquo;Birlikte Çalıştığımız İş Ortaklarımız&rsquo;
+          olarak değiştirilmesine gerek yok. &lsquo;Referanslar&rsquo; başlığına tıklandığında ise aşağıda
+          yalnızca &lsquo;İş Ortaklarımız&rsquo; ifadesinin görünmesi yeterlidir.”
+        </div>
+        <p>
+          Bölüm içi doğru yapılmış. Fakat <b>üst menüdeki başlık dört dilde de uzun hâlinde kaldı:</b>
+        </p>
+        <ul>
+          <li>TR: <code>"Birlikte Çalıştığımız İş Ortaklarımız"</code> → olmalı: <code>"Referanslar"</code></li>
+          <li>EN: <code>"Our Business Partners"</code> → olmalı: <code>"References"</code></li>
+          <li>DE: <code>"Unsere Geschäftspartner"</code> → olmalı: <code>"Referenzen"</code></li>
+          <li>BS: <code>"Naši poslovni partneri"</code> → olmalı: <code>"Reference"</code></li>
+        </ul>
+        <p>
+          Not: 20 Temmuz güncelleme notunda bu iş “yapıldı” olarak yazılmış, ama sadece
+          bölüm başlığı düzeltilmiş; menü atlanmış.
+        </p>
+        <p class="kv">
+          <b>Dosya:</b> <code>app/data/homepage-content.js</code> satır
+          <code>79</code>, <code>398</code>, <code>717</code>, <code>1067</code>
+        </p>
+      </div>
+
+      <div class="card card--warn">
+        <div class="card__head">
+          <h3 class="card__title">Boşnakça “Kimliğimiz” paragrafı eski metinde kalmış</h3>
+          <span class="chip chip--warn">R1 · Orta</span>
+        </div>
+        <p>
+          R1’de istenen “33 yılı aşkın uluslararası saha tecrübesi… mühendis, eğitmen ve eğitimci”
+          paragrafı TR, EN ve DE’ye işlenmiş. Boşnakça sürümde ise <b>tamamen alakasız, eski bir metin</b>
+          duruyor (“Vaše osoblje smatramo partnerima…” = “Çalışanlarınızı partner olarak görüyoruz…”).
+          Yani BS ziyaretçisi Kimliğimiz bölümünde yanlış içeriği görüyor.
+        </p>
+        <p>
+          Aynı yerde ikinci bir tutarsızlık: BS’deki buton metni
+          <code>"Pogledajte priču našeg osnivača."</code> — sonunda nokta var, diğer üç dilde yok.
+        </p>
+        <p class="kv"><b>Dosya:</b> <code>app/data/homepage-content.js:1074-1082</code></p>
+      </div>
+
+      <div class="card card--warn">
+        <div class="card__head">
+          <h3 class="card__title">Uzmanlık kartlarında eski paragraflar duruyor — teyit gerekiyor</h3>
+          <span class="chip chip--warn">R11 · R12 · R13 · Düşük</span>
+        </div>
+        <p>
+          Müşteri 3., 4. ve 5. kartlar için “YENİ METİN” diye gönderdi. Yeni metinler doğru
+          yazılmış, ancak her üç kartta <b>eski paragraflardan biri de altında bırakılmış</b>.
+          1. ve 2. kartta böyle bir artık yok — yani kartlar arasında tutarsızlık var.
+        </p>
+        <ul>
+          <li>Kart 3: “Bir şirketin süreçleri her zaman %100 doğru hizmet veya ürün üretmez…” (<code>:219</code>)</li>
+          <li>Kart 4: “Kontrol çizelgesi, histogram, Pareto analizi…” (<code>:234</code>)</li>
+          <li>Kart 5: “Kalite, Ar-Ge, Üretim, Üretim Planlama ve Satış Sonrası süreçleri…” (<code>:251</code>)</li>
+        </ul>
+        <p>
+          Bu paragraflar silinmeli mi yoksa kalsın mı — talep metninden kesin anlaşılmıyor.
+          Müşteriye tek soruyla sorulup kapatılması en temizi.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ 3. COMMIT EDILMEMIS ============ -->
+  <section>
+    <h2><span class="num">03</span> Yapıldı ama yayında değil — commit bekleyen çalışma</h2>
+    <p class="sub">Çalışma dizininde duran, henüz commit edilmemiş ve dolayısıyla canlıda görünmeyen değişiklik.</p>
+
+    <div class="cards">
+      <div class="card card--info">
+        <div class="card__head">
+          <h3 class="card__title">Kurucu sloganının fotoğrafın sağına alınması</h3>
+          <span class="chip chip--info">R6 · madde 1</span>
+        </div>
+        <p>
+          Müşterinin ilk maddesi şuydu: <i>“Fotoğrafım sağında böyle bir slogan olmalı…”</i>
+          Bu düzen çalışması <b>tamamlanmış ve doğru</b>, ama commit edilmediği için canlıda
+          slogan hâlâ fotoğrafın altında görünüyor.
+        </p>
+        <ul>
+          <li><code>components/sections/founder-story-section.jsx</code> — fotoğraf + isim/unvan
+              <code>.founder-portrait</code> sarmalayıcısına alındı, slogan kardeş eleman oldu.</li>
+          <li><code>app/globals.css</code> — <code>.founder-image-wrap</code> iki sütunlu grid’e
+              çevrildi; slogan sağda, dikeyde ortalı, kırmızı sol kenarlıklı alıntı bloğu.</li>
+          <li>1040px altında iki sütun alt alta düşüyor; slogan fotoğrafın altına geçip
+              sol kenarlık yerine üst ayraç çizgisi kullanıyor — mobil regresyonu yok.</li>
+        </ul>
+        <p>
+          Doğrulama: <code>npm run build</code> hatasız tamamlandı, CSS geçerli,
+          dört dilde tüm sayfalar statik üretildi. <b>Yayına almak için tek eksik: commit + push.</b>
+        </p>
+        <p class="kv">
+          <b>Değişiklik:</b> 2 dosya, +48 / −36 satır ·
+          <b>Not:</b> <code>globals.css</code> içindeki <code>.footer-copyright</code> satırında
+          sadece boşluk farkı var, işlevsel değil.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. PANEL HIJYENI ============ -->
+  <section>
+    <h2><span class="num">04</span> Panel durumu ile gerçek durum uyuşmuyor</h2>
+    <p class="sub">
+      Revizyon panelinde 9 kaydın etiketi gerçeği yansıtmıyor. Panel bu yüzden “ne kaldı”
+      sorusuna güvenilir cevap veremiyor.
+    </p>
+
+    <div class="cards">
+      <div class="card card--ok">
+        <div class="card__head">
+          <h3 class="card__title">“Tamamlandı” yapılabilecek 8 kayıt</h3>
+          <span class="chip chip--ok">Kapatmaya hazır</span>
+        </div>
+        <p>Bunların işi bitmiş, panelde hâlâ açık görünüyor:</p>
+        <ul>
+          <li><b>Yeni</b> → Tamamlandı: R7 (Yaklaşımımız), R14 (Ana başlık ilaveleri)</li>
+          <li><b>Devam ediyor</b> → Tamamlandı: R9, R10, R11, R12, R13 (beş uzmanlık kartı)</li>
+          <li><b>Yeni</b> → Tamamlandı: R6 (Kurucu hikayesi) — <i>ancak commit sonrası</i></li>
+        </ul>
+      </div>
+
+      <div class="card card--warn">
+        <div class="card__head">
+          <h3 class="card__title">Açık kalması gereken 3 kayıt</h3>
+          <span class="chip chip--warn">İş var</span>
+        </div>
+        <ul>
+          <li><b>R2 (Misyonumuz)</b> — “Devam ediyor” görünüyor ama fiilen başlanmamış. Asıl açık iş bu.</li>
+          <li><b>R4 (Referanslar)</b> — menü başlığı düzeltilene kadar açık kalmalı.</li>
+          <li><b>R1 (Kimliğimiz)</b> — Boşnakça metin düzeltilene kadar açık kalmalı.</li>
+        </ul>
+      </div>
+
+      <div class="card card--warn">
+        <div class="card__head">
+          <h3 class="card__title">Güncellemeler akışı 10 gün geride</h3>
+          <span class="chip chip--warn">Kayıt eksiği</span>
+        </div>
+        <p>
+          Panelin “Güncellemeler” bölümündeki en yeni kart <b>20 Temmuz</b> tarihli. Oysa
+          23–30 Temmuz arasında 7 commit’lik iş yapıldı ve hiçbiri akışa yazılmadı:
+        </p>
+        <ul>
+          <li>Üst menüye Kimliğimiz / Misyonumuz / Yaklaşımımız eklenmesi (<code>e926a41</code>)</li>
+          <li>Yaklaşımımız metninin sadeleştirilmesi (<code>4b339a3</code>)</li>
+          <li>Uzmanlık kartlarının EN/DE/BS eşitlenmesi (<code>73d60d3</code>, <code>607b2d7</code>, <code>4b339a3</code>)</li>
+          <li>Kimliğimiz bölümündeki fazla içeriklerin kaldırılması (<code>1cfe978</code>)</li>
+          <li>Bölüm geçişi butonlarının tek tipe indirilmesi (<code>055d5e2</code>)</li>
+        </ul>
+        <p class="kv"><b>Dosya:</b> <code>app/admin/(panel)/updates-feed/page.jsx</code> — <code>UPDATES</code> dizisinin en üstüne kart eklenecek</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. TALEP DISI BULGULAR ============ -->
+  <section>
+    <h2><span class="num">05</span> Revizyon talebi olmayan, kontrolde çıkan bulgular</h2>
+    <p class="sub">Müşteri bunları bildirmedi; kontrol sırasında ortaya çıktı. Karar sizin.</p>
+
+    <div class="cards">
+
+      <div class="card card--bad">
+        <div class="card__head">
+          <h3 class="card__title">Bölüm geçişi metinleri 3 dilde Türkçe görünüyor</h3>
+          <span class="chip chip--bad">Yüksek</span>
+        </div>
+        <p>
+          Ana sayfadaki 11 bölüm geçişinin özlü sözleri ve buton yazıları
+          <code>app/[lang]/page.jsx</code> içinde <b>doğrudan Türkçe sabit metin</b> olarak yazılmış —
+          içerik dosyasından değil. Sonuç: İngilizce, Almanca ve Boşnakça sayfalarda ziyaretçi
+          “Her dönüşüm, sahada atılan ilk adımla gerçeğe dönüşür.” ve “Öğren ve Geliş” gibi
+          Türkçe metinler görüyor.
+        </p>
+        <p>Aynı sorun <code>app/[lang]/newera/page.jsx</code> dosyasında da birebir mevcut (11 geçiş).</p>
+        <p class="kv"><b>Etki:</b> 4 dilin 3’ünde, ana sayfanın en görünür 11 noktası</p>
+      </div>
+
+      <div class="card card--warn">
+        <div class="card__head">
+          <h3 class="card__title">Footer’daki tanıtım bağlantıları 5px puntoyla görünmez durumda</h3>
+          <span class="chip chip--warn">Risk</span>
+        </div>
+        <p>
+          <code>.footer-copyright</code> için <code>font-size: 5px</code> tanımlı
+          (<code>app/globals.css:2434</code>). Bu satırda telif metniyle birlikte üç harici
+          bağlantı da yer alıyor (nakliyat, hurda metal, erotik ürün sitesi).
+        </p>
+        <p>
+          5px punto pratikte okunamaz. Arama motorları okunamayacak kadar küçültülmüş bağlantıları
+          “gizli bağlantı” olarak değerlendirebiliyor; bu da ceza riski taşır. Ayrıca konuyla
+          ilgisiz bir yetişkin içerik bağlantısının kurumsal sanayi danışmanlığı sitesinde
+          bulunması marka açısından ayrı bir karar konusu.
+        </p>
+        <p>
+          Bilinçli bir tercihse dokunmuyorum — sadece riski kayda geçiriyorum.
+        </p>
+        <p class="kv"><b>Dosya:</b> <code>components/site-footer.jsx:37-47</code> · <code>app/globals.css:2431-2438</code></p>
+      </div>
+
+      <div class="card card--warn">
+        <div class="card__head">
+          <h3 class="card__title">Telif satırı dört dilde de Türkçe</h3>
+          <span class="chip chip--warn">Düşük</span>
+        </div>
+        <p>
+          “EJS Consulting 2026 - Tüm Hakları Saklıdır” metni bileşenin içinde sabit yazılmış,
+          dile göre değişmiyor. <code>TODO.md</code>’de de açık madde olarak duruyor.
+        </p>
+        <p class="kv"><b>Dosya:</b> <code>components/site-footer.jsx:39</code></p>
+      </div>
+
+      <div class="card card--info">
+        <div class="card__head">
+          <h3 class="card__title">İçerik dosyasında kullanılmayan ölü alanlar</h3>
+          <span class="chip chip--info">Temizlik</span>
+        </div>
+        <p>
+          Kaldırılan tasarım öğelerinin verileri dosyada kaldı; hiçbir bileşen bunları okumuyor.
+          Zararsız ama kafa karıştırıcı — sonradan “neden görünmüyor?” sorusunu doğuruyor.
+        </p>
+        <ul>
+          <li><code>identity.tag</code> (“Yaklaşım” / “Approach” / “Ansatz” / “Pristup”) — dört dilde var,
+              <code>IdentitySection</code> yalnızca <code>eyebrow</code> okuyor, o da tanımlı değil.</li>
+          <li><code>founder.languagesLabel</code> ve <code>founder.languages</code> — diller artık
+              hikayenin son paragrafında cümle olarak geçiyor, etiket listesi hiç basılmıyor.</li>
+        </ul>
+      </div>
+
+      <div class="card card--info">
+        <div class="card__head">
+          <h3 class="card__title">TODO.md güncelliğini yitirmiş</h3>
+          <span class="chip chip--info">Düşük</span>
+        </div>
+        <p>
+          Dosyadaki “Kalan İşler” listesindeki maddelerin çoğu aslında bitmiş: arama sayfası,
+          yazı detay sayfaları, dil başına SEO metadata, DE çevirisi hep yapıldı. Hâlâ geçerli
+          olan tek tek maddeler: <code>lib/language-context.jsx</code>’in silinmesi,
+          <code>globals.css</code>’in bölünmesi (şu an ~3.680 satır) ve footer telif satırının
+          lokalizasyonu.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ 6. NEWERA ============ -->
+  <section>
+    <h2><span class="num">06</span> ejsconsulting.org → NewEra geçişi</h2>
+    <p class="sub">
+      <code>PLAN_NEWERA.md</code> ve panelin “Sıradaki Adımlar” bölümüne göre durum.
+      Teknik taraf hazır, kalan adımlar panel/DNS işleri.
+    </p>
+
+    <div class="tbl-scroll">
+      <table>
+        <thead>
+          <tr><th>Aşama</th><th>Adım</th><th>Durum</th><th>Not</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="id">0</td><td class="what"><b>Erişim bilgileri kaydı</b></td>
+            <td><span class="chip chip--ok">Yapıldı</span></td>
+            <td class="note"><code>credentials.md</code> oluşturuldu, <code>.gitignore</code>’a alındı.</td>
+          </tr>
+          <tr>
+            <td class="id">0</td><td class="what"><b>WordPress tam yedeği</b></td>
+            <td><span class="chip chip--bad">Yapılmadı</span></td>
+            <td class="note">Hosting panelinde manuel işlem — geçişin ön koşulu. <b>Blokaj burada.</b></td>
+          </tr>
+          <tr>
+            <td class="id">1</td><td class="what"><b>“Yenileniyoruz” bakım mesajı</b></td>
+            <td><span class="chip chip--bad">Yapılmadı</span></td>
+            <td class="note">Mesaj metni de henüz netleşmedi.</td>
+          </tr>
+          <tr>
+            <td class="id">2</td><td class="what"><b><code>/newera</code> route’u</b></td>
+            <td><span class="chip chip--ok">Yapıldı</span></td>
+            <td class="note">Dört dilde statik üretiliyor — bu raporun build çıktısında doğrulandı.</td>
+          </tr>
+          <tr>
+            <td class="id">2</td><td class="what"><b>Canlıda doğrulama</b></td>
+            <td><span class="chip chip--warn">Bekliyor</span></td>
+            <td class="note"><code>askanai.online/tr/newera</code> tarayıcıdan kontrol edilmeli.</td>
+          </tr>
+          <tr>
+            <td class="id">3</td><td class="what"><b>DNS yönlendirme + SSL</b></td>
+            <td><span class="chip chip--bad">Yapılmadı</span></td>
+            <td class="note">domainhizmetleri.com panelinden manuel. Sunucu IP’si de hâlâ teyit edilmedi.</td>
+          </tr>
+          <tr>
+            <td class="id">3</td><td class="what"><b><code>/newera</code>’nın geleceği</b></td>
+            <td><span class="chip chip--warn">Karar bekliyor</span></td>
+            <td class="note">Ana sayfaya taşınacak mı, 301 ile yönlendirilecek mi?</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ 7. AKSIYON ============ -->
+  <section>
+    <h2><span class="num">07</span> Önerilen sıra</h2>
+    <p class="sub">Etki ve efor dengesine göre. İlk üçü kısa işler ve müşterinin doğrudan gördüğü yerler.</p>
+
+    <ol class="actions">
+      <li>
+        <b>Kurucu bölümü düzenini commit edip push et</b>
+        <span>İş zaten bitmiş ve build geçiyor; commit edilmediği için müşterinin R6’daki
+        birinci maddesi canlıda görünmüyor. En hızlı kazanç.</span>
+      </li>
+      <li>
+        <b>Üst menüdeki “Referanslar” başlığını dört dilde düzelt</b>
+        <span>R4 · Tek dosyada 4 satır. Müşteri bunu açıkça ve gerekçesiyle bildirmiş, üstelik
+        “yapıldı” diye kaydedilmiş.</span>
+      </li>
+      <li>
+        <b>Boşnakça Kimliğimiz paragrafını doğru metinle değiştir</b>
+        <span>R1 · BS ziyaretçisi şu an yanlış içerik görüyor. Buton sonundaki noktayı da al.</span>
+      </li>
+      <li>
+        <b>MİSYONUMUZ bölümünü talep edildiği gibi yeniden yaz</b>
+        <span>R2 · Yeni başlık + 3 madde, dört dilde. Bu rapordaki en büyük açık iş kalemi.</span>
+      </li>
+      <li>
+        <b>Uzmanlık kartlarındaki eski paragrafları müşteriye sor</b>
+        <span>R11/R12/R13 · “Bu üç paragraf kalsın mı, silinsin mi?” — tek soruyla üç kayıt kapanır.</span>
+      </li>
+      <li>
+        <b>Bölüm geçişi metinlerini içerik dosyasına taşı</b>
+        <span>Talep dışı ama etkisi büyük: 3 dilde 11 nokta Türkçe görünüyor. Yapısal iş,
+        ayrı bir çalışma olarak planlanmalı.</span>
+      </li>
+      <li>
+        <b>Panelde 8 kaydı “Tamamlandı” yap, güncellemeler akışına 23–30 Temmuz kartını ekle</b>
+        <span>Panel bu iki adımdan sonra “ne kaldı” sorusuna doğru cevap verir hâle gelir.</span>
+      </li>
+      <li>
+        <b>NewEra geçişi: WordPress yedeğini al</b>
+        <span>Zincirin ilk halkası ve tek blokajı. Yedek olmadan sonraki adımlar başlatılmamalı.</span>
+      </li>
+    </ol>
+  </section>
+
+  <footer class="foot">
+    <p>
+      <b>Yöntem:</b> Revizyon talepleri ve yorumları Supabase’den okundu
+      (<code>revision_requests</code> 14 kayıt, <code>revision_comments</code> 8 kayıt);
+      her madde <code>app/data/homepage-content.js</code> ve ilgili bileşenlerdeki güncel içerikle
+      dört dil için karşılıklı kontrol edildi. Çalışma dizini <code>git diff</code> ile,
+      derlenebilirlik <code>npm run build</code> ile doğrulandı (çıkış kodu 0, tüm sayfalar
+      dört dilde statik üretildi).
+    </p>
+    <p>
+      Panel durum etiketlerine güvenilmedi — her satırın kaynağı koddur. Satır numaraları
+      HEAD <code>4b339a3</code> ve commit edilmemiş çalışma dizini durumuna göredir.
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

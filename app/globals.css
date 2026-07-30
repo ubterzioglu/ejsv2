@@ -3570,12 +3570,11 @@ img {
 
 .founder-image-wrap {
   display: grid;
-  /* Gorsel karti iki sutunlu duzene gore ~2 KAT genis: tek sutunda
-     genis bir blok olarak ortada durur, gorsel belirgin sekilde buyur. */
-  justify-items: center;
-  text-align: center;
-  align-content: start;
-  gap: 1rem;
+  /* Kart ici IKI sutun: SOLDA gorsel (+ isim/unvan), SAGDA slogan.
+     Slogan dikeyde gorselin ortasina hizalanir. */
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1.5rem, 3vw, 2.75rem);
   padding: clamp(1.5rem, 2.5vw, 2.25rem);
   background: var(--surface);
   border: var(--card-border);
@@ -3583,22 +3582,20 @@ img {
   border-radius: var(--card-radius);
 }
 
+.founder-portrait {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+  min-width: 0;
+}
+
 .founder-image {
-  /* Gorsel ALTINDAKI metin kartiyla AYNI genislikte: kart icerigini
-     (padding haric) tam kaplar, max-width siniri yok. */
+  /* Gorsel kendi sutununu (sol sutun) tam kaplar. */
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: var(--card-radius);
   filter: grayscale(1);
-}
-
-/* Gorsel buyurken isim/unvan ve caption metni asiri genis/okunmaz olmasin;
-   makul bir okuma genisliginde ortali kalsinlar. */
-.founder-image-wrap .founder-meta,
-.founder-image-wrap .founder-caption {
-  width: 100%;
-  max-width: 56rem;
 }
 
 .founder-meta {
@@ -3650,17 +3647,30 @@ img {
   background: var(--signal);
 }
 
+/* Slogan: gorselin SAGINDA duran alinti blogu. */
 .founder-caption {
   margin: 0;
-  margin-top: 0.6rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--line);
+  min-width: 0;
+  padding-left: clamp(1rem, 1.6vw, 1.5rem);
+  border-left: 3px solid var(--signal);
   color: var(--muted);
-  font-size: clamp(0.92rem, 1.05vw, 1rem);
-  line-height: 1.55;
+  font-size: clamp(1.02rem, 1.5vw, 1.35rem);
+  line-height: 1.5;
+  letter-spacing: -0.01em;
   font-style: italic;
 }
 
-/* .founder-layout zaten tek sutun; gorsel karti tam genislikte kalir
-   (gorsel kendi max-width'i ile ortali sinirlanir). Ayri responsive
-   override'a gerek yok. */
+/* Dar ekranda iki sutun alt alta duser: slogan gorselin ALTINA gecer ve
+   sol kenarlik yerine ust ayrac cizgisi kullanir. */
+@media (max-width: 1040px) {
+  .founder-image-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .founder-caption {
+    padding-left: 0;
+    padding-top: 1rem;
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+}
