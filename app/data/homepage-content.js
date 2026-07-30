@@ -558,15 +558,19 @@ export const homepageContent = {
         {
           title: "After-Sales Customer Complaint Management",
           summary:
-            "We build a system that turns customer complaints into fast, traceable, and lasting solutions.",
+            "We build an effective management system that turns customer complaints into fast, traceable, and lasting solutions.",
           paragraphs: [
-            "What should the customer-complaint resolution process and tracking platform look like? How are products returned from customers as faulty stored and examined? When a defect is confirmed, through which process are the resulting costs recovered from the supplier or the service that made the wrong decision? What should a Fault Investigation Center look like?",
+            "By analyzing complaint management, warranty processes, fault investigation, and recourse mechanisms, we strengthen the coordination between processes. With rapid response, root cause analysis, and a continuous improvement approach, we increase customer satisfaction and standardize your processes.",
             "Do the Quality, R&D, Production, Production Planning, and After-Sales processes really serve the same goal? Is there a seamless flow between them? Let's evaluate it together.",
           ],
           details: [
-            "Intake, classification, and prioritization of complaints.",
-            "Rapid response run together with root cause analysis.",
-            "Customer satisfaction measurement and a continuous improvement loop.",
+            "Setting up a faulty parts warehouse.",
+            "Setting up a faulty part / customer complaint investigation laboratory.",
+            "Investigation, classification, and prioritization of customer complaints and faulty parts.",
+            "Improvement of fault investigation processes.",
+            "Establishing warranty recourse processes toward the supplier or the service.",
+            "Resolving customer complaints and establishing a continuous improvement process.",
+            "Organizing after-sales services according to lean principles and calculating the required workforce.",
           ],
           image: "/assets/expertise/5-customer-service.jpg",
         },
@@ -866,15 +870,19 @@ export const homepageContent = {
         {
           title: "After-Sales-Kundenreklamationsmanagement",
           summary:
-            "Wir bauen ein System, das Kundenreklamationen in schnelle, nachvollziehbare und dauerhafte Lösungen verwandelt.",
+            "Wir bauen ein wirksames Managementsystem, das Kundenreklamationen in schnelle, nachvollziehbare und dauerhafte Lösungen verwandelt.",
           paragraphs: [
-            "Wie sollten der Bearbeitungsprozess für Kundenreklamationen und die Tracking-Plattform aussehen? Wie werden vom Kunden als fehlerhaft zurückgesandte Produkte gelagert und untersucht? Über welchen Prozess werden im Fehlerfall die entstandenen Kosten vom Lieferanten oder vom Service, der die falsche Entscheidung getroffen hat, zurückgefordert? Wie sollte ein Fehler-Untersuchungszentrum aussehen?",
+            "Durch die Analyse von Reklamationsmanagement, Garantieprozessen, Fehleruntersuchung und Rückgriffsmechanismen stärken wir die Koordination zwischen den Prozessen. Mit schneller Reaktion, Ursachenanalyse und einem Ansatz der kontinuierlichen Verbesserung steigern wir die Kundenzufriedenheit und standardisieren Ihre Prozesse.",
             "Dienen die Prozesse Qualität, F&E, Produktion, Produktionsplanung und After-Sales wirklich demselben Ziel? Gibt es zwischen ihnen einen nahtlosen Fluss? Lassen Sie es uns gemeinsam bewerten.",
           ],
           details: [
-            "Erfassung, Klassifizierung und Priorisierung von Reklamationen.",
-            "Schnelle Reaktion gemeinsam mit der Ursachenanalyse.",
-            "Messung der Kundenzufriedenheit und eine kontinuierliche Verbesserungsschleife.",
+            "Einrichtung eines Lagers für fehlerhafte Teile.",
+            "Einrichtung eines Labors zur Untersuchung fehlerhafter Teile / Kundenreklamationen.",
+            "Untersuchung, Klassifizierung und Priorisierung von Kundenreklamationen und fehlerhaften Teilen.",
+            "Weiterentwicklung der Fehleruntersuchungsprozesse.",
+            "Aufbau von Garantie-Rückgriffsprozessen gegenüber Lieferant oder Service.",
+            "Bearbeitung von Kundenreklamationen und Aufbau eines kontinuierlichen Verbesserungsprozesses.",
+            "Organisation der After-Sales-Services nach Lean-Prinzipien und Berechnung des erforderlichen Personalbedarfs.",
           ],
           image: "/assets/expertise/5-customer-service.jpg",
         },
@@ -1192,15 +1200,19 @@ export const homepageContent = {
         },
         {
           "title": "Upravljanje pritužbama kupaca nakon prodaje",
-          "summary": "Uspostavili smo sistem koji pretvara pritužbe kupaca u brza, praćenja i trajna rješenja.",
+          "summary": "Uspostavljamo efikasan sistem upravljanja koji pritužbe kupaca pretvara u brza, pratljiva i trajna rješenja.",
           "paragraphs": [
-            "Kako bi trebali izgledati proces rješavanja pritužbi kupaca i platforma za praćenje? Kako se proizvodi koje kupci vrate kao neispravne skladište i pregledavaju? Ako se utvrdi da je proizvod neispravan, kroz koji se proces nastali troškovi naplaćuju dobavljaču ili servisnom centru koji je donio pogrešnu odluku? Kakav bi trebao biti Centar za istragu grešaka?",
+            "Analizom upravljanja pritužbama, garancijskih procesa, ispitivanja neispravnosti i mehanizama regresa jačamo koordinaciju između procesa. Brzom reakcijom, analizom osnovnih uzroka i pristupom kontinuiranog poboljšanja povećavamo zadovoljstvo kupaca i standardiziramo vaše procese.",
             "Da li procesi kvaliteta, istraživanja i razvoja, proizvodnje, planiranja proizvodnje i postprodaje zaista služe istom cilju? Postoji li neometan protok između njih? Hajde da ovo zajedno procijenimo."
           ],
           "details": [
-            "Procesi za primanje, klasifikaciju i prioritizaciju pritužbi.",
-            "Provedba analize osnovnih uzroka u kombinaciji s brzim odgovorom.",
-            "Mjerenje zadovoljstva kupaca i ciklus kontinuiranog poboljšanja."
+            "Uspostavljanje skladišta neispravnih dijelova.",
+            "Uspostavljanje laboratorije za ispitivanje neispravnih dijelova / pritužbi kupaca.",
+            "Ispitivanje, klasifikacija i prioritizacija pritužbi kupaca i neispravnih dijelova.",
+            "Razvoj procesa ispitivanja neispravnosti.",
+            "Uspostavljanje procesa garancijskog regresa prema dobavljaču ili servisu.",
+            "Rješavanje pritužbi kupaca i uspostavljanje procesa kontinuiranog poboljšanja.",
+            "Organizacija postprodajnih servisa prema lean principima i izračun potrebne radne snage."
           ],
           "image": "/assets/expertise/5-customer-service.jpg"
         }
