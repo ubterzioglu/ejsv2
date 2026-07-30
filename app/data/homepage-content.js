@@ -92,8 +92,7 @@ export const homepageContent = {
       eyebrow: "Yaklaşımımız",
       title: "Çözümü masada değil, sizinle birlikte sahada kuruyoruz",
       body: [
-        "Farklı sektörlerde edindiğimiz saha tecrübesiyle ekiplerinizle birlikte çalışır, çözümleri birlikte üretiriz ve ekibinizi bağımsız çalışması için yetiştiririz.",
-        "Sadece ne yapılacağını söylemekle yetinmeyiz; süreç tamamlanana kadar uygulamacı kimliğimizle ekiplerinizle birlikte sahada/süreçte yer alırız.",
+        "Farklı sektörlerde edindiğimiz saha tecrübesiyle ekiplerinizle birlikte çalışır, çözümleri birlikte geliştirir, uygulamacı yaklaşımımızla süreç tamamlanana kadar sahada aktif rol alır ve ekibinizi bağımsız şekilde sürdürülebilir başarı sağlayacak yetkinliğe ulaştırırız.",
       ],
       highlight: "Danışman Değil, Uygulamacı Dönüşüm Ortağı.",
     },
@@ -412,8 +411,7 @@ export const homepageContent = {
       eyebrow: "Our Approach",
       title: "We build the solution with you on the floor, not at the desk",
       body: [
-        "Unlike classic consulting, we do not arrive with a report and leave with one. We design the transformation with you on the floor, implement it, and stay until results are real.",
-        "For us, a successful transformation makes execution part of the concept itself. We do not impose a solution; we build it with your team, shaped around your reality.",
+        "Drawing on the shopfloor experience we have gained across different sectors, we work together with your teams, develop the solutions jointly, take an active role on the floor with our hands-on approach until the process is complete, and bring your team to the competence needed to sustain success independently.",
       ],
       highlight: "Not a Consultant — a Hands-On Transformation Partner.",
     },
@@ -495,32 +493,39 @@ export const homepageContent = {
         {
           title: "Lean Transformation and Digitalization of Processes",
           summary:
-            "We make waste in office and administrative processes visible, speed up flow, and move processes onto digital systems with lean management principles.",
+            "We make waste in your processes visible, speed up the workflow, and move your processes onto digital systems with lean management principles.",
           paragraphs: [
-            "Companies usually focus on improving production processes, since production is one of the most significant cost items in terms of investment scale and operational expense. Yet inefficiencies in other business processes — sales, service, planning, purchasing, quality, and management — lead to substantial cost and performance losses, caused by weak links between processes, the absence of shared goals, inadequate performance indicators, and activities that are not measured correctly.",
-            "We measure the performance of these processes and analyze value-adding and non-value-adding activities, cross-process interactions, supplier and customer focus, digital maturity, and organizational efficiency. Based on the results, we define standards, responsibilities, the right workforce capacity, and performance criteria to transform processes into a more customer-focused, fast, transparent, and sustainable structure. We redesign processes according to lean management principles, integrate them into your existing digital systems, or build them on new digital platforms tailored to your needs.",
-            "Our goal is to transform your processes into a structure that is efficient, transparent, sustainable, and aligned with world-class standards. We do not merely propose the systems we design; we work alongside your team through implementation, follow-up, measurement, improvement, and standardization to achieve lasting results and sustainable success.",
+            "By analyzing management, core, and support processes, we identify bottlenecks, non-value-adding activities, cross-process interactions, and performance losses. On that basis we establish standards, responsibilities, performance indicators, and the right workforce capacity, making processes faster, more transparent, and more customer-focused.",
+            "We integrate the solutions we design into your existing digital systems or develop new digital structures suited to your needs. We do not merely offer recommendations; we work alongside your team through implementation, measurement, improvement, and standardization to secure lasting results.",
           ],
           details: [
-            "End-to-end process visibility through value stream mapping (VSM).",
-            "Identifying and removing waste in administrative and planning processes.",
-            "Standard work, visual management, and a regular management cadence.",
+            "Determining the process maturity level (including value-added analysis).",
+            "Value stream mapping (VSM).",
+            "Defining standard work and work cycle times.",
+            "Determining white-collar/blue-collar workforce requirements.",
+            "Building and implementing a KPI and performance management system.",
+            "Digital process design and integration.",
           ],
           image: "/assets/expertise/1-lean-digital.jpg",
         },
         {
           title: "Lean Transformation of Production",
           summary:
-            "We make the shopfloor leaner, smoother, and more efficient while reducing downtime and waste.",
+            "We make the shopfloor leaner, smoother, and more efficient; we reduce downtime, increase capacity, and eliminate waste.",
           paragraphs: [
-            "Production is known as a company's highest cost, due to the heavy investment made in its processes, people, machines, equipment, and floor space. Designing production according to lean manufacturing principles brings significant gains in space, material, human resources, and capacity. It is therefore sensible for companies to prioritize improvement in this area.",
-            "In this scope we support you in examining the current production flow, planning new lines and cells, accelerating end-to-end production time, making automation decisions, eliminating bottlenecks, deciding on new investments, and increasing capacity.",
-            "We also help reduce machine setup/changeover times, feed production lines with material, lower inventory, plan balanced production aligned with customer orders, establish and apply a production management system, and transition to a new production culture — all as hands-on practitioners.",
+            "We analyze the current production flow and guide your operation on line and cell design, removing bottlenecks, automation decisions, capacity planning, and new investments. We also provide hands-on support on reducing setup times, improving material flow, lowering inventory, balanced production planning, and establishing production management systems.",
           ],
           details: [
-            "Line balancing, cellular manufacturing, and flow design.",
-            "SMED for fast changeovers and increased flexibility.",
-            "5S, TPM, and OEE for shopfloor discipline and equipment effectiveness.",
+            "Production/factory organization aligned with lean principles.",
+            "Establishing production lines.",
+            "Planning and commissioning a new layout according to lean principles.",
+            "Value-added analysis of operator and machine activities.",
+            "Defining new standard work activities for operators and machines.",
+            "Line balancing (balancing operator and machine work to takt time), cellular manufacturing, and flow design.",
+            "Fast product/die changeover with SMED.",
+            "Commissioning 5S and Shopfloor Management (Production Management System).",
+            "TPM and OEE applications.",
+            "Material flow and inventory optimization (including Kanban).",
           ],
           image: "/assets/expertise/2-production.jpg",
         },
@@ -725,8 +730,7 @@ export const homepageContent = {
       eyebrow: "Unser Ansatz",
       title: "Wir bauen die Lösung mit Ihnen vor Ort — nicht am Schreibtisch",
       body: [
-        "Anders als die klassische Beratung kommen und gehen wir nicht mit einem Bericht. Wir gestalten die Transformation gemeinsam mit Ihnen vor Ort, setzen sie um und bleiben, bis Ergebnisse real sind.",
-        "Für uns macht eine erfolgreiche Transformation die Umsetzung zum natürlichen Teil des Konzepts. Wir drängen Ihnen keine Lösung auf; wir bauen sie mit Ihrem Team, passend zu Ihrer Realität.",
+        "Mit der Praxiserfahrung, die wir in verschiedenen Branchen gewonnen haben, arbeiten wir gemeinsam mit Ihren Teams, entwickeln die Lösungen zusammen, übernehmen mit unserem praxisnahen Ansatz eine aktive Rolle vor Ort, bis der Prozess abgeschlossen ist, und bringen Ihr Team auf die Kompetenz, nachhaltigen Erfolg eigenständig zu sichern.",
       ],
       highlight: "Kein Berater — ein praxisnaher Transformationspartner.",
     },
@@ -808,32 +812,39 @@ export const homepageContent = {
         {
           title: "Lean-Transformation und Digitalisierung der Prozesse",
           summary:
-            "Wir machen Verschwendung in Büro- und Verwaltungsprozessen sichtbar, beschleunigen den Fluss und überführen Prozesse mit Lean-Management-Prinzipien in digitale Systeme.",
+            "Wir machen Verschwendung in Ihren Prozessen sichtbar, beschleunigen den Arbeitsfluss und überführen Ihre Prozesse mit Lean-Management-Prinzipien in digitale Systeme.",
           paragraphs: [
-            "Unternehmen konzentrieren sich meist auf die Verbesserung der Produktionsprozesse, da die Produktion hinsichtlich Investitionsvolumen und Betriebskosten zu den wichtigsten Kostenpositionen zählt. Ineffizienzen in anderen Geschäftsprozessen — Vertrieb, Service, Planung, Einkauf, Qualität und Management — führen jedoch durch schwache Verbindungen zwischen den Prozessen, fehlende gemeinsame Ziele, unzureichende Leistungskennzahlen und nicht korrekt gemessene Aktivitäten zu erheblichen Kosten und Leistungsverlusten.",
-            "Wir messen die Leistung dieser Prozesse und analysieren wertschöpfende und nicht wertschöpfende Aktivitäten, prozessübergreifende Wechselwirkungen, Lieferanten- und Kundenorientierung, den digitalen Reifegrad und die organisatorische Effizienz. Auf Basis der Ergebnisse definieren wir Standards, Verantwortlichkeiten, die richtige Personalkapazität und Leistungskriterien, um die Prozesse kundenorientierter, schneller, transparenter und nachhaltiger zu gestalten. Wir gestalten Prozesse nach Lean-Management-Prinzipien neu, integrieren sie in Ihre bestehenden digitalen Systeme oder bauen sie auf neuen, auf Ihre Bedürfnisse zugeschnittenen digitalen Plattformen auf.",
-            "Unser Ziel ist es, Ihre Prozesse in eine effiziente, transparente, nachhaltige und weltklasse-konforme Struktur zu überführen. Wir empfehlen die von uns entworfenen Systeme nicht nur; wir arbeiten gemeinsam mit Ihrem Team durch Umsetzung, Nachverfolgung, Messung, Verbesserung und Standardisierung, um dauerhafte Ergebnisse und nachhaltigen Erfolg zu erzielen.",
+            "Durch die Analyse von Management-, Kern- und Unterstützungsprozessen identifizieren wir Engpässe, nicht wertschöpfende Aktivitäten, prozessübergreifende Wechselwirkungen und Leistungsverluste. Auf dieser Grundlage etablieren wir Standards, Verantwortlichkeiten, Leistungskennzahlen und die richtige Personalkapazität und machen die Prozesse schneller, transparenter und kundenorientierter.",
+            "Die von uns entworfenen Lösungen integrieren wir in Ihre bestehenden digitalen Systeme oder entwickeln neue, auf Ihre Bedürfnisse zugeschnittene digitale Strukturen. Wir geben nicht nur Empfehlungen; wir arbeiten gemeinsam mit Ihrem Team durch Umsetzung, Messung, Verbesserung und Standardisierung, um dauerhafte Ergebnisse zu sichern.",
           ],
           details: [
-            "Durchgängige Prozesstransparenz durch Wertstromanalyse (VSM).",
-            "Erkennen und Beseitigen von Verschwendung in Verwaltungs- und Planungsprozessen.",
-            "Standardarbeit, visuelles Management und ein regelmäßiger Management-Rhythmus.",
+            "Bestimmung des Prozessreifegrads (einschließlich Wertschöpfungsanalyse).",
+            "Wertstromanalyse (VSM).",
+            "Festlegung der Standardarbeit und der Arbeitszeiten.",
+            "Ermittlung des Personalbedarfs für Angestellte und Produktionsmitarbeiter.",
+            "Aufbau und Umsetzung eines KPI- und Leistungsmanagementsystems.",
+            "Digitale Prozessgestaltung und Integration.",
           ],
           image: "/assets/expertise/1-lean-digital.jpg",
         },
         {
           title: "Lean-Transformation der Produktion",
           summary:
-            "Wir machen den Shopfloor schlanker, flüssiger und effizienter und reduzieren Stillstände und Verschwendung.",
+            "Wir machen den Shopfloor schlanker, flüssiger und effizienter; wir reduzieren Stillstände, erhöhen die Kapazität und beseitigen Verschwendung.",
           paragraphs: [
-            "Die Produktion gilt aufgrund der hohen Investitionen in ihre Prozesse, Mitarbeiter, Maschinen, Anlagen und Flächen als höchste Kostenposition eines Unternehmens. Eine an Lean-Prinzipien ausgerichtete Gestaltung der Produktion bringt erhebliche Gewinne bei Fläche, Material, Personal und Kapazität. Daher ist es sinnvoll, dass Unternehmen Verbesserungen in diesem Bereich priorisieren.",
-            "In diesem Rahmen unterstützen wir Sie bei der Analyse des bestehenden Produktionsflusses, der Planung neuer Linien und Zellen, der Beschleunigung der durchgängigen Produktionszeit, Automatisierungsentscheidungen, der Beseitigung von Engpässen, Entscheidungen über Neuinvestitionen und der Steigerung der Kapazität.",
-            "Wir helfen außerdem, Rüst- und Einstellzeiten der Maschinen zu reduzieren, Produktionslinien mit Material zu versorgen, Bestände zu senken, eine an Kundenaufträgen ausgerichtete, ausgewogene Produktion zu planen, ein Produktionsmanagementsystem aufzubauen und anzuwenden sowie den Übergang zu einer neuen Produktionskultur zu gestalten — als praxisnahe Praktiker.",
+            "Wir analysieren den bestehenden Produktionsfluss und begleiten Ihren Betrieb bei Linien- und Zellengestaltung, der Beseitigung von Engpässen, Automatisierungsentscheidungen, Kapazitätsplanung und Neuinvestitionen. Darüber hinaus unterstützen wir Sie praxisnah bei der Reduzierung von Rüstzeiten, der Verbesserung des Materialflusses, der Senkung von Beständen, der ausgewogenen Produktionsplanung und dem Aufbau von Produktionsmanagementsystemen.",
           ],
           details: [
-            "Linienausgleich, zelluläre Fertigung und Flussgestaltung.",
-            "SMED für schnelle Rüstvorgänge und mehr Flexibilität.",
-            "5S, TPM und OEE für Shopfloor-Disziplin und Anlageneffektivität.",
+            "Produktions-/Fabrikorganisation nach Lean-Prinzipien.",
+            "Aufbau von Produktionslinien.",
+            "Planung und Inbetriebnahme eines neuen Layouts nach Lean-Prinzipien.",
+            "Wertschöpfungsanalyse der Tätigkeiten von Mitarbeitern und Maschinen.",
+            "Festlegung neuer Standardarbeitsabläufe für Mitarbeiter und Maschinen.",
+            "Linienausgleich (Abstimmung von Mitarbeiter- und Maschinenarbeit auf die Taktzeit), zelluläre Fertigung und Flussgestaltung.",
+            "Schneller Produkt-/Werkzeugwechsel mit SMED.",
+            "Inbetriebnahme von 5S und Shopfloor Management (Produktionsmanagementsystem).",
+            "TPM- und OEE-Anwendungen.",
+            "Materialfluss- und Bestandsoptimierung (einschließlich Kanban).",
           ],
           image: "/assets/expertise/2-production.jpg",
         },
@@ -1071,9 +1082,9 @@ export const homepageContent = {
     },
     "approach": {
       "eyebrow": "Naš pristup",
+      "title": "Rješenje ne gradimo za stolom, već zajedno s vama na terenu",
       "body": [
-        "Za razliku od tradicionalnog savjetovanja, mi se ne pojavljujemo samo s izvještajem i potom odlazimo. Mi zajedno s vama na terenu osmišljavamo i provodimo transformaciju te ostajemo uz vas dok se ne postignu rezultati.",
-        "Za nas uspješna transformacija čini implementaciju prirodnim dijelom koncepta. Ne namećemo vam rješenje; umjesto toga radimo uz vaš tim kako bismo izgradili rješenje prilagođeno vašim specifičnim okolnostima."
+        "Sa iskustvom s terena stečenim u različitim sektorima radimo zajedno s vašim timovima, rješenja razvijamo zajednički, svojim praktičnim pristupom aktivno učestvujemo na terenu do završetka procesa i vaš tim dovodimo do kompetencija potrebnih da samostalno osigura održiv uspjeh."
       ],
       "highlight": "Ne savjetnik, već partner za transformaciju koji ostvaruje rezultate."
     },
@@ -1143,31 +1154,38 @@ export const homepageContent = {
       "areas": [
         {
           "title": "Lean transformacija i digitalizacija procesa",
-          "summary": "Ističemo gubitke u kancelarijskim i administrativnim procesima, optimiziramo tokove rada i migriramo procese u digitalne sisteme u skladu s principima lean menadžmenta.",
+          "summary": "Činimo gubitke u vašim procesima vidljivim, ubrzavamo tok rada i migriramo vaše procese u digitalne sisteme u skladu s principima lean menadžmenta.",
           "paragraphs": [
-            "Kompanije se obično fokusiraju na poboljšanje svojih proizvodnih procesa, jer je proizvodnja jedan od najznačajnijih stavki troškova u pogledu obima ulaganja i operativnih troškova. Međutim, neefikasnosti u drugim poslovnim procesima—kao što su prodaja, servis, planiranje, nabavka, kvalitet i upravljanje—dovode do značajnih troškova i gubitaka u učinkovitosti zbog slabih veza između procesa, nedostatka zajedničkih ciljeva, neadekvatnih pokazatelja učinka i aktivnosti koje se ne mogu pravilno mjeriti.",
-            "Mjerimo učinak ovih procesa; analiziramo aktivnosti koje stvaraju dodanu vrijednost i aktivnosti koje ne stvaraju dodanu vrijednost, interakcije između procesa, fokus na dobavljače i kupce, digitalnu zrelost i organizacijsku efikasnost. Na osnovu dobijenih rezultata, definiramo standarde, odgovornosti, odgovarajući kapacitet radne snage i kriterije učinka, čime transformiramo procese u strukturu koja je više usmjerena na kupca, agilnija, transparentnija i održivija. Redizajniramo procese u skladu s principima lean menadžmenta, integrišemo ih u vaše postojeće digitalne sisteme ili ih gradimo na novim digitalnim platformama prilagođenim vašim potrebama.",
-            "Naš cilj je transformirati vaše procese u strukturu koja ispunjava globalne standarde i koja je efikasna, transparentna i održiva. Ne predlažemo samo sisteme koje dizajniramo; radimo zajedno s vašim timom tokom faza implementacije, nadzora, mjerenja, poboljšanja i standardizacije kako bismo osigurali trajne rezultate i održiv uspjeh."
+            "Analizom upravljačkih, osnovnih i pratećih procesa identificiramo uska grla, aktivnosti koje ne stvaraju dodanu vrijednost, interakcije između procesa i gubitke u učinku. Na toj osnovi uspostavljamo standarde, odgovornosti, pokazatelje učinka i odgovarajući kapacitet radne snage te procese činimo bržim, transparentnijim i više usmjerenim na kupca.",
+            "Rješenja koja osmislimo integriramo u vaše postojeće digitalne sisteme ili razvijamo nove digitalne strukture prilagođene vašim potrebama. Ne dajemo samo preporuke; radimo zajedno s vašim timom kroz implementaciju, mjerenje, poboljšanje i standardizaciju kako bismo osigurali trajne rezultate."
           ],
           "details": [
-            "Vidljivost procesa od početka do kraja putem mapiranja toka vrijednosti (VSM).",
-            "Identifikacija i eliminacija gubitaka u administrativnim i planskim procesima.",
-            "Uspostavljanje standardnih operativnih procedura, vizuelnog upravljanja i redovnog ciklusa upravljanja."
+            "Određivanje nivoa zrelosti procesa (uključujući analizu dodane vrijednosti).",
+            "Mapiranje toka vrijednosti (VSM).",
+            "Određivanje standardnog rada i vremena izvršenja.",
+            "Određivanje potreba za radnom snagom (administrativni i proizvodni kadar).",
+            "Uspostavljanje i primjena sistema KPI i upravljanja učinkom.",
+            "Dizajn i integracija digitalnih procesa."
           ],
           "image": "/assets/expertise/1-lean-digital.jpg"
         },
         {
           "title": "Lean transformacija u proizvodnji",
-          "summary": "To čini proizvodnu halu vitkijom, fluidnijom i efikasnijom; smanjujemo vrijeme zastoja i otpad.",
+          "summary": "Proizvodnu halu činimo vitkijom, fluidnijom i efikasnijom; smanjujemo zastoje, povećavamo kapacitet i eliminiramo gubitke.",
           "paragraphs": [
-            "Proizvodnja se prepoznaje kao najveći trošak kompanije zbog značajnih ulaganja u njene procese, radnu snagu, mašine, opremu i prostorije. Dizajniranje proizvodnje u skladu s principima vitke proizvodnje donosi značajne dobitke u pogledu prostora, materijala, ljudskih resursa i kapaciteta. Stoga je za kompanije logično da daju prioritet poboljšanjima u ovom području.",
-            "U ovom kontekstu podržaćemo vas u oblastima kao što su analiza vašeg trenutnog proizvodnog toka, planiranje novih linija i ćelija, smanjenje ukupnog vremena proizvodnje od početka do kraja, donošenje odluka o automatizaciji proizvodnje, uklanjanje uskih grla, odlučivanje o novim investicijama i povećanje kapaciteta.",
-            "Također pružamo praktičnu podršku u oblastima kao što su smanjenje vremena podešavanja mašina, osiguravanje snabdijevanja materijalom proizvodnim linijama, smanjenje nivoa zaliha, planiranje uravnotežene proizvodnje u skladu sa narudžbama kupaca, uspostavljanje i implementacija sistema upravljanja proizvodnjom i prelazak na novu proizvodnu kulturu."
+            "Analiziramo postojeći proizvodni tok i vodimo vaše poslovanje u dizajnu linija i ćelija, uklanjanju uskih grla, odlukama o automatizaciji, planiranju kapaciteta i novim investicijama. Također pružamo praktičnu podršku u smanjenju vremena podešavanja, poboljšanju toka materijala, smanjenju zaliha, uravnoteženom planiranju proizvodnje i uspostavljanju sistema upravljanja proizvodnjom."
           ],
           "details": [
-            "Balansiranje linija, ćelijska proizvodnja i dizajn protoka.",
-            "Brze promjene kalupa/proizvoda i povećana fleksibilnost uz SMED.",
-            "Disciplina na radnom mjestu i efikasnost opreme putem 5S, TPM i OEE."
+            "Organizacija proizvodnje/fabrike u skladu s lean principima.",
+            "Uspostavljanje proizvodnih linija.",
+            "Planiranje i puštanje u rad novog rasporeda prema lean principima.",
+            "Analiza dodane vrijednosti aktivnosti radnika i mašina.",
+            "Određivanje novih standardnih radnih aktivnosti za radnike i mašine.",
+            "Balansiranje linija (usklađivanje rada radnika i mašina s takt vremenom), ćelijska proizvodnja i dizajn protoka.",
+            "Brza promjena proizvoda/kalupa uz SMED.",
+            "Puštanje u rad 5S i Shopfloor Managementa (sistem upravljanja proizvodnjom).",
+            "Primjena TPM i OEE.",
+            "Optimizacija toka materijala i zaliha (uključujući Kanban)."
           ],
           "image": "/assets/expertise/2-production.jpg"
         },
