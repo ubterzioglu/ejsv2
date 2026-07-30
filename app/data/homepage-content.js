@@ -76,7 +76,7 @@ export const homepageContent = {
       { label: "Çalışmamız Hakkında", href: "#calismamiz-hakkinda" },
       { label: "Uzmanlık Alanlarımız", href: "#uzmanlik-alanlarimiz" },
       { label: "Öğren ve Geliş", href: "#ogren-ve-gelis" },
-      { label: "Birlikte Çalıştığımız İş Ortaklarımız", href: "#referanslar" },
+      { label: "Referanslar", href: "#referanslar" },
     ],
     hero: {
       ctaLabel: "Yaklaşımımız",
@@ -98,13 +98,12 @@ export const homepageContent = {
     },
     mission: {
       eyebrow: "Misyonumuz",
-      title: "Karlılığı, kurumsal yapıları ve saha disiplinini birlikte güçlendirmek.",
+      title: "Sanayiye Değer Katan Sürdürülebilir Dönüşüm",
       intro:
         "Sanayiye yurt içi ve yurt dışı bilgi birikimiyle katkı sağlamak ve şirketleri dijital çağa hazırlamak için çalışıyoruz.",
       bullets: [
-        "Şirketlerin karlılığını ve kurumsal yapısını güçlendirmek.",
-        "Organizasyonları dijital çağa hazırlayıp bu dönüşümde başarıyla konumlandırmak.",
-        "Yalın, çevik, hızlı ve verimli çalışma sistemleri kurmak.",
+        "Şirketlerin kârlılığını, kurumsal yapısını ve rekabet gücünü artırmak.",
+        "Yalın, çevik ve sürdürülebilir çalışma sistemleri kurarak organizasyonları dijital dönüşüme hazırlamak.",
         "Çalışanlara nitelik kazandırarak anlaşılır ve sürdürülebilir süreçler oluşturmak.",
       ],
       highlight: "Bilgi ve Tecrübeden Güce, Güçten Sonuca",
@@ -395,7 +394,7 @@ export const homepageContent = {
       { label: "About Our Work", href: "#calismamiz-hakkinda" },
       { label: "Expertise", href: "#uzmanlik-alanlarimiz" },
       { label: "Learn & Grow", href: "#ogren-ve-gelis" },
-      { label: "Our Business Partners", href: "#referanslar" },
+      { label: "References", href: "#referanslar" },
     ],
     hero: {
       ctaLabel: "Our Approach",
@@ -417,13 +416,12 @@ export const homepageContent = {
     },
     mission: {
       eyebrow: "Mission",
-      title: "Strengthening profitability, governance, and operational discipline together.",
+      title: "Sustainable Transformation That Adds Value to Industry",
       intro:
         "We work to contribute to industry with domestic and international experience and to prepare companies for the digital era.",
       bullets: [
-        "Strengthen company profitability and institutional capability.",
-        "Prepare organizations for the digital era and position them for success.",
-        "Build lean, agile, fast, and efficient operating systems.",
+        "Increase companies' profitability, institutional capability, and competitiveness.",
+        "Prepare organizations for digital transformation by building lean, agile, and sustainable operating systems.",
         "Develop people capabilities to create clear and sustainable processes.",
       ],
       highlight: "From Knowledge and Experience to Strength, from Strength to Results",
@@ -714,7 +712,7 @@ export const homepageContent = {
       { label: "Über unsere Arbeit", href: "#calismamiz-hakkinda" },
       { label: "Fachgebiete", href: "#uzmanlik-alanlarimiz" },
       { label: "Lernen & Wachsen", href: "#ogren-ve-gelis" },
-      { label: "Unsere Geschäftspartner", href: "#referanslar" },
+      { label: "Referenzen", href: "#referanslar" },
     ],
     hero: {
       ctaLabel: "Unser Ansatz",
@@ -736,13 +734,12 @@ export const homepageContent = {
     },
     mission: {
       eyebrow: "Mission",
-      title: "Rentabilität, Governance und operative Disziplin gemeinsam stärken.",
+      title: "Nachhaltige Transformation, die der Industrie Mehrwert schafft",
       intro:
         "Wir arbeiten daran, mit nationaler und internationaler Erfahrung zur Industrie beizutragen und Unternehmen auf das digitale Zeitalter vorzubereiten.",
       bullets: [
-        "Unternehmensrentabilität und institutionelle Fähigkeit stärken.",
-        "Organisationen auf das digitale Zeitalter vorbereiten und für Erfolg positionieren.",
-        "Schlanke, agile, schnelle und effiziente Betriebssysteme aufbauen.",
+        "Rentabilität, Unternehmensstruktur und Wettbewerbsfähigkeit von Unternehmen steigern.",
+        "Organisationen durch den Aufbau schlanker, agiler und nachhaltiger Arbeitssysteme auf die digitale Transformation vorbereiten.",
         "Mitarbeiterfähigkeiten entwickeln, um klare und nachhaltige Prozesse zu schaffen.",
       ],
       highlight: "Von Wissen und Erfahrung zur Stärke, von der Stärke zum Ergebnis",
@@ -1064,7 +1061,7 @@ export const homepageContent = {
         "href": "#ogren-ve-gelis"
       },
       {
-        "label": "Naši poslovni partneri",
+        "label": "Reference",
         "href": "#referanslar"
       }
     ],
@@ -1074,9 +1071,9 @@ export const homepageContent = {
     "identity": {
       "title": "Naš identitet",
       "tag": "Pristup",
-      "body": "Vaše osoblje smatramo partnerima i zajedno s njima razvijamo rješenja. Ne samo da vam govorimo šta treba raditi; ostajemo na terenu s vašim timovima dok proces ne bude dovršen. U našem radu dajemo prednost djelovanju nad riječima.",
+      "body": "Sa više od 33 godine međunarodnog iskustva na terenu; inženjeri, treneri i edukatori koji vode transformaciju kompanija u oblastima vitke proizvodnje i planiranja proizvodnje, vitkih procesa, kvaliteta i upravljanja projektima i to primjenjuju na terenu.",
       "cta": {
-        "label": "Pogledajte priču našeg osnivača.",
+        "label": "Pogledajte priču našeg osnivača",
         "href": "#kurucumuzun-hikayesi"
       }
     },
@@ -1090,12 +1087,11 @@ export const homepageContent = {
     },
     "mission": {
       "eyebrow": "Naša misija",
-      "title": "Za jačanje profitabilnosti, organizacijskih struktura i discipline na licu mjesta istovremeno.",
+      "title": "Održiva transformacija koja industriji donosi vrijednost",
       "intro": "Radimo na tome da doprinesemo industriji svojom stručnošću, kako u zemlji, tako i u inostranstvu, i da pripremimo kompanije za digitalno doba.",
       "bullets": [
-        "Za jačanje profitabilnosti i korporativne strukture kompanija.",
-        "Pripremiti organizacije za digitalno doba i uspješno ih pozicionirati u ovoj transformaciji.",
-        "Uspostaviti vitke, agilne, brze i efikasne radne sisteme.",
+        "Povećati profitabilnost, korporativnu strukturu i konkurentnost kompanija.",
+        "Pripremiti organizacije za digitalnu transformaciju uspostavljanjem vitkih, agilnih i održivih radnih sistema.",
         "Stvoriti jasne i održive procese opremajući osoblje potrebnim vještinama."
       ],
       "highlight": "Od znanja i iskustva do snage, od snage do rezultata"
