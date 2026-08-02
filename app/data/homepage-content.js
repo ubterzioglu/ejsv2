@@ -70,9 +70,7 @@ export const homepageContent = {
     ],
     mainLinks: [
       { label: "Hemen Başla!", href: "#iletisim" },
-      { label: "Kimliğimiz", href: "#kimligimiz" },
       { label: "Misyonumuz", href: "#misyonumuz" },
-      { label: "Yaklaşımımız", href: "#yaklasimimiz" },
       { label: "Çalışmamız Hakkında", href: "#calismamiz-hakkinda" },
       { label: "Uzmanlık Alanlarımız", href: "#uzmanlik-alanlarimiz" },
       { label: "Öğren ve Geliş", href: "#ogren-ve-gelis" },
@@ -388,9 +386,7 @@ export const homepageContent = {
     ],
     mainLinks: [
       { label: "Start Now", href: "#iletisim" },
-      { label: "Identity", href: "#kimligimiz" },
       { label: "Mission", href: "#misyonumuz" },
-      { label: "Our Approach", href: "#yaklasimimiz" },
       { label: "About Our Work", href: "#calismamiz-hakkinda" },
       { label: "Expertise", href: "#uzmanlik-alanlarimiz" },
       { label: "Learn & Grow", href: "#ogren-ve-gelis" },
@@ -706,9 +702,7 @@ export const homepageContent = {
     ],
     mainLinks: [
       { label: "Jetzt starten", href: "#iletisim" },
-      { label: "Identität", href: "#kimligimiz" },
       { label: "Mission", href: "#misyonumuz" },
-      { label: "Unser Ansatz", href: "#yaklasimimiz" },
       { label: "Über unsere Arbeit", href: "#calismamiz-hakkinda" },
       { label: "Fachgebiete", href: "#uzmanlik-alanlarimiz" },
       { label: "Lernen & Wachsen", href: "#ogren-ve-gelis" },
@@ -1037,16 +1031,8 @@ export const homepageContent = {
         "href": "#iletisim"
       },
       {
-        "label": "Naš identitet",
-        "href": "#kimligimiz"
-      },
-      {
         "label": "Naša misija",
         "href": "#misyonumuz"
-      },
-      {
-        "label": "Naš pristup",
-        "href": "#yaklasimimiz"
       },
       {
         "label": "O našoj studiji",
