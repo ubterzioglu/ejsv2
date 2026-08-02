@@ -97,8 +97,6 @@ export const homepageContent = {
     mission: {
       eyebrow: "Misyonumuz",
       title: "Sanayiye Değer Katan Sürdürülebilir Dönüşüm",
-      intro:
-        "Sanayiye yurt içi ve yurt dışı bilgi birikimiyle katkı sağlamak ve şirketleri dijital çağa hazırlamak için çalışıyoruz.",
       bullets: [
         "Şirketlerin kârlılığını, kurumsal yapısını ve rekabet gücünü artırmak.",
         "Yalın, çevik ve sürdürülebilir çalışma sistemleri kurarak organizasyonları dijital dönüşüme hazırlamak.",
@@ -413,8 +411,6 @@ export const homepageContent = {
     mission: {
       eyebrow: "Mission",
       title: "Sustainable Transformation That Adds Value to Industry",
-      intro:
-        "We work to contribute to industry with domestic and international experience and to prepare companies for the digital era.",
       bullets: [
         "Increase companies' profitability, institutional capability, and competitiveness.",
         "Prepare organizations for digital transformation by building lean, agile, and sustainable operating systems.",
@@ -729,8 +725,6 @@ export const homepageContent = {
     mission: {
       eyebrow: "Mission",
       title: "Nachhaltige Transformation, die der Industrie Mehrwert schafft",
-      intro:
-        "Wir arbeiten daran, mit nationaler und internationaler Erfahrung zur Industrie beizutragen und Unternehmen auf das digitale Zeitalter vorzubereiten.",
       bullets: [
         "Rentabilität, Unternehmensstruktur und Wettbewerbsfähigkeit von Unternehmen steigern.",
         "Organisationen durch den Aufbau schlanker, agiler und nachhaltiger Arbeitssysteme auf die digitale Transformation vorbereiten.",
@@ -1074,7 +1068,6 @@ export const homepageContent = {
     "mission": {
       "eyebrow": "Naša misija",
       "title": "Održiva transformacija koja industriji donosi vrijednost",
-      "intro": "Radimo na tome da doprinesemo industriji svojom stručnošću, kako u zemlji, tako i u inostranstvu, i da pripremimo kompanije za digitalno doba.",
       "bullets": [
         "Povećati profitabilnost, korporativnu strukturu i konkurentnost kompanija.",
         "Pripremiti organizacije za digitalnu transformaciju uspostavljanjem vitkih, agilnih i održivih radnih sistema.",
