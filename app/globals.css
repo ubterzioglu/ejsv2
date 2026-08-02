@@ -3329,11 +3329,12 @@ img {
 }
 
 .mission-highlight {
-  margin: 1.4rem 0 0;
+  margin: 1.4rem auto 0;
   font-size: clamp(1.15rem, 1.8vw, 1.5rem);
   font-weight: 700;
-  letter-spacing: -0.03em;
-  color: var(--signal);
+  letter-spacing: 0;
+  color: #050505;
+  text-align: center;
 }
 
 /* Expertise — premium stacked accordion cards */
