@@ -220,18 +220,31 @@
     </p>
     <div class="meta-row">
       <span><b>Rapor tarihi:</b> 30 Temmuz 2026</span>
-      <span><b>Branch:</b> main · <b>HEAD:</b> <code>4b339a3</code></span>
+      <span><b>Branch:</b> main · <b>HEAD:</b> <code>4ce3943</code> (origin/main ile senkron)</span>
       <span><b>Build:</b> <span class="chip chip--ok">npm run build · başarılı</span></span>
       <span><b>Kaynak:</b> Supabase <code>revision_requests</code> (14) + <code>revision_comments</code> (8)</span>
+    </div>
+    <div class="card card--ok" style="margin-top:1.2rem">
+      <div class="card__head">
+        <h3 class="card__title">Bu rapor push sonrası güncellendi</h3>
+        <span class="chip chip--ok">2. tur</span>
+      </div>
+      <p>
+        İlk taramada açık görünen dört maddenin dördü de artık kapandı. Kurucu bölümü düzeni
+        <code>1615d11</code> ile commit'lendi; ayrıca ikinci bir katkıcının
+        (<code>4ce3943</code>, <i>calcomweb</i>) commit'i <b>Misyonumuz</b>, <b>Referanslar menüsü</b>
+        ve <b>Boşnakça Kimliğimiz</b> maddelerini çözmüş. Aşağıdaki tablo bu iki commit
+        sonrasındaki durumu gösterir.
+      </p>
     </div>
   </header>
 
   <div class="kpis">
-    <div class="kpi kpi--ok"><div class="kpi__v">10</div><div class="kpi__l">Yapıldı</div></div>
-    <div class="kpi kpi--warn"><div class="kpi__v">2</div><div class="kpi__l">Kısmen yapıldı</div></div>
-    <div class="kpi kpi--bad"><div class="kpi__v">1</div><div class="kpi__l">Yapılmadı</div></div>
-    <div class="kpi kpi--info"><div class="kpi__v">1</div><div class="kpi__l">Commit bekliyor</div></div>
-    <div class="kpi"><div class="kpi__v">8</div><div class="kpi__l">Panelde kapatılmalı</div></div>
+    <div class="kpi kpi--ok"><div class="kpi__v">14</div><div class="kpi__l">Talep uygulandı</div></div>
+    <div class="kpi kpi--warn"><div class="kpi__v">3</div><div class="kpi__l">Müşteri teyidi bekliyor</div></div>
+    <div class="kpi kpi--bad"><div class="kpi__v">0</div><div class="kpi__l">Yapılmadı</div></div>
+    <div class="kpi kpi--ok"><div class="kpi__v">0</div><div class="kpi__l">Commit bekleyen</div></div>
+    <div class="kpi kpi--info"><div class="kpi__v">8</div><div class="kpi__l">Panelde kapatılmalı</div></div>
     <div class="kpi kpi--bad"><div class="kpi__v">5</div><div class="kpi__l">Talep dışı bulgu</div></div>
   </div>
 
@@ -243,10 +256,8 @@
       sonuçtur. İkisi 9 kayıtta birbirinden farklı.
     </p>
     <div class="legend">
-      <span><span class="chip chip--ok">Yapıldı</span> kodda doğrulandı</span>
-      <span><span class="chip chip--warn">Kısmen</span> bir parçası eksik</span>
-      <span><span class="chip chip--bad">Yapılmadı</span> uygulanmamış</span>
-      <span><span class="chip chip--info">Commit'siz</span> yapıldı ama yayında değil</span>
+      <span><span class="chip chip--ok">Yapıldı</span> kodda satır satır doğrulandı</span>
+      <span><span class="chip chip--mute">Devam ediyor</span> / <span class="chip chip--bad">Yeni</span> panelin gösterdiği (güncel olmayan) etiket</span>
     </div>
 
     <div class="tbl-scroll">
@@ -265,21 +276,23 @@
             <td class="id">R1</td>
             <td class="what"><b>KİMLİĞİMİZ</b><span>05.07 · yeni metin + “Kurucumuzun hikayesine göz atın” kalsın</span></td>
             <td><span class="chip chip--mute">Devam ediyor</span></td>
-            <td><span class="chip chip--warn">Kısmen</span></td>
+            <td><span class="chip chip--ok">Yapıldı</span></td>
             <td class="note">
-              TR/EN/DE metni birebir uygulandı, CTA kurucu bölümüne gidiyor
-              (<code>homepage-content.js:84-90</code>). <b>Boşnakça hâlâ eski paragrafı taşıyor.</b>
-              Müşteri 20.07 yorumunda “işlenmedi” demişti — TR tarafı o tarihten sonra düzeltilmiş.
+              Dört dilde de tamam. TR/EN/DE zaten uygulanmıştı; <b>Boşnakça paragraf
+              <code>4ce3943</code> ile düzeltildi</b> (“Sa više od 33 godine…”, <code>:1074</code>)
+              ve buton sonundaki fazla nokta da kaldırıldı.
             </td>
           </tr>
           <tr>
             <td class="id">R2</td>
             <td class="what"><b>MİSYONUMUZ</b><span>05.07 · yeni başlık + 3 madde + noktasız slogan</span></td>
             <td><span class="chip chip--mute">Devam ediyor</span></td>
-            <td><span class="chip chip--bad">Yapılmadı</span></td>
+            <td><span class="chip chip--ok">Yapıldı</span></td>
             <td class="note">
-              Sadece slogandaki nokta kaldırılmış. <b>Başlık ve maddeler dört dilde de eski hâlde</b>
-              (<code>homepage-content.js:99-111</code>). Detay için bkz. Bölüm 02.
+              <code>4ce3943</code> ile çözüldü. Başlık “Sanayiye Değer Katan Sürdürülebilir Dönüşüm”
+              oldu ve 4 madde istenen 3 maddeye indirildi — dört dilde de
+              (<code>:101</code>, <code>:419</code>, <code>:737</code>, <code>:1090</code>).
+              Slogan zaten noktasızdı.
             </td>
           </tr>
           <tr>
@@ -297,11 +310,11 @@
             <td class="id">R4</td>
             <td class="what"><b>REFERANSLAR</b><span>05.07 + 20.07 yorum · ana başlık “Referanslar” kalsın</span></td>
             <td><span class="chip chip--mute">Devam ediyor</span></td>
-            <td><span class="chip chip--warn">Kısmen</span></td>
+            <td><span class="chip chip--ok">Yapıldı</span></td>
             <td class="note">
-              Bölüm içi doğru: üst etiket “Referanslar”, alt başlık “İş Ortaklarımız”
-              (<code>:329-332</code>). <b>Ama üst menüdeki başlık dört dilde de hâlâ uzun hâli.</b>
-              Detay için bkz. Bölüm 02.
+              Bölüm içi zaten doğruydu (<code>:329-332</code>). <b>Üst menü başlığı da
+              <code>4ce3943</code> ile dört dilde kısaltıldı:</b> Referanslar / References /
+              Referenzen / Reference (<code>:79</code>, <code>:397</code>, <code>:715</code>, <code>:1064</code>).
             </td>
           </tr>
           <tr>
@@ -318,11 +331,12 @@
             <td class="id">R6</td>
             <td class="what"><b>Kurucumuzun Hikayesi-1</b><span>20.07 · 4 maddelik talep (slogan sağda, noktasız başlıklar, hikaye özeti)</span></td>
             <td><span class="chip chip--bad">Yeni</span></td>
-            <td><span class="chip chip--info">Commit'siz</span></td>
+            <td><span class="chip chip--ok">Yapıldı</span></td>
             <td class="note">
-              4 maddenin <b>tamamı yapılmış</b>: başlık ve giriş noktasız (<code>:268-270</code>),
+              4 maddenin tamamı tamam: başlık ve giriş noktasız (<code>:268-270</code>),
               hikaye özeti birebir ve dört dilde (<code>:274-280</code>), slogan noktasız (<code>:271</code>).
-              <b>Sloganı fotoğrafın sağına alan düzen çalışması commit edilmedi</b> — bkz. Bölüm 03.
+              <b>Sloganı fotoğrafın sağına alan düzen <code>1615d11</code> ile commit'lendi</b>
+              ve yayında — bkz. Bölüm 03.
             </td>
           </tr>
           <tr>
@@ -416,92 +430,41 @@
 
   <!-- ============ 2. YAPILMAYANLAR ============ -->
   <section>
-    <h2><span class="num">02</span> Yapılmayan ve eksik kalan işler</h2>
-    <p class="sub">Müşterinin açıkça istediği ama koda girmemiş maddeler. Sıralama önem derecesine göre.</p>
+    <h2><span class="num">02</span> Revizyonlarda kalan tek açık madde</h2>
+    <p class="sub">
+      İlk taramadaki üç büyük eksik (Misyonumuz, Referanslar menüsü, Boşnakça Kimliğimiz)
+      <code>4ce3943</code> ile kapandı. Revizyon tarafında kod işi olarak kalan bir şey yok;
+      geriye yalnızca müşteriye sorulması gereken bir karar kaldı.
+    </p>
 
     <div class="cards">
 
-      <div class="card card--bad">
+      <div class="card card--ok">
         <div class="card__head">
-          <h3 class="card__title">MİSYONUMUZ bölümü hiç güncellenmedi</h3>
-          <span class="chip chip--bad">R2 · Yüksek</span>
+          <h3 class="card__title">Kapanan üç madde</h3>
+          <span class="chip chip--ok">R1 · R2 · R4 · çözüldü</span>
         </div>
-        <p>
-          Müşteri 5 Temmuz’da misyon bölümü için yeni bir başlık ve 3 maddelik yeni bir liste
-          gönderdi. Uygulanan tek şey slogandaki noktanın kaldırılması oldu; başlık ve maddeler
-          hâlâ eski metin — <b>dört dilde de</b>.
-        </p>
-        <div class="cmp">
-          <div>
-            <h4>İstenen başlık</h4>
-            <p class="want">Sanayiye Değer Katan Sürdürülebilir Dönüşüm</p>
-          </div>
-          <div>
-            <h4>Sitedeki başlık</h4>
-            <p class="have">Karlılığı, kurumsal yapıları ve saha disiplinini birlikte güçlendirmek.</p>
-          </div>
-        </div>
-        <p>Maddelerde de fark var — istenen 3 madde, sitede 4 madde duruyor ve içerikleri farklı:</p>
         <ul>
-          <li><b>Eksik:</b> “…ve <b>rekabet gücünü artırmak</b>” ifadesi hiç yok.</li>
-          <li><b>Eksik:</b> “Yalın, çevik ve <b>sürdürülebilir</b> çalışma sistemleri kurarak organizasyonları <b>dijital dönüşüme hazırlamak</b>” — istenen tek madde, sitede iki ayrı ve farklı maddeye bölünmüş.</li>
-          <li><b>Doğru:</b> “Çalışanlara nitelik kazandırarak anlaşılır ve sürdürülebilir süreçler oluşturmak.”</li>
-          <li><b>Doğru:</b> Slogan noktasız — “Bilgi ve Tecrübeden Güce, Güçten Sonuca”</li>
+          <li>
+            <b>R2 — Misyonumuz:</b> başlık “Sanayiye Değer Katan Sürdürülebilir Dönüşüm” oldu,
+            4 madde istenen 3 maddeye indirildi. “Rekabet gücünü artırmak” ve
+            “sürdürülebilir çalışma sistemleri kurarak dijital dönüşüme hazırlamak” ifadeleri
+            artık yerinde — dört dilde de.
+          </li>
+          <li>
+            <b>R4 — Referanslar:</b> üst menü başlığı dört dilde kısaltıldı
+            (Referanslar / References / Referenzen / Reference). Bölüm içi zaten doğruydu.
+          </li>
+          <li>
+            <b>R1 — Boşnakça Kimliğimiz:</b> yanlış duran eski paragraf, istenen
+            “33 yıllık saha tecrübesi” metninin Boşnakçasıyla değiştirildi; butondaki
+            fazla nokta da kaldırıldı.
+          </li>
         </ul>
         <p class="kv">
-          <b>Dosya:</b> <code>app/data/homepage-content.js</code> · TR <code>99-111</code> ·
-          EN <code>418-430</code> · DE <code>737-749</code> · BS <code>1091-1102</code>
+          <b>Commit:</b> <code>4ce3943</code> · <i>calcomweb</i> · 30.07.2026 14:24 ·
+          <code>app/data/homepage-content.js</code> (+21 / −23)
         </p>
-      </div>
-
-      <div class="card card--bad">
-        <div class="card__head">
-          <h3 class="card__title">Üst menüdeki “Referanslar” başlığı geri alınmadı</h3>
-          <span class="chip chip--bad">R4 · Yüksek</span>
-        </div>
-        <p>
-          Müşteri 20 Temmuz yorumunda bunu net biçimde düzeltti — kendi hatası olduğunu da söyledi:
-        </p>
-        <div class="quote">
-          “Ana başlıkta &lsquo;Referanslar&rsquo; ifadesi kalsın; &lsquo;Birlikte Çalıştığımız İş Ortaklarımız&rsquo;
-          olarak değiştirilmesine gerek yok. &lsquo;Referanslar&rsquo; başlığına tıklandığında ise aşağıda
-          yalnızca &lsquo;İş Ortaklarımız&rsquo; ifadesinin görünmesi yeterlidir.”
-        </div>
-        <p>
-          Bölüm içi doğru yapılmış. Fakat <b>üst menüdeki başlık dört dilde de uzun hâlinde kaldı:</b>
-        </p>
-        <ul>
-          <li>TR: <code>"Birlikte Çalıştığımız İş Ortaklarımız"</code> → olmalı: <code>"Referanslar"</code></li>
-          <li>EN: <code>"Our Business Partners"</code> → olmalı: <code>"References"</code></li>
-          <li>DE: <code>"Unsere Geschäftspartner"</code> → olmalı: <code>"Referenzen"</code></li>
-          <li>BS: <code>"Naši poslovni partneri"</code> → olmalı: <code>"Reference"</code></li>
-        </ul>
-        <p>
-          Not: 20 Temmuz güncelleme notunda bu iş “yapıldı” olarak yazılmış, ama sadece
-          bölüm başlığı düzeltilmiş; menü atlanmış.
-        </p>
-        <p class="kv">
-          <b>Dosya:</b> <code>app/data/homepage-content.js</code> satır
-          <code>79</code>, <code>398</code>, <code>717</code>, <code>1067</code>
-        </p>
-      </div>
-
-      <div class="card card--warn">
-        <div class="card__head">
-          <h3 class="card__title">Boşnakça “Kimliğimiz” paragrafı eski metinde kalmış</h3>
-          <span class="chip chip--warn">R1 · Orta</span>
-        </div>
-        <p>
-          R1’de istenen “33 yılı aşkın uluslararası saha tecrübesi… mühendis, eğitmen ve eğitimci”
-          paragrafı TR, EN ve DE’ye işlenmiş. Boşnakça sürümde ise <b>tamamen alakasız, eski bir metin</b>
-          duruyor (“Vaše osoblje smatramo partnerima…” = “Çalışanlarınızı partner olarak görüyoruz…”).
-          Yani BS ziyaretçisi Kimliğimiz bölümünde yanlış içeriği görüyor.
-        </p>
-        <p>
-          Aynı yerde ikinci bir tutarsızlık: BS’deki buton metni
-          <code>"Pogledajte priču našeg osnivača."</code> — sonunda nokta var, diğer üç dilde yok.
-        </p>
-        <p class="kv"><b>Dosya:</b> <code>app/data/homepage-content.js:1074-1082</code></p>
       </div>
 
       <div class="card card--warn">
@@ -530,19 +493,19 @@
 
   <!-- ============ 3. COMMIT EDILMEMIS ============ -->
   <section>
-    <h2><span class="num">03</span> Yapıldı ama yayında değil — commit bekleyen çalışma</h2>
-    <p class="sub">Çalışma dizininde duran, henüz commit edilmemiş ve dolayısıyla canlıda görünmeyen değişiklik.</p>
+    <h2><span class="num">03</span> Kurucu bölümü düzeni — commit'lendi, yayında</h2>
+    <p class="sub">İlk raporda commit bekleyen çalışma; artık <code>main</code> üzerinde ve canlıya çıkmış durumda.</p>
 
     <div class="cards">
-      <div class="card card--info">
+      <div class="card card--ok">
         <div class="card__head">
           <h3 class="card__title">Kurucu sloganının fotoğrafın sağına alınması</h3>
-          <span class="chip chip--info">R6 · madde 1</span>
+          <span class="chip chip--ok">R6 · madde 1 · yayında</span>
         </div>
         <p>
           Müşterinin ilk maddesi şuydu: <i>“Fotoğrafım sağında böyle bir slogan olmalı…”</i>
-          Bu düzen çalışması <b>tamamlanmış ve doğru</b>, ama commit edilmediği için canlıda
-          slogan hâlâ fotoğrafın altında görünüyor.
+          Bu düzen çalışması <code>1615d11</code> ile commit'lendi ve <code>origin/main</code>'e
+          gitti; slogan artık fotoğrafın sağında.
         </p>
         <ul>
           <li><code>components/sections/founder-story-section.jsx</code> — fotoğraf + isim/unvan
@@ -553,13 +516,13 @@
               sol kenarlık yerine üst ayraç çizgisi kullanıyor — mobil regresyonu yok.</li>
         </ul>
         <p>
-          Doğrulama: <code>npm run build</code> hatasız tamamlandı, CSS geçerli,
-          dört dilde tüm sayfalar statik üretildi. <b>Yayına almak için tek eksik: commit + push.</b>
+          Doğrulama: <code>4ce3943</code> birleştirildikten sonra <code>npm run build</code>
+          yeniden çalıştırıldı — hatasız tamamlandı, dört dilde tüm sayfalar statik üretildi.
         </p>
         <p class="kv">
           <b>Değişiklik:</b> 2 dosya, +48 / −36 satır ·
           <b>Not:</b> <code>globals.css</code> içindeki <code>.footer-copyright</code> satırında
-          sadece boşluk farkı var, işlevsel değil.
+          sadece boşluk farkı vardı, işlevsel değil.
         </p>
       </div>
     </div>
@@ -579,23 +542,30 @@
           <h3 class="card__title">“Tamamlandı” yapılabilecek 8 kayıt</h3>
           <span class="chip chip--ok">Kapatmaya hazır</span>
         </div>
-        <p>Bunların işi bitmiş, panelde hâlâ açık görünüyor:</p>
+        <p>Bunların işi bitmiş, panelde hâlâ “Yeni” veya “Devam ediyor” görünüyor:</p>
         <ul>
-          <li><b>Yeni</b> → Tamamlandı: R7 (Yaklaşımımız), R14 (Ana başlık ilaveleri)</li>
-          <li><b>Devam ediyor</b> → Tamamlandı: R9, R10, R11, R12, R13 (beş uzmanlık kartı)</li>
-          <li><b>Yeni</b> → Tamamlandı: R6 (Kurucu hikayesi) — <i>ancak commit sonrası</i></li>
+          <li><b>Yeni</b> → Tamamlandı: R6 (Kurucu hikayesi), R7 (Yaklaşımımız), R14 (Ana başlık ilaveleri)</li>
+          <li><b>Devam ediyor</b> → Tamamlandı: R1 (Kimliğimiz), R2 (Misyonumuz), R4 (Referanslar), R9, R10</li>
         </ul>
+        <p>
+          R3, R5 ve R8 zaten “Tamamlandı” durumunda. Yani bu 8 kayıt kapatılınca panelde
+          yalnızca aşağıdaki 3 kayıt açık kalır.
+        </p>
       </div>
 
       <div class="card card--warn">
         <div class="card__head">
           <h3 class="card__title">Açık kalması gereken 3 kayıt</h3>
-          <span class="chip chip--warn">İş var</span>
+          <span class="chip chip--warn">Müşteri teyidi</span>
         </div>
+        <p>
+          Üçünün de metni yazılmış durumda; bekleyen şey kod değil, tek bir soruya cevap:
+          kartların altındaki eski paragraflar kalsın mı, silinsin mi?
+        </p>
         <ul>
-          <li><b>R2 (Misyonumuz)</b> — “Devam ediyor” görünüyor ama fiilen başlanmamış. Asıl açık iş bu.</li>
-          <li><b>R4 (Referanslar)</b> — menü başlığı düzeltilene kadar açık kalmalı.</li>
-          <li><b>R1 (Kimliğimiz)</b> — Boşnakça metin düzeltilene kadar açık kalmalı.</li>
+          <li><b>R11</b> — Problem Çözme kartı</li>
+          <li><b>R12</b> — Tedarikçiden Müşteriye Kalite kartı</li>
+          <li><b>R13</b> — Satış Sonrası Şikayet Yönetimi kartı</li>
         </ul>
       </div>
 
@@ -614,6 +584,8 @@
           <li>Uzmanlık kartlarının EN/DE/BS eşitlenmesi (<code>73d60d3</code>, <code>607b2d7</code>, <code>4b339a3</code>)</li>
           <li>Kimliğimiz bölümündeki fazla içeriklerin kaldırılması (<code>1cfe978</code>)</li>
           <li>Bölüm geçişi butonlarının tek tipe indirilmesi (<code>055d5e2</code>)</li>
+          <li>Kurucu sloganının fotoğrafın sağına alınması (<code>1615d11</code>)</li>
+          <li>Misyonumuz, Referanslar menüsü ve Boşnakça Kimliğimiz düzeltmeleri (<code>4ce3943</code>)</li>
         </ul>
         <p class="kv"><b>Dosya:</b> <code>app/admin/(panel)/updates-feed/page.jsx</code> — <code>UPDATES</code> dizisinin en üstüne kart eklenecek</p>
       </div>
@@ -639,8 +611,11 @@
           “Her dönüşüm, sahada atılan ilk adımla gerçeğe dönüşür.” ve “Öğren ve Geliş” gibi
           Türkçe metinler görüyor.
         </p>
-        <p>Aynı sorun <code>app/[lang]/newera/page.jsx</code> dosyasında da birebir mevcut (11 geçiş).</p>
-        <p class="kv"><b>Etki:</b> 4 dilin 3’ünde, ana sayfanın en görünür 11 noktası</p>
+        <p>Aynı sorun <code>app/[lang]/newera/page.jsx</code> dosyasında da birebir mevcut (11 geçiş daha).</p>
+        <p class="kv">
+          <b>Etki:</b> 4 dilin 3’ünde, ana sayfanın en görünür noktaları ·
+          <b>Toplam:</b> 2 dosyada 22 sabit Türkçe buton etiketi + her birinin iki özlü söz satırı
+        </p>
       </div>
 
       <div class="card card--warn">
@@ -772,39 +747,36 @@
 
     <ol class="actions">
       <li>
-        <b>Kurucu bölümü düzenini commit edip push et</b>
-        <span>İş zaten bitmiş ve build geçiyor; commit edilmediği için müşterinin R6’daki
-        birinci maddesi canlıda görünmüyor. En hızlı kazanç.</span>
-      </li>
-      <li>
-        <b>Üst menüdeki “Referanslar” başlığını dört dilde düzelt</b>
-        <span>R4 · Tek dosyada 4 satır. Müşteri bunu açıkça ve gerekçesiyle bildirmiş, üstelik
-        “yapıldı” diye kaydedilmiş.</span>
-      </li>
-      <li>
-        <b>Boşnakça Kimliğimiz paragrafını doğru metinle değiştir</b>
-        <span>R1 · BS ziyaretçisi şu an yanlış içerik görüyor. Buton sonundaki noktayı da al.</span>
-      </li>
-      <li>
-        <b>MİSYONUMUZ bölümünü talep edildiği gibi yeniden yaz</b>
-        <span>R2 · Yeni başlık + 3 madde, dört dilde. Bu rapordaki en büyük açık iş kalemi.</span>
-      </li>
-      <li>
         <b>Uzmanlık kartlarındaki eski paragrafları müşteriye sor</b>
-        <span>R11/R12/R13 · “Bu üç paragraf kalsın mı, silinsin mi?” — tek soruyla üç kayıt kapanır.</span>
+        <span>R11/R12/R13 · “Bu üç paragraf kalsın mı, silinsin mi?” — tek soruyla üç kayıt
+        birden kapanır. Revizyon tarafında kalan tek karar bu.</span>
+      </li>
+      <li>
+        <b>Panelde 8 kaydı “Tamamlandı” yap</b>
+        <span>R1, R2, R4, R6, R7, R9, R10, R14 · Hepsinin işi bitti. Bu yapılmadan panel
+        “ne kaldı” sorusuna yanlış cevap veriyor.</span>
+      </li>
+      <li>
+        <b>Güncellemeler akışına 23–30 Temmuz kartını ekle</b>
+        <span>Akış hâlâ 20 Temmuz’da duruyor; arada 9 commit’lik iş var.</span>
       </li>
       <li>
         <b>Bölüm geçişi metinlerini içerik dosyasına taşı</b>
-        <span>Talep dışı ama etkisi büyük: 3 dilde 11 nokta Türkçe görünüyor. Yapısal iş,
-        ayrı bir çalışma olarak planlanmalı.</span>
+        <span>Talep dışı ama en büyük açık iş: 3 dilde, 2 dosyada, 22 nokta Türkçe görünüyor.
+        Yapısal çalışma — ayrı planlanmalı.</span>
       </li>
       <li>
-        <b>Panelde 8 kaydı “Tamamlandı” yap, güncellemeler akışına 23–30 Temmuz kartını ekle</b>
-        <span>Panel bu iki adımdan sonra “ne kaldı” sorusuna doğru cevap verir hâle gelir.</span>
+        <b>Footer’daki 5px punto kararını netleştir</b>
+        <span>Gizli bağlantı riski. Bilinçli tercihse kalsın, değilse okunur bir puntoya çekilmeli.</span>
       </li>
       <li>
         <b>NewEra geçişi: WordPress yedeğini al</b>
         <span>Zincirin ilk halkası ve tek blokajı. Yedek olmadan sonraki adımlar başlatılmamalı.</span>
+      </li>
+      <li>
+        <b>Küçük temizlikler</b>
+        <span>Ölü <code>identity.tag</code> / <code>founder.languages</code> alanları,
+        Türkçe sabit telif satırı, güncelliğini yitirmiş <code>TODO.md</code>.</span>
       </li>
     </ol>
   </section>
@@ -820,7 +792,14 @@
     </p>
     <p>
       Panel durum etiketlerine güvenilmedi — her satırın kaynağı koddur. Satır numaraları
-      HEAD <code>4b339a3</code> ve commit edilmemiş çalışma dizini durumuna göredir.
+      HEAD <code>4ce3943</code> durumuna göredir.
+    </p>
+    <p>
+      <b>İkinci tur:</b> ilk rapor <code>4b339a3</code> üzerinde hazırlandı. Ardından kurucu
+      düzeni commit'lendi (<code>1615d11</code>) ve <code>origin/main</code>'den ikinci bir
+      katkıcının commit'i (<code>4ce3943</code>) alındı. Birleştirme sonrası <code>npm run build</code>
+      tekrar çalıştırıldı ve açık maddeler yeniden kontrol edildi; kapanan üç madde
+      kod üzerinden ayrıca doğrulandı.
     </p>
   </footer>
 
