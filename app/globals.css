@@ -3330,10 +3330,11 @@ img {
 
 .mission-highlight {
   margin: 1.4rem auto 0;
+  max-width: 34rem;
   font-size: clamp(1.15rem, 1.8vw, 1.5rem);
   font-weight: 700;
   letter-spacing: 0;
-  color: #050505;
+  color: #000000;
   text-align: center;
 }
 
